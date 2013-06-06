@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Account" verbose="1" >
+    <listeners>
+    </listeners>
+    <test name="AccountTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
+        </classes>
+    </test>
+</suite>

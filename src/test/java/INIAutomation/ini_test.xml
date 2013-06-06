@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tablet" verbose="1" >
+    <test name="iniDesktopTest">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="INIAutomation.ININIMultiBrandPatientTest"/>
+            <class name="INIAutomation.ININIMultiBrandPatientBoxTest"/>
+            <class name="INIAutomation.ININIMultiBrand1EyeEachTest"/>
+        </classes>
+    </test>
+</suite>

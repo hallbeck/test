@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Ranorex">
+    <CLASSES>
+      <root url="file://C:/Program Files (x86)/Ranorex 4.0/Bin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files (x86)/Ranorex 4.0/Bin" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files (x86)/Ranorex 4.0/Bin" recursive="false" />
+    <jarDirectory url="file://C:/Program Files (x86)/Ranorex 4.0/Bin" recursive="false" type="SOURCES" />
+  </library>
+</component>

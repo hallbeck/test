@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="" />
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/FirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566663577" ignored="false" />
+    <file path="/fragment.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370463649969" ignored="false" />
+    <file path="/TestUrlOpener.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362958090030" ignored="false" />
+    <file path="/ResponsiveSuggest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362959303229" ignored="false" />
+    <file path="/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366834471457" ignored="false" />
+    <file path="/Utils.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566622203" ignored="false" />
+    <file path="/pom.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369171817814" ignored="false" />
+    <file path="/TestBase.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370473382502" ignored="false" />
+    <file path="/a.groovy" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364357450993" ignored="false" />
+    <file path="/a.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364357456128" ignored="false" />
+    <file path="/a.dummy" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370278789848" ignored="false" />
+    <file path="C:/SeleniumCookbook/src/test/java/seleniumcookbook/example/test/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571047280" ignored="false" />
+    <file path="/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364570914506" ignored="false" />
+    <file path="C:/AndroidAutomation/First/src/test/java/Automation/First.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571203804" ignored="false" />
+    <file path="C:/AndroidAutomation/First/src/test/java/Automation/AndroidDriverTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364572844751" ignored="false" />
+    <file path="/AndroidDriverTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571973390" ignored="false" />
+    <file path="C:/AndroidAutomation/First/pom.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571722518" ignored="false" />
+    <file path="C:/AndroidAutomation/First/src/test/java/Automation/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364597762512" ignored="false" />
+    <file path="C:/AndroidAutomation/First/src/test/java/Automation/TestBase.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364597785654" ignored="false" />
+    <file path="/SmokeNIToricTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043234423" ignored="false" />
+    <file path="/SmokeNIColor6Mo.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366056708482" ignored="false" />
+    <file path="/SmokeNIColorToric.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366052868980" ignored="false" />
+    <file path="/SmokeNIVialTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368464744687" ignored="false" />
+    <file path="/SmokeNIAcuvueCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366062823809" ignored="false" />
+    <file path="/SmokeNIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1365028403950" ignored="false" />
+    <file path="/playTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1365453039846" ignored="false" />
+    <file path="/SmokeNIProgressiveCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043375428" ignored="false" />
+    <file path="/SmokeNIAcuvue2PlanoCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043883727" ignored="false" />
+    <file path="/SmokeNIColorPlanoDeclinedCardTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369260109702" ignored="false" />
+    <file path="/SmokeNI1EyeAsphericTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369772248341" ignored="false" />
+    <file path="/SmokeNIMultiBrand1EyeEachTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043553323" ignored="false" />
+    <file path="/SmokeNIMultiBrandPatientTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368121282717" ignored="false" />
+    <file path="/SmokeNIMultiBrandPatientBoxTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043495984" ignored="false" />
+    <file path="/SystemOutTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1365196509117" ignored="false" />
+    <file path="/SmokeRIVialTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369175596191" ignored="false" />
+    <file path="/SmokeRIColor6Mo.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366058941741" ignored="false" />
+    <file path="/SmokeRIToricTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368141510683" ignored="false" />
+    <file path="/SmokeRIColorPlanoDeclinedCardTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369252584793" ignored="false" />
+    <file path="/SmokeRIAcuvue2PlanoCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042773244" ignored="false" />
+    <file path="/SmokeRIMultiBrandPatientTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368040763880" ignored="false" />
+    <file path="/SmokeRIMultiBrandPatientBoxTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370277318403" ignored="false" />
+    <file path="/SmokeNIProgressiveInternationalTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043311911" ignored="false" />
+    <file path="/SmokeRIProgressiveInternationalTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042182839" ignored="false" />
+    <file path="/SmokeRIMultiBrand1EyeEachTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042419903" ignored="false" />
+    <file path="/SmokeRIColorToric.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366053211506" ignored="false" />
+    <file path="/SmokeNIAsphericInternationalTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368546730622" ignored="false" />
+    <file path="/SmokeRIAsphericInternationalTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368806722252" ignored="false" />
+    <file path="/SmokeRIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042813976" ignored="false" />
+    <file path="/SmokeRI1EyeAsphericPlusColorTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370471496605" ignored="false" />
+    <file path="/SmokeNIColorToricTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368476815797" ignored="false" />
+    <file path="/SmokeRIColorToricTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042506101" ignored="false" />
+    <file path="/SmokeNIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368483380908" ignored="false" />
+    <file path="/SmokeRIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369942264733" ignored="false" />
+    <file path="/SmokeNIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043943977" ignored="false" />
+    <file path="/Dummy.txt" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370535371342" ignored="false" />
+    <file path="/testng.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366823962680" ignored="false" />
+    <file path="/SmokeRIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042248603" ignored="false" />
+    <file path="/phoneSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367261367068" ignored="false" />
+    <file path="/desktopSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367875820447" ignored="false" />
+    <file path="/tabletSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367268396559" ignored="false" />
+    <file path="/INIFirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368569594440" ignored="false" />
+    <file path="/ShippingChanges47266.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122156533" ignored="false" />
+    <file path="/verification.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367616998941" ignored="false" />
+    <file path="/CanadaShipping.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367856348287" ignored="false" />
+    <file path="/one_test.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370469851062" ignored="false" />
+    <file path="/CanadaShipping47326.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122136652" ignored="false" />
+    <file path="/desktopSmokeRI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368717450074" ignored="false" />
+    <file path="/tabletSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369866823359" ignored="false" />
+    <file path="/phoneSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369953510514" ignored="false" />
+    <file path="/phoneSmokeRI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370271556406" ignored="false" />
+    <file path="/EditShippingBilling44764.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368819116891" ignored="false" />
+    <file path="/DiffShippingBillingColor47612.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368747020126" ignored="false" />
+    <file path="/DiffShippingBilling47612.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368462014317" ignored="false" />
+    <file path="/desktopSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369953534711" ignored="false" />
+    <file path="/a_one_test.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368554974604" ignored="false" />
+    <file path="/ini_test.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858239572" ignored="false" />
+    <file path="/INI_ColorPlano_47767.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369862371551" ignored="false" />
+    <file path="/INI_cardDecline_47768.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368650213723" ignored="false" />
+    <file path="/PDPBadRx47802.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369782471059" ignored="false" />
+    <file path="/tabletPayment.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368743167989" ignored="false" />
+    <file path="/phonePayment.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778521005" ignored="false" />
+    <file path="/DeclinedCardMC47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414968976" ignored="false" />
+    <file path="/DeclinedCardVisa47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414944911" ignored="false" />
+    <file path="/ApprovedVisaForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414975608" ignored="false" />
+    <file path="/ApprovedDinersCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368812123641" ignored="false" />
+    <file path="/ApprovedMCForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414927932" ignored="false" />
+    <file path="/one.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370445593519" ignored="false" />
+    <file path="/Links47930.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369327364378" ignored="false" />
+    <file path="/Links.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369327399676" ignored="false" />
+    <file path="/TitleTags.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369337395766" ignored="false" />
+    <file path="/ApprovedDiscoverCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414935999" ignored="false" />
+    <file path="/NotAcceptedDinersCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414955847" ignored="false" />
+    <file path="/ApprovedAmexCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415024338" ignored="false" />
+    <file path="/TitleTags48150.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415366716" ignored="false" />
+    <file path="/INI_130_dollar_47766.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369435009994" ignored="false" />
+    <file path="/desktopPayment.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778542598" ignored="false" />
+    <file path="/NoCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778190090" ignored="false" />
+    <file path="/desktopAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370279248496" ignored="false" />
+    <file path="/tabletAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370279288634" ignored="false" />
+    <file path="/tabletIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858276182" ignored="false" />
+    <file path="/desktopIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858284028" ignored="false" />
+    <file path="/phoneIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858325838" ignored="false" />
+    <file path="/pdp.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370386291269" ignored="false" />
+    <file path="/iniNotAllUsed.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369935169190" ignored="false" />
+    <file path="/NILogin_48412.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370273989405" ignored="false" />
+    <file path="/NILogin_signinpage_48412.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370386164129" ignored="false" />
+    <file path="/phoneAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370299087074" ignored="false" />
+    <file path="/account.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370384688826" ignored="false" />
+    <file path="/phoneINI_NI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370284019589" ignored="false" />
+    <file path="/iniAppliedTax.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370290244269" ignored="false" />
+    <file path="/desktopINI_NI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370383579774" ignored="false" />
+    <file path="/PDPEditRx48520.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370456429252" ignored="false" />
+    <file path="/PDPAccessories48553.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370464541455" ignored="false" />
+    <file path="/tabletSmokeRI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370471169056" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370535613322" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370535409623" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out" openResultsInEditor="true" userTempatePath="" />
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeRI.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2CanadaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2PlanoCanadaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAsphericInternationalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrand1EyeEachTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiFocalCanadaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIProgressiveInternationalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIVialTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRI1EyeAsphericPlusColorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\AutomationTools\apache-maven-3.0.5" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testResults" />
+    <property name="project.structure.side.proportion" value="0.28852838" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Regression.PDP" />
+      <recent name="INIAutomation" />
+      <recent name="Regression.Account" />
+      <recent name="Regression.Totals" />
+      <recent name="Regression.Payment" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\test\src\test\java\INIAutomation" />
+      <recent name="C:\test\src\test\java\Regression\Account" />
+      <recent name="C:\test\src\test\java\Regression\Totals" />
+      <recent name="C:\test\src\test\java\SuitesOfTests" />
+      <recent name="C:\test\src\test\java\Regression\TitleTagProducts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\test\src\test\java\Regression\PDP" />
+      <recent name="C:\test\src\test\java\SMOKE" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeRI.xml">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/phoneSmokeRI.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/phoneSmokeRI.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeNI.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeNI.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeRI.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeRI.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FirstTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.example.FirstTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="testingmodule" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.FirstTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/phoneSmokeRI.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/one_test.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeNI.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeRI.xml" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeRI.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeRI.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeRI.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/tabletSmokeNI.xml" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\khallbec\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="" />
+      <created>1362878233317</created>
+      <updated>1362878233317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31553975" sideWeight="0.99937886" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33926454" sideWeight="0.1125" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="ConsoleMavenPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30875203" sideWeight="0.628707" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.371293" sideWeight="0.8875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26613817" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901296" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="test" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="test" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="test" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="test" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="testingmodule" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2CanadaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="28" selection-start="3368" selection-end="3368" vertical-scroll-proportion="0.5743381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2PlanoCanadaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="28" selection-start="3258" selection-end="3258" vertical-scroll-proportion="0.64358455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAsphericInternationalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="28" selection-start="3390" selection-end="3390" vertical-scroll-proportion="0.71283096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="28" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.7820774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColor6MoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="-2.2647657">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="28" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.67820776">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrandPatientBoxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="-1.5376782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiFocalCanadaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="28" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.5397149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrandPatientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="-2.2505093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIProgressiveInternationalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="28" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.5397149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIToricTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="-1.7454175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIVialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="26" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.71283096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/tabletSmokeRI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRI1EyeAsphericPlusColorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="36" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrand1EyeEachTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="24" selection-start="3223" selection-end="3223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="507" column="62" selection-start="22201" selection-end="22201" vertical-scroll-proportion="0.6960298">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>monkeytalk</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.hamcrest:hamcrest-all:1.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28852838" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

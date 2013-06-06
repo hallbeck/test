@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="phoneNI" verbose="1" >
+    <test name="NIsmokePhone">
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="INIAutomation.ININIVialTest"/>
+            <class name="INIAutomation.ININIToricTest"/>
+            <class name="INIAutomation.ININIProgressiveInternationalTest"/>
+            <class name="INIAutomation.ININIProgressiveCanadaTest"/>
+            <class name="INIAutomation.ININIMultiBrandPatientTest"/>
+            <class name="INIAutomation.ININIMultiBrandPatientBoxTest"/>
+            <class name="INIAutomation.ININIMultiBrand1EyeEachTest"/>
+            <class name="INIAutomation.ININIColorToricTest"/>
+            <class name="INIAutomation.ININIColorPlanoDeclinedCardTest"/>
+            <class name="INIAutomation.ININIColor6MoTest"/>
+            <class name="INIAutomation.ININIAsphericInternationalTest"/>
+            <class name="INIAutomation.ININIAcuvue2PlanoCanadaTest"/>
+            <class name="INIAutomation.ININIAcuvue2CanadaTest"/>
+            <class name="INIAutomation.ININI1EyeAsphericTest"/>
+        </classes>
+    </test>
+</suite>

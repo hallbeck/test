@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Totals" verbose="1" >
+    <test name="TotalsTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Totals.iniAppliedTax"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tabletNI" verbose="1" >
+    <test name="NIsmokeTablet">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SmokeNIProgressiveInternationalTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientTest"/>
+            <class name="SMOKE.SmokeNIColorToricTest"/>
+        </classes>
+    </test>
+</suite>

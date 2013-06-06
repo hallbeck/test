@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1" >
+    <test name="iniDesktopTest">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="INIAutomation.INI_130_dollar_47766"/>
+            <class name="INIAutomation.INI_0_dollar_47761"/>
+            <class name="INIAutomation.INI_ColorPlano_47767"/>
+            <class name="INIAutomation.INI_cardDecline_47768"/>
+        </classes>
+    </test>
+</suite>

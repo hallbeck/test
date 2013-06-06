@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="phone" verbose="1" >
+    <test name="PhoneTitleTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.TitleTagProducts.TitleTags48150"/>
+        </classes>
+    </test>
+    <test name="PhoneAccountTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
+            <class name="Regression.Account.NILogin_48412"/>
+        </classes>
+    </test>
+    <test name="PhonePaymentTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.Payment.DeclinedCardMC47577"/>
+            <class name="Regression.Payment.DeclinedCardVisa47577"/>
+            <class name="Regression.Payment.ApprovedAmexCard47577"/>
+            <class name="Regression.Payment.NotAcceptedDinersCard47577"/>
+            <class name="Regression.Payment.ApprovedDiscoverCard47577"/>
+            <class name="Regression.Payment.ApprovedMCForeignCard47577"/>
+            <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
+            <class name="Regression.Payment.NoCard47577"/>
+        </classes>
+    </test>
+    <test name="PhonePDPTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.PDP.PDPBadRx47802"/>
+            <class name="Regression.PDP.PDPBadPName47802"/>
+        </classes>
+    </test>
+    <test name="PhoneLinksTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.Links.Links47930"/>
+        </classes>
+    </test>
+    <test name="PhoneINITests" >
+    <parameter name="device" value='phone'/>
+    <classes>
+        <class name="INIAutomation.INI_0_dollar_47761"/>
+        <class name="INIAutomation.INI_130_dollar_47766"/>
+        <class name="INIAutomation.INI_cardDecline_47768"/>
+        <class name="INIAutomation.INI_ColorPlano_47767"/>
+        <class name="INIAutomation.ININIVialTest"/>
+        <class name="INIAutomation.ININIToricTest"/>
+        <class name="INIAutomation.ININIProgressiveInternationalTest"/>
+        <class name="INIAutomation.ININIProgressiveCanadaTest"/>
+        <class name="INIAutomation.ININIMultiBrandPatientTest"/>
+        <class name="INIAutomation.ININIMultiBrandPatientBoxTest"/>
+        <class name="INIAutomation.ININIMultiBrand1EyeEachTest"/>
+        <class name="INIAutomation.ININIColorToricTest"/>
+        <class name="INIAutomation.ININIColorPlanoDeclinedCardTest"/>
+        <class name="INIAutomation.ININIColor6MoTest"/>
+        <class name="INIAutomation.ININIAsphericInternationalTest"/>
+        <class name="INIAutomation.ININIAcuvue2PlanoCanadaTest"/>
+        <class name="INIAutomation.ININIAcuvue2CanadaTest"/>
+        <class name="INIAutomation.ININI1EyeAsphericTest"/>
+    </classes>
+</test>
+    <test name="PhoneTotalsTests" >
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.Totals.iniAppliedTax"/>
+        </classes>
+    </test>
+</suite>

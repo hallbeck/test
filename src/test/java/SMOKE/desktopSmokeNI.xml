@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1" >
+    <test name="NIsmokeDesktop">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="SMOKE.SmokeNIVialTest"/>
+            <class name="SMOKE.SmokeNIToricTest"/>
+            <class name="SMOKE.SmokeNIProgressiveInternationalTest"/>
+            <class name="SMOKE.SmokeNIProgressiveCanadaTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest"/>
+            <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest"/>
+            <class name="SMOKE.SmokeNIColorToricTest"/>
+            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.SmokeNIColor6MoTest"/>
+            <class name="SMOKE.SmokeNIAsphericInternationalTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
+            <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
+        </classes>
+    </test>
+</suite>

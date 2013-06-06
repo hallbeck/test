@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1" >
+    <test name="testing1">
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="Regression.PDP.PDPAccessories48553"/>
+        </classes>
+    </test>
+</suite>

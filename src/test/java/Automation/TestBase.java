@@ -37,7 +37,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "ipadP";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -51,6 +51,7 @@ public class TestBase {
 
     //public String desktopBaseUrl = "https://www.1800contactstest.com/";
     public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+    //public String desktopBaseUrl = "https://www.1800contacts.com/";
     public String mobileBaseUrl = "https://ww1.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://ww1.1800contactstest.com/";
@@ -128,6 +129,9 @@ public class TestBase {
         }
         return deviceProfile;
     }
+    public void print(String text){
+        System.out.println(text);
+    }
 
     public DateTime dt = new DateTime();
     public int iToD = dt.getHourOfDay();
@@ -168,6 +172,49 @@ public class TestBase {
         driver.get(desktopBaseUrl + addition);
         Wait(1);
         verifyPageTitle(expected);
+    }
+    public void clickRemove (String device){
+        driver.findElement(By.xpath("//a[contains(@id,'cartRemoveLink')]")).click();
+    }
+    public static String removeCharAt(String s, int pos) {
+        return s.substring(0, pos) + s.substring(pos + 1);
+    }
+     public void verifyRebateCart(String device,String rebateAmount){
+         WebElement weTotal = driver.findElement(By.xpath("//td[contains(@class,'a41-cart-right-final-total')]"));
+         String strTotal = weTotal.getText();
+         String strNoDollarTotal = strTotal.substring(1);
+         WebElement weTotalAfterRebate = driver.findElement(By.xpath("//td[contains(@style,'color: #0BA14B;')]"));
+         String strTotalAfterRebate = weTotalAfterRebate.getText();
+         String strNoDollarTotalAfterRebate = strTotalAfterRebate.substring(1);
+         float intTotal = Float.parseFloat(strNoDollarTotal);
+         float intTotalAfterRebate = Float.parseFloat(strNoDollarTotalAfterRebate);
+         float actualdRebateAmt = (intTotal - intTotalAfterRebate);
+         double actualRebateAmt = Math.ceil(actualdRebateAmt);
+         String strActualRebate = String.valueOf(actualRebateAmt);
+         if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
+         assert true;
+         }
+         else { assert false;
+         }
+     }
+    public void verifyRebateRS(String device,String rebateAmount){
+        WebElement weTotal = driver.findElement(By.xpath("(//dd[@class='a41-checkout-review-subtotal'])[4]"));
+        String strTotal = weTotal.getText();
+        String strNoDollarTotal = strTotal.substring(1);
+        WebElement weTotalAfterRebate = driver.findElement(By.xpath("(//dd[@class='totalRebateAmount'])[2]"));
+        String strTotalAfterRebate = weTotalAfterRebate.getText();
+        String strNoDollarTotalAfterRebate = strTotalAfterRebate.substring(1);
+
+        double intTotal = Double.parseDouble(strNoDollarTotal);
+        double intTotalAfterRebate = Double.parseDouble(strNoDollarTotalAfterRebate);
+        double actualdRebateAmt = (intTotal - intTotalAfterRebate);
+        double actualRebateAmt = Math.ceil(actualdRebateAmt);
+        String strActualRebate = String.valueOf(actualRebateAmt);
+        if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
+            assert true;
+        }
+        else { assert false;
+        }
     }
     public void verifyProduct(String device, String expected) {
         try{
@@ -1417,6 +1464,7 @@ public class TestBase {
             return n;}
         }
     }
+
     public void goback(){
         Wait(5);
         driver.navigate().back();

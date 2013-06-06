@@ -16,7 +16,7 @@ public class DiffShippingBilling47612 extends TestBase {
 
     String testNumber = "47612";
     String typeOfTest = "Regression";
-String typeOfCust = "NI"; String posR = "+"; String posL = "+";
+String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Icuity";
     String searchAllBrand2 = "";
@@ -26,8 +26,10 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String brandVerifyPDP2 = "";
     String rPower2 = "";
     String lPower2 = "";
+    String posR = "";
+    String posL = "+";
     String rPower = "-0.50";
-    String lPower = "+2.25";
+    String lPower = "2.25";
     String rBC = "8";
     String lBC = "8";
     String rBC2 = "";

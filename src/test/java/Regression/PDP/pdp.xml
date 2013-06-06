@@ -2,7 +2,7 @@
 
 <suite name="phone" verbose="1" >
     <test name="testing1">
-        <parameter name="device" value='tablet'/>
+        <parameter name="device" value='desktop'/>
         <classes>
             <class name="Regression.PDP.PDPBadRx47802"/>
             <class name="Regression.PDP.PDPBadPName47802"/>

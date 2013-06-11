@@ -64,7 +64,7 @@
     <file path="/SmokeNIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368483380908" ignored="false" />
     <file path="/SmokeRIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369942264733" ignored="false" />
     <file path="/SmokeNIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043943977" ignored="false" />
-    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1370990146080" ignored="false" />
+    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1370990156403" ignored="false" />
     <file path="/testng.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366823962680" ignored="false" />
     <file path="/SmokeRIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042248603" ignored="false" />
     <file path="/phoneSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367261367068" ignored="false" />
@@ -227,62 +227,7 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="one.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phoneAll.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/phoneAll.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="28" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.51900584">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeclinedCardMC47577.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeclinedCardVisa47577.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NILogin_signinpage_48412.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="25" selection-start="5199" selection-end="5216" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1329" column="58" selection-start="62150" selection-end="62150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -889,7 +834,11 @@
       <created>1370990149734</created>
       <updated>1370990149734</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="base files">
+      <created>1370990159004</created>
+      <updated>1370990159004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1081,13 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="25" selection-start="5199" selection-end="5216" vertical-scroll-proportion="0.0">
@@ -1126,6 +1068,13 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/phoneAll.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="28" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.51900584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="230" selection-end="230" vertical-scroll-proportion="0.1491228">
           <folding />
         </state>
       </provider>

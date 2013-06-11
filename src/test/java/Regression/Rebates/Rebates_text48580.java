@@ -67,45 +67,6 @@ public class Rebates_text48580 extends TestBase {
     String password = "password";
 
 
-    String DayAcuvueMoist90pk="lens/1-day-acuvue-moist-90";
-    String DayAcuvueTruEye30pk="lens/1-day-acuvue-trueye-30";
-    String DayAcuvueMoist30pk="lens/1-day-acuvue-moist-30";
-    String DayAcuvueMoistforAstigmatism30pk="lens/1-day-acuvue-moist-for-astigmatism-30";
-    String DayAcuvueTruEye90pk="lens/1-day-acuvue-trueye-90";
-    String Acuvue="lens/acuvue";
-    String Acuvue2Colours="lens/acuvue-2-colours";
-    String AcuvueAdvanceAstigmatism="lens/acuvue-advance-for-astigmatism" ;
-    String AcuvueAdvancePlus6pk="lens/acuvue-advance-plus-6";
-    String AcuvueOasysAstigmatism="lens/acuvue-oasys-for-astigmatism" ;
-    String AcuvueOasysHydraclearPlus24pk="lens/acuvue-oasys-24" ;
-    String AirOptixAqua="lens/air-optix-aqua";
-    String Aqualens38="lens/aqualens-38";
-    String Aqualens55Aspheric="lens/aqualens-55-aspheric";
-    String Aqualite55="lens/aqualite-55";
-    String Avaira="lens/avaira";
-    String Acuvue2="lens/acuvue-2" ;
-    String AcuvueAdvance="lens/acuvue-advance" ;
-    String AcuvueAdvancePlus24pk="lens/acuvue-advance-plus-24";
-    String AcuvueBifocals="lens/acuvue-bifocals";
-    String AcuvueOasysPresbyopia="lens/acuvue-oasys-for-presbyopia";
-    String AcuvueOasysHydraclearPlus6pk="lens/acuvue-oasys";
-    String AirOptixAquaMultifocal="lens/air-optix-aqua-multifocal";
-    String AirOptixNightDayAqua="lens/air-optix-night-day-aqua";
-    String Aqualens55="lens/aqualens-55";
-    String Aqualite38="lens/aqualite-38";
-    String Aqualite55ProAspheric="lens/aqualite-55-pro-aspheric" ;
-    String AvairaToric="lens/avaira-toric";
-    String Biofinity="lens/biofinity";
-    String BiofinityToric="lens/biofinity-toric";
-    String Biomedics38="lens/biomedics-38" ;
-    String Biomedics55Evolution="lens/biomedics-55-evolution" ;
-    String BiomedicsEP="lens/biomedics-ep";
-    String BiomedicsXC="lens/biomedics-xc";
-    String BiofinityMultifocal="lens/biofinity-multifocal";
-    String Biomedics1Day90pk="lens/biomedics-1-day-90" ;
-    String Biomedics55="lens/biomedics-55" ;
-    String Biomedics55Premier="lens/biomedics-55-premier";
-    String BiomedicsToric="lens/biomedics-toric" ;
     String ClarityH2O="lens/clarity-h2o";
     String Clear58="lens/clear-58" ;
     String ClearSightDay30pk="lens/clearsight-1-day-30";
@@ -205,7 +166,7 @@ public class Rebates_text48580 extends TestBase {
     String VertexToricXR="lens/vertex-toric-xr";
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + " | " + typeOfPayment + "_" + shippingVerify;
+    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 
 
 

@@ -45,7 +45,7 @@ public class Rebates_DayAcuvue30Pk_48580 extends TestBase {
     String password = "password";
     String shippingVerify = "Rebates";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + " | " + typeOfPayment + "_" + shippingVerify;
+    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 
 
 

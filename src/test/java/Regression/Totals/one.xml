@@ -2,7 +2,7 @@
 
 <suite name="Totals" verbose="1" >
     <test name="TotalsTests" >
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <class name="Regression.Totals.iniAppliedTax"/>
         </classes>

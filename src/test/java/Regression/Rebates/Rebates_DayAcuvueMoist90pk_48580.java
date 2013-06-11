@@ -68,7 +68,7 @@ public class Rebates_DayAcuvueMoist90pk_48580 extends TestBase {
 
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + " | " + typeOfPayment + "_" + shippingVerify;
+    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 
 
 
@@ -121,6 +121,6 @@ public class Rebates_DayAcuvueMoist90pk_48580 extends TestBase {
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
         verifyRebateRS(device,rebate12Month);
-       // driver.quit();
+        driver.quit();
     }
 }

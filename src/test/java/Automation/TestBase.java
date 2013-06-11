@@ -37,7 +37,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "iphoneOS61P";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -66,15 +66,6 @@ public class TestBase {
     public ChromeOptions options = new ChromeOptions();
     public DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
-   // public String defineBrowser(String defineBrowser){
-        //printToExcel(TestNumber + browser, browser);
-
-   //     return browser;
-   // }
-  //  public String getBrowser(String sFileName){
-   //     readFile(sFileName);
-   //     return browser;
-   // }
     public void defineProfile(String TestNumber,String profile){
         printToExcel(TestNumber + profile, profile);
     }
@@ -145,7 +136,9 @@ public class TestBase {
     public void takeScreenshot (String screenshotName, String page){
         try{
             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(scrFile, new File(pathForScreenshot + screenshotName + "/" + page + iToD +"oclock.jpg"));
+            String path = (pathForScreenshot + screenshotName + "/" + page + iToD +"oclock.jpg");
+            FileUtils.copyFile(scrFile, new File(path));
+            System.out.println("screenshot path: " + path);
         }
        catch(Exception e) {
             System.out.println("screenshot did not work");
@@ -180,7 +173,28 @@ public class TestBase {
         return s.substring(0, pos) + s.substring(pos + 1);
     }
      public void verifyRebateCart(String device,String rebateAmount){
-         WebElement weTotal = driver.findElement(By.xpath("//td[contains(@class,'a41-cart-right-final-total')]"));
+         if(rebateAmount.equals("0.0")){
+             try{
+                 WebElement weTotal = driver.findElement(By.xpath("//td[contains(@class,'a41-cart-right-final-total')]"));
+                 String strTotal = weTotal.getText();
+                 String strNoDollarTotal = strTotal.substring(1);
+                 WebElement weTotalAfterRebate = driver.findElement(By.xpath("//td[contains(@style,'color: #0BA14B;')]"));
+                 String strTotalAfterRebate = weTotalAfterRebate.getText();
+                 String strNoDollarTotalAfterRebate = strTotalAfterRebate.substring(1);
+                 float intTotal = Float.parseFloat(strNoDollarTotal);
+                 float intTotalAfterRebate = Float.parseFloat(strNoDollarTotalAfterRebate);
+                 double actualdRebateAmt = (Math.round(intTotal) - Math.round(intTotalAfterRebate));
+                 double actualRebateAmt = Math.ceil(actualdRebateAmt);
+                 String strActualRebate = String.valueOf(actualRebateAmt);
+                 if(rebateAmount.equals(strActualRebate)){System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
+                     assert false;}
+             }
+                 catch(Exception e) {
+                     System.out.println("No rebate. Rebate expected is: " + rebateAmount);
+                 }
+         }
+         //add something here that checks if rebateAmount is 0.0 and if it is, make sure there is no weTotalAfterRebate.
+       else{ WebElement weTotal = driver.findElement(By.xpath("//td[contains(@class,'a41-cart-right-final-total')]"));
          String strTotal = weTotal.getText();
          String strNoDollarTotal = strTotal.substring(1);
          WebElement weTotalAfterRebate = driver.findElement(By.xpath("//td[contains(@style,'color: #0BA14B;')]"));
@@ -188,16 +202,43 @@ public class TestBase {
          String strNoDollarTotalAfterRebate = strTotalAfterRebate.substring(1);
          float intTotal = Float.parseFloat(strNoDollarTotal);
          float intTotalAfterRebate = Float.parseFloat(strNoDollarTotalAfterRebate);
-         float actualdRebateAmt = (intTotal - intTotalAfterRebate);
+
+         double actualdRebateAmt = (Math.round(intTotal) - Math.round(intTotalAfterRebate));
          double actualRebateAmt = Math.ceil(actualdRebateAmt);
          String strActualRebate = String.valueOf(actualRebateAmt);
          if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
          assert true;
          }
-         else { assert false;
+         else {
+             System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
+             assert false;
+         }
          }
      }
     public void verifyRebateRS(String device,String rebateAmount){
+        if(rebateAmount.equals("0.0")){
+            try{
+                WebElement weTotal = driver.findElement(By.xpath("(//dd[@class='a41-checkout-review-subtotal'])[4]"));
+                String strTotal = weTotal.getText();
+                String strNoDollarTotal = strTotal.substring(1);
+                WebElement weTotalAfterRebate = driver.findElement(By.xpath("(//dd[@class='totalRebateAmount'])[2]"));
+                String strTotalAfterRebate = weTotalAfterRebate.getText();
+                String strNoDollarTotalAfterRebate = strTotalAfterRebate.substring(1);
+
+                double intTotal = Double.parseDouble(strNoDollarTotal);
+                double intTotalAfterRebate = Double.parseDouble(strNoDollarTotalAfterRebate);
+                double actualdRebateAmt = (Math.round(intTotal) - Math.round(intTotalAfterRebate));
+                double actualRebateAmt = Math.ceil(actualdRebateAmt);
+                String strActualRebate = String.valueOf(actualRebateAmt);
+                if(rebateAmount.equals(strActualRebate)){System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
+                    assert false;
+                }
+            }
+        catch(Exception e) {
+            System.out.println("No rebate. Rebate expected is: " + rebateAmount);
+        }
+        }
+       else{
         WebElement weTotal = driver.findElement(By.xpath("(//dd[@class='a41-checkout-review-subtotal'])[4]"));
         String strTotal = weTotal.getText();
         String strNoDollarTotal = strTotal.substring(1);
@@ -207,15 +248,18 @@ public class TestBase {
 
         double intTotal = Double.parseDouble(strNoDollarTotal);
         double intTotalAfterRebate = Double.parseDouble(strNoDollarTotalAfterRebate);
-        double actualdRebateAmt = (intTotal - intTotalAfterRebate);
+        double actualdRebateAmt = (Math.round(intTotal) - Math.round(intTotalAfterRebate));
         double actualRebateAmt = Math.ceil(actualdRebateAmt);
         String strActualRebate = String.valueOf(actualRebateAmt);
         if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
             assert true;
         }
-        else { assert false;
+        else {
+            System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
+            assert false;
         }
     }
+}
     public void verifyProduct(String device, String expected) {
         try{
             WebElement weText = driver.findElement(By.tagName("title"));
@@ -815,25 +859,26 @@ public class TestBase {
       }
       else if(device.equals("desktop")){
           Wait(5);
+          try {
           driver.findElement(By.xpath("//input[contains(@id,'RightPowerPicker')]")).click();
               //WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
           WebElement wePower = driver.findElement(By.xpath("//a[contains(@id,'Right_" + power +"')]"));
           wePower.click();
-// Then instantiate the Select class with that WebElement
-              //driver.findElement(By.xpath("//a[contains(.,power)]"));
-
-
-          //Select select = new Select(selectElement);
-// Get a list of the options
-              //List<WebElement> options = select.getOptions();
-// For each option in the list, verify if it's the one you want and then click it
-              //for (WebElement we : options) {
-                  //if (we.getText().equals(power)) {
-                      //we.click();
-                     // break;
-                 // }
-              //}
           System.out.println("Power for right eye: " + posR + power);
+          }
+          catch (Throwable e){
+              WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+              Select select = new Select(selectElement);
+              driver.findElement(By.xpath("//a[contains(.,power)]"));
+              List<WebElement> options = select.getOptions();
+              for (WebElement we : options) {
+              if (we.getText().equals(power)) {
+              we.click();
+              System.out.println("Power for right eye: " + posR + power);
+               break;
+               }
+              }
+          }
           Wait(5);
       }
   }
@@ -841,34 +886,27 @@ public class TestBase {
     public void clickLPower(String device,String posL,String power) {
         if(device.equals("desktop")){
             Wait(5);
-            try{
-                WebElement wePower = driver.findElement(By.xpath("//input[contains(@id,'LeftPowerPicker')]"));
-                System.out.println("Found left Power picker");
-                wePower.click();
-                WebElement wePowerNumber = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
-                //WebElement wePowerNumber = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
-                wePowerNumber.click();
-                System.out.println("Power for left eye desktop style: " + posL + power);
+            try {
+            driver.findElement(By.xpath("//input[contains(@id,'LeftPowerPicker')]")).click();
+            //WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+            WebElement wePower = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
+            wePower.click();
+            System.out.println("Power for Left eye: " + posL + power);
+            Wait(5);
             }
-            catch (Throwable e){}
-            try{
-                WebElement selectElement =
-                        driver.findElement(By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.SphericalPower')]"));
-// Then instantiate the Select class with that WebElement
+            catch (Throwable e){
+                WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
                 Select select = new Select(selectElement);
-// Get a list of the options
+                driver.findElement(By.xpath("//a[contains(.,power)]"));
                 List<WebElement> options = select.getOptions();
-// For each option in the list, verify if it's the one you want and then click it
                 for (WebElement we : options) {
                     if (we.getText().equals(power)) {
                         we.click();
+                        System.out.println("Power for Left eye: " + posL + power);
                         break;
                     }
                 }
-                System.out.println("Power for left eye mobile style: " + power);
             }
-            catch (Throwable e){}
-            Wait(5);
         }
         else{
             try {WebElement selectElement =
@@ -903,22 +941,19 @@ public class TestBase {
         }
         Wait(1);
     }
-    public void clickRPowerPlano(String device,String power) {
-        WebElement wePower = driver.findElement(By.xpath("//input[contains(@id,'RightPowerPicker')]"));
-        wePower.click();
-        Wait(5);
-        System.out.println("Power for right eye: Plano");
-        WebElement wePowerNumber = driver.findElement(By.xpath("//a[contains(@id,'Right_" + power +"')]"));
-        wePowerNumber.click();
+    public void clickRDN(String device,String DN) {
+        WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
+        weDNNumber.click();
+        weDNNumber.sendKeys(DN);
+        System.out.println("Dom/NonDom for right eye: " + DN);
         Wait(5);
     }
-    public void clickLPowerPlano(String device,String power) {
-        WebElement wePower = driver.findElement(By.xpath("//input[contains(@id,'LeftPowerPicker')]"));
-        wePower.click();
-        Wait(5);
-        System.out.println("Power for left eye: Plano");
-        WebElement wePowerNumber = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
-        wePowerNumber.click();
+    public void clickLDN(String device,String DN) {
+        WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
+        //WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Dominant')]"));
+        //weDNNumber.click();
+        weDNNumber.sendKeys(DN);
+        System.out.println("Dom/NonDom for left eye: " + DN);
         Wait(5);
     }
 
@@ -1292,7 +1327,7 @@ public class TestBase {
       if(device.equals("phone")){
           Wait(3);
           driver.findElement(By.xpath("//input[contains(@name,'Phone')]")).sendKeys(thePhoneString);
-          driver.findElement(By.xpath("//input[contains(@name,'EmailAddress')]")).click();
+          driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.AddressLine2')]")).click();
           System.out.println("Phone used is: " + thePhoneString);
           Wait(3);
       }

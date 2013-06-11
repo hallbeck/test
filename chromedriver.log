@@ -1,0 +1,225 @@
+[0418/153948:INFO:chromedriver_server.cc(76)] Handling request: /status 
+[0418/153948:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Windows NT","version":"6.1 SP1"}}}
+[0418/153948:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
+[0418/153948:INFO:chrome_launcher.cc(74)] Using chrome from C:\Users\khallbec\AppData\Local\Google\Chrome\Application\chrome.exe
+[0418/153948:INFO:chromedriver_server.cc(81)] Done handling request: 303 
+[0418/153948:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97 
+[0418/153948:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","cssSelectorsEnabled":true,"databaseEnabled":true,"driverVersion":"0.7","handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesScreenshot":true,"version":"26.0.1410.64","webStorageEnabled":true}}
+[0418/153948:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/url {"url":"https://www.1800contactstest.com"}
+[0418/153955:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154002:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/title 
+[0418/154002:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"Contact Lenses at 1-800 CONTACTS | World's Largest Contact Lens Store\u00AE"}
+[0418/154008:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//img[contains(@alt,'New to 1-800 Contacts - Find your contact lens brand')]"}
+[0418/154008:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154008:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/click {"id":"1"}
+[0418/154009:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154021:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'searchTerm')]"}
+[0418/154021:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154021:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/click {"id":"1"}
+[0418/154021:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154021:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'searchTerm')]"}
+[0418/154022:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154022:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/clear {"id":"1"}
+[0418/154022:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154022:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'searchTerm')]"}
+[0418/154022:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154022:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/value {"id":"1","value":["vial",""]}
+[0418/154024:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154034:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//a[contains(@id,'BrandSelectButton_SoftconEW')]"}
+[0418/154034:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154034:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/click {"id":"1"}
+[0418/154035:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154046:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'RightPowerPicker')]"}
+[0418/154046:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154046:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/click {"id":"1"}
+[0418/154046:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154046:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//a[contains(@id,'Right_0.25')]"}
+[0418/154046:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154046:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/click {"id":"2"}
+[0418/154046:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154056:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'LeftPowerPicker')]"}
+[0418/154056:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"3"}}
+[0418/154056:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/click {"id":"3"}
+[0418/154056:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154101:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//a[contains(@id,'Left_0.75')]"}
+[0418/154101:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"4"}}
+[0418/154101:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/4/click {"id":"4"}
+[0418/154101:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154106:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_BaseCurve')]"}
+[0418/154106:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"5"}}
+[0418/154106:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/5/click {"id":"5"}
+[0418/154106:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154111:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/5/value {"id":"5","value":["8"]}
+[0418/154111:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154116:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_BaseCurve')]"}
+[0418/154117:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"6"}}
+[0418/154117:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/6/click {"id":"6"}
+[0418/154117:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154122:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/6/value {"id":"6","value":["8"]}
+[0418/154122:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154127:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.DiameterLength')]"}
+[0418/154127:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"7"}}
+[0418/154127:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/7/click {"id":"7"}
+[0418/154127:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154132:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/7/value {"id":"7","value":["11"]}
+[0418/154132:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154137:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.DiameterLength')]"}
+[0418/154137:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"8"}}
+[0418/154137:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/8/click {"id":"8"}
+[0418/154137:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154142:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/8/value {"id":"8","value":["11"]}
+[0418/154142:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'firstNameInput')]"}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"9"}}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/9/clear {"id":"9"}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/9/value {"id":"9","value":["PatientFirst"]}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'lastNameInput')]"}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"10"}}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/10/clear {"id":"10"}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/10/value {"id":"10","value":["PatientLast"]}
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154147:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/title 
+[0418/154147:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"Softcon EW at 1-800 CONTACTS | World's Largest Contact Lens Store\u00AE"}
+[0418/154154:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@type,'submit')]"}
+[0418/154154:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"11"}}
+[0418/154154:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/11/click {"id":"11"}
+[0418/154154:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154159:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/title 
+[0418/154159:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"Contact Lenses at 1-800 CONTACTS | World's Largest Contact Lens Store\u00AE"}
+[0418/154205:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//img[contains(@alt,'continue')]"}
+[0418/154205:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154205:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//img[contains(@alt,'continue')]"}
+[0418/154205:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154205:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/click {"id":"1"}
+[0418/154207:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.FirstName')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/clear {"id":"1"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.FirstName')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/value {"id":"1","value":["shipfirst"]}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.LastName')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/clear {"id":"2"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.LastName')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/value {"id":"2","value":["shiplast"]}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@name,'ShippingAddress.Country')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"3"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/click {"id":"3"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//option[contains(@value,'USA')]"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"4"}}
+[0418/154217:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/4/click {"id":"4"}
+[0418/154217:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154220:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.AddressLine1')]"}
+[0418/154220:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"5"}}
+[0418/154220:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/5/value {"id":"5","value":["ship address 1366321340828"]}
+[0418/154220:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154223:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.City')]"}
+[0418/154223:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"6"}}
+[0418/154223:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/6/value {"id":"6","value":["slc"]}
+[0418/154224:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'ShippingAddress_StateProvinceOrRegion')]"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"7"}}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/7/value {"id":"7","value":["UT"]}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'ShippingAddress.ZipOrPostalCode')]"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"8"}}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/8/value {"id":"8","value":["84121"]}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'Phone')]"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"9"}}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/9/click {"id":"9"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'Phone')]"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"9"}}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/9/clear {"id":"9"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'Phone')]"}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"9"}}
+[0418/154227:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/9/value {"id":"9","value":["1366321347253"]}
+[0418/154227:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'EmailAddress')]"}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"10"}}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/10/value {"id":"10","value":["test_1366321352415@invalid.com"]}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'a41-checkout-password')]"}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"11"}}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/11/value {"id":"11","value":["password"]}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'a41-checkout-confirm-password')]"}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"12"}}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/12/value {"id":"12","value":["password"]}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@value,'continue')]"}
+[0418/154232:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"13"}}
+[0418/154232:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/13/click {"id":"13"}
+[0418/154234:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154237:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]"}
+[0418/154237:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154237:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/value {"id":"1","value":["test"]}
+[0418/154237:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'DoctorSearchOptionsViewModel_State')]"}
+[0418/154239:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/name 
+[0418/154239:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"select"}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/attribute/multiple 
+[0418/154239:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/elements {"id":"2","using":"xpath","value":".//option[normalize-space(.) = \"Utah\"]"}
+[0418/154239:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":[{"ELEMENT":"3"}]}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/selected 
+[0418/154239:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":false}
+[0418/154239:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/click {"id":"3"}
+[0418/154240:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154242:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//img[contains(@alt,'search')]"}
+[0418/154242:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"4"}}
+[0418/154242:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/4/click {"id":"4"}
+[0418/154242:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154244:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//a[contains(@id,'SelectDoctorButton2696254')]"}
+[0418/154244:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"5"}}
+[0418/154244:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/5/click {"id":"5"}
+[0418/154247:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154253:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'CreditCardNumber')]"}
+[0418/154253:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154255:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/clear {"id":"1"}
+[0418/154255:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/1/value {"id":"1","value":["4012000077777777"]}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'CreditCardName')]"}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/2/value {"id":"2","value":["Blah"]}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'CreditCardExpirationMonth')]"}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"3"}}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/value {"id":"3","value":["03"]}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//select[contains(@id,'CreditCardExpirationYear')]"}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"4"}}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/4/value {"id":"4","value":["2015"]}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//input[contains(@id,'ReviewAndSubmit_BottomButton')]"}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"5"}}
+[0418/154259:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/5/click {"id":"5"}
+[0418/154259:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//h1[contains(.,'Thank you for your order!')]"}
+[0418/154346:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"1"}}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//p[contains(.,'A confirmation of this order has been sent to:')]"}
+[0418/154346:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"2"}}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/title 
+[0418/154346:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"Thank You at 1-800 CONTACTS | World's Largest Contact Lens Store\u00AE"}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element {"using":"xpath","value":"//td[contains(@id,'orderNumber')]"}
+[0418/154346:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":{"ELEMENT":"3"}}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97/element/3/text 
+[0418/154346:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":"0029621242"}
+[0418/154346:INFO:chromedriver_server.cc(76)] Handling request: /session/b690c9a6714d076c69edb96c8c28bd97 
+[0418/154347:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"b690c9a6714d076c69edb96c8c28bd97","status":0,"value":null}
+[0418/154347:INFO:chromedriver_server.cc(76)] Handling request: /shutdown 
+[0418/154347:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":null}

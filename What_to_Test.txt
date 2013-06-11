@@ -1,0 +1,45 @@
+flows:
+smoke
+ini
+RI/NI/RP
+email Links
+
+Places to verify:
+(list what to verify on each page)
+PDP
+Cart
+RS
+TY 
+Dashboard (0, 1, 2 items)
+Order history (0, 1, 2 items)
+
+Text boxes: 
+constraints (over, under, valid, illegal chars, empty)
+
+Valid /invalid:
+credit cards
+exp dates
+insurance DOB
+insurance name
+
+Upsell
+shipping upgrade
+Page titles
+NI no cart, return and login
+shipping continuity
+international shipping
+shipping and billing different
+shipping international billing US (ins and no ins)
+shipping US billing international (ins and no ins)
+plano
+conventional and disposible
+accessories
+only accessories
+merge accounts (shouldn't be able to)
+changing quantity
+rebates
+coupon code
+edit billing
+edit shipping
+edit credit card
+

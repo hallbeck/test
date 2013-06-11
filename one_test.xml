@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tablet" verbose="1" >
+    <test name="RIColor6MoTest">
+        <parameter name="device" value='desktop'/>
+        <parameter name="emailToUse" value='test_1368555764641@invalid.com'/>
+        <!--dependant on 44030-->
+        <classes>
+            <class name="SMOKE.SmokeRIColor6MoTest">
+                <methods>
+                    <include name=".*desktop.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="RIColorPlanoDeclinedCardTest">
+        <parameter name="device" value='desktop'/>
+        <parameter name="emailToUse" value='test_1368555221274@invalid.com'/>
+        <!--dependant on 44037 -->
+        <classes>
+            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest">
+                <methods>
+                    <include name=".*desktop.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

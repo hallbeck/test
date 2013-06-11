@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="mobile" verbose="1" >
+    <test name="rismokemobile">
+        <classes>
+            <class name="MobileAutomation.SmokeRI1EyeAsphericPlusColorTest"/>
+            <class name="MobileAutomation.SmokeRIAcuvue2CanadaTest"/>
+            <class name="MobileAutomation.SmokeRIAcuvue2PlanoCanadaTest"/>
+            <class name="MobileAutomation.SmokeRIAsphericInternationalTest"/>
+            <class name="MobileAutomation.SmokeRIColor6MoTest"/>
+            <class name="MobileAutomation.SmokeRIColorPlanoDeclinedCardTest"/>
+            <class name="MobileAutomation.SmokeRIColorToricTest"/>
+            <class name="MobileAutomation.SmokeRIMultiBrand1EyeEachTest"/>
+            <class name="MobileAutomation.SmokeRIMultiBrandPatientBoxTest"/>
+            <class name="MobileAutomation.SmokeRIMultiBrandPatientTest"/>
+            <class name="MobileAutomation.SmokeRIMultiFocalCanadaTest"/>
+            <class name="MobileAutomation.SmokeRIProgressiveInternationalTest"/>
+            <class name="MobileAutomation.SmokeRIToricTest"/>
+            <class name="MobileAutomation.SmokeRIVialTest"/>
+        </classes>
+    </test>
+    <test name="nismokemobile">
+        <classes>
+            <class name="MobileAutomation.SmokeNI1EyeAsphericTest"/>
+            <class name="MobileAutomation.SmokeNIAcuvue2CanadaTest"/>
+            <class name="MobileAutomation.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="MobileAutomation.SmokeNIAsphericInternationalTest"/>
+            <class name="MobileAutomation.SmokeNIColor6MoTest"/>
+            <class name="MobileAutomation.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="MobileAutomation.SmokeNIColorToricTest"/>
+            <class name="MobileAutomation.SmokeNIMultiBrand1EyeEachTest"/>
+            <class name="MobileAutomation.SmokeNIMultiBrandPatientBoxTest"/>
+            <class name="MobileAutomation.SmokeNIMultiBrandPatientTest"/>
+            <class name="MobileAutomation.SmokeNIProgressiveCanadaTest"/>
+            <class name="MobileAutomation.SmokeNIProgressiveInternationalTest"/>
+            <class name="MobileAutomation.SmokeNIToricTest"/>
+            <class name="MobileAutomation.SmokeNIVialTest"/>
+        </classes>
+    </test>
+</suite>

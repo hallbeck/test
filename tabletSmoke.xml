@@ -1,0 +1,78 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tablet" verbose="1" >
+    <test name="NIsmokeTablet">
+        <classes>
+            <class name="SMOKE.SmokeNIVialTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIToricTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIProgressiveInternationalTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIProgressiveCanadaTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIMultiBrandPatientTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIColorToricTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIColor6MoTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIAsphericInternationalTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNIAcuvue2CanadaTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+            <class name="SMOKE.SmokeNI1EyeAsphericTest">
+                <methods>
+                    <include name=".*tablet.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

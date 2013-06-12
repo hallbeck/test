@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1" >
+    <test name="NIsmokePhone">
+        <parameter name="device" value='phone'/>
+        <classes>
+            <class name="SMOKE.SmokeNIVialTest"/>
+            <class name="SMOKE.SmokeNIToricTest"/>
+            <class name="SMOKE.SmokeNIProgressiveInternationalTest"/>
+            <class name="SMOKE.SmokeNIProgressiveCanadaTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest"/>
+            <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest"/>
+            <class name="SMOKE.SmokeNIColorToricTest"/>
+            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.SmokeNIColor6MoTest"/>
+            <class name="SMOKE.SmokeNIAsphericInternationalTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
+            <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
+        </classes>
+    </test>
+    <test name="RIsmokePhone">
+        <parameter name="device" value='phone'/>
+        <classes>
+            <!--dependant on 44039-->
+            <class name="SMOKE.SmokeRI1EyeAsphericPlusColorTest"/>
+            <!--dependant on 44033-->
+            <class name="SMOKE.SmokeRIAcuvue2CanadaTest"/>
+            <!--dependant on 44038-->
+            <class name="SMOKE.SmokeRIAcuvue2PlanoCanadaTest"/>
+            <!--dependant on 44036-->
+            <class name="SMOKE.SmokeRIAsphericInternationalTest"/>
+            <!--dependant on 44030-->
+            <class name="SMOKE.SmokeRIColor6MoTest"/>
+            <!--dependant on 44037-->
+            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
+            <!--dependant on 44031-->
+            <class name="SMOKE.SmokeRIColorToricTest"/>
+            <!--dependant on 44040-->
+            <class name="SMOKE.SmokeRIMultiBrand1EyeEachTest"/>
+            <!--dependant on 44042-->
+            <class name="SMOKE.SmokeRIMultiBrandPatientBoxTest"/>
+            <!--dependant on 44041-->
+            <class name="SMOKE.SmokeRIMultiBrandPatientTest"/>
+            <!--dependant on 44034-->
+            <class name="SMOKE.SmokeRIMultiFocalCanadaTest"/>
+            <!--dependant on 44035-->
+            <class name="SMOKE.SmokeRIProgressiveInternationalTest"/>
+            <!--dependant on 44029-->
+            <class name="SMOKE.SmokeRIToricTest"/>
+            <!--dependant on 44032-->
+            <class name="SMOKE.SmokeRIVialTest"/>
+        </classes>
+    </test>
+</suite>

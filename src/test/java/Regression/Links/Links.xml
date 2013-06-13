@@ -1,16 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Links" verbose="1" >
-    <listeners>
-    </listeners>
     <test name="LinkTests" >
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='phone'/>
         <classes>
-            <class name="Regression.Links.Links47930">
-                <methods>
-                    <include name=".*Links.*"/>
-                </methods>
-            </class>
+            <class name="Regression.Links.Links47930"/>
         </classes>
     </test>
 </suite>

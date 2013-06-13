@@ -152,9 +152,6 @@ public class TestBase {
         driver.get(baseUrl);
         Wait(2);
         setCookie();
-        clickNoThanksButton(device);
-        Wait(2);
-        clickSignOut(device);
     }
     public void gotoPage(String addition) {
         driver.get(desktopBaseUrl + addition);
@@ -405,11 +402,28 @@ public class TestBase {
         try{
         driver.findElement(By.xpath("//img[contains(@alt,'No Thanks')]")).click();
         System.out.println("Clicked No Thanks");
+        clickSignOut(device);
         }
             catch (Throwable e)
             {
                 System.out.println("No Interstitial Page");
+                clickSignOut(device);
             }
+        Wait(4);
+    }
+    public void clickYesButton(String device) {
+        printPageTitle();
+        String expected = "";
+        try{
+            driver.findElement(By.xpath("//img[contains(@alt,'Get The App')]")).click();
+            System.out.println("Clicked Get the App");
+            verifyGetApp(device,expected);
+        }
+        catch (Throwable e)
+        {
+            System.out.println("No Interstitial Page");
+            clickSignOut(device);
+        }
         Wait(4);
     }
   public void clickMainPage_NewButton(String device) {
@@ -1155,25 +1169,18 @@ public class TestBase {
         Wait(5);
     }
   public void clickAddToCart(String device) {
-      //printPageTitle();
       Wait(5);
       if(device.equals("phone")){
       WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton rd-addToCartButton')]"));
        weAdd.click();
           System.out.println("Clicked add to cart");
+          Wait(5);
       }
       else if(device.equals("tablet")){
-          //try{
               WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton rd-addToCartButton')]"));
               weAdd.click();
               System.out.println("Clicked add to cart");
-           //   }
-          //catch (Throwable e){
-         // System.out.println("add to cart2 Tablet");
-         // WebElement lastPatientName = driver.findElement(By.xpath("//input[contains(@id,'lastNameInput')]"));
-         // lastPatientName.click();
-         // lastPatientName.sendKeys(Keys.ENTER);
-            //  }
+          Wait(5);
           }
       else if(device.equals("desktop")){
           driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
@@ -1724,8 +1731,17 @@ public class TestBase {
                 System.out.println("Patient name " + patientName + " not found... this should not happen at this point.");
             }
         }
-
-
+    }
+    public void verifyGetApp(String device,String expected){
+        try{
+            WebElement weText = driver.findElement(By.tagName("title"));
+            String toVerify = weText.getText();
+            verifyTxtPresent("Pages: ",expected,toVerify);
+        }
+        catch(Exception e)
+        {
+            System.out.println("FAIL: " + expected + "NOT Found " );
+        }
     }
 
   public void typeCreditCard(String device,String cardNumber) {

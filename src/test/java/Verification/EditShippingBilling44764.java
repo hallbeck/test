@@ -86,6 +86,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String shippingLNameEdit = "testacct edit";
     String countryEdit = "united states";
     String stateEdit = "california";
+    String stateAbrev = "CA";
     String cityEdit = "santa cruz";
     String zipEdit = "95066";
     String emailPrefix = "test";
@@ -115,6 +116,6 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
         gotoMyAccount(device);
         gotoShippingBilling(device);
         clickEditShipping(device);
-        editShipping(device,shippingFNameEdit,shippingLNameEdit,countryEdit,cityEdit,stateEdit,zipEdit);
+        editShipping(device,shippingFNameEdit,shippingLNameEdit,countryEdit,cityEdit,stateEdit,stateAbrev,zipEdit);
     }
 }

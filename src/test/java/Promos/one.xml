@@ -4,9 +4,9 @@
     <listeners>
     </listeners>
     <test name="AccountTests" >
-        <parameter name="device" value='tablet'/>
+        <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Account.lightbox_test"/>
+            <class name="Promos.SunglassesPromo"/>
         </classes>
     </test>
 </suite>

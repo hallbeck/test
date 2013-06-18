@@ -4,10 +4,7 @@
     <test name="NIsmokedesktop">
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="SMOKE.SmokeNIMultiBrandPatientAccessoryTest"/>
-            <class name="SMOKE.SmokeNIProgressiveAccessoryInternationalTest"/>
-            <class name="SMOKE.SmokeNIAcuvue2AccessoryCanadaTest"/>
-            <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeRIToricTest"/>
         </classes>
     </test>
 </suite>

@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricAccessoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIMultiBrandPatientAccessoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIProgressiveAccessoryInternationalTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2AccessoryCanadaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricAccessoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrandAccessoryPatientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIProgressiveAccessoryInternationalTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -87,7 +79,7 @@
     <file path="/ShippingChanges47266.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122156533" ignored="false" />
     <file path="/verification.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367616998941" ignored="false" />
     <file path="/CanadaShipping.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367856348287" ignored="false" />
-    <file path="/one_test.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371588324370" ignored="false" />
+    <file path="/one_test.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371592424372" ignored="false" />
     <file path="/CanadaShipping47326.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122136652" ignored="false" />
     <file path="/desktopSmokeRI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368717450074" ignored="false" />
     <file path="/tabletSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369866823359" ignored="false" />
@@ -246,30 +238,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PDPAccessories48553.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="one_test.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TestBase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1408" column="26" selection-start="66704" selection-end="67520" vertical-scroll-proportion="-19.92">
+            <state line="42" column="44" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -277,37 +249,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmokeNIMultiBrandPatientAccessoryTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIMultiBrandPatientAccessoryTest.java">
+      <file leaf-file-name="desktopAll.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="35" selection-start="4968" selection-end="5009" vertical-scroll-proportion="0.0">
+            <state line="20" column="47" selection-start="799" selection-end="799" vertical-scroll-proportion="0.45945945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmokeNIProgressiveAccessoryInternationalTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIProgressiveAccessoryInternationalTest.java">
+      <file leaf-file-name="Rebates.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmokeNIColorToricAccessoryTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricAccessoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="0" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.827027">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="one_test.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="63" column="56" selection-start="97" selection-end="3795" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -334,22 +288,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Account/lightbox_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Promos/one.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Promos/SunglassesPromo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricAccessoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrandAccessoryPatientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIProgressiveAccessoryInternationalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2AccessoryCanadaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIMultiBrandPatientAccessoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIProgressiveAccessoryInternationalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricAccessoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
       </list>
     </option>
   </component>
@@ -483,6 +437,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SuitesOfTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SMOKE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -510,6 +490,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Totals" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -629,6 +613,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Payment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Links" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -686,6 +700,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Promos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="INIAutomation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -772,36 +812,7 @@
       <recent name="C:\test\src\test\java\SMOKE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/test/src/test/java/SMOKE/one_test.xml">
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Links/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Links/one.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml">
     <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -894,6 +905,35 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -1052,17 +1092,17 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.FirstTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Links/one.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Account/one.xml" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Promos/one.xml" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/one_test.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Account/one.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Promos/one.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/one_test.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
       </list>
@@ -1278,104 +1318,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="8" selection-start="3681" selection-end="3731" vertical-scroll-proportion="0.105405405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIAcuvue2AccessoryCanadaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="905" selection-end="905" vertical-scroll-proportion="0.5910987">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricAccessoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="43" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.72461754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIProgressiveAccessoryInternationalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="50" selection-start="572" selection-end="572" vertical-scroll-proportion="-0.6787205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIMultiBrandAccessoryPatientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="379" selection-end="379" vertical-scroll-proportion="0.2767733">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/INIFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="-1.867872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/TitleTagProducts/PageTitle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/TitleTagProducts/TitleTags48150.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="76" selection-start="15857" selection-end="15857" vertical-scroll-proportion="-0.3713491">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_AcuvueOasysAstigmatism_48580.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="-1.9554937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1408" column="26" selection-start="66704" selection-end="67520" vertical-scroll-proportion="-19.92">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIMultiBrandPatientAccessoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="35" selection-start="4968" selection-end="5009" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIProgressiveAccessoryInternationalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1389,7 +1334,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricAccessoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="0" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.827027">
+        <state line="133" column="25" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.87297297">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIProgressiveAccessoryInternationalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.36756757">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIMultiBrandPatientAccessoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="35" selection-start="4968" selection-end="5009" vertical-scroll-proportion="0.64324325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="294" column="31" selection-start="12236" selection-end="12236" vertical-scroll-proportion="6.754054">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedVisaForeignCard47577.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="23" selection-start="728" selection-end="728" vertical-scroll-proportion="-0.52837837">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorToricTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="23" selection-start="497" selection-end="497" vertical-scroll-proportion="-0.71216214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIVialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="-1.1364865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIToricTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="399" selection-end="399" vertical-scroll-proportion="0.32162163">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/one_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="229" selection-end="229" vertical-scroll-proportion="0.13783784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="233" selection-end="233" vertical-scroll-proportion="0.13783784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="584" selection-end="584" vertical-scroll-proportion="0.2527027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="56" selection-start="97" selection-end="3795" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="44" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="47" selection-start="799" selection-end="799" vertical-scroll-proportion="0.45945945">
           <folding />
         </state>
       </provider>

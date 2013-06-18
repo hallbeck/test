@@ -40,7 +40,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "ipadP";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";

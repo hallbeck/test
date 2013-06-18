@@ -40,7 +40,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "ipadP";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -260,16 +260,21 @@ public class TestBase {
         }
     }
 }
-    public void verifyProduct(String device, String expected) {
+    public void verifyProduct(String device, String expected, String searchedFor) {
+        String state = "";
         try{
             WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
             String toVerify = weText.getText();
-            verifyTxtPresent("Pages: ",expected,toVerify);
+            verifyTxtPresent("Pages:  Searched for " + searchedFor,expected,toVerify);
+            state = "PASS";
         }
         catch(Exception e)
         {
-            System.out.println("FAIL: " + expected + "NOT Found " );
+            System.out.println("FAIL: " + expected + "NOT Found. Searched for " + searchedFor );
+            state = "FAIL";
         }
+        String fileName = (state + "_" + searchedFor+ "_" + expected);
+        takeScreenshot(fileName, "SearchBrand");
     }
     public void verifyPageTitle(String expected) {
         try{
@@ -396,7 +401,7 @@ public class TestBase {
       Thread.sleep(seconds * 1000);
       //System.out.println("Waiting " + seconds + " seconds");
     } catch (Exception e) {
-      System.out.println("Sleep exception...its a nightmare");
+      print("Sleep exception...its a nightmare");
     }
   }
 
@@ -986,6 +991,19 @@ public class TestBase {
         System.out.println("Clicked See All");
     }
 
+    public void clickAccessory(String device,String brand) {
+        if(device.equals("phone")){
+            String theString = "//a[contains(@id,'" + brand + "')]";
+            driver.findElement(By.xpath(theString)).click();
+            System.out.println("Clicked on brand: " + brand);
+        }
+        else {
+            String theString = "BrandText_" + brand;
+            driver.findElement(By.id(theString)).click();
+            print("Clicked on accessory: " + brand);
+        }
+        Wait(6);
+    }
     public void clickPhoneBrand(String device,String brand) {
         if(device.equals("phone")){
             String theString = "//a[contains(@id,'" + brand + "')]";
@@ -1369,6 +1387,33 @@ public class TestBase {
       }
       Wait(5);
   }
+    public void clickAddAccessoryToCart(String device) {
+        Wait(5);
+        driver.findElement(By.cssSelector("input.accessoryAddToCart")).click();
+        /*if(device.equals("phone")){
+            WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton rd-addToCartButton')]"));
+            weAdd.click();
+            System.out.println("Clicked add to cart");
+            Wait(5);
+        }
+        else if(device.equals("tablet")){
+            WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton rd-addToCartButton')]"));
+            weAdd.click();
+            print("Clicked add to cart");
+            Wait(5);
+        }
+        else if(device.equals("desktop")){
+            driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
+            print("Clicked add to cart");
+            Wait(5);
+        }*/
+        Wait(5);
+    }
+   /* driver.findElement(By.id("BrandText_OPTI-FREE®PureMoist®Drops")).click();
+    assertEquals("", driver.getTitle());
+    new Select(driver.findElement(By.id("quantity"))).selectByVisibleText("6");
+    driver.findElement(By.cssSelector("option[value=\"6\"]")).click();
+    driver.findElement(By.cssSelector("input.accessoryAddToCart")).click();*/
     public void clickCartEdit(String device){
         Wait(5);
         printPageTitle();

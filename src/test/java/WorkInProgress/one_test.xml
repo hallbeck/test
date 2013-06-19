@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WIN" verbose="1" >
+    <test name="WIN">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SmokeRIToricTest"/>
+        </classes>
+    </test>
+</suite>

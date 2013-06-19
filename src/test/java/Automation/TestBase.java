@@ -691,6 +691,12 @@ public class TestBase {
         driver.findElement(By.xpath("//input[contains(@id,'SaveBillingButton')]")).click();
         Wait(5);
     }
+    public void enterOrderCode (String device,String orderCode){
+        //desktop
+        driver.findElement(By.xpath("//a[contains(@id,'cartOrderCodeLink')]")).click();
+        driver.findElement(By.xpath("//input[contains(@id,'couponCode')]")).sendKeys(orderCode);
+        driver.findElement(By.xpath("//input[contains(@class,'applyCodeButton')]")).click();
+    }
 
     //reorder checkboxes this uses tabs to click each. two tabs, click tab click
     public void checkReorderCheckboxOne(){
@@ -1429,6 +1435,7 @@ public class TestBase {
     // e = expedited,
     // i = international, ii= international exp.
     public void selectShippingCart(String ship) {
+        Wait(4);
             WebElement weShipping = driver.findElement(By.xpath("//select[contains(@id,'ShippingViewModel_SelectedShipperCode')]"));
             weShipping.click();
             weShipping.sendKeys(ship,Keys.TAB);
@@ -1457,27 +1464,88 @@ public class TestBase {
     }
 
      public void selectPromoCart(String device,String promoName){
-
+         Wait(5);
+         WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpagerbslot%5F"+ promoName +"%5Fimage')]"));
+         print("Promo link: " + wePromo);
+         wePromo.click();
+         print("Clicked Promo in Cart");
      }
+    public void verifyPromoCart(String device,String promoProdName,String pricePromo,String promoItemNumber,String promoText){
+        verifyPromoProdName(device,promoProdName);
+        verifyPricePromo(device,pricePromo);
+        verifyPromoItemNumber(device,promoItemNumber);
+        verifyPromoText(device,pricePromo,promoText);
+    }
+    public void verifyPromoRS(String device,String promoProdName,String pricePromo,String promoItemNumber,String promoText){
+        verifyPromoProdNameRS(device,promoProdName);
+        verifyPricePromoRS(device,pricePromo);
+        verifyPromoItemNumberRS(device,promoItemNumber);
+        verifyPromoTextRS(device,pricePromo,promoText);
+    }
+    public void verifyPromoProdName(String device,String promoProdName){
+        String verifyPromoProdName =  driver.findElement(By.xpath("(//div[@id='productManufacturerDiv'])")).getText();
+        verifyTxtPresent("Product offered on Promo: ", promoProdName, verifyPromoProdName);
+    }
+    public void verifyPromoText(String device,String pricePromo,String promoText){
+        assertEquals("-$" + pricePromo,driver.findElement(By.id("discountTd")).getText());
+        print("$ of Promo: -$" + pricePromo);
+        assertEquals(promoText, driver.findElement(By.cssSelector("td.a41-cart-remove-code-spacer.a41-cart-discount  > span")).getText());
+        print(promoText + " was present");
+
+        assertEquals("-$" + pricePromo, driver.findElement(By.id("totalDiscount")).getText());
+        print("$ Total Discount Applied: -$" + pricePromo);
+        assertEquals("Total discount applied:", driver.findElement(By.cssSelector("td.a41-cart-right")).getText());
+    }
+    public void verifyPricePromo(String device,String pricePromo){
+        String verifyPricePromo =  driver.findElement(By.xpath("(//div[@class='innerParam AccessoryViewModel.AccessoryPrescriptionViewModel.Price'])")).getText();
+        verifyTxtPresent("Price of Promo: ", pricePromo, verifyPricePromo);
+    }
+    public void verifyPromoItemNumber(String device,String promoItemNumber){
+        String VerifyPromoItemNumber =
+                driver.findElement(By.id(promoItemNumber + "_hiddenField")).getAttribute("value");
+        print ("Item Number of Promo: " + VerifyPromoItemNumber);
+        verifyTxtPresent("Item Number of Promo: ", promoItemNumber, VerifyPromoItemNumber);
+    }
+    public void verifyPromoProdNameRS(String device,String promoProdName){
+        assertEquals(promoProdName, driver.findElement(By.cssSelector("span.a41-blue-text")).getText());
+        print("Product offered on Promo: " + promoProdName);
+    }
+    public void verifyPromoTextRS(String device,String pricePromo,String promoText){
+        assertEquals("-$" + pricePromo,driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dd.a41-total-savings-amount")).getText());
+        print("$ of Promo: -$" + pricePromo);
+        assertEquals(promoText, driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dt")).getText());
+        print(promoText + " was present");
+
+        assertEquals("-$" + pricePromo, driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dd.a41-total-savings-amount")).getText());
+        print("$ Total Discount Applied: -$" + pricePromo);
+        assertEquals("Total discount applied:", driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dt.a41-total-savings")).getText());
+    }
+    public void verifyPricePromoRS(String device,String pricePromo){
+        assertEquals("$" + pricePromo, driver.findElement(By.xpath("//form[@id='CreditCardContentForm']/div[3]/div[3]/div[2]/div/div/div/div/div/div[2]/div/div/div[3]/div[3]/div/div[2]/div[3]/div/label")).getText());
+    }
+    public void verifyPromoItemNumberRS(String device,String promoItemNumber){
+        String VerifyPromoItemNumber =
+                driver.findElement(By.id(promoItemNumber + "_hiddenField")).getAttribute("value");
+        print ("Item Number of Promo: " + VerifyPromoItemNumber);
+        verifyTxtPresent("Item Number of Promo: ", promoItemNumber, VerifyPromoItemNumber);
+    }
     public void clickCart_Continue(String device) {
       printPageTitle();
       Wait(4);
-      System.out.println("Find Continue");
+      print("Find Continue");
       if(device.equals("phone")){
           WebElement weCartContinue = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton rd-continueButton')]"));
           weCartContinue.click();
-          System.out.println("Click Continue phone");
       }
       else if (device.equals("desktop")){
           WebElement weCartContinue = driver.findElement(By.xpath("//img[contains(@alt,'continue')]"));
           weCartContinue.click();
-          System.out.println("Click Continue desktop");
       }
       else if (device.equals("tablet")){
           WebElement weCartContinue = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton rd-continueButton')]"));
           weCartContinue.click();
-          System.out.println("Click Continue tablet");
       }
+        print("Clicked Continue in Cart");
       Wait(10);
   }
 
@@ -1759,11 +1827,11 @@ public class TestBase {
         System.out.println("is insurance available? " + insurance);
         if(insurance.contains("y")){
             clickIniCheckNow(device);
-            System.out.println("verify patient1 on first insurance page");
+            print("verify patient1 on first insurance page");
             verifyIniMembersPotential(device,patientName);
-            System.out.println("verify patient2 on first insurance page");
+            print("verify patient2 on first insurance page");
             verifyIniMembersPotential(device,patientName2);
-            System.out.println("click continue to get to first dob page");
+            print("click continue to get to first dob page");
             try{
             clickIniContinue(device);
             }

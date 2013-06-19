@@ -73,7 +73,7 @@ public class PDPBadRx47802 extends TestBase {
     String rsTotal = "349.73";
     String rsTotalAfterRebate = "329.73";
     String rsTax = "20.82";
-    String rsRebate = "20 Icuity H2O Rebate";
+    String rsRebate = "";
     String rsShipping = "24.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";

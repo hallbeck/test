@@ -15,24 +15,22 @@ public class SunglassesPromo extends TestBase {
 
 
     //change the Strings below to change the tests
-    String testNumber = "need";
+    String testNumber = "48970";
     String typeOfTest = "Promo";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "Air Optix Aqua";
-    String searchAllBrand2 = "";
-    String brandToClickOn = "AirOptixAqua";
-    String brandToClickOn2 = "";
-    String brandVerifyPDP = "Air Optix Aqua";
+    String searchAllBrand = "acuvue 2";
+    String brandToClickOn = "Acuvue2";
+    String brandVerifyPDP = "Acuvue 2";
     String brandVerifyPDP2 = "";
     String posR = "+";
-    String posL = "+";
-    String rPower2 = "0.75";
-    String lPower2 = "0.75";
-    String rPower = "0.25";
-    String lPower = "0.75";
-    String rBC = "";
-    String lBC = "";
+    String posL = "";
+    String rPower2 = "";
+    String lPower2 = "";
+    String rPower = "0.50";
+    String lPower = "-1.00";
+    String rBC = "8";
+    String lBC = "8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -66,8 +64,14 @@ public class SunglassesPromo extends TestBase {
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
     String ShippingCart = "ii";
-    String promoName = "aquasoftOffer";
-    String sunglassesPromoLink = "?rb=sunglasscookie";
+    String promoName = "acfsw2013";
+    String promoProdName = "Suncloud Cookie";
+    String pricePromoCart = "49.99";
+    String promoItemNumber = "002568";
+    String promoText = "FREE Polarized Sunglasses:";
+    //osta.1800contactstest.com/?rb=ACFSM2013
+    String sunglassesPromoLink = "?rb=ACFSW2013";
+    String promoCode = "ACFS2013";
     String pricePerBox = "59.99";
     String priceREye = "119.98";
     String priceLEye = "119.98";
@@ -77,7 +81,7 @@ public class SunglassesPromo extends TestBase {
     String priceTotal = "275.95";
     String rsTotal = "275.95";
     String rsTotalAfterRebate = "230.95";
-    String rsTax = "14.79";
+    String rsTax = "";
     String rsRebate = "";
     String rsShipping = "35.99" ;
     String shippingFName = "ShipFirst";
@@ -117,13 +121,17 @@ public class SunglassesPromo extends TestBase {
         verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         typePatientName(PatientFNameCart,PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
         selectPromoCart(device,promoName);
-        /*selectShippingCart(ShippingCart);
+        selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
+        enterOrderCode(device,promoCode);
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        verifyPromoCart(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
@@ -136,12 +144,14 @@ public class SunglassesPromo extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
+
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        clickBottomSubmitButton(device);
+        verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
+        /*clickBottomSubmitButton(device);
         verifyThankYouPage(shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);

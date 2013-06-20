@@ -52,6 +52,12 @@
             <class name="Regression.Rebates.Rebates_BiomedicsXC_48580"/>
         </classes>
     </test>
+    <test name="RebateTests_C" >
+        <parameter name="device" value='phone'/>
+        <classes>
+
+        </classes>
+    </test>
     <test name="RebateTests_No Rebates" >
     <parameter name="device" value='phone'/>
     <classes>

@@ -67,15 +67,14 @@ public class Rebates_text48580 extends TestBase {
     String password = "password";
 
 
-    String ClarityH2O="lens/clarity-h2o";
-    String Clear58="lens/clear-58" ;
-    String ClearSightDay30pk="lens/clearsight-1-day-30";
-    String ClearSight1DayToric30pk="lens/clearsight-1-day-toric-30";
-    String Clear55A="lens/clear-55a";
-    String ClearAllDay="lens/clear-all-day";
-    String ClearSight1Day90pk="lens/clearsight-1-day-90" ;
-    String DailiesAquaComfortPlus30pk="lens/dailies-aquacomfort-plus-30";
-    String DailiesAquaComfortPlus90pk="lens/dailies-aquacomfort-plus-90" ;
+
+
+
+
+
+
+
+
     String EncorePremium="lens/encore-premium" ;
     String ExtremeH2O54136="lens/extreme-h2o-54-13-6" ;
     String ExtremeH2O54ToricLC="lens/extreme-h2o-54-toric-lc" ;

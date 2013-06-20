@@ -1,6 +1,6 @@
-package SMOKE;
+package Regression;
 
-import Automation.TestBase;
+import Automation.TestBaseGlasses;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,27 +11,26 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNI1EyeAsphericTest extends TestBase {
+public class glasses extends TestBaseGlasses {
+
 
     //change the Strings below to change the tests
-    String testNumber = "44039";
-    String typeOfTest = "SMOKE";
+    String testNumber = "Chris";
+    String typeOfTest = "Promo";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "Astigmatism";
-    String searchAllBrand2 = "";
-    String brandToClickOn = "AcuvueOasysforAstigmatism";
-    String brandToClickOn2 = "";
-    String brandVerifyPDP = "Acuvue Oasys for Astigmatism";
+    String searchAllBrand = "acuvue 2";
+    String brandToClickOn = "Acuvue2";
+    String brandVerifyPDP = "Acuvue 2";
     String brandVerifyPDP2 = "";
-    String posR = "";
-    String posL = "+";
-    String rPower = "";
-    String lPower = "0.75";
+    String posR = "+";
+    String posL = "";
     String rPower2 = "";
     String lPower2 = "";
-    String rBC = "";
-    String lBC = "";
+    String rPower = "0.50";
+    String lPower = "-1.00";
+    String rBC = "8";
+    String lBC = "8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -46,11 +45,11 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String lAdd = "";
     String rAdd2 = "";
     String lAdd2 = "";
-    String rCyl = "";
+    String rCyl = "--";
     String lCyl = "--";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "";
+    String rAxis = "11";
     String rAxis2 = "";
     String lAxis = "11";
     String lAxis2 = "";
@@ -64,25 +63,33 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "e";
-    String pricePerBox = "47.99";
-    String priceREye = "";
-    String priceLEye = "191.96";
-    String pricePerBox2 = "";
-    String priceREye2 = "";
-    String priceLEye2 = "";
-    String priceTotal = "206.95";
-    String rsTotal = "230.77";
-    String rsTotalAfterRebate = "181.95";
-    String rsTax = "13.15";
-    String rsRebate = "25 Acuvue Rebate";
-    String rsShipping = "14.99" ;
+    String ShippingCart = "ii";
+    String promoName = "acfsw2013";
+    String promoProdName = "Suncloud Cookie";
+    String pricePromoCart = "49.99";
+    String promoItemNumber = "002568";
+    String promoText = "FREE Polarized Sunglasses:";
+    //osta.1800contactstest.com/?rb=ACFSM2013
+    String sunglassesPromoLink = "?rb=ACFSW2013";
+    String promoCode = "ACFS2013";
+    String pricePerBox = "59.99";
+    String priceREye = "119.98";
+    String priceLEye = "119.98";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "99.98";
+    String priceLEye2 = "199.96";
+    String priceTotal = "275.95";
+    String rsTotal = "275.95";
+    String rsTotalAfterRebate = "230.95";
+    String rsTax = "";
+    String rsRebate = "";
+    String rsShipping = "35.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "united states";
-    String state = "utah";
-    String city = "slc";
-    String zip = "84121";
+    String country = "BOLIVIA";
+    String state = "whatever";
+    String city = "newberry";
+    String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
@@ -94,33 +101,41 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
-    String shippingVerify = "Expedited";
+    String shippingVerify = "Int'l Express";
+    String selection = "women";
+    String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify + seperator;
 
 
     @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
         openWebPage(device);
-        takeScreenshot(screenshotTestName, "Interstitial");
-        clickNoThanksButton(device);
+        takeScreenshot(screenshotTestName, "Home");
+        //clickNoThanksButton(device);
         printTestNumber(printTestName);
-        clickFindBrand(device);
+        //gotoPage(sunglassesPromoLink);
+        clickNoFeedback(device);
+        clickHeader(device,selection);
+
+        /*clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
-        takeScreenshot(screenshotTestName, "PDP1");
-        checkBoxRightEye(device);
+        verifyPDP(brandVerifyPDP);
+        clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickLCyl(lCyl);
-        clickLAxis(lAxis);
+        clickRBC(rBC);
+        clickLBC(lBC);
         typePatientName(PatientFNameCart,PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
+        selectPromoCart(device,promoName);
         selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
+        enterOrderCode(device,promoCode);
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        verifyPromoCart(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
@@ -133,21 +148,13 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        typeDoctorSearch(drName);
-        typeDoctorStateAndFind(device,drState);
-        takeScreenshot(screenshotTestName, "DoctorSearch");
-        selectDoctor(device);
-        typeCreditCard(device,creditCard);
-        typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMoBad, ccExpYearBad);
-        clickBottomSubmitButton(device);
-        verifyExpiredCard(device);
-        takeScreenshot(screenshotTestName, "ExpiredCard");
+
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
-        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
+        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickBottomSubmitButton(device);
         verifyThankYouPage(shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
@@ -157,6 +164,6 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();
-    }
+        driver.quit();*/
+  }
 }

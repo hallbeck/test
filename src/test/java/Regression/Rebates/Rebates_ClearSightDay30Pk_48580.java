@@ -11,46 +11,24 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
+public class Rebates_ClearSightDay30Pk_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
-    String typeOfPayment = "Rebates";   
+    String typeOfPayment = "Rebates";
     //LENS//
-    String DayAcuvueMoistforAstigmatism30pk="lens/1-day-acuvue-moist-for-astigmatism-30";
-    String rebatesAvailable = "Rebate expected--save $30 on 12 -- save $65 on 24";
-    String rebate6Month = "30.0";
-    String rebate12Month = "65.0";
+    String ClearSightDay30pk="lens/clearsight-1-day-30";
+    String rebatesAvailable = "No rebate expected";
+    String rebate6Month = "0.0";
+    String rebate12Month = "0.0";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
     String lPower = "2.25";
-    String rBC = "8";
-    String lBC = "8";
-    String rBC2 = "";
-    String lBC2 = "";
-    String rDia = "";
-    String lDia = "";
-    String rDia2 = "";
-    String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
-    String rColor2 = "";
-    String lColor2 = "";
-    String rAdd;
-    String lAdd;
-    String rAdd2;
-    String lAdd2;
-    String rCyl = "-";
-    String lCyl = "-";
-    String rCyl2 = "";
-    String lCyl2 = "";
-    String rAxis = "180";
-    String rAxis2 = "";
-    String lAxis = "180";
-    String lAxis2 = "";
+    String rBC = "";
+    String lBC = "";
     String rBoxes = "6";
     String rBoxes2 = "12";
     String lBoxes = "6";
@@ -65,8 +43,7 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
-
-    String shippingVerify = "Title tag";
+    String shippingVerify = "Rebates";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 
@@ -79,14 +56,10 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(DayAcuvueMoistforAstigmatism30pk);
+        gotoPage(ClearSightDay30pk);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -106,25 +79,7 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month);
-        goToCart(device);
-        clickRemove(device);
 
-        gotoPage(DayAcuvueMoistforAstigmatism30pk);
-        print(rebatesAvailable);
-        clickRPower(device,posR,rPower);
-        clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
-        clickRboxes(rBoxes2);
-        clickLboxes(lBoxes2);
-        typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2_");
-        clickAddToCart(device);
-        verifyRebateCart(device,rebate12Month);
-        clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
         driver.quit();
     }
 }

@@ -24,8 +24,6 @@ import java.util.regex.Pattern;
 import static org.junit.Assert.assertEquals;
 
 
-
-
 /**
  * Created with IntelliJ IDEA.
  * User: KHALLBEC
@@ -35,7 +33,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 
-public class TestBase {
+public class TestBaseGlasses{
     //change this to whatever browser you want to test on
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
@@ -53,7 +51,7 @@ public class TestBase {
 
 
     //public String desktopBaseUrl = "https://www.1800contactstest.com/";
-    public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.glasses.com/";
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -157,12 +155,20 @@ public class TestBase {
     }
     public void openWebPage(String device) {
         String baseUrl = makeBaseUrl(device);
-        driver.get("https://www.google.com");
-        driver.manage().deleteAllCookies();
         Wait(5);
         driver.get(baseUrl);
+        driver.manage().deleteAllCookies();
         Wait(2);
-        setCookie();
+        //setCookie();
+    }
+    public void clickHeader(String device,String header){
+        String headerName =   "//a[contains(@class,'nav-" + header + "')]" ;
+                driver.findElement(By.xpath(headerName)).click();
+        WebElement blah = driver.findElement(By.xpath("//a[contains(@class,'female nav_eg sub')]"));
+       print("this is what the link says: " + blah.getText());
+    }
+    public void clickNoFeedback(String device){
+        driver.findElement(By.xpath("//input[contains(@value,'No')]")).click();
     }
     public void gotoPage(String addition) {
         driver.get(desktopBaseUrl + addition);
@@ -491,7 +497,7 @@ public class TestBase {
             System.out.println("Clicked on Order status and history");
         }
         else if(device.equals("tablet")){
-            driver.get(desktopBaseUrl + "/accounthub/OrderStatusAndHistory");
+            driver.get(desktopBaseUrl + "accounthub/OrderStatusAndHistory");
             System.out.println("Navigated to Order status and history");
         }
     }

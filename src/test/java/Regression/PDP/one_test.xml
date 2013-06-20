@@ -1,10 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" >
+<suite name="desktop" verbose="1" parallel="classes" thread-count="5">
     <test name="testing1">
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='phone'/>
         <classes>
-            <class name="Regression.PDP.PDPBadRx47802"/>
+            <class name="Regression.PDP.PDPAccessories_A48553"/>
+            <class name="Regression.PDP.PDPAccessories_B_C48553"/>
+            <class name="Regression.PDP.PDPAccessories_D_E48553"/>
+            <class name="Regression.PDP.PDPAccessories_F_L48553"/>
+            <class name="Regression.PDP.PDPAccessories_M_N48553"/>
+            <class name="Regression.PDP.PDPAccessories_O_P48553"/>
+            <class name="Regression.PDP.PDPAccessories_R48553"/>
+            <class name="Regression.PDP.PDPAccessories_S48553"/>
+            <class name="Regression.PDP.PDPAccessories_T48553"/>
+            <class name="Regression.PDP.PDPAccessories_U_Z48553"/>
         </classes>
     </test>
 </suite>

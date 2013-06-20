@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
+public class Rebates_DayClearSightToric30pk_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -19,16 +19,16 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String DayAcuvueMoistforAstigmatism30pk="lens/1-day-acuvue-moist-for-astigmatism-30";
-    String rebatesAvailable = "Rebate expected--save $30 on 12 -- save $65 on 24";
-    String rebate6Month = "30.0";
-    String rebate12Month = "65.0";
+    String ClearSight1DayToric30pk="lens/clearsight-1-day-toric-30";
+    String rebatesAvailable = "No rebate expected";
+    String rebate6Month = "0.0";
+    String rebate12Month = "0.0";
     String posR = "";
-    String posL = "+";
+    String posL = "";
     String rPower = "-0.50";
-    String lPower = "2.25";
-    String rBC = "8";
-    String lBC = "8";
+    String lPower = "-2.25";
+    String rBC = "";
+    String lBC = "";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -79,7 +79,7 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(DayAcuvueMoistforAstigmatism30pk);
+        gotoPage(ClearSight1DayToric30pk);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
@@ -109,7 +109,7 @@ public class Rebates_DayAcuvueMoistforAstigmatism30pk_48580 extends TestBase {
         goToCart(device);
         clickRemove(device);
 
-        gotoPage(DayAcuvueMoistforAstigmatism30pk);
+        gotoPage(ClearSight1DayToric30pk);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

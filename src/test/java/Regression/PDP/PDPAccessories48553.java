@@ -18,7 +18,7 @@ public class PDPAccessories48553 extends TestBase {
     String typeOfTest = "Regression";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchResultAccessoriesPage = "Accessories";
+    String searchResultAccessoriesPage = "Eye Care Solutions";
     String searchAllBrand1 = "Zaditor";
     String searchAllBrand2 = "opti-free";
     String searchAllBrand3 = "solution";

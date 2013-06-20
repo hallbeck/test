@@ -1,10 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Rebates" verbose="1" >
-    <test name="RebateTests_B" >
+    <test name="RebateTests_C_D" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_Acuvue_48580"/>
+            <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear58_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearAllDay_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearSightDay30Pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
         </classes>
     </test>
 </suite>

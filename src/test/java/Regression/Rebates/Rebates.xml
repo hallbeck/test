@@ -52,10 +52,18 @@
             <class name="Regression.Rebates.Rebates_BiomedicsXC_48580"/>
         </classes>
     </test>
-    <test name="RebateTests_C" >
+    <test name="RebateTests_C_D" >
         <parameter name="device" value='phone'/>
         <classes>
-
+            <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear58_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearAllDay_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearSightDay30Pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
         </classes>
     </test>
     <test name="RebateTests_No Rebates" >

@@ -1,18 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Rebates" verbose="1" >
-    <test name="RebateTests_C_D" >
+    <test name="RebateTests_E" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
-            <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
-            <class name="Regression.Rebates.Rebates_Clear58_48580"/>
-            <class name="Regression.Rebates.Rebates_ClearAllDay_48580"/>
-            <class name="Regression.Rebates.Rebates_ClearSightDay30Pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_EncorePremium_48580"/>
+            <class name="Regression.Rebates.Rebates_Expressions_48580"/>
+
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54ToricMC_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Thin_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Extra_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54142_48580"/>
+
         </classes>
     </test>
 </suite>

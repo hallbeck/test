@@ -67,22 +67,6 @@ public class Rebates_text48580 extends TestBase {
     String password = "password";
 
 
-
-
-
-
-
-
-
-
-    String EncorePremium="lens/encore-premium" ;
-    String ExtremeH2O54136="lens/extreme-h2o-54-13-6" ;
-    String ExtremeH2O54ToricLC="lens/extreme-h2o-54-toric-lc" ;
-    String ExtremeH2O59Thin="lens/extreme-h2o-59-thin" ;
-    String Expressions="lens/expressions" ;
-    String ExtremeH2O54142="lens/extreme-h2o-54-14-2" ;
-    String ExtremeH2O54ToricMC="lens/extreme-h2o-54-toric-mc";
-    String ExtremeH2O59Xtra="lens/extreme-h2o-59-xtra";
     String Flextique38="lens/flextique-38" ;
     String Flextique55Aspheric="lens/flextique-55-aspheric" ;
     String FocusDAILIES90pk="lens/focus-dailies-90";
@@ -104,6 +88,8 @@ public class Rebates_text48580 extends TestBase {
     String FreshLookColorblendsToric="lens/freshlook-colorblends-toric";
     String FreshLookDimensions="lens/freshlook-dimensions" ;
     String FreshLookONEDAY="lens/freshlook-one-day";
+
+
     String IcuityH2O="lens/icuity-h2o" ;
     String Mediflex38="lens/mediflex-38" ;
     String Mediflex55="lens/mediflex-55" ;
@@ -111,6 +97,7 @@ public class Rebates_text48580 extends TestBase {
     String OptimaFW="lens/optima-fw" ;
     String Optima38SP="lens/optima-38-sp";
     String OptimaToric="lens/optima-toric" ;
+
     String Perspecta55Aspheric="lens/perspecta-55-aspheric" ;
     String Polysoft55="lens/polysoft-55";
     String PreferenceDWFW="lens/preference-dw-fw";
@@ -137,6 +124,7 @@ public class Rebates_text48580 extends TestBase {
     String PureVision="lens/purevision";
     String PureVision2HDforAstigmatism="lens/purevision-2-hd-for-astigmatism";
     String PureVisionToric="lens/purevision-toric";
+
     String SofLens38="lens/soflens-38" ;
     String SofLensDailyDisposables90pk="lens/soflens-daily-disposables-90" ;
     String SofLensToric="lens/soflens-toric" ;
@@ -149,6 +137,7 @@ public class Rebates_text48580 extends TestBase {
     String Sofmed55="lens/sofmed-55";
     String Sterling38="lens/sterling-38";
     String Sterling55Aspheric="lens/sterling-55-aspheric";
+
     String Target38="lens/target-38";
     String Target55Aspheric="lens/target-55-aspheric";
     String Target55="lens/target-55";

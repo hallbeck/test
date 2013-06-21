@@ -6,7 +6,7 @@
     <test name="AccountTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.glasses"/>
+            <class name="glasses.glasses"/>
         </classes>
     </test>
 </suite>

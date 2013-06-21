@@ -1,18 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Rebates" verbose="1" >
-    <test name="RebateTests_E" >
+    <test name="RebateTests_F" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_EncorePremium_48580"/>
-            <class name="Regression.Rebates.Rebates_Expressions_48580"/>
+            <class name="Regression.Rebates.Rebates_Flextique38_48580"/>
+            <class name="Regression.Rebates.Rebates_Flextique55_48580"/>
+            <class name="Regression.Rebates.Rebates_Flextique55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusDailies30_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookOneDay_48580"/>
 
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54ToricMC_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O59Thin_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O59Extra_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54142_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusDailies90_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusDailiesToric30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusDailiesToric90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusDailiesProgressives30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_FocusMonthlySoftcolors_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55MultiD_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55MultiN_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55ToricXR_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55Toric_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookColorblends_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookColorblendToric_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookColors_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookDimensions_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookToric_48580"/>
+            <class name="Regression.Rebates.Rebates_FreshlookLiteTint_48580"/>
 
         </classes>
     </test>

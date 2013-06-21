@@ -66,6 +66,18 @@
             <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
         </classes>
     </test>
+    <test name="RebateTests_E" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54ToricMC_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Thin_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Extra_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54142_48580"/>
+
+        </classes>
+    </test>
     <test name="RebateTests_No Rebates" >
     <parameter name="device" value='phone'/>
     <classes>
@@ -74,6 +86,8 @@
         <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus6pk_48580"/>
         <class name="Regression.Rebates.Rebates_AcuvueBifocals_48580"/>
         <class name="Regression.Rebates.Rebates_DayAcuvueTruEye30pk_48580"/>
+        <class name="Regression.Rebates.Rebates_EncorePremium_48580"/>
+        <class name="Regression.Rebates.Rebates_Expressions_48580"/>
     </classes>
     </test>
 </suite>

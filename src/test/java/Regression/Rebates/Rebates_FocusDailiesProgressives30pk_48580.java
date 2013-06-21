@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
+public class Rebates_FocusDailiesProgressives30pk_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -19,10 +19,10 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String ExtremeH2O54ToricMC="lens/extreme-h2o-54-toric-mc";
-    String rebatesAvailable = "Rebate expected--save $35 on 8";
-    String rebate6Month = "35.0";
-    String rebate12Month = "0.0";
+    String FocusDAILIESProgressives30pk="lens/focus-dailies-progressives-30";
+    String rebatesAvailable = "Rebate expected--save $20 on 12 --- save $50 on 24";
+    String rebate6Month = "20.0";
+    String rebate12Month = "50.0";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
@@ -47,14 +47,14 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String lCyl = "-";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "180";
+    String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "180";
+    String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "4";
-    String rBoxes2 = "";
-    String lBoxes = "4";
-    String lBoxes2 = "";
+    String rBoxes = "6";
+    String rBoxes2 = "12";
+    String lBoxes = "6";
+    String lBoxes2 = "12";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -79,12 +79,10 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(ExtremeH2O54ToricMC);
+        gotoPage(FocusDAILIESProgressives30pk);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -104,7 +102,25 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month);
+        goToCart(device);
+        clickRemove(device);
 
+        gotoPage(FocusDAILIESProgressives30pk);
+        print(rebatesAvailable);
+        clickRPower(device,posR,rPower);
+        clickLPower(device,posL,lPower);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
+        clickRboxes(rBoxes2);
+        clickLboxes(lBoxes2);
+        typePatientName(PatientFNameCart, PatientLNameCart);
+        takeScreenshot(screenshotTestName, "PDP2_");
+        clickAddToCart(device);
+        verifyRebateCart(device,rebate12Month);
+        clickCart_Continue(device);
+        verifyRebateRS(device,rebate12Month);
         driver.quit();
     }
 }

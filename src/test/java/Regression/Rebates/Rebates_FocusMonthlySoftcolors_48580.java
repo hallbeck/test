@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
+public class Rebates_FocusMonthlySoftcolors_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -19,41 +19,41 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String ExtremeH2O54ToricMC="lens/extreme-h2o-54-toric-mc";
-    String rebatesAvailable = "Rebate expected--save $35 on 8";
-    String rebate6Month = "35.0";
-    String rebate12Month = "0.0";
+    String FocusMonthlySoftcolors="lens/focus-monthly-softcolors";
+    String rebatesAvailable = "Rebate expected--save $25 on 4";
+    String rebate6Month = "25.0";
+    String rebate12Month = "";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
     String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String rBC = "8.9";
+    String lBC = "8.9";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
+    String rColor = "royal";
+    String lColor = "royal";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd;
     String lAdd;
     String rAdd2;
     String lAdd2;
-    String rCyl = "-";
-    String lCyl = "-";
+    String rCyl = "";
+    String lCyl = "";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "180";
+    String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "180";
+    String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "4";
+    String rBoxes = "6";
     String rBoxes2 = "";
-    String lBoxes = "4";
+    String lBoxes = "6";
     String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
@@ -79,12 +79,14 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(ExtremeH2O54ToricMC);
+        gotoPage(FocusMonthlySoftcolors);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
+        clickRBC(rBC);
+        clickLBC(lBC);
+        clickRColor(rColor);
+        clickLColor(lColor);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

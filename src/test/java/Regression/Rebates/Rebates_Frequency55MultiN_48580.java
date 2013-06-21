@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
+public class Rebates_Frequency55MultiN_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -19,10 +19,10 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String ExtremeH2O54ToricMC="lens/extreme-h2o-54-toric-mc";
-    String rebatesAvailable = "Rebate expected--save $35 on 8";
-    String rebate6Month = "35.0";
-    String rebate12Month = "0.0";
+    String Frequency55Multifocal="lens/frequency-55-multifocal" ;
+    String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String rebate6Month = "20.0";
+    String rebate12Month = "";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
@@ -39,8 +39,8 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String lColor = "";
     String rColor2 = "";
     String lColor2 = "";
-    String rAdd;
-    String lAdd;
+    String rAdd = "2.00";
+    String lAdd= "2.00";
     String rAdd2;
     String lAdd2;
     String rCyl = "-";
@@ -51,9 +51,11 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "180";
     String lAxis2 = "";
-    String rBoxes = "4";
+    String rDN = "N";
+    String lDN = "N";
+    String rBoxes = "2";
     String rBoxes2 = "";
-    String lBoxes = "4";
+    String lBoxes = "2";
     String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
@@ -79,12 +81,14 @@ public class Rebates_ExtremeH2O54ToricMC_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(ExtremeH2O54ToricMC);
+        gotoPage(Frequency55Multifocal);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
+        clickRDN(device,rDN);
+        clickLDN(device,lDN);
+        clickRAdd(rAdd);
+        clickLAdd(lAdd);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

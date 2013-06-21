@@ -35,8 +35,8 @@ public class Rebates_Expressions_48580 extends TestBase {
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
+    String rColor = "blue";
+    String lColor = "blue";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd;
@@ -83,6 +83,8 @@ public class Rebates_Expressions_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRColor(rColor);
+        clickLColor(lColor);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

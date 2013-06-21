@@ -67,63 +67,9 @@ public class Rebates_text48580 extends TestBase {
     String password = "password";
 
 
-    String Flextique38="lens/flextique-38" ;
-    String Flextique55Aspheric="lens/flextique-55-aspheric" ;
-    String FocusDAILIES90pk="lens/focus-dailies-90";
-    String FocusDAILIESToric30pk="lens/focus-dailies-toric-30" ;
-    String FocusMonthlySoftcolors="lens/focus-monthly-softcolors";
-    String Frequency55Aspheric="lens/frequency-55-aspheric";
-    String Frequency55Toric="lens/frequency-55-toric" ;
-    String FreshLookColorblends="lens/freshlook-colorblends" ;
-    String FreshLookColors="lens/freshlook-colors";
-    String FreshLookHandlingTint="lens/freshlook-handling-tint";
-    String FreshLookToric="lens/freshlook-toric";
-    String Flextique55="lens/flextique-55";
-    String FocusDAILIES30pk="lens/focus-dailies-30";
-    String FocusDAILIESProgressives30pk="lens/focus-dailies-progressives-30";
-    String FocusDAILIESToric90pk="lens/focus-dailies-toric-90" ;
-    String Frequency55="lens/frequency-55" ;
-    String Frequency55Multifocal="lens/frequency-55-multifocal" ;
-    String Frequency55ToricXR="lens/frequency-55-toric-xr" ;
-    String FreshLookColorblendsToric="lens/freshlook-colorblends-toric";
-    String FreshLookDimensions="lens/freshlook-dimensions" ;
-    String FreshLookONEDAY="lens/freshlook-one-day";
 
 
-    String IcuityH2O="lens/icuity-h2o" ;
-    String Mediflex38="lens/mediflex-38" ;
-    String Mediflex55="lens/mediflex-55" ;
-    String O2Optix="lens/o2-optix" ;
-    String OptimaFW="lens/optima-fw" ;
-    String Optima38SP="lens/optima-38-sp";
-    String OptimaToric="lens/optima-toric" ;
 
-    String Perspecta55Aspheric="lens/perspecta-55-aspheric" ;
-    String Polysoft55="lens/polysoft-55";
-    String PreferenceDWFW="lens/preference-dw-fw";
-    String PreferenceToric="lens/preference-toric";
-    String Proclear1Day90pk="lens/proclear-1-day-90" ;
-    String ProclearEP="lens/proclear-ep" ;
-    String ProclearToric="lens/proclear-toric" ;
-    String Proflex38="lens/proflex-38" ;
-    String Prosite38="lens/prosite-38";
-    String Prosite55Aspheric="lens/prosite-55-aspheric" ;
-    String ProvisionPremium="lens/provision-premium" ;
-    String PureVision2="lens/purevision-2-hd";
-    String PureVisionMultiFocal="lens/purevision-multi-focal";
-    String Polysoft38="lens/polysoft-38";
-    String Polysoft55Aspheric="lens/polysoft-55-aspheric";
-    String PreferenceStandard="lens/preference-standard";
-    String Proclear="lens/proclear";
-    String Proclear1DayMultifocal30pk="lens/proclear-1-day-multifocal-30" ;
-    String ProclearMultifocal="lens/proclear-multifocal";
-    String ProclearToricXR="lens/proclear-toric-xr";
-    String Proflex55="lens/proflex-55" ;
-    String Prosite55="lens/prosite-55";
-    String Provision55="lens/provision-55";
-    String PureVision="lens/purevision";
-    String PureVision2HDforAstigmatism="lens/purevision-2-hd-for-astigmatism";
-    String PureVisionToric="lens/purevision-toric";
 
     String SofLens38="lens/soflens-38" ;
     String SofLensDailyDisposables90pk="lens/soflens-daily-disposables-90" ;

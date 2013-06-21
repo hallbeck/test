@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Rebates" verbose="1" >
+    <test name="RebateTests_I_O" >
+    <parameter name="device" value='desktop'/>
+    <classes>
+        <class name="Regression.Rebates.Rebates_IcuityH2O_48580"/>
+        <class name="Regression.Rebates.Rebates_Optima38SP_48580"/>
+        <class name="Regression.Rebates.Rebates_OptimaFW_48580"/>
+        <class name="Regression.Rebates.Rebates_OptimaToric_48580"/>
+        <class name="Regression.Rebates.Rebates_Mediflex38_48580"/>
+        <class name="Regression.Rebates.Rebates_Mediflex55_48580"/>
+
+        <class name="Regression.Rebates.Rebates_O2Optix_48580"/>
+
+    </classes>
+</test>
+    <test name="RebateTests_P" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Perspecta55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_PolySoft38_48580"/>
+            <class name="Regression.Rebates.Rebates_Polysoft55_48580"/>
+            <class name="Regression.Rebates.Rebates_Polysoft55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceDWFW_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceStandard_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceToric_48580"/>
+            <class name="Regression.Rebates.Rebates_ProclearToricXR_48580"/>
+            <class name="Regression.Rebates.Rebates_Proflex38_48580"/>
+            <class name="Regression.Rebates.Rebates_Proflex55_48580"/>
+            <class name="Regression.Rebates.Rebates_Prosite55_48580"/>
+            <class name="Regression.Rebates.Rebates_Prosite55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_ProSite38_48580"/>
+            <class name="Regression.Rebates.Rebates_Provision55_48580"/>
+            <class name="Regression.Rebates.Rebates_ProVisionPremium_48580"/>
+
+            <class name="Regression.Rebates.Rebates_ProClear1Day90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClear1DayMulti30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClear_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearEP_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearMultiD_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearMultiN_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearToric_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision2HD_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision2HDAstig_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVisionMulti_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVisionToric_48580"/>
+
+        </classes>
+    </test>
+</suite>

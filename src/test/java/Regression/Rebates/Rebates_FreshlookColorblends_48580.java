@@ -20,9 +20,9 @@ public class Rebates_FreshlookColorblends_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String FreshLookColorblends="lens/freshlook-colorblends" ;
-    String rebatesAvailable = "Rebate expected--save $25 on 4 --- save $65 on 8";
-    String rebate6Month = "25.0";
-    String rebate12Month = "65.0";
+    String rebatesAvailable = "Rebate expected--save $40 on 4 --- save $90 on 8";
+    String rebate6Month = "40.0";
+    String rebate12Month = "90.0";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
@@ -111,10 +111,8 @@ public class Rebates_FreshlookColorblends_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
+        clickRColor(rColor);
+        clickLColor(lColor);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);

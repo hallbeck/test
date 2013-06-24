@@ -20,8 +20,8 @@ public class Rebates_O2Optix_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String O2Optix="lens/o2-optix";
-    String rebatesAvailable = "Rebate expected--save $30 on 8 ";
-    String rebate6Month = "30.0";
+    String rebatesAvailable = "Rebate expected--save $50 on 8 ";
+    String rebate6Month = "50.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "";

@@ -194,6 +194,7 @@ public class TestBase {
                  double actualdRebateAmt = (Math.round(intTotal) - Math.round(intTotalAfterRebate));
                  double actualRebateAmt = Math.ceil(actualdRebateAmt);
                  String strActualRebate = String.valueOf(actualRebateAmt);
+                 print ("rebate amount: " + strActualRebate);
                  if(rebateAmount.equals(strActualRebate)){System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
                      assert false;}
              }

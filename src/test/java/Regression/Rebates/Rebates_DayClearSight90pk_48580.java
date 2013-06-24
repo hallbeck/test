@@ -20,9 +20,9 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String ClearSight1Day90pk="lens/clearsight-1-day-90";
-    String rebatesAvailable = "Rebate expected-- save $45 on 8";
-    String rebate6Month = "45.0";
-    String rebate12Month = "0.0";
+    String rebatesAvailable = "Rebate expected-- save $65 on 8 --- save $20 on 4";
+    String rebate6Month = "20.0";
+    String rebate12Month = "65.0";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
@@ -51,10 +51,10 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "4";
-    String rBoxes2 = "";
-    String lBoxes = "4";
-    String lBoxes2 = "";
+    String rBoxes = "2";
+    String rBoxes2 = "4";
+    String lBoxes = "2";
+    String lBoxes2 = "4";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -102,6 +102,20 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month);
+        goToCart(device);
+        clickRemove(device);
+
+        gotoPage(ClearSight1Day90pk);
+        clickRPower(device,posR,rPower);
+        clickLPower(device,posL,lPower);
+        clickRboxes(rBoxes2);
+        clickLboxes(lBoxes2);
+        typePatientName(PatientFNameCart, PatientLNameCart);
+        takeScreenshot(screenshotTestName, "PDP2_");
+        clickAddToCart(device);
+        verifyRebateCart(device,rebate12Month);
+        clickCart_Continue(device);
+        verifyRebateRS(device,rebate12Month);
 
         driver.quit();
     }

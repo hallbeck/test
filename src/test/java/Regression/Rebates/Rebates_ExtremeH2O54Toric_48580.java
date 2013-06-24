@@ -21,7 +21,7 @@ public class Rebates_ExtremeH2O54Toric_48580 extends TestBase {
     //LENS//
     String ExtremeH2O54ToricLC="lens/extreme-h2o-54-toric-lc";
     String rebatesAvailable = "Rebate expected--save $35 on 8";
-    String rebate6Month = "0.0";
+    String rebate6Month = "35.0";
     String rebate12Month = "0.0";
     String posR = "";
     String posL = "";

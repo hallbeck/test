@@ -20,9 +20,9 @@ public class Rebates_FreshlookDimensions_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String FreshLookDimensions="lens/freshlook-dimensions" ;
-    String rebatesAvailable = "Rebate expected--save $30 on 4 --- save $60 on 8";
-    String rebate6Month = "30.0";
-    String rebate12Month = "60.0";
+    String rebatesAvailable = "Rebate expected--save $40 on 4 --- save $90 on 8";
+    String rebate6Month = "40.0";
+    String rebate12Month = "90.0";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
@@ -85,7 +85,6 @@ public class Rebates_FreshlookDimensions_48580 extends TestBase {
         clickLPower(device,posL,lPower);
         clickRColor(rColor);
         clickLColor(lColor);
-
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -112,10 +111,8 @@ public class Rebates_FreshlookDimensions_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
+        clickRColor(rColor);
+        clickLColor(lColor);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);

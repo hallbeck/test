@@ -20,8 +20,8 @@ public class Rebates_BiofinityToric_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String BiofinityToric="lens/biofinity-toric";
-    String rebatesAvailable = "Rebate expected--save $65 on 4";
-    String rebate6Month = "65.0";
+    String rebatesAvailable = "Rebate expected--save $40 on 4";
+    String rebate6Month = "40.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "";

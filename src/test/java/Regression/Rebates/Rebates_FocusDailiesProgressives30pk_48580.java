@@ -109,10 +109,6 @@ public class Rebates_FocusDailiesProgressives30pk_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);

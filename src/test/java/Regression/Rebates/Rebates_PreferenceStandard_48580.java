@@ -27,12 +27,12 @@ public class Rebates_PreferenceStandard_48580 extends TestBase {
     String posL = "";
     String rPower = "-0.50";
     String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String rBC = "8.6";
+    String lBC = "8.6";
     String rBC2 = "";
     String lBC2 = "";
-    String rDia = "";
-    String lDia = "";
+    String rDia = "14.4";
+    String lDia = "14.4";
     String rDia2 = "";
     String lDia2 = "";
     String rColor = "";
@@ -83,6 +83,10 @@ public class Rebates_PreferenceStandard_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
+        clickRDia(rDia);
+        clickLDia(lDia);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

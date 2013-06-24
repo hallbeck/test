@@ -20,8 +20,8 @@ public class Rebates_DayAcuvueMoist30pk_48580 extends TestBase {
     String typeOfPayment = "Rebates";
     //LENS//
     String DayAcuvueMoist30pk="lens/1-day-acuvue-moist-30";
-    String rebatesAvailable = "Rebate expected--save $25 on 12";
-    String rebate6Month = "25.0";
+    String rebatesAvailable = "Rebate expected--save $40 on 12";
+    String rebate6Month = "40.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "+";

@@ -20,8 +20,8 @@ public class Rebates_AirOptixAqua_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String AirOptixAqua="lens/air-optix-aqua";
-    String rebatesAvailable = "Rebate expected--save $55 on 4";
-    String rebate6Month = "55.0";
+    String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String rebate6Month = "20.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "+";

@@ -20,8 +20,8 @@ public class Rebates_Frequency55_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String Frequency55="lens/frequency-55" ;
-    String rebatesAvailable = "No rebate expected";
-    String rebate6Month = "0.0";
+    String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String rebate6Month = "20.0";
     String rebate12Month = "0.0";
     String posR = "+";
     String posL = "+";
@@ -51,10 +51,10 @@ public class Rebates_Frequency55_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "4";
-    String rBoxes2 = "12";
-    String lBoxes = "4";
-    String lBoxes2 = "12";
+    String rBoxes = "2";
+    String rBoxes2 = "";
+    String lBoxes = "2";
+    String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";

@@ -27,8 +27,8 @@ public class Rebates_Optima38SP_48580 extends TestBase {
     String posL = "";
     String rPower = "-0.50";
     String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String rBC = "8.8";
+    String lBC = "8.8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -83,6 +83,8 @@ public class Rebates_Optima38SP_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

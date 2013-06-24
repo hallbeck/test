@@ -20,8 +20,8 @@ public class Rebates_Avaira_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String Avaira="lens/avaira";
-    String rebatesAvailable = "Rebate expected--save $40 on 8";
-    String rebate6Month = "40.0";
+    String rebatesAvailable = "Rebate expected--save $60 on 8";
+    String rebate6Month = "60.0";
     String rebate12Month = "";
     String posR = "+";
     String posL = "+";

@@ -42,7 +42,7 @@ public class Rebates_BiofinityMulti_48580 extends TestBase {
     String rAdd = "2.00";
     String lAdd = "2.00";
     String rDN = "D";
-    String lDN = "N";
+    String lDN = "D";
     String rAdd2;
     String lAdd2;
     String rCyl = "-";

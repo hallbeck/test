@@ -20,8 +20,8 @@ public class Rebates_PureVisionToric_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String PureVisionToric="lens/purevision-toric";
-    String rebatesAvailable = "Rebate expected--save $25 on 4 ";
-    String rebate6Month = "25.0";
+    String rebatesAvailable = "Rebate expected--save $55 on 4 ";
+    String rebate6Month = "55.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "";

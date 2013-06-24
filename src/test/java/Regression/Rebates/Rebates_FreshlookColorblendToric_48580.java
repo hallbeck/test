@@ -35,8 +35,8 @@ public class Rebates_FreshlookColorblendToric_48580 extends TestBase {
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "true";
-    String lColor = "true";
+    String rColor = "blue";
+    String lColor = "blue";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd;
@@ -119,6 +119,8 @@ public class Rebates_FreshlookColorblendToric_48580 extends TestBase {
         clickLCyl(lCyl);
         clickRAxis(rAxis);
         clickLAxis(lAxis);
+        clickRColor(rColor);
+        clickLColor(lColor);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);

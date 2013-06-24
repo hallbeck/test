@@ -71,33 +71,11 @@ public class Rebates_text48580 extends TestBase {
 
 
 
-    String SofLens38="lens/soflens-38" ;
-    String SofLensDailyDisposables90pk="lens/soflens-daily-disposables-90" ;
-    String SofLensToric="lens/soflens-toric" ;
-    String Sofmed55Aspheric="lens/sofmed-55-aspheric";
-    String SoftconEW="lens/softcon-ew";
-    String Sterling55="lens/sterling-55";
-    String SofLensDailyDisposableforAstigmatism="lens/soflens-daily-disposable-for-astigmatism-30";
-    String SofLensMultiFocal="lens/soflens-multi-focal";
-    String Sofmed38="lens/sofmed-38";
-    String Sofmed55="lens/sofmed-55";
-    String Sterling38="lens/sterling-38";
-    String Sterling55Aspheric="lens/sterling-55-aspheric";
 
-    String Target38="lens/target-38";
-    String Target55Aspheric="lens/target-55-aspheric";
-    String Target55="lens/target-55";
-    String UltraFlex71438="lens/ultraflex-7-14-38";
-    String UltraFlexIIAspheric="lens/ultraflex-II-aspheric";
-    String UltraFlexXC="lens/ultraflex-xc";
-    String UltraFlex71455="lens/ultraflex-7-14-55";
-    String UltraFlexToric="lens/ultraflex-toric";
-    String Versaflex38="lens/versaflex-38";
-    String Versaflex55Aspheric="lens/versaflex-55-aspheric";
-    String VertexToric="lens/vertex-toric";
-    String Versaflex55="lens/versaflex-55";
-    String VertexSphere="lens/vertex-sphere";
-    String VertexToricXR="lens/vertex-toric-xr";
+
+
+
+
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
@@ -154,146 +132,6 @@ public class Rebates_text48580 extends TestBase {
         clickCart_Continue(device);
         verifyRebateRS(device,rebate12Month);
 
-
-
-
-
-        /*gotoPage(DayAcuvueMoist90pk);
-        gotoPage(DayAcuvueTruEye30pk);
-        gotoPage(DayAcuvueMoist30pk);
-        gotoPage(DayAcuvueMoistforAstigmatism30pk);
-        gotoPage(DayAcuvueTruEye90pk);
-        gotoPage(Acuvue);
-        gotoPage(Acuvue2Colours);
-        gotoPage(AcuvueAdvanceAstigmatism);
-        gotoPage(AcuvueAdvancePlus6pk);
-        gotoPage(AcuvueOasysAstigmatism);
-        gotoPage(AcuvueOasysHydraclearPlus24pk);
-        gotoPage(AirOptixAqua);
-        gotoPage(Aqualens38);
-        gotoPage(Aqualens55Aspheric);
-        gotoPage(Aqualite55);
-        gotoPage(Avaira);
-        gotoPage(Acuvue2);
-        gotoPage(AcuvueAdvance);
-        gotoPage(AcuvueAdvancePlus24pk);
-        gotoPage(AcuvueBifocals);
-        gotoPage(AcuvueOasysPresbyopia);
-        gotoPage(AcuvueOasysHydraclearPlus6pk);
-        gotoPage(AirOptixAquaMultifocal);
-        gotoPage(AirOptixNightDayAqua);
-        gotoPage(Aqualens55);
-        gotoPage(Aqualite38);
-        gotoPage(Aqualite55ProAspheric);
-        gotoPage(AvairaToric);
-        gotoPage(Biofinity);
-        gotoPage(BiofinityToric);
-        gotoPage(Biomedics38);
-        gotoPage(Biomedics55Evolution);
-        gotoPage(BiomedicsEP);
-        gotoPage(BiomedicsXC);
-        gotoPage(BiofinityMultifocal);
-        gotoPage(Biomedics1Day90pk);
-        gotoPage(Biomedics55);
-        gotoPage(Biomedics55Premier);
-        gotoPage(BiomedicsToric);
-        gotoPage(ClarityH2O);
-        gotoPage(Clear58);
-        gotoPage(ClearSightDay30pk);
-        gotoPage(ClearSight1DayToric30pk);
-        gotoPage(Clear55A);
-        gotoPage(ClearAllDay);
-        gotoPage(ClearSight1Day90pk);
-        gotoPage(DailiesAquaComfortPlus30pk);
-        gotoPage(DailiesAquaComfortPlus90pk);
-        gotoPage(EncorePremium);
-        gotoPage(ExtremeH2O54136);
-        gotoPage(ExtremeH2O54ToricLC);
-        gotoPage(ExtremeH2O59Thin);
-        gotoPage(Expressions);
-        gotoPage(ExtremeH2O54142);
-        gotoPage(ExtremeH2O54ToricMC);
-        gotoPage(ExtremeH2O59Xtra);
-        gotoPage(Flextique38);
-        gotoPage(Flextique55Aspheric);
-        gotoPage(FocusDAILIES90pk);
-        gotoPage(FocusDAILIESToric30pk);
-        gotoPage(FocusMonthlySoftcolors);
-        gotoPage(Frequency55Aspheric);
-        gotoPage(Frequency55Toric);
-        gotoPage(FreshLookColorblends);
-        gotoPage(FreshLookColors);
-        gotoPage(FreshLookHandlingTint);
-        gotoPage(FreshLookToric);
-        gotoPage(Flextique55);
-        gotoPage(FocusDAILIES30pk);
-        gotoPage(FocusDAILIESProgressives30pk);
-        gotoPage(FocusDAILIESToric90pk);
-        gotoPage(Frequency55);
-        gotoPage(Frequency55Multifocal);
-        gotoPage(Frequency55ToricXR);
-        gotoPage(FreshLookColorblendsToric);
-        gotoPage(FreshLookDimensions);
-        gotoPage(FreshLookONEDAY);
-        gotoPage(IcuityH2O);
-        gotoPage(Mediflex38);
-        gotoPage(Mediflex55);
-        gotoPage(O2Optix);
-        gotoPage(OptimaFW);
-        gotoPage(Optima38SP);
-        gotoPage(OptimaToric);
-        gotoPage(Perspecta55Aspheric);
-        gotoPage(Polysoft55);
-        gotoPage(PreferenceDWFW);
-        gotoPage(PreferenceToric);
-        gotoPage(Proclear1Day90pk);
-        gotoPage(ProclearEP);
-        gotoPage(ProclearToric);
-        gotoPage(Proflex38);
-        gotoPage(Prosite38);
-        gotoPage(Prosite55Aspheric);
-        gotoPage(ProvisionPremium);
-        gotoPage(PureVision2);
-        gotoPage(PureVisionMultiFocal);
-        gotoPage(Polysoft38);
-        gotoPage(Polysoft55Aspheric);
-        gotoPage(PreferenceStandard);
-        gotoPage(Proclear);
-        gotoPage(Proclear1DayMultifocal30pk);
-        gotoPage(ProclearMultifocal);
-        gotoPage(ProclearToricXR);
-        gotoPage(Proflex55);
-        gotoPage(Prosite55);
-        gotoPage(Provision55);
-        gotoPage(PureVision);
-        gotoPage(PureVision2HDforAstigmatism);
-        gotoPage(PureVisionToric);
-        gotoPage(SofLens38);
-        gotoPage(SofLensDailyDisposables90pk);
-        gotoPage(SofLensToric);
-        gotoPage(Sofmed55Aspheric);
-        gotoPage(SoftconEW);
-        gotoPage(Sterling55);
-        gotoPage(SofLensDailyDisposableforAstigmatism);
-        gotoPage(SofLensMultiFocal);
-        gotoPage(Sofmed38);
-        gotoPage(Sofmed55);
-        gotoPage(Sterling38);
-        gotoPage(Sterling55Aspheric);
-        gotoPage(Target38);
-        gotoPage(Target55Aspheric);
-        gotoPage(Target55);
-        gotoPage(UltraFlex71438);
-        gotoPage(UltraFlexIIAspheric);
-        gotoPage(UltraFlexXC);
-        gotoPage(UltraFlex71455);
-        gotoPage(UltraFlexToric);
-        gotoPage(Versaflex38);
-        gotoPage(Versaflex55Aspheric);
-        gotoPage(VertexToric);
-        gotoPage(Versaflex55);
-        gotoPage(VertexSphere);
-        gotoPage(VertexToricXR);*/
        // driver.quit();
     }
 }

@@ -20,8 +20,8 @@ public class Rebates_Frequency55Asph_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String Frequency55Aspheric="lens/frequency-55-aspheric";
-    String rebatesAvailable = "No rebate expected";
-    String rebate6Month = "0.0";
+    String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String rebate6Month = "20.0";
     String rebate12Month = "0.0";
     String posR = "+";
     String posL = "+";

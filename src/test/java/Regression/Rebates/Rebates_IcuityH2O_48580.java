@@ -20,8 +20,8 @@ public class Rebates_IcuityH2O_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String IcuityH2O="lens/icuity-h2o";
-    String rebatesAvailable = "No rebate expected";
-    String rebate6Month = "0.0";
+    String rebatesAvailable = "Rebate expected--save $20 on 8";
+    String rebate6Month = "20.0";
     String rebate12Month = "0.0";
     String posR = "";
     String posL = "";
@@ -52,9 +52,9 @@ public class Rebates_IcuityH2O_48580 extends TestBase {
     String lAxis = "";
     String lAxis2 = "";
     String rBoxes = "4";
-    String rBoxes2 = "12";
+    String rBoxes2 = "";
     String lBoxes = "4";
-    String lBoxes2 = "12";
+    String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";

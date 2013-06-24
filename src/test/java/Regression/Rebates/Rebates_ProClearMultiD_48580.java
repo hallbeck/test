@@ -20,8 +20,8 @@ public class Rebates_ProClearMultiD_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String ProclearMultifocal="lens/proclear-multifocal";
-    String rebatesAvailable = "Rebate expected--save $25 on 4";
-    String rebate6Month = "25.0";
+    String rebatesAvailable = "Rebate expected--save $50 on 4";
+    String rebate6Month = "50.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "";

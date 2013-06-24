@@ -20,9 +20,9 @@ public class Rebates_AcuvueOasysAstigmatism_48580 extends TestBase {
     String typeOfPayment = "Rebates";   
     //LENS//
     String AcuvueOasysAstigmatism="lens/acuvue-oasys-for-astigmatism" ;
-    String rebatesAvailable = "Rebate expected--save $25 on 4 -- save $75 on 8";
-    String rebate6Month = "25.0";
-    String rebate12Month = "75.0";
+    String rebatesAvailable = "Rebate expected--save $35 on 4 -- save $85 on 8";
+    String rebate6Month = "35.0";
+    String rebate12Month = "85.0";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";

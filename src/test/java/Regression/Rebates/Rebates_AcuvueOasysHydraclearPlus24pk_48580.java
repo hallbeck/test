@@ -21,14 +21,15 @@ public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
     //LENS//
     String AcuvueOasysHydraclearPlus24pk="lens/acuvue-oasys-24";
     String rebatesAvailable = "Rebate expected--save $75 on 2";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "75.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
     String lPower = "2.25";
-    String rBC = "8";
-    String lBC = "8";
+    String rBC = "8.8";
+    String lBC = "8.8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -83,10 +84,11 @@ public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRboxes(rBoxes);
-        clickLboxes(lBoxes);
         clickRBC(rBC);
         clickLBC(lBC);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
+
         typePatientName(PatientFNameCart, PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP1_");
         clickAddToCart(device);
@@ -103,7 +105,7 @@ public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

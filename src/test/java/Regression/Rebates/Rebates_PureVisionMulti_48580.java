@@ -21,6 +21,7 @@ public class Rebates_PureVisionMulti_48580 extends TestBase {
     //LENS//
     String PureVisionMultiFocal="lens/purevision-multi-focal";
     String rebatesAvailable = "Rebate expected--save $30 on 4 ";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "30.0";
     String rebate12Month = "";
     String posR = "";
@@ -39,8 +40,8 @@ public class Rebates_PureVisionMulti_48580 extends TestBase {
     String lColor = "violet";
     String rColor2 = "";
     String lColor2 = "";
-    String rAdd;
-    String lAdd;
+    String rAdd = "2.50";
+    String lAdd = "2.50";
     String rAdd2;
     String lAdd2;
     String rCyl = "-";
@@ -83,8 +84,8 @@ public class Rebates_PureVisionMulti_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRColor(rColor);
-        clickLColor(lColor);
+        clickRAdd(rAdd);
+        clickLAdd(lAdd);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -103,7 +104,7 @@ public class Rebates_PureVisionMulti_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

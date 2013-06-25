@@ -21,6 +21,7 @@ public class Rebates_AcuvueBifocals_48580 extends TestBase {
     //LENS//
     String AcuvueBifocals="lens/acuvue-bifocals";
     String rebatesAvailable = "No Rebate Expected";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "5.0";
     String posR = "";
@@ -104,8 +105,8 @@ public class Rebates_AcuvueBifocals_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
-       // driver.quit();
+       driver.quit();
     }
 }

@@ -21,6 +21,7 @@ public class Rebates_AcuvueAdvancePlus24pk_48580 extends TestBase {
     //LENS//
     String AcuvueAdvancePlus24pk="lens/acuvue-advance-plus-24";
     String rebatesAvailable = "Rebate expected--save $65 on 2";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "65.0";
     String rebate12Month = "";
     String posR = "";
@@ -103,7 +104,7 @@ public class Rebates_AcuvueAdvancePlus24pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         driver.quit();
     }
 }

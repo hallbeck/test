@@ -21,6 +21,7 @@ public class Rebates_Acuvue_48580 extends TestBase {
     //LENS//
     String Acuvue="lens/acuvue";
     String rebatesAvailable = "No rebate expected";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
     String posR = "";
@@ -105,7 +106,7 @@ public class Rebates_Acuvue_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -124,7 +125,7 @@ public class Rebates_Acuvue_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
         driver.quit();
     }

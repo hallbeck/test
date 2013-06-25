@@ -21,6 +21,7 @@ public class Rebates_PreferenceStandard_48580 extends TestBase {
     //LENS//
     String PreferenceStandard="lens/preference-standard";
     String rebatesAvailable = "No rebate expected";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
     String posR = "";
@@ -31,8 +32,8 @@ public class Rebates_PreferenceStandard_48580 extends TestBase {
     String lBC = "8.6";
     String rBC2 = "";
     String lBC2 = "";
-    String rDia = "14.4";
-    String lDia = "14.4";
+    String rDia = "14.0";
+    String lDia = "14.0";
     String rDia2 = "";
     String lDia2 = "";
     String rColor = "";
@@ -105,8 +106,8 @@ public class Rebates_PreferenceStandard_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
-       // driver.quit();
+       driver.quit();
     }
 }

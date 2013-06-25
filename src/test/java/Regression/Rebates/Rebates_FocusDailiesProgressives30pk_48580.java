@@ -21,6 +21,7 @@ public class Rebates_FocusDailiesProgressives30pk_48580 extends TestBase {
     //LENS//
     String FocusDAILIESProgressives30pk="lens/focus-dailies-progressives-30";
     String rebatesAvailable = "Rebate expected--save $20 on 12 --- save $50 on 24";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "50.0";
     String posR = "";
@@ -101,7 +102,7 @@ public class Rebates_FocusDailiesProgressives30pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -116,7 +117,7 @@ public class Rebates_FocusDailiesProgressives30pk_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
         driver.quit();
     }
 }

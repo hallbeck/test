@@ -937,6 +937,6 @@ public class PDPAccessories48553 extends TestBase {
         verifyProduct(device,searchResultAccessoriesPage,search298);
         searchAllBrand(device,search299);
         verifyProduct(device,searchResultAccessoriesPage,search299);
-        //driver.quit();
+        driver.quit();
     }
 }

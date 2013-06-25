@@ -21,6 +21,7 @@ public class Rebates_AcuvueOasysAstigmatism_48580 extends TestBase {
     //LENS//
     String AcuvueOasysAstigmatism="lens/acuvue-oasys-for-astigmatism" ;
     String rebatesAvailable = "Rebate expected--save $35 on 4 -- save $85 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "35.0";
     String rebate12Month = "85.0";
     String posR = "";
@@ -106,7 +107,7 @@ public class Rebates_AcuvueOasysAstigmatism_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -125,7 +126,7 @@ public class Rebates_AcuvueOasysAstigmatism_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
         driver.quit();
     }

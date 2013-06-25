@@ -21,14 +21,15 @@ public class Rebates_ProclearToricXR_48580 extends TestBase {
     //LENS//
     String ProclearToricXR="lens/proclear-toric-xr";
     String rebatesAvailable = "No rebate expected";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
     String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String rBC = "8.4";
+    String lBC = "8.4";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -43,13 +44,13 @@ public class Rebates_ProclearToricXR_48580 extends TestBase {
     String lAdd;
     String rAdd2;
     String lAdd2;
-    String rCyl = "-";
-    String lCyl = "-";
+    String rCyl = "-4.75";
+    String lCyl = "-4.75";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "";
+    String rAxis = "100";
     String rAxis2 = "";
-    String lAxis = "";
+    String lAxis = "100";
     String lAxis2 = "";
     String rBoxes = "4";
     String rBoxes2 = "12";
@@ -83,6 +84,12 @@ public class Rebates_ProclearToricXR_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -101,8 +108,8 @@ public class Rebates_ProclearToricXR_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
-       // driver.quit();
+       driver.quit();
     }
 }

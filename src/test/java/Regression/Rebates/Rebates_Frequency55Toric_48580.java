@@ -21,6 +21,7 @@ public class Rebates_Frequency55Toric_48580 extends TestBase {
     //LENS//
     String Frequency55Toric="lens/frequency-55-toric" ;
     String rebatesAvailable = "Rebate expected--save $25 on 4";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "25.0";
     String rebate12Month = "";
     String posR = "";
@@ -107,7 +108,7 @@ public class Rebates_Frequency55Toric_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

@@ -63,9 +63,9 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    public String mobileBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://ww1.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
-    public String tabletBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
+    public String tabletBaseUrl = "https://ww1.1800contactstest.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
 
@@ -224,7 +224,7 @@ public class TestBase {
          }
          }
      }
-    public void verifyRebateRS(String device,String rebateAmount){
+    public void verifyRebateRS(String device,String rebateAmount,String RebateText){
         if(rebateAmount.equals("0.0")){
             try{
                 WebElement weTotal = driver.findElement(By.xpath("(//dd[@class='a41-checkout-review-subtotal'])[4]"));
@@ -262,6 +262,11 @@ public class TestBase {
         String strActualRebate = String.valueOf(actualRebateAmt);
         if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
             assert true;
+            rebateAmount = rebateAmount.replace(".0","");
+            String expectedRebateText = "$"+rebateAmount + " " + RebateText;
+            WebElement weRebateText = driver.findElement(By.xpath("//div[contains(@class,'a41-checkout-review-details-right-padding')]"));
+            String NameOfRebate = weRebateText.getText();
+            verifyTxtPresent("Rebate Text on Review and Submit: ",expectedRebateText,NameOfRebate);
         }
         else {
             System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);
@@ -269,6 +274,14 @@ public class TestBase {
         }
     }
 }
+    public void checkoutAndVerify (String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+        clickBottomSubmitButton(device);
+        verifyThankYouPage(shippingVerify);
+        gotoMyAccount(device);
+        verifyDashboard(device,brandVerifyPDP,fullPatientName);
+        gotoOrderStatusHistory(device);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+    }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";
         try{

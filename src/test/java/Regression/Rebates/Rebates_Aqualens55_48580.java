@@ -21,6 +21,7 @@ public class Rebates_Aqualens55_48580 extends TestBase {
     //LENS//
     String Aqualens55="lens/aqualens-55";;
     String rebatesAvailable = "Rebate expected--save $30 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "30.0";
     String rebate12Month = "";
     String posR = "+";
@@ -103,7 +104,7 @@ public class Rebates_Aqualens55_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

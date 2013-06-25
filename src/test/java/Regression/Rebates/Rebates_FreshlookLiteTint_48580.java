@@ -21,6 +21,7 @@ public class Rebates_FreshlookLiteTint_48580 extends TestBase {
     //LENS//
     String FreshLookHandlingTint="lens/freshlook-handling-tint";
     String rebatesAvailable = "Rebate expected--save $25 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "25.0";
     String rebate12Month = "0.0";
     String posR = "";
@@ -101,7 +102,7 @@ public class Rebates_FreshlookLiteTint_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

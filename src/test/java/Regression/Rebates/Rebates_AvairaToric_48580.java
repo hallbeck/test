@@ -21,6 +21,7 @@ public class Rebates_AvairaToric_48580 extends TestBase {
     //LENS//
     String AvairaToric="lens/avaira-toric";
     String rebatesAvailable = "Rebate expected-- save $20 on 4 ---save $50 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "50.0";
     String posR = "";
@@ -51,10 +52,10 @@ public class Rebates_AvairaToric_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "1";
     String lAxis2 = "";
-    String rBoxes = "4";
-    String rBoxes2 = "";
-    String lBoxes = "4";
-    String lBoxes2 = "";
+    String rBoxes = "2";
+    String rBoxes2 = "4";
+    String lBoxes = "2";
+    String lBoxes2 = "4";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -107,7 +108,7 @@ public class Rebates_AvairaToric_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -126,7 +127,7 @@ public class Rebates_AvairaToric_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
         driver.quit();
     }

@@ -21,14 +21,15 @@ public class Rebates_PureVision_48580 extends TestBase {
     //LENS//
     String PureVision="lens/purevision";
     String rebatesAvailable = "Rebate expected--save $25 on 4 ";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "25.0";
     String rebate12Month = "";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
     String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String rBC = "8.6";
+    String lBC = "8.6";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -83,8 +84,8 @@ public class Rebates_PureVision_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRColor(rColor);
-        clickLColor(lColor);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -103,7 +104,7 @@ public class Rebates_PureVision_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

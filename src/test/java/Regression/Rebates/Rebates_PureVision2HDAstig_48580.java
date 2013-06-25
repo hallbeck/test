@@ -19,8 +19,9 @@ public class Rebates_PureVision2HDAstig_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String PureVision2HDforAstigmatism="lens/purevision-2-hd-for-astigmatism";
+    String PureVision2HDforAstigmatism="lens/purevision-2-for-astigmatism";
     String rebatesAvailable = "Rebate expected--save $70 on 4 ";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "70.0";
     String rebate12Month = "";
     String posR = "";
@@ -83,8 +84,10 @@ public class Rebates_PureVision2HDAstig_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRColor(rColor);
-        clickLColor(lColor);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -103,7 +106,7 @@ public class Rebates_PureVision2HDAstig_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

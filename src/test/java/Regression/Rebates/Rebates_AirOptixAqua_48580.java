@@ -21,6 +21,7 @@ public class Rebates_AirOptixAqua_48580 extends TestBase {
     //LENS//
     String AirOptixAqua="lens/air-optix-aqua";
     String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "";
     String posR = "";
@@ -103,7 +104,7 @@ public class Rebates_AirOptixAqua_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

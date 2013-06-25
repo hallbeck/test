@@ -19,10 +19,11 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String AcuvueOasysAstigmatism="lens/acuvue-oasys-for-astigmatism" ;
-    String rebatesAvailable = "Rebate expected--save $35 on 4 -- save $85 on 8";
-    String rebate6Month = "35.0";
-    String rebate12Month = "85.0";
+    String BioTrue="lens/biotrue-oneday-90" ;
+    String rebatesAvailable = "Rebate expected--save $40 on 4 -- save $100 on 8";
+    String RebateTextRS = "Acuvue Rebate";
+    String rebate6Month = "40.0";
+    String rebate12Month = "100.0";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
@@ -80,14 +81,10 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(AcuvueOasysAstigmatism);
+        gotoPage(BioTrue);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -106,18 +103,14 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
-        gotoPage(AcuvueOasysAstigmatism);
+        gotoPage(BioTrue);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -125,7 +118,7 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
         driver.quit();
     }

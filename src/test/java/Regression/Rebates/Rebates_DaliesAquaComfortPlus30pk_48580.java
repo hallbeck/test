@@ -21,6 +21,7 @@ public class Rebates_DaliesAquaComfortPlus30pk_48580 extends TestBase {
     //LENS//
     String DailiesAquaComfortPlus30pk="lens/dailies-aquacomfort-plus-30";
     String rebatesAvailable = "Rebate expected--save $25 on 12";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "25.0";
     String rebate12Month = "";
     String posR = "";
@@ -78,7 +79,7 @@ public class Rebates_DaliesAquaComfortPlus30pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
-        //driver.quit();
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
+        driver.quit();
     }
 }

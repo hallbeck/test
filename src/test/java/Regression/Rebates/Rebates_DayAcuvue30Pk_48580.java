@@ -21,6 +21,7 @@ public class Rebates_DayAcuvue30Pk_48580 extends TestBase {
     //LENS//
     String DayAcuvue30pk="lens/1-day-acuvue-30";
     String rebatesAvailable = "Rebate expected--save $40 on 12 -- save $85 on 24";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "40.0";
     String rebate12Month = "85.0";
     String posR = "";
@@ -80,7 +81,7 @@ public class Rebates_DayAcuvue30Pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -97,7 +98,7 @@ public class Rebates_DayAcuvue30Pk_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
         driver.quit();
     }
 }

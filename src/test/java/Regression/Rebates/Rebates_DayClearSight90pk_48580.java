@@ -21,6 +21,7 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
     //LENS//
     String ClearSight1Day90pk="lens/clearsight-1-day-90";
     String rebatesAvailable = "Rebate expected-- save $65 on 8 --- save $20 on 4";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "65.0";
     String posR = "";
@@ -101,7 +102,7 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -115,7 +116,7 @@ public class Rebates_DayClearSight90pk_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
         driver.quit();
     }

@@ -21,6 +21,7 @@ public class Rebates_O2Optix_48580 extends TestBase {
     //LENS//
     String O2Optix="lens/o2-optix";
     String rebatesAvailable = "Rebate expected--save $50 on 8 ";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "50.0";
     String rebate12Month = "";
     String posR = "";
@@ -83,8 +84,6 @@ public class Rebates_O2Optix_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRColor(rColor);
-        clickLColor(lColor);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -103,7 +102,7 @@ public class Rebates_O2Optix_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

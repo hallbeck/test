@@ -21,6 +21,7 @@ public class Rebates_ProClear1Day90pk_48580 extends TestBase {
     //LENS//
     String Proclear1Day90pk="lens/proclear-1-day-90" ;
     String rebatesAvailable = "Rebate expected--save $40 on 4 -- save $100 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "40.0";
     String rebate12Month = "100.0";
     String posR = "";
@@ -83,8 +84,6 @@ public class Rebates_ProClear1Day90pk_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRBC(rBC);
-        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -103,7 +102,7 @@ public class Rebates_ProClear1Day90pk_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
         goToCart(device);
         clickRemove(device);
 
@@ -111,8 +110,6 @@ public class Rebates_ProClear1Day90pk_48580 extends TestBase {
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRBC(rBC);
-        clickLBC(lBC);
         clickRboxes(rBoxes2);
         clickLboxes(lBoxes2);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -120,7 +117,7 @@ public class Rebates_ProClear1Day90pk_48580 extends TestBase {
         clickAddToCart(device);
         verifyRebateCart(device,rebate12Month);
         clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
         driver.quit();
     }
 }

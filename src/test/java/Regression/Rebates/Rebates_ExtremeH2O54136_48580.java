@@ -21,6 +21,7 @@ public class Rebates_ExtremeH2O54136_48580 extends TestBase {
     //LENS//
     String ExtremeH2O54136="lens/extreme-h2o-54-13-6";
     String rebatesAvailable = "Rebate expected--save $20 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "";
     String posR = "";
@@ -101,7 +102,7 @@ public class Rebates_ExtremeH2O54136_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

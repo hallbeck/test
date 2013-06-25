@@ -21,6 +21,7 @@ public class Rebates_ProClearMultiD_48580 extends TestBase {
     //LENS//
     String ProclearMultifocal="lens/proclear-multifocal";
     String rebatesAvailable = "Rebate expected--save $50 on 4";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "50.0";
     String rebate12Month = "";
     String posR = "";
@@ -107,7 +108,7 @@ public class Rebates_ProClearMultiD_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

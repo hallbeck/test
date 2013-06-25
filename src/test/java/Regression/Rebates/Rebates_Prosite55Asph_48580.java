@@ -21,14 +21,15 @@ public class Rebates_Prosite55Asph_48580 extends TestBase {
     //LENS//
     String Prosite55Aspheric="lens/prosite-55-aspheric" ;
     String rebatesAvailable = "No rebate expected";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
     String posR = "+";
     String posL = "+";
     String rPower = "0.50";
     String lPower = "2.25";
-    String rBC = "8.7";
-    String lBC = "8.7";
+    String rBC = "8.8";
+    String lBC = "8.8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -103,8 +104,8 @@ public class Rebates_Prosite55Asph_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
-       // driver.quit();
+       driver.quit();
     }
 }

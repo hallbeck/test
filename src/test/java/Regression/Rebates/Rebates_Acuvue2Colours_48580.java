@@ -21,8 +21,10 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
     //LENS//
     String Acuvue2Colours="lens/acuvue-2-colours";
     String rebatesAvailable = "Rebate expected--save $40 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "40.0";
     String rebate12Month = "";
+    String brandVerifyPDP = "Acuvue 2";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
@@ -65,6 +67,14 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
+    String creditCard = "373235387881007";
+    String ccName = "Blah";
+    String ccExpMo = "03";
+    String ccExpYear = "2014";
+    String creditCardBad = "36259600";
+    String ccExpMoBad = "01";
+    String ccExpYearBad = "2013";
+    String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
 
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
@@ -102,10 +112,30 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
+        String priceTotal = "318.91";
+        String rsTotal = "339.73";
+        String rsTotalAfterRebate = "147.92";
+        String rsTax = "20.82";
+        String rsRebate = "20 Acuvue Rebate";
+        String rsShipping = "14.99" ;
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);
+        typeCreditCard(device,creditCard);
+        typeCreditCardName(device,ccName);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        takeScreenshot(screenshotTestName, "ReviewSubmit");
+        clickBottomSubmitButton(device);
+        verifyThankYouPage(shippingVerify);
+        takeScreenshot(screenshotTestName, "ThankYou");
+        gotoMyAccount(device);
+        takeScreenshot(screenshotTestName, "Dashboard");
+        verifyDashboard(device,brandVerifyPDP,fullPatientName);
+        gotoOrderStatusHistory(device);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        takeScreenshot(screenshotTestName, "OrderStatusHistory");
+
 
         driver.quit();
     }

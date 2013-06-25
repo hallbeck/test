@@ -21,6 +21,7 @@ public class Rebates_ExtremeH2O54Toric_48580 extends TestBase {
     //LENS//
     String ExtremeH2O54ToricLC="lens/extreme-h2o-54-toric-lc";
     String rebatesAvailable = "Rebate expected--save $35 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "35.0";
     String rebate12Month = "0.0";
     String posR = "";
@@ -103,7 +104,7 @@ public class Rebates_ExtremeH2O54Toric_48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month);
+        verifyRebateRS(device,rebate6Month,RebateTextRS);;
 
         driver.quit();
     }

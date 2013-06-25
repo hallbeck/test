@@ -40,7 +40,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "iphoneOS61P";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -274,13 +274,18 @@ public class TestBase {
         }
     }
 }
-    public void checkoutAndVerify (String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+    public void checkoutAndVerify (String prod,String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+        if (prod.equals("no")){
         clickBottomSubmitButton(device);
         verifyThankYouPage(shippingVerify);
         gotoMyAccount(device);
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        }
+        else if(prod.equals("yes")){
+            print("Production... We won't place an order");
+        }
     }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";

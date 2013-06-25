@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" >
+<suite name="desktop" verbose="1" parallel="methods" thread-count="10">
     <test name="NIsmokePhone">
         <parameter name="device" value='phone'/>
         <classes>
@@ -18,6 +18,10 @@
             <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
             <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
             <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
+            <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2AccessoryCanadaTest"/>
+            <class name="SMOKE.SmokeNIProgressiveAccessoryInternationalTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientAccessoryTest"/>
         </classes>
     </test>
     <test name="RIsmokePhone">

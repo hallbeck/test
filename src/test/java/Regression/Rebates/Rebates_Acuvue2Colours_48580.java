@@ -83,8 +83,8 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
 
 
     @Test (singleThreaded = true)
-    @Parameters(value = "device")
-    public void titleTagTest(String device) {
+    @Parameters({ "device", "prod" })
+    public void titleTagTest(String device,String prod) {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
@@ -126,17 +126,7 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
-        takeScreenshot(screenshotTestName, "ThankYou");
-        gotoMyAccount(device);
-        takeScreenshot(screenshotTestName, "Dashboard");
-        verifyDashboard(device,brandVerifyPDP,fullPatientName);
-        gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
-        takeScreenshot(screenshotTestName, "OrderStatusHistory");
-
-
+        checkoutAndVerify(prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
         driver.quit();
     }
 }

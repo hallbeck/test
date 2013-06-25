@@ -3,6 +3,7 @@
 <suite name="Rebates" verbose="1" >
     <test name="RebateTests_F" >
         <parameter name="device" value='tablet'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
         </classes>

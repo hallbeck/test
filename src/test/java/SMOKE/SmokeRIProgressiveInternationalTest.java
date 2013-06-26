@@ -45,9 +45,9 @@ public class SmokeRIProgressiveInternationalTest extends TestBase {
     String priceTotal = "1,019.74";
     String rsTotal = "230.77";
     String rsTotalAfterRebate = "147.92";
-    String rsTax = "14.79";
+    String rsTax = "";
     String rsRebate = "";
-    String rsShipping = "FREE" ;
+    String rsShipping = "19.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";

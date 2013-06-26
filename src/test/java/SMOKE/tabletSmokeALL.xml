@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="methods" thread-count="7">
+<suite name="desktop" verbose="1" parallel="methods" thread-count="10">
     <test name="NIsmokePhone">
-        <parameter name="device" value='phone'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <class name="SMOKE.SmokeNIVialTest"/>
             <class name="SMOKE.SmokeNIToricTest"/>
@@ -25,7 +25,7 @@
         </classes>
     </test>
     <test name="RIsmokePhone">
-        <parameter name="device" value='phone'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <!--dependant on 44039-->
             <class name="SMOKE.SmokeRI1EyeAsphericPlusColorTest"/>

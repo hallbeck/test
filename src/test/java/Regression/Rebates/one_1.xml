@@ -1,10 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Rebates" verbose="1" >
-    <test name="RebateTests_S" >
-    <parameter name="device" value='desktop'/>
-    <classes>
-        <class name="Regression.Rebates.Rebates_Soflens38_48580"/>
-    </classes>
-</test>
+<suite name="rebates" verbose="1">
+    <test name="RebateTests_A" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
+        </classes>
+    </test>
 </suite>

@@ -24,6 +24,7 @@ public class Rebates_text48580 extends TestBase {
     String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "30.0";
     String rebate12Month = "65.0";
+        String brandVerifyPDP = "Acuvue 2";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";
@@ -65,8 +66,20 @@ public class Rebates_text48580 extends TestBase {
     String city = "whatever";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
-    String password = "password";
-
+String password = "password";
+    String creditCard = "373235387881007";
+    String ccName = "Blah";
+    String ccExpMo = "03";
+    String ccExpYear = "2014";
+    String creditCardBad = "36259600";
+    String ccExpMoBad = "01";
+    String ccExpYearBad = "2013";
+    String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+    String rsTotal = "339.73";
+    String rsTotalAfterRebate = "147.92";
+    String rsTax = "20.82";
+    String rsRebate = "20 Acuvue Rebate";
+    String rsShipping = "14.99" ;
 
 
 
@@ -84,8 +97,8 @@ public class Rebates_text48580 extends TestBase {
 
 
     @Test (singleThreaded = true)
-    @Parameters(value = "device")
-    public void titleTagTest(String device) {
+    @Parameters({ "device", "prod" })
+    public void rebatesTest(String device,String prod) {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
@@ -114,7 +127,7 @@ public class Rebates_text48580 extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        verifyRebateRS(device,rebate6Month,RebateTextRS);;
+        verifyRebateRS(device,rebate6Month,RebateTextRS);
         goToCart(device);
         clickRemove(device);
 
@@ -133,6 +146,11 @@ public class Rebates_text48580 extends TestBase {
         clickCart_Continue(device);
         verifyRebateRS(device,rebate12Month,RebateTextRS);
 
-       driver.quit();
+               typeCreditCard(device,creditCard);
+        typeCreditCardName(device,ccName);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        takeScreenshot(screenshotTestName, "ReviewSubmit");
+        checkoutAndVerify(prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        driver.quit();
     }
 }

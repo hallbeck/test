@@ -2,9 +2,9 @@
 
 <suite name="tabletNI" verbose="1" >
     <test name="NIsmokedesktop">
-        <parameter name="device" value='tablet'/>
+        <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.SmokeRIToricTest"/>
+            <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
         </classes>
     </test>
 </suite>

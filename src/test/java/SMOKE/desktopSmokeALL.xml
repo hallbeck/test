@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1"  parallel="methods" thread-count="7">
+<suite name="desktop" verbose="1"  parallel="methods" thread-count="5">
     <test name="NIsmokeDesktop">
         <parameter name="device" value='desktop'/>
         <classes>

@@ -45,7 +45,7 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
     String priceTotal = "279.96";
     String rsTotal = "230.77";
     String rsTotalAfterRebate = "147.92";
-    String rsTax = "14.79";
+    String rsTax = "";
     String rsRebate = "";
     String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";

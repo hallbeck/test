@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="rebates" verbose="1" parallel="methods" thread-count="5">
+<suite name="rebates" verbose="1" parallel="methods" thread-count="15">
     <test name="RebateTests_A" >
         <parameter name="device" value='phone'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
             <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>

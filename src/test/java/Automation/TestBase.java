@@ -40,7 +40,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "iphoneOS61P";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -262,11 +262,16 @@ public class TestBase {
         String strActualRebate = String.valueOf(actualRebateAmt);
         if(rebateAmount.equals(strActualRebate)){System.out.println("PASS: " + rebateAmount + " = " + strActualRebate);
             assert true;
+            if(device.equals("phone")){ //this is to expand the order summary
+                driver.findElement(By.xpath("//div[contains(@class,'collapsingHeader rd-phone')]")).click();
+            }
             rebateAmount = rebateAmount.replace(".0","");
-            String expectedRebateText = "$"+rebateAmount + " " + RebateText;
+            String expectedRebateText = rebateAmount + " " + RebateText;
             WebElement weRebateText = driver.findElement(By.xpath("//div[contains(@class,'a41-checkout-review-details-right-padding')]"));
             String NameOfRebate = weRebateText.getText();
-            verifyTxtPresent("Rebate Text on Review and Submit: ",expectedRebateText,NameOfRebate);
+            //print("expected-"+expectedRebateText+"-");
+            //print("axpected-"+NameOfRebate+"-");
+            assertTxtPresent("Rebate Text on Review and Submit: ",expectedRebateText,NameOfRebate);
         }
         else {
             System.out.println("FAIL: " + rebateAmount + " != " + strActualRebate);

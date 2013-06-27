@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
+    <test name="RebateTests_A" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
+            <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvance_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvanceAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus6pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus24pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysPresbyopia_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAqua_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAquaMultifocal_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixNightDayAqua_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens38_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens55_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens55Aspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite38_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite55_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite55ProAspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_Avaira_48580"/>
+            <class name="Regression.Rebates.Rebates_AvairaToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Acuvue_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus24pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus6pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueBifocals_48580"/>
+        </classes>
+    </test>
+
+</suite>

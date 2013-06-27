@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
+
+    <test name="RebateTests_T_Z" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Target38_48580"/>
+            <class name="Regression.Rebates.Rebates_Target55_48580"/>
+            <class name="Regression.Rebates.Rebates_Target55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlex55_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlex7_14_38_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexIIAspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexToric_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexXC_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflax55_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflex38_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflex55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexSphere_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexToricXR_48580"/>
+        </classes>
+    </test>
+</suite>

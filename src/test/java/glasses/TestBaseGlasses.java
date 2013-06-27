@@ -2452,7 +2452,7 @@ public class TestBaseGlasses{
         }
         assertEquals(country, driver.findElement(By.xpath("//div[@id='billingAddressInfo']/div[4]")).getText());
     }
-  public void verifyThankYouPage(String ship) {
+  public void verifyThankYouPage(String testNumber,String ship) {
       //TODO: clean this up!
       Wait(14);
       System.out.println("Page title is: " + driver.getTitle());

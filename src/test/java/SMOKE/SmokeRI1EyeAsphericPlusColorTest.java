@@ -124,7 +124,7 @@ public class SmokeRI1EyeAsphericPlusColorTest extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit2");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();
     }

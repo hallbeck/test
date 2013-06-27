@@ -107,7 +107,7 @@ public class ININIProgressiveCanadaTest extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
         takeScreenshot(screenshotTestName, "Dashboard");

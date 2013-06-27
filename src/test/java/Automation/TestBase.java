@@ -16,14 +16,15 @@ import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertEquals;
-
-
 
 
 /**
@@ -40,7 +41,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "iphoneOS61P";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -51,9 +52,14 @@ public class TestBase {
     public String deviceProfileTablet = "ipadP";
     public String deviceProfileDesktop = "desktopFF";   //choices are iphoneP, iphoneL, iphoneOS61P, iphoneOS61L, - this is for firefox profiles only
 
+    //SQL setup
+    String userID = null;
+    Connection conn=null;
+    Statement stmt=null;
+    ResultSet rs=null;
 
-    //public String desktopBaseUrl = "https://www.1800contactstest.com/";
-    public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+   //PRODUCTION
+   /*public String desktopBaseUrl = "https://www.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -63,6 +69,14 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://www.1800contacts.com/";
+    public String mobileURL = (mobileBaseUrl + "?responsive=yes");
+    public String tabletBaseUrl = "https://www.1800contacts.com/";
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+
+    //STAGING
+    public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+
     public String mobileBaseUrl = "https://ww1.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://ww1.1800contactstest.com/";
@@ -279,10 +293,49 @@ public class TestBase {
         }
     }
 }
-    public void checkoutAndVerify (String prod,String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+    public void getRebate(String device,String testNumber,String expected){
+        //note this testNumber has the word rebate at the end, the file with email in it has nothing appended.
+        gotoPage("rebates");
+        String orderNumber = readFile(testNumber);
+        driver.findElement(By.xpath("//input[contains(@class,'get-rebate-cert-text')]")).sendKeys(orderNumber);
+        driver.findElement(By.xpath("//input[contains(@id,'RebatesGetRebateListButton')]")).click();
+
+        if (expected.contains("not shipped")){
+            print("Order should not have shipped");
+            //this actually finds nothing. the text is not findable. ARGHHHHHHHH
+            //maybe I should do a pass if NOT found...
+            WebElement weNotShipped = driver.findElement(By.xpath("//div[contains(@id,'rebateListDiv')]"));
+            String messageText = weNotShipped.getText();
+            print("one: \n" + messageText);
+            verifyTxtPresent("Rebate Text on Get Rebate not shipped: ",expected,messageText);
+            print("****\nFound not shipped message. ");
+        }
+        else if (expected.contains("2013c")){
+            String rebateText = driver.findElement(By.xpath("//div[contains(@class,'rebateItem')]")).getText();
+            verifyTxtPresent("Rebate Text on Get Rebate shipped: ",expected,rebateText);
+            driver.findElement(By.xpath("//img[contains(@class,'get-rebate-cert-img')]")).click();
+        }
+    }
+    public void shipOrder(String testNumber){
+        String orderNumber = readFile(testNumber);
+        //SQL
+/*        Class.forName("net.sourceforge.jtds.jdbc.Driver");
+        conn = DriverManager.getConnection("jdbc:jtds:sqlserver://XXXX:1433/XXX","XX","XXXX");
+        stmt = conn.createStatement();
+        rs = stmt.executeQuery("SELECT TOP 1 UserID FROM webuser ORDER BY 1 DESC");
+        while(rs.next()){
+            userID = rs.getString("UserID");
+            conn.close();
+            System.out.println(userID);*/
+        // update orderhd
+        /*set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'
+        where orderno = '0029594723';*/
+
+    }
+    public void checkoutAndVerify (String testNumber,String prod,String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
         if (prod.equals("no")){
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         gotoMyAccount(device);
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
@@ -2470,7 +2523,7 @@ public class TestBase {
         }
         assertEquals(country, driver.findElement(By.xpath("//div[@id='billingAddressInfo']/div[4]")).getText());
     }
-  public void verifyThankYouPage(String ship) {
+  public void verifyThankYouPage(String testNumber,String ship) {
       //TODO: clean this up!
       Wait(14);
       System.out.println("Page title is: " + driver.getTitle());
@@ -2493,6 +2546,7 @@ public class TestBase {
           System.out.println("No Rebate line found on ty page");
       }
       String theOrderNumber = driver.findElement(By.xpath("//td[contains(@id,'orderNumber')]")).getText();
+      printToExcel(testNumber,theOrderNumber);
       System.out.println("Order Number: " + theOrderNumber);
   }
     public void verifyPDP(String brand) {

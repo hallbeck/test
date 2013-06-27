@@ -149,7 +149,7 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
         takeScreenshot(screenshotTestName, "Dashboard");

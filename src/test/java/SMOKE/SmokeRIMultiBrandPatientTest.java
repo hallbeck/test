@@ -103,7 +103,7 @@ public class SmokeRIMultiBrandPatientTest extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox2, priceREye2, priceLEye2, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();
     }

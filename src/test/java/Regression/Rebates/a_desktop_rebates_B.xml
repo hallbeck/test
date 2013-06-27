@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
+
+    <test name="RebateTests_B" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Biofinity_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics1day90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics38_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55Evo_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55Premier_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsEP_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsToric_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsXC_48580"/>
+            <class name="Regression.Rebates.Rebates_BioTrue1Day90_48580"/>
+        </classes>
+    </test>
+
+</suite>

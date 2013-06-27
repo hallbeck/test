@@ -155,7 +155,7 @@ String typeOfCust = "NI";
         takeScreenshot(screenshotTestName, "RS3");
         clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "TY");
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         driver.quit();
     }
 }

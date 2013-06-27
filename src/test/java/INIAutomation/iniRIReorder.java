@@ -129,7 +129,7 @@ public class iniRIReorder extends TestBase {
         takeScreenshot(screenshotTestName, "RS3");
         clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "TY");
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         gotoMyAccount(device);
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);

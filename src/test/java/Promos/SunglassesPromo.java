@@ -152,7 +152,7 @@ public class SunglassesPromo extends TestBase {
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         /*clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
         takeScreenshot(screenshotTestName, "Dashboard");

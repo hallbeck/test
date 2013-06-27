@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
+
+    <test name="RebateTests_S" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Soflens38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed55_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_SoftconEW_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling55_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensDaily90_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensDailyAstig30_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensMultiFocal_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensToric_48580"/>
+        </classes>
+    </test>
+
+</suite>

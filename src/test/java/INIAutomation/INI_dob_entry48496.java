@@ -118,7 +118,7 @@ public class INI_dob_entry48496 extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit3");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
-    verifyThankYouPage(shippingVerify);
+    verifyThankYouPage(testNumber,shippingVerify);
       takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
         takeScreenshot(screenshotTestName, "Dashboard");

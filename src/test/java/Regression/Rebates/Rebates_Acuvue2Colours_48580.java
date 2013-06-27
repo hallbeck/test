@@ -15,6 +15,7 @@ public class Rebates_Acuvue2Colours_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
+    String orderNumberPlaceholder = "48580Acuvue2_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
@@ -76,7 +77,7 @@ String password = "password";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
     String rsShipping = "14.99" ;
-
+    String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
@@ -122,12 +123,15 @@ String password = "password";
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
-                typeCreditCard(device,creditCard);
+        checkoutAndVerify(testNumber,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        checkoutAndVerify(testNumber,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        getRebate(device,orderNumberPlaceholder,rebateNotShipped);
+        //shipOrder(testNumber);
+        //getRebate(device,orderNumberPlaceholder,rebateShipped);
         driver.quit();
     }
 }

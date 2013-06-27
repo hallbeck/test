@@ -3,7 +3,7 @@
 <suite name="rebates" verbose="1" parallel="methods" thread-count="10">
     <test name="RebateTests_A" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='no'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
             <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
@@ -33,6 +33,7 @@
     </test>
     <test name="RebateTests_OneDay" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_DayAcuvue30Pk_48580"/>
             <class name="Regression.Rebates.Rebates_DayAcuvueMoist30pk_48580"/>
@@ -46,6 +47,7 @@
     </test>
     <test name="RebateTests_B" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Biofinity_48580"/>
             <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>
@@ -63,6 +65,7 @@
     </test>
     <test name="RebateTests_C_D" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
             <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
@@ -76,6 +79,7 @@
     </test>
     <test name="RebateTests_E" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
             <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
@@ -89,6 +93,7 @@
     </test>
     <test name="RebateTests_I_O" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_IcuityH2O_48580"/>
             <class name="Regression.Rebates.Rebates_Mediflex38_48580"/>
@@ -101,6 +106,7 @@
     </test>
     <test name="RebateTests_P" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ProClear1Day90pk_48580"/>
             <class name="Regression.Rebates.Rebates_ProClear1DayMulti30pk_48580"/>
@@ -133,6 +139,7 @@
     </test>
     <test name="RebateTests_S" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Soflens38_48580"/>
             <class name="Regression.Rebates.Rebates_Sofmed38_48580"/>
@@ -150,6 +157,7 @@
     </test>
     <test name="RebateTests_T_Z" >
         <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Target38_48580"/>
             <class name="Regression.Rebates.Rebates_Target55_48580"/>

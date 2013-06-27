@@ -109,7 +109,7 @@ public class SmokeRIAsphericInternationalTest extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit1");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
-        verifyThankYouPage(shippingVerify);
+        verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();
     }

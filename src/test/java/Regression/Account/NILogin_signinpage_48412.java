@@ -96,6 +96,7 @@ public class NILogin_signinpage_48412 extends TestBase {
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Expedited";
     String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;

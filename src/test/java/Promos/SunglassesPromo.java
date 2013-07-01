@@ -101,6 +101,7 @@ public class SunglassesPromo extends TestBase {
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Int'l Express";
     String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;

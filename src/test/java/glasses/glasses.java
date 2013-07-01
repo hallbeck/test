@@ -100,6 +100,7 @@ public class glasses extends TestBaseGlasses {
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Int'l Express";
     String selection = "women";
     String seperator = "/";

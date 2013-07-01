@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class ApprovedAmexCard47577 extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "47577";
+    String testNumber = "47577_AMEX";
     String typeOfTest = "Verification";
 String typeOfCust = "NI";
     String typeOfPayment = "Credit AMEX Approved";
@@ -90,11 +90,12 @@ String typeOfCust = "NI";
     String drState = "UT";
     String creditCard = "373235387881007";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "06";
+    String ccExpYear = "2013";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Expedited";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

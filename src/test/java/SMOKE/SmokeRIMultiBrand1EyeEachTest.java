@@ -75,6 +75,7 @@ public class SmokeRIMultiBrand1EyeEachTest extends TestBase {
     String ccName = "Blah";
     String ccExpMo = "03";
     String ccExpYear = "2014";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

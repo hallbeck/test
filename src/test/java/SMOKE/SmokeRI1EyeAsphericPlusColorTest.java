@@ -80,6 +80,7 @@ public class SmokeRI1EyeAsphericPlusColorTest extends TestBase {
     String ccExpYear = "2014";
     String ccExpMoBad = "02";
     String ccExpYearBad = "2013";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

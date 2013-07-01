@@ -58,7 +58,8 @@ String password = "password";
     String rsTotalAfterRebate = "147.92";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
-    String rsShipping = "14.99" ;    String shippingVerify = "Rebates";
+    String rsShipping = "14.99" ;        String rebateNotShipped = "Your order has not shipped yet.";
+    String shippingVerify = "Rebates";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 

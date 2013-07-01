@@ -19,6 +19,7 @@ public class PDPAccessories_B_C48553 extends TestBase {
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchResultAccessoriesPage = "Eye Care Solutions";
+    String searchResultBiotrue = "BioTrue ONEDay 90 pack";
     String search55 = "bio true";
     String search56 = "biotrue";
     String search57 = "blink eye drops";
@@ -110,9 +111,9 @@ public class PDPAccessories_B_C48553 extends TestBase {
         clickNoThanksButton(device);
         printTestNumber(printTestName);
         searchAllBrand(device,search55);
-        verifyProduct(device,searchResultAccessoriesPage,search55);
+        verifyProduct(device,searchResultBiotrue,search55);
         searchAllBrand(device,search56);
-        verifyProduct(device,searchResultAccessoriesPage,search56);
+        verifyProduct(device,searchResultBiotrue,search56);
         searchAllBrand(device,search57);
         verifyProduct(device,searchResultAccessoriesPage,search57);
         searchAllBrand(device,search58);

@@ -97,6 +97,7 @@ public class PDPEditRx48520 extends TestBase {
     String ccName = "Blah";
     String ccExpMo = "03";
     String ccExpYear = "2014";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Next Day by Noon";
     String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;

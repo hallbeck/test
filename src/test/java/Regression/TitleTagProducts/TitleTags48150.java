@@ -209,6 +209,7 @@ public class TitleTags48150 extends TestBase {
     String Versaflex55="lens/versaflex-55";
     String VertexSphere="lens/vertex-sphere";
     String VertexToricXR="lens/vertex-toric-xr";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Title tag";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

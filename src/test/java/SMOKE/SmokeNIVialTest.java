@@ -59,6 +59,7 @@ String typeOfCust = "NI";
     String ccName = "Blah";
     String ccExpMo = "03";
     String ccExpYear = "2014";
+        String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Noon";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;

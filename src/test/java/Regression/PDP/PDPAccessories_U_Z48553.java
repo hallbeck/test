@@ -19,6 +19,7 @@ public class PDPAccessories_U_Z48553 extends TestBase {
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchResultAccessoriesPage = "Eye Care Solutions";
+    String zaditorResultsPage = "ZADITOR® Eye Drops 2pk";
     String search15 = "Zaditor";
     String search16 = "2 ounce solution";
     String search17 = "2oz";
@@ -26,6 +27,7 @@ public class PDPAccessories_U_Z48553 extends TestBase {
     String search19 = "visine";
     String search20 = "wetting drops";
     String search21 = "wetting solution";
+    String search22 = "Zaditor Eye Drops 2pk";
 
     String seperator = "\\";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust +  " | " + typeOfPayment;
@@ -41,7 +43,7 @@ public class PDPAccessories_U_Z48553 extends TestBase {
         printTestNumber(printTestName);
 
         searchAllBrand(device,search15);
-        verifyProduct(device,searchResultAccessoriesPage,search15);
+        verifyProduct(device,zaditorResultsPage,search15);
         searchAllBrand(device,search16);
         verifyProduct(device,searchResultAccessoriesPage,search16);
         searchAllBrand(device,search17);
@@ -54,7 +56,8 @@ public class PDPAccessories_U_Z48553 extends TestBase {
         verifyProduct(device,searchResultAccessoriesPage,search20);
         searchAllBrand(device,search21);
         verifyProduct(device,searchResultAccessoriesPage,search21);
-
+        searchAllBrand(device,search22);
+        verifyProduct(device,zaditorResultsPage,search21);
         driver.quit();
     }
 }

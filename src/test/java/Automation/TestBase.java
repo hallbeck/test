@@ -41,7 +41,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "iphoneOS61P";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -332,7 +332,8 @@ public class TestBase {
         where orderno = '0029594723';*/
 
     }
-    public void checkoutAndVerify (String testNumber,String prod,String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+    public void checkoutAndVerify (String testNumber,String prod,String device,
+    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
         if (prod.equals("no")){
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
@@ -347,16 +348,24 @@ public class TestBase {
     }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";
+        Wait(3);
         try{
             WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
             String toVerify = weText.getText();
-            verifyTxtPresent("Pages:  Searched for " + searchedFor,expected,toVerify);
+            verifyTxtPresent("1st try Pages:  Searched for " + searchedFor,expected,toVerify);
             new String (state = "PASS");
         }
         catch(Exception e)
         {
-            System.out.println("FAIL: " + expected + "NOT Found. Searched for " + searchedFor );
+            try {WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
+            String toVerify = weText.getText();
+            assertTxtPresent("2nd try Pages:  Searched for " + searchedFor,expected,toVerify);
+            new String (state = "PASS");
+            }
+            catch(Exception E){
+            System.out.println("FAIL: " + expected + " NOT Found. Searched for " + searchedFor );
             new String (state = "FAIL");
+            }
         }
         String fileName = (state + "_" + searchedFor+ "_" + expected);
         takeScreenshot(fileName, "SearchBrand");
@@ -369,7 +378,7 @@ public class TestBase {
         }
         catch(Exception e)
         {
-            System.out.println("FAIL: " + expected + "NOT Found " );
+            System.out.println("FAIL: " + expected + " NOT Found " );
         }
     }
     public void assertPageTitleError(String expected) {
@@ -403,11 +412,11 @@ public class TestBase {
         Matcher m = p.matcher(actual);
         // try to find a match
         if (m.find()){
-            System.out.println("FAIL " + identifier + "Found " + notDesired + " within " + actual + "." );
+            System.out.println("FAIL " + identifier + " Found " + notDesired + " within " + actual + "." );
             assert false;
         }
         else {
-            System.out.println("VERIFIED " + identifier + "NOT FOUND " + notDesired + " within " + actual + "." );
+            System.out.println("VERIFIED " + identifier + " NOT FOUND " + notDesired + " within " + actual + "." );
         }
     }
     public void setCookie(){

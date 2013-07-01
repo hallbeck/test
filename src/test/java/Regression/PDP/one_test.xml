@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="classes" thread-count="5">
+<suite name="desktop" verbose="1" parallel="classes" thread-count="10">
     <test name="testing1">
-        <parameter name="device" value='phone'/>
+        <parameter name="device" value='desktop'/>
         <classes>
             <class name="Regression.PDP.PDPAccessories_A48553"/>
             <class name="Regression.PDP.PDPAccessories_B_C48553"/>

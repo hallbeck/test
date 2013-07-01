@@ -19,7 +19,8 @@ public class PDPAccessories_O_P48553 extends TestBase {
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchResultAccessoriesPage = "Eye Care Solutions";
-
+    String searchResultOptiFreePMPage = "OPTI-FREE® PureMoist";
+    String searchResultOptiFreeReplenishPage = "OPTI-FREE® RepleniSH";
     String search196 = "ocuclear";
     String search197 = "Ocupure	";
     String search198 = "ocupure 55";
@@ -51,6 +52,10 @@ public class PDPAccessories_O_P48553 extends TestBase {
     String search224 = "Opti-Free PureMoist Drops";
     String search225 = "Opti-Free PureMoist MPS";
     String search226 = "Opti-Free Replenish MPS 2pk";
+    String search227 = "OPTI-FREE PureMoist Rewetting Drops";
+    String search228 = "OPTI-FREE PureMoist Solution";
+    String search229 = "OPTI-FREE PureMoist Solution 2 pack";
+    String search230 = "OPTI-FREE RepleniSH Solution 2 pack";
 
 
     String seperator = "/";
@@ -125,12 +130,19 @@ public class PDPAccessories_O_P48553 extends TestBase {
         searchAllBrand(device,search223);
         verifyProduct(device,searchResultAccessoriesPage,search223);
         searchAllBrand(device,search224);
-        verifyProduct(device,searchResultAccessoriesPage,search224);
+        verifyProduct(device,searchResultOptiFreePMPage,search224);
         searchAllBrand(device,search225);
-        verifyProduct(device,searchResultAccessoriesPage,search225);
+        verifyProduct(device,searchResultOptiFreePMPage,search225);
         searchAllBrand(device,search226);
-        verifyProduct(device,searchResultAccessoriesPage,search226);
-
+        verifyProduct(device,searchResultOptiFreeReplenishPage,search226);
+        searchAllBrand(device,search227);
+        verifyProduct(device,searchResultOptiFreePMPage,search227);
+        searchAllBrand(device,search228);
+        verifyProduct(device,searchResultOptiFreePMPage,search228);
+        searchAllBrand(device,search229);
+        verifyProduct(device,searchResultOptiFreePMPage,search229);
+        searchAllBrand(device,search230);
+        verifyProduct(device,searchResultOptiFreeReplenishPage,search230);
         driver.quit();
     }
 }

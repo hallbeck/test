@@ -18,7 +18,8 @@ public class Rebates_Acuvue2_48580 extends TestBase {
     String orderNumberPlaceholder = "48580Acuvue2_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
-    String typeOfPayment = "Rebates";   
+    String typeOfPayment = "Rebates";
+    String orderNumbers = "rebates";
     //LENS//
     String Acuvue2="lens/acuvue-2";
     String rebatesAvailable = "Rebate expected--save $40 on 8";

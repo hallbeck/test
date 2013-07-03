@@ -2,10 +2,10 @@
 
 <suite name="rebates" verbose="1">
     <test name="RebateTests_P" >
-        <parameter name="device" value='phone'/>
+        <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed55Asph_48580"/>
         </classes>
     </test>
 </suite>

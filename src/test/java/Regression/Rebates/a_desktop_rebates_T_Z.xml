@@ -4,7 +4,7 @@
 
     <test name="RebateTests_T_Z" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Target38_48580"/>
             <class name="Regression.Rebates.Rebates_Target55_48580"/>

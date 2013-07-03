@@ -11,27 +11,27 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_BioTrue1Day90_48580 extends TestBase {
+public class Rebates_sqltest_48580 extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "48580";
+    String testNumber = "48580_Acuvue2";
     String orderNumberPlaceholder = "48580Acuvue2_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String BioTrue="lens/biotrue-oneday-90" ;
-    String rebatesAvailable = "Rebate expected--save $40 on 4 -- save $100 on 8";
-    String RebateTextRS = "Biotrue Rebate";
+    String Acuvue2="lens/acuvue-2";
+    String rebatesAvailable = "Rebate expected--save $40 on 8";
+    String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "40.0";
-    String rebate12Month = "100.0";
-        String brandVerifyPDP = "Acuvue 2";
+    String rebate12Month = "";
+    String brandVerifyPDP = "Acuvue 2";
     String posR = "";
-    String posL = "";
+    String posL = "+";
     String rPower = "-0.50";
-    String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String lPower = "2.25";
+    String rBC = "8";
+    String lBC = "8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -50,14 +50,14 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
     String lCyl = "-";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "1";
+    String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "1";
+    String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "2";
-    String rBoxes2 = "4";
-    String lBoxes = "2";
-    String lBoxes2 = "4";
+    String rBoxes = "4";
+    String rBoxes2 = "";
+    String lBoxes = "4";
+    String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -67,7 +67,7 @@ public class Rebates_BioTrue1Day90_48580 extends TestBase {
     String city = "whatever";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
-String password = "password";
+    String password = "password";
     String creditCard = "373235387881007";
     String ccName = "Blah";
     String ccExpMo = "03";
@@ -80,10 +80,10 @@ String password = "password";
     String rsTotalAfterRebate = "147.92";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
+    String rebateNotShipped = "Your order has not shipped yet.";
+    String rebateShipped = "40 Acuv2 12M-2013c";
     String rsShipping = "14.99" ;
-
-        String rebateNotShipped = "Your order has not shipped yet.";
-    String shippingVerify = "Title tag";
+    String shippingVerify = "na";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
 
@@ -96,10 +96,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(BioTrue);
+        gotoPage(Acuvue2);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -119,30 +121,14 @@ String password = "password";
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month,RebateTextRS);
-        goToCart(device);
-        clickRemove(device);
-
-        gotoPage(BioTrue);
-        print(rebatesAvailable);
-        clickRPower(device,posR,rPower);
-        clickLPower(device,posL,lPower);
-        clickRboxes(rBoxes2);
-        clickLboxes(lBoxes2);
-        typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2_");
-        clickAddToCart(device);
-        verifyRebateCart(device,rebate12Month);
-        clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month,RebateTextRS);
-
-                typeCreditCard(device,creditCard);
+        typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(testNumber,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        checkoutAndVerify(orderNumberPlaceholder,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
-        //shipOrder(testNumber);
-        //getRebate(device,orderNumberPlaceholder,rebateShipped);
+        //shipOrder(orderNumberPlaceholder);
+        getRebate(device,orderNumberPlaceholder,rebateShipped);
         driver.quit();
     }
 }

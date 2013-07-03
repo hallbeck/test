@@ -11,11 +11,11 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SunglassesPromo extends TestBase {
+public class FreeExpeditedShipping_SolutionPromo extends TestBase {
 
 
     //change the Strings below to change the tests
-    String testNumber = "48970";
+    String testNumber = "solution";
     String typeOfTest = "Promo";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
@@ -23,6 +23,7 @@ public class SunglassesPromo extends TestBase {
     String brandToClickOn = "Acuvue2";
     String brandVerifyPDP = "Acuvue 2";
     String brandVerifyPDP2 = "";
+    String Acuvue2Colours="lens/acuvue-2-colours";
     String posR = "+";
     String posL = "";
     String rPower2 = "";
@@ -64,7 +65,7 @@ public class SunglassesPromo extends TestBase {
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
     String ShippingCart = "ii";
-    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpagerbslot%5Facfsw2013%5Fimage";
+    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpageupsell%5Falconsingle%5Fmod?fmt=png-alpha";
     String promoProdName = "Suncloud Cookie";
     String pricePromoCart = "49.99";
     String promoItemNumber = "002568";
@@ -109,23 +110,23 @@ public class SunglassesPromo extends TestBase {
 
 
     @Test (singleThreaded = true)
-    @Parameters(value = "device")
-    public void test(String device) {
+    @Parameters({ "device", "prod" })
+    public void promoTest(String device,String prod) {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(sunglassesPromoLink);
-        clickFindBrand(device);
-        searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        verifyPDP(brandVerifyPDP);
+        gotoPage(Acuvue2Colours);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);
         clickLBC(lBC);
-        typePatientName(PatientFNameCart,PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2");
+        clickRColor(rColor);
+        clickLColor(lColor);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
+        typePatientName(PatientFNameCart, PatientLNameCart);
+        takeScreenshot(screenshotTestName, "PDP1_");
         clickAddToCart(device);
         selectPromoCart(device,promoName);
         selectShippingCart(ShippingCart);

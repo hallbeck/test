@@ -19,6 +19,7 @@ public class PDPAccessories_A48553 extends TestBase {
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchResultAccessoriesPage = "Eye Care Solutions";
+    String zaditorResultsPage = "ZADITOR® Eye Drops 2pk";
     String search1 = "Accessories";
     String search2 = "Antihistamine";
     String search3 = "Alcon";
@@ -75,7 +76,7 @@ public class PDPAccessories_A48553 extends TestBase {
         searchAllBrand(device,search1);
         verifyProduct(device,searchResultAccessoriesPage,search1);
         searchAllBrand(device,search2);
-        verifyProduct(device,searchResultAccessoriesPage,search2);
+        verifyProduct(device,zaditorResultsPage,search2);
         searchAllBrand(device,search3);
         verifyProduct(device,searchResultAccessoriesPage,search3);
         searchAllBrand(device,search4);

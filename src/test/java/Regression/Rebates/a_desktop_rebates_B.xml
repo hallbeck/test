@@ -4,7 +4,7 @@
 
     <test name="RebateTests_B" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_Biofinity_48580"/>
             <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>

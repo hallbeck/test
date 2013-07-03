@@ -3,7 +3,7 @@
 <suite name="rebates" verbose="1" parallel="methods" thread-count="10">
     <test name="RebateTests_P" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ProClear1Day90pk_48580"/>
             <class name="Regression.Rebates.Rebates_ProClear1DayMulti30pk_48580"/>

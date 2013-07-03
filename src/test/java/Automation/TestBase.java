@@ -59,7 +59,7 @@ public class TestBase {
     ResultSet rs=null;
 
    //PRODUCTION
-   /*public String desktopBaseUrl = "https://www.1800contacts.com/";
+/*   public String desktopBaseUrl = "https://www.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -87,7 +87,24 @@ public class TestBase {
     //profiles locations are stored in C:\Users\<user>\AppData\Roaming\Mozilla\Firefox
     //change this file to point to your personal profiles
      //I need to say if device is phone use device profile mobileProfile, if tablet tabletProfile, if desktop desktop
+   // @Entity
+    /*@NamedQuery(name="ship.Order", query="update orderhd set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'  where orderno = '" + orderNumber + "'")
 
+    private void hibernateNativeQueryUpdate(SessionFactory factory,String testNumber) {
+        String orderNumber = readFile(testNumber);
+        print("2a"+orderNumber);
+        String UPDATE = "update orderhd set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'  where orderno = '" + orderNumber + "'";
+
+        Session session = factory.getCurrentSession();
+        session = factory.openSession();
+        session.beginTransaction();
+        SQLQuery sqlQuery = session.createSQLQuery(UPDATE);
+        int result = sqlQuery.executeUpdate();
+        System.out.println(result);
+        session.getTransaction().commit();
+        session.createSQLQuery("UPDATE ITEM set name='hib' WHERE itemid=1").executeUpdate();
+
+    }*/
     public ChromeOptions options = new ChromeOptions();
     public DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
@@ -173,15 +190,15 @@ public class TestBase {
         String baseUrl = makeBaseUrl(device);
         driver.get("https://www.google.com");
         driver.manage().deleteAllCookies();
-        Wait(5);
-        driver.get(baseUrl);
         Wait(2);
+        driver.get(baseUrl);
+        Wait(1);
         setCookie();
     }
     public void gotoPage(String addition) {
         driver.get(desktopBaseUrl + addition);
         System.out.println("went to: " + desktopBaseUrl  + addition);
-        Wait(3);
+        Wait(2);
     }
     public void gotoPageVTitle(String addition,String expected) {
         driver.get(desktopBaseUrl + addition);
@@ -316,22 +333,108 @@ public class TestBase {
             driver.findElement(By.xpath("//img[contains(@class,'get-rebate-cert-img')]")).click();
         }
     }
-    public void shipOrder(String testNumber){
+
+    /*public void shipOrder(String testNumber){
         String orderNumber = readFile(testNumber);
         //SQL
-/*        Class.forName("net.sourceforge.jtds.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:jtds:sqlserver://XXXX:1433/XXX","XX","XXXX");
+        print("1"+orderNumber);
+        //fails with login failed
+        try{
+      Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            print("2a"+orderNumber);
+
+            Connection conn = DriverManager.getConnection("jdbc:jtds:sqlserver://10.0.36.160:1433/800Contacts","khallbec","Card.bus4");
+            print("2b"+orderNumber);
+
+            //("jdbc:jtds:sqlserver://XXXX:1433/XXX", "XX", "XXXX");
+            *//*Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection conn = DriverManager.getConnection("jdbc:sqlserver://dr0-sql-52:1433","khallbec","Card.bus4");*//*
+
         stmt = conn.createStatement();
-        rs = stmt.executeQuery("SELECT TOP 1 UserID FROM webuser ORDER BY 1 DESC");
-        while(rs.next()){
-            userID = rs.getString("UserID");
+        rs = stmt.executeQuery("update orderhd         set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP' where orderno = '" + orderNumber + "'");
+
+            while(rs.next()){
+            userID = rs.getString("orderno");
+                print("2c"+orderNumber);
             conn.close();
-            System.out.println(userID);*/
-        // update orderhd
-        /*set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'
-        where orderno = '0029594723';*/
+            print(userID);
+        }
+        }
+        catch (Exception e){
+            print ("_"+e);
+            print("3"+orderNumber);
+        }
+    }
+    public void dbcon(String testNumber){
+        String orderNumber = readFile(testNumber);
+        print("2a"+orderNumber);
+        //SQL
+        String url ="jdbc:sqlserver://10.0.36.160:1433;databaseName=800Contacts;integratedSecurity=true";
+        try{
+            print("2b"+orderNumber);
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
+        Connection conn = DriverManager.getConnection(url);
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery("update orderhd" +
+                    "        set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'" +
+                    "        where orderno = '" + orderNumber + "'");
+
+            while(rs.next()){
+                userID = rs.getString("orderno");
+                print("2c"+orderNumber);
+                conn.close();
+                print(userID);
+            }
+        }
+        catch (Exception e){
+            print ("_"+e);
+            print("3"+orderNumber);
+        }
+        print("3a "+orderNumber);
 
     }
+    public void dbconnection(String testNumber){
+        String connectionURL = "jdbc:sqlserver://dr0-sql-52:1433;user=khallbec;password=Card.bus4;";
+        //String connectionUrl = "jdbc:sqlserver://dr0-sql-52:1433;databaseName=1800contacts;user=khallbec;password=Card.bus4";
+        String orderNumber = readFile(testNumber);
+        //SQL
+        print("1_"+orderNumber);
+    // Declare the JDBC objects.
+    Connection con = null;
+    Statement stmt = null;
+    ResultSet rs = null;
+
+    try {
+        // Establish the connection.
+                       //2000
+                       //com.microsoft.jdbc.sqlserver.SQLServerDriver
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        con = DriverManager.getConnection(connectionURL);
+
+        // Create and execute an SQL statement that returns some data.
+        String query = "use [800Contacts] update orderhd" +
+                "        set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'" +
+                "        where orderno = '" + orderNumber + "'";
+        stmt = con.createStatement();
+        rs = stmt.executeQuery(query);
+
+        // Iterate through the data in the result set and display it.
+        while (rs.next()) {
+            System.out.println(rs.getString(4) + " " + rs.getString(6));
+        }
+    }
+
+    // Handle any errors that may have occurred.
+    catch (Exception e) {
+        e.printStackTrace();
+    }
+    finally {
+        if (rs != null) try { rs.close(); } catch(Exception e) {}
+        if (stmt != null) try { stmt.close(); } catch(Exception e) {}
+        if (con != null) try { con.close(); } catch(Exception e) {}
+    }
+}*/
     public void checkoutAndVerify (String testNumber,String prod,String device,
     String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
         if (prod.equals("no")){
@@ -348,7 +451,7 @@ public class TestBase {
     }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";
-        Wait(3);
+        Wait(2);
         try{
             WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
             String toVerify = weText.getText();
@@ -359,7 +462,7 @@ public class TestBase {
         {
             try {WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
             String toVerify = weText.getText();
-            assertTxtPresent("2nd try Pages:  Searched for " + searchedFor,expected,toVerify);
+            assertTxtPresent("2nd try Pages:  Searched for " + searchedFor, expected, toVerify);
             new String (state = "PASS");
             }
             catch(Exception E){
@@ -433,6 +536,15 @@ public class TestBase {
         // for (Cookie loadedCookie : allCookies) {
         //    System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
        // }
+    }
+    public void appendToFile(String fileName, String toAppend){
+
+        try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)))) {
+            out.println(toAppend);
+            print("appended file "+ fileName);
+        }catch (IOException e) {
+            System.err.println(e);
+        }
     }
     public void printToExcel(String sFileName, String textToWrite){
         try
@@ -511,7 +623,7 @@ public class TestBase {
                 System.out.println("No Interstitial Page");
                 clickSignOut(device);
             }
-        Wait(4);
+        Wait(2);
     }
     public void clickYesButton(String device) {
         printPageTitle();
@@ -1083,7 +1195,7 @@ public class TestBase {
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).sendKeys(search, Keys.ENTER);
             System.out.println("Searched for brand: " + search);
     }
-        Wait(2);
+        Wait(1);
     }
      //UNKNOWN if it works
     public void clickSeeAll(String device) {
@@ -1559,7 +1671,9 @@ public class TestBase {
 
      public void selectPromoCart(String device,String promoName){
          Wait(5);
-         WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpagerbslot%5F"+ promoName +"%5Fimage')]"));
+         WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'"+promoName+"')]"));
+         driver.findElement(By.xpath("//img[contains(@src,'')]"));
+
          print("Promo link: " + wePromo);
          wePromo.click();
          print("Clicked Promo in Cart");
@@ -1688,10 +1802,7 @@ public class TestBase {
 
   public void typeShippingState(String country,String state) {
       Wait(3);
-      //2 of these work for phone
-      //if(device.equals("phone")){
 
-  //}
       if (country.equals("united states")){
           driver.findElement(By.xpath("//select[contains(@id,'ShippingAddress_StateProvinceOrRegion')]")).sendKeys(state,Keys.TAB);
           System.out.println("State is: " + state);
@@ -2556,6 +2667,7 @@ public class TestBase {
       }
       String theOrderNumber = driver.findElement(By.xpath("//td[contains(@id,'orderNumber')]")).getText();
       printToExcel(testNumber,theOrderNumber);
+      appendToFile("rebates",theOrderNumber+"\n");
       System.out.println("Order Number: " + theOrderNumber);
   }
     public void verifyPDP(String brand) {

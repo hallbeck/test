@@ -38,8 +38,8 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
+    String rColor = "E-Blue";
+    String lColor = "E-Blue";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd = "";
@@ -54,9 +54,9 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
     String rAxis2 = "";
     String lAxis = "11";
     String lAxis2 = "";
-    String rBoxes = "";
+    String rBoxes = "1";
     String rBoxes2 = "";
-    String lBoxes = "";
+    String lBoxes = "1";
     String lBoxes2 = "";
     String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
@@ -64,33 +64,33 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "ii";
+    String ShippingCart = "e";
     String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpageupsell%5Falconsingle%5Fmod?fmt=png-alpha";
-    String promoProdName = "Suncloud Cookie";
-    String pricePromoCart = "49.99";
-    String promoItemNumber = "002568";
-    String promoText = "FREE Polarized Sunglasses:";
+    String promoProdName = "OPTI-FREE® PureMoist® Solution 10oz";
+    String pricePromoCart = "12.99";
+    String promoItemNumber = "002966";
+    String promoText = "";
     //osta.1800contactstest.com/?rb=ACFSM2013
     String sunglassesPromoLink = "?rb=ACFSW2013";
     String promoCode = "ACFS2013";
-    String pricePerBox = "59.99";
-    String priceREye = "119.98";
-    String priceLEye = "119.98";
+    String pricePerBox = "39.99";
+    String priceREye = "39.99";
+    String priceLEye = "39.99";
     String pricePerBox2 = "49.99";
     String priceREye2 = "99.98";
     String priceLEye2 = "199.96";
-    String priceTotal = "275.95";
-    String rsTotal = "275.95";
-    String rsTotalAfterRebate = "230.95";
-    String rsTax = "";
+    String priceTotal = "92.97";
+    String rsTotal = "99.34";
+    String rsTotalAfterRebate = "";
+    String rsTax = "6.37";
     String rsRebate = "";
-    String rsShipping = "35.99" ;
+    String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
-    String state = "whatever";
-    String city = "newberry";
-    String zip = "K1A 0G9";
+    String country = "united states";
+    String state = "utah";
+    String city = "slc";
+    String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
@@ -103,7 +103,7 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
-    String shippingVerify = "Int'l Express";
+    String shippingVerify = "FREE";
     String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify + seperator;
@@ -131,7 +131,7 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
         selectPromoCart(device,promoName);
         selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
-        enterOrderCode(device,promoCode);
+        //enterOrderCode(device,promoCode);
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         verifyPromoCart(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickCart_Continue(device);
@@ -146,14 +146,17 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-
+        typeDoctorSearch(drName);
+        typeDoctorStateAndFind(device,drState);
+        takeScreenshot(screenshotTestName, "DoctorSearch");
+        selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
-        /*clickBottomSubmitButton(device);
+        clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
@@ -162,6 +165,6 @@ public class FreeExpeditedShipping_SolutionPromo extends TestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();*/
+        driver.quit();
   }
 }

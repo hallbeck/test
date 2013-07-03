@@ -41,7 +41,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "iphoneOS61P";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -1679,22 +1679,33 @@ public class TestBase {
          print("Clicked Promo in Cart");
      }
     public void verifyPromoCart(String device,String promoProdName,String pricePromo,String promoItemNumber,String promoText){
-        verifyPromoProdName(device,promoProdName);
+        //if(!(promoText.equals(""))){
+            verifyPromoProdName(device,promoProdName);
         verifyPricePromo(device,pricePromo);
         verifyPromoItemNumber(device,promoItemNumber);
         verifyPromoText(device,pricePromo,promoText);
+        //}
+       // else{
+            print("Promo is "+ promoProdName) ;
+        //}
     }
     public void verifyPromoRS(String device,String promoProdName,String pricePromo,String promoItemNumber,String promoText){
-        verifyPromoProdNameRS(device,promoProdName);
+        if(!(promoText.equals(""))){
+            verifyPromoProdNameRS(device,promoProdName);
         verifyPricePromoRS(device,pricePromo);
         verifyPromoItemNumberRS(device,promoItemNumber);
         verifyPromoTextRS(device,pricePromo,promoText);
+        }
+        else{
+            print("Promo is "+ promoProdName) ;
+        }
     }
     public void verifyPromoProdName(String device,String promoProdName){
         String verifyPromoProdName =  driver.findElement(By.xpath("(//div[@id='productManufacturerDiv'])")).getText();
         verifyTxtPresent("Product offered on Promo: ", promoProdName, verifyPromoProdName);
     }
     public void verifyPromoText(String device,String pricePromo,String promoText){
+        if(!(promoText.equals(""))){
         assertEquals("-$" + pricePromo,driver.findElement(By.id("discountTd")).getText());
         print("$ of Promo: -$" + pricePromo);
         assertEquals(promoText, driver.findElement(By.cssSelector("td.a41-cart-remove-code-spacer.a41-cart-discount  > span")).getText());
@@ -1703,6 +1714,7 @@ public class TestBase {
         assertEquals("-$" + pricePromo, driver.findElement(By.id("totalDiscount")).getText());
         print("$ Total Discount Applied: -$" + pricePromo);
         assertEquals("Total discount applied:", driver.findElement(By.cssSelector("td.a41-cart-right")).getText());
+        }
     }
     public void verifyPricePromo(String device,String pricePromo){
         String verifyPricePromo =  driver.findElement(By.xpath("(//div[@class='innerParam AccessoryViewModel.AccessoryPrescriptionViewModel.Price'])")).getText();
@@ -1719,6 +1731,7 @@ public class TestBase {
         print("Product offered on Promo: " + promoProdName);
     }
     public void verifyPromoTextRS(String device,String pricePromo,String promoText){
+        if(!(promoText.equals(""))){
         assertEquals("-$" + pricePromo,driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dd.a41-total-savings-amount")).getText());
         print("$ of Promo: -$" + pricePromo);
         assertEquals(promoText, driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dt")).getText());
@@ -1727,6 +1740,7 @@ public class TestBase {
         assertEquals("-$" + pricePromo, driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dd.a41-total-savings-amount")).getText());
         print("$ Total Discount Applied: -$" + pricePromo);
         assertEquals("Total discount applied:", driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dt.a41-total-savings")).getText());
+        }
     }
     public void verifyPricePromoRS(String device,String pricePromo){
         assertEquals("$" + pricePromo, driver.findElement(By.xpath("//form[@id='CreditCardContentForm']/div[3]/div[3]/div[2]/div/div/div/div/div/div[2]/div/div/div[3]/div[3]/div/div[2]/div[3]/div/label")).getText());
@@ -2766,12 +2780,15 @@ public class TestBase {
         else if(device.equals("tablet")){
             try{   //tablet NI
                 String verifyBrandRS =  driver.findElement(By.xpath("//div[@class='review-order-payment-item-description']")).getText();
+                String verifyNameRS =  driver.findElement(By.xpath("//div[contains(@class,'a41-checkout-review-details-name')]")).getText();
                 verifyTxtPresent("Brand on RS: ", brand, verifyBrandRS);
-                verifyTxtPresent("Patient Name in RS: ", patientName, verifyBrandRS);
+                verifyTxtPresent("Patient Name in RS: ", patientName, verifyNameRS);
+                print("got here1");
                 Wait(6);
             }
             catch (Throwable e){System.out.println("Not NI " + device);}
             try{   //tablet RI
+                print("got here2");
                 String verifyBrandRS =  driver.findElement(By.xpath("//div[@class='ri-name']")).getText();
                 verifyTxtPresent("Brand in RS: ", brand, verifyBrandRS);
                 verifyTxtPresent("Patient Name in RS: ", patientName, verifyBrandRS);

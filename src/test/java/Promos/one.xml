@@ -4,9 +4,10 @@
     <listeners>
     </listeners>
     <test name="AccountTests" >
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='phone'/>
+        <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.SunglassesPromo"/>
+            <class name="Promos.FreeExpeditedShipping_SolutionPromo"/>
         </classes>
     </test>
 </suite>

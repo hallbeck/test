@@ -41,7 +41,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "iphoneOS61P";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -1700,6 +1700,11 @@ public class TestBase {
             print("Promo is "+ promoProdName) ;
         }
     }
+    public void clickBC(String device, String brandCanvas){
+        WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'https://media.1800contacts.com/is/image/1800Contacts/website%5Fhomepagebrandcanvas%5F"+brandCanvas+"link%5Fimage?fmt=png-alpha')]"));
+        wePromo.click();
+        print("Clicked Promo "+brandCanvas+" on home page");
+    }
     public void verifyPromoProdName(String device,String promoProdName){
         String verifyPromoProdName =  driver.findElement(By.xpath("(//div[@id='productManufacturerDiv'])")).getText();
         verifyTxtPresent("Product offered on Promo: ", promoProdName, verifyPromoProdName);
@@ -2343,6 +2348,19 @@ public class TestBase {
       }
       Wait(20);
   }
+    public void oonStartNowButton(String device){
+        driver.findElement(By.xpath("//img[contains(@alt,'Start now')]")).click();
+        Wait(5);
+    }
+    public void oonForm(String device){
+        driver.findElement(By.xpath("//input[contains(@name,'PatientInformationViewModel.PersonalInformationViewModel.BirthDate')]")).sendKeys("01012001");
+        driver.findElement(By.xpath("//input[contains(@name,'PatientInformationViewModel.MemberId')]")).sendKeys("4567");
+        driver.findElement(By.xpath("//input[contains(@id,'SameAsPatient')]")).click();
+        driver.findElement(By.xpath("//input[contains(@name,'SubscriberInformationViewModel.SubscriberId')]")).sendKeys("435");
+        driver.findElement(By.xpath("//input[contains(@name,'ProviderName')]")).sendKeys("contacts");
+        driver.findElement(By.xpath("//input[contains(@name,'ProviderPhoneNumber')]")).sendKeys("4569875654");
+        driver.findElement(By.xpath("//input[contains(@id,'generatePDF')]")).click();
+    }
     public void verifyExpiredCard(String device) {
         driver.findElement(By.id ("errorMessagesUl"));
         System.out.println("Got the Expired Card message");
@@ -2689,7 +2707,7 @@ public class TestBase {
         System.out.println("Page title is: " + driver.getTitle());
         String verifyProdPDP =  driver.findElement(By.xpath("//h1[@class='product-heading']")).getText();
         System.out.println("Brand is:" + verifyProdPDP);
-        verifyTxtPresent("Title is: ", brand, verifyProdPDP);
+        verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
     }
     public void verifyTxtPresent(String identifier, String desired, String actual){
         // the pattern we want to search for

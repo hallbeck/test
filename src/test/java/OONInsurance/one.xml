@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Account" verbose="1" >
+<suite name="OON" verbose="1" >
     <listeners>
     </listeners>
-    <test name="AccountTests" >
+    <test name="OONTests" >
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.BrandCanvas_Click_Promo"/>
+            <class name="OONInsurance.OONTest"/>
         </classes>
     </test>
 </suite>

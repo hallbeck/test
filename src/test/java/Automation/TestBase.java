@@ -41,7 +41,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "ipadP";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -647,10 +647,11 @@ public class TestBase {
     Wait(4);
   }
    public void gotoMyAccount(String device){
-       Wait(5);
+       Wait(3);
        if(device.equals("desktop")){
        driver.findElement(By.xpath("//a[contains(@title,'My Account')]")).click();
            print("Clicked on myaccount");
+           Wait(2);
        }
        else if(device.equals("tablet")){
            WebElement weHeader = driver.findElement(By.cssSelector("li.tablet-header-account > a"));
@@ -1218,6 +1219,11 @@ public class TestBase {
     }
     public void clickPhoneBrand(String device,String brand) {
         if(device.equals("phone")){
+            String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
+            driver.findElement(By.xpath(theString)).click();
+            System.out.println("Clicked on brand: " + brand);
+        }
+        if(device.equals("desktop")){
             String theString = "//a[contains(@id,'" + brand + "')]";
             driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
@@ -1578,6 +1584,13 @@ public class TestBase {
         }
         Wait(5);
     }
+    public void editRxDashboard(String device){
+        //desktop
+        Wait(3);
+        driver.findElement(By.xpath("//a[contains(@class,'a41-edit-link')]")).click();
+        System.out.println("Clicked edit RX from Dashboard");
+        Wait(3);
+    }
   public void clickAddToCart(String device) {
       Wait(5);
       if(device.equals("phone")){
@@ -1632,6 +1645,18 @@ public class TestBase {
         driver.findElement(By.xpath("//a[contains(@id,'cartEditLink')]")).click();
         print("Clicked Edit");
         Wait(5);
+    }
+    public void clickRSEdit(String device){
+        //desktop
+        driver.findElement(By.xpath("//a[contains(@id,'editRxLink1')]")).click();
+        print("Clicked Edit on RS");
+        Wait(5);
+    }
+    public void cartRemove(String device){
+        driver.findElement(By.xpath("//a[contains(@id,'cartRemoveLink')]")).click();
+    }
+    public void reorderRx(String device){
+        driver.findElement(By.xpath("//input[contains(@id,'reorderRx')]")).click();
     }
     //change shipping method on the cart page
     //enter the letter to type
@@ -2698,7 +2723,7 @@ public class TestBase {
           System.out.println("No Rebate line found on ty page");
       }
       String theOrderNumber = driver.findElement(By.xpath("//td[contains(@id,'orderNumber')]")).getText();
-      printToExcel(testNumber,theOrderNumber);
+      printToExcel(testNumber+"_order",theOrderNumber);
       appendToFile("rebates",theOrderNumber+"\n");
       System.out.println("Order Number: " + theOrderNumber);
   }

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WIN" verbose="1" parallel="classes" thread-count="4">
+    <test name="WIN">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="WorkInProgress.editRxNI_49773"/>
+            <class name="WorkInProgress.editRxNI_49774"/>
+            <class name="WorkInProgress.editRxNI_49775"/>
+            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="WorkInProgress.editRxRI_49777"/>
+            <class name="WorkInProgress.editRxRI_49778"/>
+            <class name="WorkInProgress.editRxRI_49779"/>
+        </classes>
+    </test>
+</suite>

@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="WIN" verbose="1" >
+<suite name="WIN" verbose="1" parallel="classes" thread-count="1">
     <test name="WIN">
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="SMOKE.SmokeRIToricTest"/>
+            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
         </classes>
     </test>
 </suite>

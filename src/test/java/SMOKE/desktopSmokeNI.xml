@@ -18,6 +18,7 @@
             <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
             <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
             <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
+            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
         </classes>
     </test>
 </suite>

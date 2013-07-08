@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -41,7 +42,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "ipadP";
+    public String deviceProfile = "desktopFF";
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -1612,6 +1613,28 @@ public class TestBase {
       }
       Wait(5);
   }
+    public void verifyToolTip(String device,String xpathId,String toolTip){
+        try{
+        Actions builder = new Actions(driver);
+        WebElement weToolTip = driver.findElement(By.xpath("//*[@id='"+ xpathId +"']"));
+        Thread.sleep(6000);
+        builder.moveToElement(weToolTip).perform();
+            driver.findElement(By.id(xpathId)).findElements(By.tagName("title"));
+            WebElement weText = driver.findElement(By.tagName("title"));
+
+            String toVerify =  weText.getAttribute("title");
+                    //weText.getText();
+            //String toVerify = weToolTip.getText();
+            //get text of title
+        System.out.println("ToolTip :"+ toVerify);
+        builder.moveToElement(weToolTip).release().perform();
+            verifyTxtPresent("DOES NOT WORK YET ToolTip: ",toolTip,toVerify);
+        }
+        catch (Throwable e){
+            print("_"+e);
+            print("ToolTip not present");
+        }
+    }
     public void clickAddAccessoryToCart(String device) {
         Wait(5);
         driver.findElement(By.cssSelector("input.accessoryAddToCart")).click();

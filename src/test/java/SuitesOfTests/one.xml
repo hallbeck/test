@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="WIN" verbose="1" parallel="classes" thread-count="4">
+<suite name="tablet" verbose="1" parallel="classes" thread-count="1">
     <test name="WIN">
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
             <class name="WorkInProgress.editRxNI_49773"/>
@@ -14,4 +14,12 @@
             <class name="WorkInProgress.editRxRI_49779"/>
         </classes>
     </test>
+
+    <test name="tabletOONTests" >
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="OONInsurance.OONTest"/>
+        </classes>
+    </test>
+
 </suite>

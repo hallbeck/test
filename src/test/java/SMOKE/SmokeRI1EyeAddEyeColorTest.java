@@ -111,8 +111,8 @@ public class SmokeRI1EyeAddEyeColorTest extends TestBase {
         clickCart_Continue(device);
         selectDoctor(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit1");
-        clickBottomSubmitButton(device);
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();

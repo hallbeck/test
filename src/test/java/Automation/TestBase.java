@@ -42,7 +42,7 @@ public class TestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";
+    public String deviceProfile = "desktopFF";   //desktopIE10, desktopFF
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -60,8 +60,8 @@ public class TestBase {
     ResultSet rs=null;
 
    //PRODUCTION
-/*   public String desktopBaseUrl = "https://www.1800contacts.com/";
-    //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
+   //public String desktopBaseUrl = "https://www.1800contacts.com/";
+    public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-33.ctac.1800contacts.com/";
@@ -73,15 +73,15 @@ public class TestBase {
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+    /*public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://ww1.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://ww1.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     public String fileName = ("TestOut" + new Date().getTime());
 
 
@@ -115,7 +115,10 @@ public class TestBase {
     public void getProfile(String sFileName){
         readFile(sFileName);
     }
-
+    public void clickEmailLink(String sFileName){
+        String emailLink = readFile(sFileName);
+        driver.get(emailLink);
+    }
     public WebDriver driver = makeDriver(browser,deviceProfile);
     public WebDriver makeDriver(String browser, String deviceProfile) {
         ProfilesIni allProfiles = new ProfilesIni();
@@ -1183,7 +1186,7 @@ public class TestBase {
      //this is not working because it is not finding the search button. it has no link associated, just js. SO...
     //once it starts working uncomment searchAllBrand and rename the used searchAllBrand to Go to all Lenses
     public void searchAllBrand(String device,String search) {
-        Wait(1);
+        Wait(3);
         System.out.println("About to search for brand: " + search);
         if(device.equals("phone")){
         driver.findElement(By.xpath("//a[contains(.,'Search')]")).click();
@@ -1219,15 +1222,26 @@ public class TestBase {
         Wait(6);
     }
     public void clickPhoneBrand(String device,String brand) {
+        Wait(6);
         if(device.equals("phone")){
             String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
             driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
         }
         if(device.equals("desktop")){
-            String theString = "//a[contains(@id,'" + brand + "')]";
-            driver.findElement(By.xpath(theString)).click();
-            System.out.println("Clicked on brand: " + brand);
+            try{
+                String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
+                WebElement weBrand = driver.findElement(By.xpath(theString));
+                weBrand.click();
+                System.out.println("Clicked on brand1: " + brand);
+            }
+            catch(Throwable e){
+                print("error_"+e);
+                String theString = "//a[contains(@id,'" + brand + "')]";
+                WebElement weBrand = driver.findElement(By.xpath(theString));
+                weBrand.click();
+                System.out.println("Clicked on brand2: " + brand);
+            }
         }
         else {
             String theString = "//a[contains(@id,'BrandSelectButton_" + brand + "')]";
@@ -2320,7 +2334,14 @@ public class TestBase {
           System.out.println("enter credit card2");
           weNumber2.click();
           weNumber2.sendKeys(cardNumber);
-      System.out.println("CC Used: " + cardNumber);
+        try {System.out.println("CC Used: " + cardNumber);
+            WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
+            weCreditCard.click();
+            weCreditCard.sendKeys(cardNumber);
+            System.out.println("CC Used2: " + cardNumber);
+        }
+        catch(Throwable e){
+        }
       }
       else if(device.equals("phone")){
           WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));

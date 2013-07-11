@@ -106,8 +106,8 @@ public class editRxRI_49778 extends TestBase {
         takeScreenshot(screenshotTestName, "Cart2");
         clickCart_Continue(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit1");
-        clickBottomSubmitButton(device);
         verifyRS(device, brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();

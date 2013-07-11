@@ -7,7 +7,7 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.BrandCanvas_Click_Promo"/>
+            <class name="Promos.AutoLogin1Test"/>
         </classes>
     </test>
 </suite>

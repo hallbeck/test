@@ -1,20 +1,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="tablet" verbose="1" >
-    <test name="TabletTitleTests" >
+<suite name="tablet" verbose="1" parallel="classes" thread-count="4">
+    <test name="WIN">
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="Regression.TitleTagProducts.TitleTags48150"/>
+            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="WorkInProgress.editRxNI_49773"/>
+            <class name="WorkInProgress.editRxNI_49774"/>
+            <class name="WorkInProgress.editRxNI_49775"/>
+            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="WorkInProgress.editRxRI_49777"/>
+            <class name="WorkInProgress.editRxRI_49778"/>
+            <class name="WorkInProgress.editRxRI_49779"/>
         </classes>
     </test>
-    <test name="TabletAccountTests" >
-        <parameter name="device" value='tablet'/>
-        <classes>
-            <class name="Regression.Account.NILogin_signinpage_48412"/>
-            <class name="Regression.Account.NILogin_48412"/>
-        </classes>
-    </test>
-    <test name="TabletPaymentTests" >
+    <test name="tabletPaymentTests" >
         <parameter name="device" value='tablet'/>
         <classes>
             <class name="Regression.Payment.DeclinedCardMC47577"/>
@@ -25,28 +25,35 @@
             <class name="Regression.Payment.ApprovedMCForeignCard47577"/>
             <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
             <class name="Regression.Payment.NoCard47577"/>
+            <class name="Regression.Payment.ExpRICardVisa47577"/>
         </classes>
     </test>
-    <test name="TabletPDPTests" >
+    <test name="tabletOONTests" >
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="Regression.PDP.PDPBadRx47802"/>
-            <class name="Regression.PDP.PDPBadPName47802"/>
+            <class name="OONInsurance.OONTest"/>
         </classes>
     </test>
-    <test name="TabletLinksTests" >
+    <test name="tabletPromoTests" >
+        <parameter name="device" value='tablet'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Promos.BrandCanvas_Click_Promo"/>
+            <class name="Promos.FreeExpeditedShipping_SolutionPromo"/>
+        </classes>
+    </test>
+    <test name="AccountTests" >
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
+            <class name="Regression.Account.NILogin_48412"/>
+        </classes>
+    </test>
+
+    <test name="tabletLinksTests" >
         <parameter name="device" value='tablet'/>
         <classes>
             <class name="Regression.Links.Links47930"/>
-        </classes>
-    </test>
-    <test name="TabletINITests" >
-        <parameter name="device" value='tablet'/>
-        <classes>
-            <class name="INIAutomation.INI_0_dollar_47761"/>
-            <class name="INIAutomation.INI_130_dollar_47766"/>
-            <class name="INIAutomation.INI_cardDecline_47768"/>
-            <class name="INIAutomation.INI_ColorPlano_47767"/>
         </classes>
     </test>
 </suite>

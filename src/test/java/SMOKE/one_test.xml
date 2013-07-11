@@ -1,11 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="tabletNI" verbose="1" >
-    <test name="NIsmokedesktop">
-        <parameter name="device" value='desktop'/>
+<suite name="desktop" verbose="1" parallel="methods" thread-count="1">
+    <test name="NIsmokeTablet">
+        <parameter name="device" value='tablet'/>
         <classes>
-            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
-            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2AccessoryCanadaTest"/>
+            <class name="SMOKE.SmokeNIProgressiveAccessoryInternationalTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientAccessoryTest"/>
+        </classes>
+    </test>
+    <test name="RIsmokeTablet">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <!--dependant on 44037-->
+            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
+            <!--dependant on 44040-->
+            <class name="SMOKE.SmokeRIMultiBrand1EyeEachTest"/>
+            <!--dependant on 44042-->
+            <class name="SMOKE.SmokeRIMultiBrandPatientBoxTest"/>
+            <!--dependant on 44041-->
+            <class name="SMOKE.SmokeRIMultiBrandPatientTest"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1" parallel="methods" thread-count="1">
+    <test name="NIsmokeTablet">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2AccessoryCanadaTest"/>
+            <class name="SMOKE.SmokeNIProgressiveAccessoryInternationalTest"/>
+            <class name="SMOKE.SmokeNIMultiBrandPatientAccessoryTest"/>
+        </classes>
+    </test>
+</suite>

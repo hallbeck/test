@@ -22,9 +22,10 @@ public class SmokeNIColorToricAccessoryTest extends TestBase {
     String searchAllBrand = "Color Toric";
     String searchAllBrand2 = "solution";
     String brandToClickOn = "FreshLookColorblendsToric";
-    String brandToClickOn2 = "OPTI-FREE®PureMoist®MPS";
+    String reg = "®";
+    String brandToClickOn2 = "OPTI-FREE"+reg+"PureMoist"+reg+"Solution10oz";
     String brandVerifyPDP = "FreshLook Colorblends Toric";
-    String brandVerifyPDP2 = "OPTI-FREE® PureMoist® MPS";
+    String brandVerifyPDP2 = "OPTI-FREE"+reg+" PureMoist";
     String posR = "";
     String posL = "";
     String rPower2 = "";

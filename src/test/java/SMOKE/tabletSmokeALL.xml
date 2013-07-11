@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="methods" thread-count="10">
-    <test name="NIsmokePhone">
+<suite name="desktop" verbose="1" parallel="methods" thread-count="2">
+    <test name="NIsmokeTablet">
         <parameter name="device" value='tablet'/>
         <classes>
             <class name="SMOKE.SmokeNIVialTest"/>
@@ -25,7 +25,7 @@
             <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
         </classes>
     </test>
-    <test name="RIsmokePhone">
+    <test name="RIsmokeTablet">
         <parameter name="device" value='tablet'/>
         <classes>
             <!--dependant on 44039-->

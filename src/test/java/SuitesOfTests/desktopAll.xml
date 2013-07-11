@@ -1,17 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" >
-    <test name="DesktopTitleTests" >
+<suite name="desktop" verbose="1" parallel="classes" thread-count="4">
+    <test name="WIN">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.TitleTagProducts.TitleTags48150"/>
-        </classes>
-    </test>
-    <test name="DesktopAccountTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Account.NILogin_signinpage_48412"/>
-            <class name="Regression.Account.NILogin_48412"/>
+            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="WorkInProgress.editRxNI_49773"/>
+            <class name="WorkInProgress.editRxNI_49774"/>
+            <class name="WorkInProgress.editRxNI_49775"/>
+            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="WorkInProgress.editRxRI_49777"/>
+            <class name="WorkInProgress.editRxRI_49778"/>
+            <class name="WorkInProgress.editRxRI_49779"/>
         </classes>
     </test>
     <test name="DesktopPaymentTests" >
@@ -25,89 +25,35 @@
             <class name="Regression.Payment.ApprovedMCForeignCard47577"/>
             <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
             <class name="Regression.Payment.NoCard47577"/>
+            <class name="Regression.Payment.ExpRICardVisa47577"/>
         </classes>
     </test>
-    <test name="DesktopPDPTests" >
+    <test name="DesktopOONTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.PDP.PDPBadRx47802"/>
-            <class name="Regression.PDP.PDPBadPName47802"/>
+            <class name="OONInsurance.OONTest"/>
         </classes>
     </test>
+    <test name="DesktopPromoTests" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Promos.BrandCanvas_Click_Promo"/>
+            <class name="Promos.FreeExpeditedShipping_SolutionPromo"/>
+        </classes>
+    </test>
+    <test name="AccountTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
+            <class name="Regression.Account.NILogin_48412"/>
+        </classes>
+    </test>
+
     <test name="DesktopLinksTests" >
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="Regression.Links.Links47930"/>
-        </classes>
-    </test>
-    <test name="DesktopINITests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="INIAutomation.INI_0_dollar_47761"/>
-            <class name="INIAutomation.INI_130_dollar_47766"/>
-            <class name="INIAutomation.INI_cardDecline_47768"/>
-            <class name="INIAutomation.INI_ColorPlano_47767"/>
-        </classes>
-    </test>
-    <test name="RebateTests_A" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
-            <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvance_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvanceAstigmatism_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueOasysAstigmatism_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus6pk_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus24pk_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueOasysPresbyopia_48580"/>
-            <class name="Regression.Rebates.Rebates_AirOptixAqua_48580"/>
-            <class name="Regression.Rebates.Rebates_AirOptixAquaMultifocal_48580"/>
-            <class name="Regression.Rebates.Rebates_AirOptixAstigmatism_48580"/>
-            <class name="Regression.Rebates.Rebates_AirOptixNightDayAqua_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualens38_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualens55_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualens55Aspheric_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualite38_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualite55_48580"/>
-            <class name="Regression.Rebates.Rebates_Aqualite55ProAspheric_48580"/>
-            <class name="Regression.Rebates.Rebates_Avaira_48580"/>
-            <class name="Regression.Rebates.Rebates_AvairaToric_48580"/>
-        </classes>
-    </test>
-    <test name="RebateTests_OneDay" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_DayAcuvue30Pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoist30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye90pk_48580"/>
-        </classes>
-    </test>
-    <test name="RebateTests_B" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_Biofinity_48580"/>
-            <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>
-            <class name="Regression.Rebates.Rebates_BiofinityToric_48580"/>
-            <class name="Regression.Rebates.Rebates_Biomedics1day90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_Biomedics38_48580"/>
-            <class name="Regression.Rebates.Rebates_Biomedics55_48580"/>
-            <class name="Regression.Rebates.Rebates_Biomedics55Evo_48580"/>
-            <class name="Regression.Rebates.Rebates_Biomedics55Premier_48580"/>
-            <class name="Regression.Rebates.Rebates_BiomedicsEP_48580"/>
-            <class name="Regression.Rebates.Rebates_BiomedicsToric_48580"/>
-            <class name="Regression.Rebates.Rebates_BiomedicsXC_48580"/>
-        </classes>
-    </test>
-    <test name="RebateTests_No Rebates" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_Acuvue_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus24pk_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus6pk_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueBifocals_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye30pk_48580"/>
         </classes>
     </test>
 </suite>

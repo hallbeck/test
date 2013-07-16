@@ -6,59 +6,15 @@
   <component name="ChangeListManager">
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/play/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aspectj_aspectjrt_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aspectj_aspectjtools_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_management_5_0_2_beta.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jdmk_jmxtools_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jtds_jtds_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_6_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Draft_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_desktop.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/logsupport/settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Automation/sqlStuff2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedTestCard47577.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49935.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49935.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49936.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49936.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49937.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49937.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49938.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49938.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49939.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49939.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49940.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49940.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49941.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49941.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49943.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49943.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49962.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49962.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Acuvue_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Acuvue_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_DaliesAquaComfortPlus30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_DaliesAquaComfortPlus30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoftconEW_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoftconEW_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColor6MoTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColor6MoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorToricTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_1Day.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_1Day.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_A.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_A.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_C_D.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_C_D.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_E_O.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_E_O.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Business/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/sqlStuff.java" afterPath="$PROJECT_DIR$/src/test/java/Automation/sqlStuff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.iml" afterPath="$PROJECT_DIR$/test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566663577" ignored="false" />
-    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373921020202" ignored="false" />
+    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374003113086" ignored="false" />
     <file path="/TestUrlOpener.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362958090030" ignored="false" />
     <file path="/ResponsiveSuggest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362959303229" ignored="false" />
     <file path="/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366834471457" ignored="false" />
@@ -152,7 +108,7 @@
     <file path="/ApprovedAmexCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415024338" ignored="false" />
     <file path="/TitleTags48150.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415366716" ignored="false" />
     <file path="/INI_130_dollar_47766.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369435009994" ignored="false" />
-    <file path="/desktopPayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372287680141" ignored="false" />
+    <file path="/desktopPayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374003664362" ignored="false" />
     <file path="/NoCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778190090" ignored="false" />
     <file path="/desktopAll.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373389269545" ignored="false" />
     <file path="/tabletAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370279288634" ignored="false" />
@@ -359,7 +315,7 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out" openResultsInEditor="true" userTempatePath="" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
@@ -383,10 +339,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="one.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="288" selection-end="288" vertical-scroll-proportion="0.28208956">
+            <state line="7" column="46" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktopPayment.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="42" selection-start="526" selection-end="526" vertical-scroll-proportion="0.40298507">
               <folding />
             </state>
           </provider>
@@ -433,8 +398,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49935.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49938.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_DaliesAquaComfortPlus30pk_48580.java" />
@@ -449,6 +412,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Acuvue_48580.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_AcuvueOasysPresbyopia_48580.java" />
         <option value="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedTestCard47577.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
       </list>
     </option>
   </component>
@@ -604,7 +569,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SMOKE" />
+              <option name="myItemId" value="Regression" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,6 +596,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Payment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -754,11 +723,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Regression.Payment" />
       <recent name="Automation" />
       <recent name="Business" />
       <recent name="Promos" />
       <recent name="Regression.PDP" />
-      <recent name="WorkInProgress" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\test\src\test\java\Business" />
@@ -773,65 +742,7 @@
       <recent name="C:\test\src\test\java\SMOKE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml">
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml">
     <configuration default="false" name="$PROJECT_DIR$/src/test/java/Business/NI_Business.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -895,6 +806,64 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -1053,18 +1022,18 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.FirstTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/a_desktop_rebates_B.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/desktopSmokeALL.xml" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/NI_Business.xml" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/NI_Business.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/desktopSmokeALL.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/desktopSmokeALL.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
       </list>
     </recent_temporary>
@@ -1173,9 +1142,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.73503435" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.6572238" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.6572238" order="1" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3427762" sideWeight="0.8875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3427762" sideWeight="0.8875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1285,27 +1254,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_ExtremeH2O54136_48580.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_AcuvueOasysHydraclearPlus6pk_48580.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_AcuvueOasysHydraclearPlus24pk_48580.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_IcuityH2O_48580.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.33333334">
@@ -1392,9 +1340,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="36" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.80597013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedTestCard47577.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="26" selection-start="2823" selection-end="2823" vertical-scroll-proportion="-2.041096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="288" selection-end="288" vertical-scroll-proportion="0.28208956">
+        <state line="7" column="46" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="42" selection-start="526" selection-end="526" vertical-scroll-proportion="0.40298507">
           <folding />
         </state>
       </provider>

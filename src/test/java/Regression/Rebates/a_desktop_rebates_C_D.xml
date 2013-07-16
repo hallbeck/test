@@ -4,7 +4,7 @@
 
     <test name="RebateTests_C_D" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
             <class name="Regression.Rebates.Rebates_Clear55A_48580"/>

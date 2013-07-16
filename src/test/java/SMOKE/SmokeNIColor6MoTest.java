@@ -16,7 +16,7 @@ public class SmokeNIColor6MoTest extends TestBase {
     //change the Strings below to change the tests
     String testNumber = "44030";
     String typeOfTest = "SMOKE";
-String typeOfCust = "NI";
+    String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchAllBrand = "color";
     String searchAllBrand2 = "Toric";

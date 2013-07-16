@@ -15,7 +15,7 @@ public class Rebates_Acuvue_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
-    String orderNumberPlaceholder = "48580Acuvue2_rebate";
+    String orderNumberPlaceholder = "48580Acuvue_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
@@ -25,7 +25,7 @@ public class Rebates_Acuvue_48580 extends TestBase {
     String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
-        String brandVerifyPDP = "Acuvue 2";
+    String brandVerifyPDP = "Acuvue";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
@@ -54,9 +54,9 @@ public class Rebates_Acuvue_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "6";
+    String rBoxes = "3";
     String rBoxes2 = "12";
-    String lBoxes = "6";
+    String lBoxes = "9";
     String lBoxes2 = "12";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
@@ -79,7 +79,7 @@ String password = "password";
     String rsTotal = "339.73";
     String rsTotalAfterRebate = "147.92";
     String rsTax = "20.82";
-    String rsRebate = "20 Acuvue Rebate";
+    String rsRebate = "";
     String rsShipping = "14.99" ;
         String rebateNotShipped = "Your order has not shipped yet.";
     String shippingVerify = "Title tag";
@@ -122,27 +122,7 @@ String password = "password";
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month,RebateTextRS);
-        goToCart(device);
-        clickRemove(device);
-
-        gotoPage(Acuvue);
-        print(rebatesAvailable);
-        clickRPower(device,posR,rPower);
-        clickLPower(device,posL,lPower);
-        clickRBC(rBC);
-        clickLBC(lBC);
-        clickRDia(rDia);
-        clickLDia(lDia);
-        clickRboxes(rBoxes2);
-        clickLboxes(lBoxes2);
-        typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2_");
-        clickAddToCart(device);
-        verifyRebateCart(device,rebate12Month);
-        clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month,RebateTextRS);
-
-                typeCreditCard(device,creditCard);
+        typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");

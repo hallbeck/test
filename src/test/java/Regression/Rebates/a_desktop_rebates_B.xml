@@ -12,6 +12,8 @@
             <class name="Regression.Rebates.Rebates_Biomedics1day90pk_48580"/>
             <class name="Regression.Rebates.Rebates_Biomedics38_48580"/>
             <class name="Regression.Rebates.Rebates_Biomedics55_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityMultiN_48580"/>
             <class name="Regression.Rebates.Rebates_Biomedics55Evo_48580"/>
             <class name="Regression.Rebates.Rebates_Biomedics55Premier_48580"/>
             <class name="Regression.Rebates.Rebates_BiomedicsEP_48580"/>

@@ -25,7 +25,7 @@ public class Rebates_SoftconEW_48580 extends TestBase {
     String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
-        String brandVerifyPDP = "Acuvue 2";
+        String brandVerifyPDP = "Softcon EW";
     String posR = "+";
     String posL = "+";
     String rPower = "0.50";

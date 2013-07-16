@@ -3,7 +3,7 @@
 <suite name="rebates" verbose="1" parallel="methods" thread-count="10">
     <test name="RebateTests_E" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
             <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
@@ -17,7 +17,7 @@
     </test>
     <test name="RebateTests_I_O" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Rebates.Rebates_IcuityH2O_48580"/>
             <class name="Regression.Rebates.Rebates_Mediflex38_48580"/>

@@ -1,0 +1,178 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="15">
+    <test name="RebateTests_A" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
+            <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvance_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvanceAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus6pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus24pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueOasysPresbyopia_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAqua_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAquaMultifocal_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixAstigmatism_48580"/>
+            <class name="Regression.Rebates.Rebates_AirOptixNightDayAqua_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens38_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens55_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualens55Aspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite38_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite55_48580"/>
+            <class name="Regression.Rebates.Rebates_Aqualite55ProAspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_Avaira_48580"/>
+            <class name="Regression.Rebates.Rebates_AvairaToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Acuvue_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus24pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus6pk_48580"/>
+            <class name="Regression.Rebates.Rebates_AcuvueBifocals_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_OneDay" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_DayAcuvue30Pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayAcuvueMoist30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye30pk_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_B" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Biofinity_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityMulti_48580"/>
+            <class name="Regression.Rebates.Rebates_BiofinityToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics1day90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics38_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55Evo_48580"/>
+            <class name="Regression.Rebates.Rebates_Biomedics55Premier_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsEP_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsToric_48580"/>
+            <class name="Regression.Rebates.Rebates_BiomedicsXC_48580"/>
+            <class name="Regression.Rebates.Rebates_BioTrue1Day90_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_C_D" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
+            <class name="Regression.Rebates.Rebates_Clear58_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearAllDay_48580"/>
+            <class name="Regression.Rebates.Rebates_ClearSightDay30Pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
+
+        </classes>
+    </test>
+    <test name="RebateTests_E" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54ToricMC_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Thin_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O59Extra_48580"/>
+            <class name="Regression.Rebates.Rebates_ExtremeH2O54142_48580"/>
+            <class name="Regression.Rebates.Rebates_EncorePremium_48580"/>
+            <class name="Regression.Rebates.Rebates_Expressions_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_I_O" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_IcuityH2O_48580"/>
+            <class name="Regression.Rebates.Rebates_Mediflex38_48580"/>
+            <class name="Regression.Rebates.Rebates_Mediflex55_48580"/>
+            <class name="Regression.Rebates.Rebates_O2Optix_48580"/>
+            <class name="Regression.Rebates.Rebates_Optima38SP_48580"/>
+            <class name="Regression.Rebates.Rebates_OptimaFW_48580"/>
+            <class name="Regression.Rebates.Rebates_OptimaToric_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_P" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_ProClear1Day90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClear1DayMulti30pk_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClear_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearEP_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearMultiD_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearMultiN_48580"/>
+            <class name="Regression.Rebates.Rebates_ProClearToric_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision2HD_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision2HDAstig_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVisionMulti_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVisionToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Perspecta55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_PolySoft38_48580"/>
+            <class name="Regression.Rebates.Rebates_Polysoft55_48580"/>
+            <class name="Regression.Rebates.Rebates_Polysoft55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceDWFW_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceStandard_48580"/>
+            <class name="Regression.Rebates.Rebates_PreferenceToric_48580"/>
+            <class name="Regression.Rebates.Rebates_ProclearToricXR_48580"/>
+            <class name="Regression.Rebates.Rebates_Proflex38_48580"/>
+            <class name="Regression.Rebates.Rebates_Proflex55_48580"/>
+            <class name="Regression.Rebates.Rebates_Prosite55_48580"/>
+            <class name="Regression.Rebates.Rebates_Prosite55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_ProSite38_48580"/>
+            <class name="Regression.Rebates.Rebates_Provision55_48580"/>
+            <class name="Regression.Rebates.Rebates_ProVisionPremium_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_S" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Soflens38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed55_48580"/>
+            <class name="Regression.Rebates.Rebates_Sofmed55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_SoftconEW_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling38_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_Sterling55_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensDaily90_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensDailyAstig30_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensMultiFocal_48580"/>
+            <class name="Regression.Rebates.Rebates_SoflensToric_48580"/>
+        </classes>
+    </test>
+    <test name="RebateTests_T_Z" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_Target38_48580"/>
+            <class name="Regression.Rebates.Rebates_Target55_48580"/>
+            <class name="Regression.Rebates.Rebates_Target55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlex55_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlex7_14_38_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexIIAspheric_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexToric_48580"/>
+            <class name="Regression.Rebates.Rebates_UltraFlexXC_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexToric_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflax55_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflex38_48580"/>
+            <class name="Regression.Rebates.Rebates_Versaflex55Asph_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexSphere_48580"/>
+            <class name="Regression.Rebates.Rebates_VertexToricXR_48580"/>
+        </classes>
+    </test>
+</suite>

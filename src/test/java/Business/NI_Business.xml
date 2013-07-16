@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WIN" verbose="1" parallel="classes" thread-count="5">
+    <test name="WIN">
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Business.NI_Business_Test_49935"/>
+            <class name="Business.NI_Business_Test_49936"/>
+            <class name="Business.NI_Business_Test_49937"/>
+            <class name="Business.NI_Business_Test_49938"/>
+            <class name="Business.NI_Business_Test_49939"/>
+            <class name="Business.NI_Business_Test_49940"/>
+            <class name="Business.NI_Business_Test_49941"/>
+        </classes>
+    </test>
+</suite>

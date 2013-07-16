@@ -17,9 +17,7 @@ import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.*;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -59,7 +57,7 @@ public class TestBase {
     Statement stmt=null;
     ResultSet rs=null;
 
-   //PRODUCTION
+   /*//PRODUCTION
    //public String desktopBaseUrl = "https://www.1800contacts.com/";
     public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
@@ -73,15 +71,15 @@ public class TestBase {
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-    /*public String desktopBaseUrl = "https://ww1.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
-    public String mobileBaseUrl = "https://ww1.1800contactstest.com/";
+    public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
-    public String tabletBaseUrl = "https://ww1.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletBaseUrl = "https://www.1800contactstest.com/";
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
 
 
@@ -1237,10 +1235,13 @@ public class TestBase {
             }
             catch(Throwable e){
                 print("error_"+e);
+                try{
                 String theString = "//a[contains(@id,'" + brand + "')]";
                 WebElement weBrand = driver.findElement(By.xpath(theString));
                 weBrand.click();
                 System.out.println("Clicked on brand2: " + brand);
+                }
+                catch(Throwable E){print("error_"+e);}
             }
         }
         else {
@@ -1857,7 +1858,9 @@ public class TestBase {
     public void clickCountry(String country) {
         WebElement weTheCountryString = driver.findElement(By.xpath("//select[contains(@name,'ShippingAddress.Country')]"));
         weTheCountryString.click();
-        weTheCountryString.sendKeys(country, Keys.ENTER);
+        weTheCountryString.sendKeys(country, Keys.ENTER,Keys.ARROW_UP,Keys.ARROW_DOWN,Keys.ENTER);
+       /* weTheCountryString.click();
+        weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);*/
         Wait(3);
         System.out.println("Country is: " + country);
         Wait(3);

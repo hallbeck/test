@@ -1,12 +1,49 @@
 package Automation;
 
-import java.sql.Driver;
-
 /**
  * User: KHALLBEC
  * Date: 7/1/13
  * Time: 10:46 AM
  */
+import java.sql.*;
+
+public class sqlStuff
+{
+    public static void main(String args[]){
+
+         String toPrint=System.getProperty("java.classpath");
+        System.out.println("blah_____ "+toPrint);
+        String dbtime;
+        String dbUrl = "jdbc:mysql://dr0-sql-52/800contacts";
+        String dbClass = "com.mysql.jdbc";
+        String query = "Select * FROM lens";
+
+        try {
+
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection (dbUrl);
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()) {
+                dbtime = rs.getString(1);
+                System.out.println(dbtime);
+            } //end while
+
+            con.close();
+        } //end try
+
+        catch(ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        catch(SQLException e) {
+            e.printStackTrace();
+        }
+
+    }  //end main
+}
+/*
 public class sqlStuff {
     private java.sql.Connection  con = null;
     private final String url = "jdbc:microsoft:sqlserver://";
@@ -42,9 +79,11 @@ public class sqlStuff {
         return con;
     }
 
-     /*
-          Display the driver properties, database details
      */
+/*
+          Display the driver properties, database details
+     *//*
+
 
     public void displayDbProperties(){
         java.sql.DatabaseMetaData dm = null;
@@ -89,3 +128,4 @@ public class sqlStuff {
         myDbTest.displayDbProperties();
     }
 }
+*/

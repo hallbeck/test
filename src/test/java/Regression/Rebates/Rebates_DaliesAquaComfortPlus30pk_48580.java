@@ -25,7 +25,7 @@ public class Rebates_DaliesAquaComfortPlus30pk_48580 extends TestBase {
     String RebateTextRS = "DAILIES Rebate";
     String rebate6Month = "25.0";
     String rebate12Month = "";
-        String brandVerifyPDP = "Acuvue 2";
+    String brandVerifyPDP = "Dailies";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";

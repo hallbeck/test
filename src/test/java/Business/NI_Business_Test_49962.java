@@ -15,7 +15,7 @@ public class NI_Business_Test_49962 extends TestBase {
 
 
     //change the Strings below to change the tests
-    String testNumber = "49961";
+    String testNumber = "49962";
     String typeOfTest = "SMOKE";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";

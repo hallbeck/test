@@ -120,7 +120,7 @@ public class SmokeNIColorToricTest extends TestBase {
     clickRColor(rColor);
     clickLColor(lColor);
     clickRboxes(rBoxes);
-    clickRboxes(lBoxes);
+    clickLboxes(lBoxes);
     typePatientName(PatientFNameCart, PatientLNameCart);
     takeScreenshot(screenshotTestName, "PDP2");
     clickAddToCart(device);

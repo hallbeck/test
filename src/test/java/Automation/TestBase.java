@@ -57,9 +57,11 @@ public class TestBase {
     Statement stmt=null;
     ResultSet rs=null;
 
-   /*//PRODUCTION
+   //PRODUCTION
    //public String desktopBaseUrl = "https://www.1800contacts.com/";
+/*
     public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
+*/
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-33.ctac.1800contacts.com/";
@@ -68,7 +70,7 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    public String mobileBaseUrl = "https://www.1800contacts.com/";
+/*    public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
@@ -438,14 +440,14 @@ public class TestBase {
     }
 }*/
     public void checkoutAndVerify (String testNumber,String prod,String device,
-    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate){
+    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus){
         if (prod.equals("no")){
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         gotoMyAccount(device);
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         }
         else if(prod.equals("yes")){
             print("Production... We won't place an order");
@@ -600,7 +602,7 @@ public class TestBase {
         Wait(2);
     }
     public void printTestNumber(String test) {
-        System.out.println("Test Covered is: " + test + " " + " " + deviceProfile);
+        System.out.println("BEGIN -- Test Covered is: " + test + " " + " " + deviceProfile);
         System.out.println(test);
     }
 
@@ -1228,8 +1230,12 @@ public class TestBase {
         }
         if(device.equals("desktop")){
             try{
-                String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
-                WebElement weBrand = driver.findElement(By.xpath(theString));
+                driver.findElement(By.id("BrandText_Acuvue")).click();
+
+                //String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
+               // WebElement weBrand = driver.findElement(By.xpath(theString));
+                String theString ="\"BrandText_" + brand + "\"";
+                WebElement weBrand = driver.findElement(By.id(theString));
                 weBrand.click();
                 System.out.println("Clicked on brand1: " + brand);
             }
@@ -1244,7 +1250,7 @@ public class TestBase {
                 catch(Throwable E){print("error_"+e);}
             }
         }
-        else {
+        if(device.equals("tablet")){
             String theString = "//a[contains(@id,'BrandSelectButton_" + brand + "')]";
             driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
@@ -1858,10 +1864,18 @@ public class TestBase {
     public void clickCountry(String country) {
         WebElement weTheCountryString = driver.findElement(By.xpath("//select[contains(@name,'ShippingAddress.Country')]"));
         weTheCountryString.click();
-        weTheCountryString.sendKeys(country, Keys.ENTER,Keys.ARROW_UP,Keys.ARROW_DOWN,Keys.ENTER);
-       /* weTheCountryString.click();
-        weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);*/
+        weTheCountryString.sendKeys(country,Keys.ARROW_UP,Keys.ARROW_DOWN,Keys.ENTER);
         Wait(3);
+        String countrySelected = weTheCountryString.getText();
+        if (!countrySelected.equals(country)){
+            driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.AddressLine1')]")).click();
+            weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);
+            Wait(3);
+        }
+
+        //driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.AddressLine1')]")).click();
+        //weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);
+        //Wait(3);
         System.out.println("Country is: " + country);
         Wait(3);
     }
@@ -2333,6 +2347,7 @@ public class TestBase {
   public void typeCreditCard(String device,String cardNumber) {
       Wait(4);
       if(device.equals("desktop")){
+          Wait(2);
           WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
           System.out.println("enter credit card2");
           weNumber2.click();
@@ -2533,13 +2548,14 @@ public class TestBase {
         System.out.println("You are in the cart... proceed as normal");
         Wait(6);
     }
-    public void verifyOrderStatusHistory(String device,String brand,String patientName,String shippingCost,String shippingType,String sState,String sCity,String tax,String total,String rebateText,String totalAfterRebate) {
+    public void verifyOrderStatusHistory(String device,String brand,String patientName,String shippingCost,String shippingType,String sState,String sCity,String tax,String total,String rebateText,String totalAfterRebate,String status) {
         verifyTitleOrderStatusHistory(device);
         verifyBrandOrderStatusHistory(device,brand);
         verifyPatientOrderStatusHistory(device, patientName);
         verifyShippingCostOrderStatusHistory(device, shippingCost,shippingType,tax);
         verifyShippingOrderStatusHistory(device, sCity, sState);
         verifyTotalOrderStatusHistory(device, total);
+        verifyOrderStatus(device,status);
         //verifyRebateTextStatusHistory(device, rebateText);
         //verifyTotalARebateOrderStatusHistory(device, totalAfterRebate);
     }
@@ -2558,6 +2574,21 @@ public class TestBase {
                 verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
                 Wait(5);
             }
+        else if(device.equals("phone")) {
+            Wait(5);
+            driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]"));
+            String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
+            verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+            Wait(5);
+        }
+    }
+    public void verifyOrderStatus(String device, String status){
+        if(device.equals("desktop")) {
+            Wait(5);
+            String verifyOrderStatus =  driver.findElement(By.xpath("//div[@id='orderSummary']/div[2]")).getText();
+            verifyTxtPresent("Order Status is: ", status, verifyOrderStatus);
+            Wait(5);
+        }
         else if(device.equals("phone")) {
             Wait(5);
             driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]"));

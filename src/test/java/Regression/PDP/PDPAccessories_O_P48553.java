@@ -18,9 +18,10 @@ public class PDPAccessories_O_P48553 extends TestBase {
     String typeOfTest = "Regression";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
+    String reg = "®";
     String searchResultAccessoriesPage = "Eye Care Solutions";
-    String searchResultOptiFreePMPage = "OPTI-FREE® PureMoist";
-    String searchResultOptiFreeReplenishPage = "OPTI-FREE® RepleniSH";
+    String searchResultOptiFreePMPage = "OPTI-FREE"+reg+" PureMoist";
+    String searchResultOptiFreeReplenishPage = "OPTI-FREE"+reg+" RepleniSH";
     String search196 = "ocuclear";
     String search197 = "Ocupure	";
     String search198 = "ocupure 55";
@@ -104,9 +105,9 @@ public class PDPAccessories_O_P48553 extends TestBase {
         verifyProduct(device,searchResultAccessoriesPage,search210);
 
         searchAllBrand(device,search211);
-        verifyProduct(device,searchResultAccessoriesPage,search211);
+        verifyProduct(device,searchResultOptiFreeReplenishPage,search211);
         searchAllBrand(device,search212);
-        verifyProduct(device,searchResultAccessoriesPage,search212);
+        verifyProduct(device,searchResultOptiFreeReplenishPage,search212);
         searchAllBrand(device,search213);
         verifyProduct(device,searchResultAccessoriesPage,search213);
         searchAllBrand(device,search214);

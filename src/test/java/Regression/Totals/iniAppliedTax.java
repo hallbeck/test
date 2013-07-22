@@ -105,6 +105,7 @@ public class iniAppliedTax extends TestBase {
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
+    String orderStatus = "Checking Stock";
     String shippingVerify = "Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

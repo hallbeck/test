@@ -1,12 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="tablet" verbose="1" >
-    <test name="TabletPaymentTests" >
-        <parameter name="device" value='tablet'/>
+    <test name="desktopPaymentTests" >
+        <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Payment.DeclinedCardMC47577"/>
-            <class name="Regression.Payment.DeclinedCardVisa47577"/>
-            <class name="Regression.Payment.ApprovedAmexCard47577"/>
+            <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
         </classes>
     </test>
 </suite>

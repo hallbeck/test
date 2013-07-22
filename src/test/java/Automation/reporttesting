@@ -1,0 +1,42 @@
+ #!/usr/bin/perl
+ use strict;
+ use File::Slurp;
+ use File::Slurp qw( :all ) ;
+ use File::Find;
+ use HTML::Parser();
+my @find = qw(BEGIN Email VERIFIED FAIL );
+my $results = "";
+my $root_dir =  "c:/test/logs";
+my $remove1 = "[";
+my $remove2 = "]";
+my $insert = "#content ul li span .pass {
+                          width: 6em;
+                          font-size: 110%;
+                          color: #1d9d01;
+                          font-style: normal;
+                          font-weight: normal;
+                          float: left;
+                          text-align: left;
+                        }
+              		  #content ul li span .fail {
+                          width: 6em;
+                          font-size: 110%;
+                          color: #9d011d;
+                          font-style: normal;
+                          font-weight: normal;
+                          float: left;
+                          text-align: left;
+                        }\n";
+
+ #get list of files in dir
+ opendir DIR, $root_dir;
+ my @file = readdir(DIR);
+ closedir DIR;
+ #List files
+ print map { "$_\n" } sort  @file;
+ #for each do:
+ #foreach my $file (@file) {
+ edit_file { s/<\/style>/$insert<\/style>/g } "C:\/test\/logs\/Desktop_Smoke.html" ;
+#}
+exit 0;
+

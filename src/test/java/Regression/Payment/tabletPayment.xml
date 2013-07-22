@@ -13,6 +13,7 @@
             <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
             <class name="Regression.Payment.NoCard47577"/>
             <class name="Regression.Payment.ExpRICardVisa47577"/>
+            <class name="Regression.Payment.ApprovedTestCard47577"/>
         </classes>
     </test>
 </suite>

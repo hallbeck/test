@@ -20,6 +20,8 @@
             <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
             <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
             <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="Regression.Rebates.Rebates_Frequency55MultiD_48580"/>
+            <class name="Regression.Rebates.Rebates_Frequency55MultiN_48580"/>
         </classes>
     </test>
     <test name="RIsmokeDesktop">

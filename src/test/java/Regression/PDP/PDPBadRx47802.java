@@ -96,6 +96,7 @@ public class PDPBadRx47802 extends TestBase {
     String ccExpMo = "03";
     String ccExpYear = "2014";
         String rebateNotShipped = "Your order has not shipped yet.";
+    String orderStatus = "Checking Stock";
     String shippingVerify = "Next Day by Noon";
     String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
@@ -151,9 +152,9 @@ public class PDPBadRx47802 extends TestBase {
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        clickBottomSubmitButton(device);
+        /*clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
-        takeScreenshot(screenshotTestName, "ThankYou");
+        takeScreenshot(screenshotTestName, "ThankYou");*/
         driver.quit();
     }
 }

@@ -6,7 +6,9 @@
         <classes>
             <class name="Regression.PDP.PDPBadRx47802"/>
             <class name="Regression.PDP.PDPBadPName47802"/>
+<!--
             <class name="Regression.PDP.PDPEditRx48520"/>
+-->
             <class name="Regression.PDP.PDPAccessories_A48553"/>
             <class name="Regression.PDP.PDPAccessories_B_C48553"/>
             <class name="Regression.PDP.PDPAccessories_D_E48553"/>

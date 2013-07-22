@@ -83,6 +83,7 @@ public class Rebates_sqltest_48580 extends TestBase {
     String rebateNotShipped = "Your order has not shipped yet.";
     String rebateShipped = "40 Acuv2 12M-2013c";
     String rsShipping = "14.99" ;
+    String orderStatus = "Checking Stock";
     String shippingVerify = "na";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
@@ -125,7 +126,7 @@ public class Rebates_sqltest_48580 extends TestBase {
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(orderNumberPlaceholder,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate);
+        checkoutAndVerify(orderNumberPlaceholder,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(orderNumberPlaceholder);
         getRebate(device,orderNumberPlaceholder,rebateShipped);

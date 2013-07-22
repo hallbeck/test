@@ -97,6 +97,7 @@ String typeOfCust = "NI";
     String ccExpMo = "03";
     String ccExpYear = "2014";
         String rebateNotShipped = "Your order has not shipped yet.";
+    String orderStatus = "Checking Stock";
     String shippingVerify = "Next Day by Noon";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;

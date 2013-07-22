@@ -4,10 +4,10 @@
     <test name="WIN">
         <parameter name="device" value='desktop'/>
         <classes>
+            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+<!--
             <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
-            <class name="WorkInProgress.editRxRI_49777"/>
-            <class name="WorkInProgress.editRxRI_49778"/>
-            <class name="WorkInProgress.editRxRI_49779"/>
+-->
         </classes>
     </test>
 </suite>

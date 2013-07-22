@@ -51,5 +51,18 @@ public class Main {
         System.out.println(result);
         result = !result ;// Logical not - false
         System.out.println(result);
+
+        String e = new String("Wow");
+        String f = "Wow";
+        String g = e;
+        String h = g;
+
+        boolean b1 = e == f;
+        boolean b2 = f.equals(f + "!");
+        boolean b3 = !g.equals(e);
+
+        if (b1 && b2 && b3) {
+            System.out.println("Success!");
+        }
     }
 }

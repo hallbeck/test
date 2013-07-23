@@ -650,6 +650,12 @@ public class TestBase {
       print("Clicked on New customer button");
     Wait(4);
   }
+    public void chooseBrand(String device, String brand){
+        new Select(driver.findElement(By.xpath("(//select[@id='ctl00_contentPlaceHolderContent_ProductDropDown'])"))).selectByVisibleText(brand);
+        //String strState =  "(//option[@value='" + stateAbrev + "'])[2]";
+        //driver.findElement(By.xpath(strState)).click();
+        System.out.println("Brand is: " + brand);
+    }
    public void gotoMyAccount(String device){
        Wait(3);
        if(device.equals("desktop")){
@@ -668,6 +674,18 @@ public class TestBase {
            print("Clicked on myaccount footer");
        }
    }
+    public void findAccountCI(String device,String PatientFNameCart,String PatientLNameCart,String CustID){
+
+        driver.findElement(By.xpath("//input[contains(@value,'findByCustomer')]")).click();
+        WebElement weFName = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_FindMyAccountSearch1_findByCustomerFirstName_tbName')]"));
+        WebElement weLName = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_FindMyAccountSearch1_findByCustomerLastName_tbName')]"));
+        WebElement weCustID = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_FindMyAccountSearch1_findByCustomerCustomerNumber_tbCust')]"));
+
+        weFName.sendKeys(PatientFNameCart);
+        weLName.sendKeys(PatientLNameCart);
+        weCustID.sendKeys(CustID);
+        driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_FindMyAccountSearch1__searchCustomerInformationButton')]")).click();
+    }
     public void gotoDashboard(String device){
         if(device.equals("desktop")){
         driver.findElement(By.xpath("//a[contains(@id,'dashboardForm')]")).click();

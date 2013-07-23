@@ -1,4 +1,4 @@
-package WorkInProgress;
+package Regression.Account;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class editRxNI_49773 extends TestBase {
+public class editRxNI_49775 extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "49773";
+    String testNumber = "49775";
     String typeOfTest = "SMOKE";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";

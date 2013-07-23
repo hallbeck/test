@@ -15,7 +15,7 @@ public class Rebates_DayAcuvueMoist90pk_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
-    String orderNumberPlaceholder = "48580Acuvue2_rebate";
+    String orderNumberPlaceholder = "48580_day_acuvue_moist_90_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
@@ -25,7 +25,7 @@ public class Rebates_DayAcuvueMoist90pk_48580 extends TestBase {
     String RebateTextRS = "Acuvue Rebate";
     String rebate6Month = "30.0";
     String rebate12Month = "100.0";
-        String brandVerifyPDP = "Acuvue 2";
+        String brandVerifyPDP = "1 Day Acuvue Moist 90 pk";
     String posR = "";
     String posL = "+";
     String rPower = "-0.50";

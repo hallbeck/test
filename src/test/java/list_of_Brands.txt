@@ -1,0 +1,148 @@
+
+	itm=000616 1-Day Acuvue 30 pack
+	itm=002050 1-Day Acuvue Moist 30 pack
+	itm=002513 1-Day Acuvue Moist 90 pack
+	itm=002384 1-Day Acuvue Moist for Astigmatism 30 Pack
+	itm=002450 1-Day Acuvue TruEye 30 pack
+	itm=002514 1-Day Acuvue TruEye 90 pack
+	itm=000170 Acuvue
+	itm=000802 Acuvue 2
+	itm=001272 Acuvue 2 Colours
+	itm=001466 Acuvue Advance
+	itm=001588 Acuvue Advance for Astigmatism
+	itm=002537 Acuvue Advance Plus 24 pack
+	itm=002536 Acuvue Advance Plus 6 pack
+	itm=000769 Acuvue Bifocals
+	itm=002296 Acuvue Oasys for Astigmatism
+	itm=002387 Acuvue Oasys for Presbyopia
+	itm=002736 Acuvue Oasys with Hydraclear Plus 24 Pack
+	itm=001610 Acuvue Oasys with Hydraclear Plus 6 Pack
+	itm=002325 Air Optix Aqua
+	itm=002448 Air Optix Aqua Multifocal
+	itm=002271 Air Optix for Astigmatism
+	itm=001248 Air Optix Night &amp; Day Aqua
+	itm=001614&amp;cv=000359 Aqualens 38 (Regional Retailers)
+	itm=001500&amp;cv=000360 Aqualens 55 (Regional Retailers)
+	itm=002099&amp;cv=001533 Aqualens 55 Aspheric (Regional Retailers)
+	itm=001618&amp;cv=000359 Aqualite 38 (Internet Retailers)
+	itm=001617&amp;cv=000360 Aqualite 55 (Internet Retailers)
+	itm=002100&amp;cv=001533 Aqualite 55 Pro Aspheric (Internet Retailers)
+	itm=002287 Avaira
+	itm=002518 Avaira Toric
+	itm=002080 Biofinity
+	itm=002562 Biofinity Multifocal
+	itm=002564 Biofinity Multifocal
+	itm=002477 Biofinity Toric
+	itm=001566&amp;cv=002049 Biomedics 1-Day 90 pack (National Brand)
+	itm=000359 Biomedics 38
+	itm=000360 Biomedics 55
+	itm=001840&amp;cv=001533 Biomedics 55 Evolution
+	itm=001533 Biomedics 55 Premier
+	itm=002494&amp;cv=002081 Biomedics EP
+	itm=001240 Biomedics Toric
+	itm=001826 Biomedics XC
+	itm=002729 BioTrue ONEDay 90
+	itm=002455 Clarity H2O
+	itm=002357 Clear 55A
+	itm=002358 Clear 58
+	itm=002356 Clear All-Day
+	itm=002220 ClearSight 1 Day 30 pack
+	itm=002049 ClearSight 1 Day 90 pack
+	itm=002283 ClearSight 1 Day Toric 30pk
+	itm=002293 Dailies AquaComfort Plus 30pk
+	itm=002292 Dailies AquaComfort Plus 90pk
+	itm=001251&amp;cv=000923 Encore Premium
+	itm=001244 Expressions
+	itm=001778 Extreme H2O 54% 13.6
+	itm=001867 Extreme H2O 54% 14.2
+	itm=002155 Extreme H2O 54% Toric LC
+	itm=002320 Extreme H2O 54% Toric MC
+	itm=001364 Extreme H2O 59% Thin
+	itm=001473 Extreme H2O 59% Xtra
+	itm=001670&amp;cv=000359 Flextique 38 (Shopko Optical)
+	itm=001504&amp;cv=000360 Flextique 55 (Shopko Optical)
+	itm=002101&amp;cv=001533 Flextique 55 Aspheric (Shopko Optical)
+	itm=000786 Focus DAILIES 30 pack
+	itm=000722 Focus DAILIES 90 pack
+	itm=001242 Focus DAILIES Progressives 30 pack
+	itm=001377 Focus DAILIES Toric 30 pack
+	itm=002454 Focus DAILIES Toric 90 pack
+	itm=000219 Focus Monthly Softcolors
+	itm=000716 Frequency 55
+	itm=000923 Frequency 55 Aspheric
+	itm=001526 Frequency 55 Multifocal
+	itm=000739 Frequency 55 Toric
+	itm=001281 Frequency 55 Toric XR
+	itm=000732 FreshLook Colorblends
+	itm=000990 FreshLook Colorblends Toric
+	itm=000455 FreshLook Colors
+	itm=001436 FreshLook Dimensions
+	itm=000265 FreshLook Handling Tint
+	itm=001809 FreshLook ONE-DAY
+	itm=000720 FreshLook Toric
+	itm=002733 Icuity H2O
+	itm=001679&amp;cv=000359 Mediflex 38
+	itm=001508&amp;cv=000360 Mediflex 55
+	itm=000696 Noob Tv
+	itm=001543 O2 Optix
+	itm=002965 OPTI-FREE® PureMoist® Rewetting Drops
+	itm=002966 OPTI-FREE® PureMoist® Solution 10oz
+	itm=002964 OPTI-FREE® PureMoist® Solution 2 pack (2-10oz)
+	itm=002963 OPTI-FREE® RepleniSH® Solution 2 pack (2-10oz)
+	itm=000605 Optima 38/SP
+	itm=001493&amp;cv=000281 Optima FW
+	itm=000485 Optima Toric
+	itm=002102&amp;cv=001533 Perspecta 55 Aspheric (Sears Optical)
+	itm=001719&amp;cv=000359 Polysoft 38 (Pearle Vision)
+	itm=001512&amp;cv=000360 Polysoft 55 (Pearle Vision)
+	itm=002103&amp;cv=001533 Polysoft 55 Aspheric (Pearle Vision)
+	itm=000233 Preference DW/FW
+	itm=000314 Preference Standard
+	itm=000315 Preference Toric
+	itm=000735 Proclear
+	itm=002148 Proclear 1-Day 90 pack
+	itm=002722 Proclear 1-Day Multifocal 30
+	itm=002081 Proclear EP (Biomedics EP)
+	itm=001549 Proclear Multifocal
+	<option value="/CallForAvailability/proclear-multifocal-toric.htm Proclear Multifocal Toric
+	itm=001977 Proclear Toric
+	itm=001978 Proclear Toric XR
+	itm=001732&amp;cv=000359 Proflex 38
+	itm=001514&amp;cv=000360 Proflex 55
+	itm=002104&amp;cv=000359 Prosite 38 (For Eyes)
+	itm=002105&amp;cv=000360 Prosite 55 (For Eyes)
+	itm=002106&amp;cv=001533 Prosite 55 Aspheric (For Eyes)
+	itm=001546&amp;cv=000716 Provision 55
+	itm=001390&amp;cv=000923 Provision Premium
+	itm=000803 PureVision
+	itm=002534 PureVision 2
+	itm=002566 PureVision 2 HD For Astigmatism
+	itm=001824 PureVision Multifocal
+	itm=001779 PureVision Toric (PureVision For As
+	itm=000281 SofLens 38
+	itm=002444 SofLens Daily Disposable for Astigmatism 30pk
+	itm=002289 SofLens Daily Disposables 90pk
+	itm=001374 SofLens Multi-Focal
+	itm=000772 SofLens Toric (SofLens For Astigmatism)
+	itm=000225 Softcon EW
+	itm=001760&amp;cv=000359 Sterling 38 (Sterling Optical)
+	itm=001762&amp;cv=000360 Sterling 55 (Sterling Optical)
+	itm=002108&amp;cv=001533 Sterling 55 Aspheric (Sterling Optical)
+	itm=002568 Suncloud Cookie
+	itm=002574 Suncloud Hook
+	itm=001625&amp;cv=000359 Target 38 (Target Optical)
+	itm=001521&amp;cv=000360 Target 55 (Target Optical)
+	itm=002109&amp;cv=001533 Target 55 Aspheric (Target Optical)
+	itm=001529&amp;cv=000359 UltraFlex 7/14 38 (National Brand)
+	itm=001528&amp;cv=000360 UltraFlex 7/14 55 (National Brand)
+	itm=002110&amp;cv=001533 UltraFlex II Aspheric ()
+	itm=001530&amp;cv=001240 UltraFlex Toric (National Brand)
+	itm=002315&amp;cv=001826 UltraFlex XC (National Brand)
+	itm=001631&amp;cv=000359 Versaflex 38 (LensCrafters)
+	itm=001524&amp;cv=000360 Versaflex 55 (LensCrafters)
+	itm=002111&amp;cv=001533 Versaflex 55 Aspheric (LensCrafters)
+	itm=000775 Vertex Sphere (Encore Sphere)
+	itm=000913 Vertex Toric (Encore Toric)
+	itm=001548 Vertex Toric XR
+	itm=002967 ZADITOR® Eye Drops 2pk
+

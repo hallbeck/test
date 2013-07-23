@@ -5,7 +5,8 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Business.NI_Business_Test_49943"/>
+            <class name="Business.NI_Business_Test_49945"/>
+            <class name="Business.NI_Business_Test_49946"/>
         </classes>
     </test>
 </suite>

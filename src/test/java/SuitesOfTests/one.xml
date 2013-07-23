@@ -5,13 +5,13 @@
         <parameter name="device" value='tablet'/>
         <classes>
             <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
-            <class name="WorkInProgress.editRxNI_49773"/>
-            <class name="WorkInProgress.editRxNI_49774"/>
-            <class name="WorkInProgress.editRxNI_49775"/>
+            <class name="Regression.Account.editRxNI_49773"/>
+            <class name="Regression.Account.editRxNI_49774"/>
+            <class name="Regression.Account.editRxNI_49775"/>
             <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
-            <class name="WorkInProgress.editRxRI_49777"/>
-            <class name="WorkInProgress.editRxRI_49778"/>
-            <class name="WorkInProgress.editRxRI_49779"/>
+            <class name="Regression.Account.editRxRI_49777"/>
+            <class name="Regression.Account.editRxRI_49778"/>
+            <class name="Regression.Account.editRxRI_49779"/>
         </classes>
     </test>
 

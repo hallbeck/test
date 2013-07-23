@@ -1,4 +1,4 @@
-package WorkInProgress;
+package Regression.Account;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class editRxRI_49777 extends TestBase {
+public class editRxRI_49778 extends TestBase {
 
-    String testNumber = "49777";
-    String testNumberDependentOn = "49773";
+    String testNumber = "49778";
+    String testNumberDependentOn = "49774";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
@@ -102,12 +102,6 @@ public class editRxRI_49777 extends TestBase {
         cartRemove(device);
         gotoMyAccount(device);
         editRxDashboard(device);
-        clickRPower(device, posR, rPower);
-        clickRCyl(rCyl);
-        clickRAxis(rAxis);
-        clickLPower(device, posL, lPower);
-        clickLCyl(lCyl);
-        clickLAxis(lAxis);
         takeScreenshot(screenshotTestName, "PDP");
         clickUpdateCart(device);
         takeScreenshot(screenshotTestName, "Cart2");

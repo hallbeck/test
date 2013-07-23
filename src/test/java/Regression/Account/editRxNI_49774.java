@@ -1,4 +1,4 @@
-package WorkInProgress;
+package Regression.Account;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;

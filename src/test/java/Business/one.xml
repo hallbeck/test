@@ -5,8 +5,8 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Business.NI_Business_Test_49945"/>
-            <class name="Business.NI_Business_Test_49946"/>
+            <class name="Business.NI_Business_Test_49949"/>
+            <!--<class name="Regression.Doctor.Doctor_Custom_44058"/>-->
         </classes>
     </test>
 </suite>

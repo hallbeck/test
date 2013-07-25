@@ -1235,13 +1235,14 @@ public class TestBase {
     }
 
     public void clickAccessory(String device,String brand) {
+        Wait(6);
         if(device.equals("phone")){
             String theString = "//a[contains(@id,'" + brand + "')]";
             driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
         }
         else {
-            String theString = "BrandText_" + brand;
+            String theString = ("BrandText_" + brand);
             driver.findElement(By.id(theString)).click();
             print("Clicked on accessory: " + brand);
         }
@@ -2057,11 +2058,29 @@ public class TestBase {
 
   public void typeDoctorSearch(String doctor) {
       Wait(5);
-    driver.findElement(By.xpath("//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]")).sendKeys(doctor);
-      System.out.println("input dr name for search");
+      driver.findElement(By.xpath("//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]")).clear();
+      driver.findElement(By.xpath("//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]")).sendKeys(doctor);
+      print("input dr name for search");
     Wait(2);
   }
-
+  public void addDoctor(String device){
+      driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
+      print("click add doctor");
+  }
+    public void addDoctorInfo(String device, String lastName, String clinicName, String city, String state, String phone){
+        Wait(3);
+        driver.findElement(By.xpath("//p[contains(@class,'a41-doctor-add-note')]")).click();
+        driver.findElement(By.id("LastName")).clear();
+        driver.findElement(By.id("LastName")).sendKeys(lastName);
+        driver.findElement(By.id("Clinic")).clear();
+        driver.findElement(By.id("Clinic")).sendKeys(clinicName);
+        driver.findElement(By.id("City")).clear();
+        driver.findElement(By.id("City")).sendKeys(city);
+        new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
+        driver.findElement(By.id("Phone")).clear();
+        driver.findElement(By.id("Phone")).sendKeys(phone);
+        driver.findElement(By.id("addDoctorButton")).click();
+    }
   public void typeDoctorStateAndFind(String device,String state) {
         // this is required for all
          new Select(driver.findElement(By.xpath("//select[contains(@id,'DoctorSearchOptionsViewModel_State')]"))).selectByValue(state);

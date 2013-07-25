@@ -6,39 +6,27 @@
   <component name="ChangeListManager">
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/7_24_SuitesOfTests_desktopAll_xml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom_44058.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Doctor/one.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_0_dollar_47761.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_0_dollar_47761.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_cardDecline_47768.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_cardDecline_47768.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiD_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiD_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiN_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiN_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2CanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2CanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorPlanoDeclinedCardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business.xml" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49948.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49948.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49949.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49949.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/how_to_order_brands_46203.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/how_to_order_brands_46203.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/reportPuller" afterPath="$PROJECT_DIR$/src/test/java/Automation/reportPuller" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Business/one.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566663577" ignored="false" />
-    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374618023842" ignored="false" />
+    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374774581196" ignored="false" />
     <file path="/TestUrlOpener.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362958090030" ignored="false" />
     <file path="/ResponsiveSuggest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362959303229" ignored="false" />
     <file path="/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366834471457" ignored="false" />
     <file path="/Utils.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566622203" ignored="false" />
     <file path="/pom.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374601653139" ignored="false" />
-    <file path="/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374767982822" ignored="false" />
+    <file path="/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374792163160" ignored="false" />
     <file path="/a.groovy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372701459820" ignored="false" />
     <file path="/a.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374601006485" ignored="false" />
     <file path="/a.dummy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374765668579" ignored="false" />
@@ -117,7 +105,7 @@
     <file path="/ApprovedVisaForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414975608" ignored="false" />
     <file path="/ApprovedDinersCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368812123641" ignored="false" />
     <file path="/ApprovedMCForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414927932" ignored="false" />
-    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374768209088" ignored="false" />
+    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374792626122" ignored="false" />
     <file path="/Links47930.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369327364378" ignored="false" />
     <file path="/Links.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374163574896" ignored="false" />
     <file path="/TitleTags.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369337395766" ignored="false" />
@@ -281,6 +269,8 @@
     <file path="/how_to_order_brands_46203.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374701888603" ignored="false" />
     <file path="/Find_my_account_50468.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374618221811" ignored="false" />
     <file path="/First.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374705231256" ignored="false" />
+    <file path="/NI_Business_Test_49948.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374773491427" ignored="false" />
+    <file path="/Doctor_Custom_44058.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374790568565" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,19 +341,7 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TestBase.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="41" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.7365854">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -384,14 +362,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Automation/reportPuller" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/how_to_order_brands_46203.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiD_48580.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiN_48580.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2CanadaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorPlanoDeclinedCardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" />
@@ -399,7 +369,15 @@
         <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49948.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/one.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49949.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom_44058.java" />
         <option value="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Doctor/one.xml" />
       </list>
     </option>
   </component>
@@ -603,6 +581,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SMOKE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Regression" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -633,7 +637,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Payment" />
+              <option name="myItemId" value="Doctor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Promos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -679,18 +735,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Regression.Doctor" />
       <recent name="Regression.OpenBugs" />
       <recent name="Regression.Payment" />
       <recent name="Automation" />
       <recent name="Business" />
-      <recent name="Promos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\test\src\test\java\Regression\Doctor" />
       <recent name="C:\test\src\test\java\Regression\OpenBugs" />
       <recent name="C:\test\src\test\java\Automation" />
       <recent name="C:\test\src\test\java\Business" />
       <recent name="C:\test\src\test\java\Regression\Rebates" />
-      <recent name="C:\test\src\test\java\SMOKE" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\test\src\test\java\Regression\Account" />
@@ -699,128 +755,128 @@
       <recent name="C:\test\src\test\java\SMOKE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/PDP/pdp.xml">
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/one.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml">
     <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Business/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Business/one.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctor_Custom_44058.test" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Regression.Doctor" />
+      <option name="MAIN_CLASS_NAME" value="Regression.Doctor.Doctor_Custom_44058" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Doctor/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Doctor/one.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -979,19 +1035,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.FirstTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/OpenBugs/one.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll.xml" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/desktopSmokeALL.xml" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/pdp.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/pdp.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Business/one.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.Doctor_Custom_44058.test" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/PDP/pdp.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/one_test.xml" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/desktopSmokeALL.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.Doctor_Custom_44058.test" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Doctor/one.xml" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1099,9 +1155,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.73503435" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.6411709" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.6411709" order="1" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35882908" sideWeight="0.8875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35882908" sideWeight="0.8875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1211,90 +1267,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2CanadaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="549" selection-end="549" vertical-scroll-proportion="-1.5234375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiN_48580.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="45" selection-start="913" selection-end="913" vertical-scroll-proportion="0.54375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Frequency55MultiD_48580.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0421875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/phoneSmokeALL.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/desktopSmokeALL.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="1470" selection-end="1505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="44" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeRIColorPlanoDeclinedCardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="143" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="143" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.78167117">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIColorPlanoDeclinedCardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="44" selection-start="2837" selection-end="2853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/INI_cardDecline_47768.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="144" selection-start="3130" selection-end="3417" vertical-scroll-proportion="0.55121297">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="35" selection-start="5649" selection-end="5649" vertical-scroll-proportion="0.59973043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/one_test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="59" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="208" selection-end="224" vertical-scroll-proportion="0.20673813">
@@ -1316,9 +1288,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49945.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="26" selection-start="423" selection-end="5944" vertical-scroll-proportion="0.7890625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49948.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="22" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.2828125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="678" selection-end="678" vertical-scroll-proportion="0.4961715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49935.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="0" selection-start="423" selection-end="5705" vertical-scroll-proportion="0.83125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Promos/FreeExpeditedShipping_SolutionPromo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="25" selection-start="495" selection-end="495" vertical-scroll-proportion="0.5859375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeNIAcuvue2AccessoryCanadaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="4188" selection-end="4468" vertical-scroll-proportion="0.5015625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="149" selection-end="149" vertical-scroll-proportion="0.124042876">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_49949.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="22" selection-start="4245" selection-end="4259" vertical-scroll-proportion="0.2953125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom_44058.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="34" selection-start="5260" selection-end="5260" vertical-scroll-proportion="5.484375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/one.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="288" selection-end="288" vertical-scroll-proportion="0.2894334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Doctor/one.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="185" selection-end="185" vertical-scroll-proportion="0.24808575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Automation/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="41" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.7365854">
+        <state line="2069" column="122" selection-start="100378" selection-end="100378" vertical-scroll-proportion="4.4243903">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

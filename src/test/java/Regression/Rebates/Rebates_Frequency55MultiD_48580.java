@@ -15,17 +15,17 @@ public class Rebates_Frequency55MultiD_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
-    String orderNumberPlaceholder = "48580Acuvue2_rebate";
+    String orderNumberPlaceholder = "48580Frequency55D_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
     String Frequency55Multifocal="lens/frequency-55-multifocal" ;
     String rebatesAvailable = "Rebate expected--save $20 on 4";
-    String RebateTextRS = "Biomedics Rebate";
+    String RebateTextRS = "Frequency Rebate";
     String rebate6Month = "20.0";
     String rebate12Month = "";
-        String brandVerifyPDP = "Acuvue 2";
+        String brandVerifyPDP = "Frequency 55";
     String posR = "";
     String posL = "";
     String rPower = "-0.50";

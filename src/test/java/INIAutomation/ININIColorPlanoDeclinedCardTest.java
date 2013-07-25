@@ -92,7 +92,9 @@ public class ININIColorPlanoDeclinedCardTest extends TestBase {
     String ccName = "Blah";
     String ccExpMo = "03";
     String ccExpYear = "2014";
-    String creditCardBad = "4111111111111111";
+    String creditCardBad = "5424180279791740";
+    String creditCardInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
+    String creditCardDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
@@ -149,7 +151,7 @@ public class ININIColorPlanoDeclinedCardTest extends TestBase {
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         clickBottomSubmitButton(device);
-        verifyDeclinedCard(device);
+         verifyDeclinedCard(device,creditCardDecline);
         takeScreenshot(screenshotTestName, "DeclinedCard");
         goToCart1Item(device);
         clickCart_Continue(device);

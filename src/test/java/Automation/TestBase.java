@@ -59,9 +59,7 @@ public class TestBase {
 
    //PRODUCTION
    //public String desktopBaseUrl = "https://www.1800contacts.com/";
-/*
-    public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
-*/
+    //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-33.ctac.1800contacts.com/";
@@ -70,7 +68,8 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-/*    public String mobileBaseUrl = "https://www.1800contacts.com/";
+   /* public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
@@ -466,7 +465,7 @@ public class TestBase {
         {
             try {WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
             String toVerify = weText.getText();
-            assertTxtPresent("2nd try Pages:  Searched for " + searchedFor, expected, toVerify);
+            verifyTxtPresent("2nd try Pages:  Searched for " + searchedFor, expected, toVerify);
             new String (state = "PASS");
             }
             catch(Exception E){
@@ -684,7 +683,13 @@ public class TestBase {
         weFName.sendKeys(PatientFNameCart);
         weLName.sendKeys(PatientLNameCart);
         weCustID.sendKeys(CustID);
-        driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_FindMyAccountSearch1__searchCustomerInformationButton')]")).click();
+        Wait(3);
+        WebElement weSearch = driver.findElement(By.xpath("//input[contains(@name,'searchCustomerInformationButton')]"));
+        weSearch.click();
+        print("Clicked Search");
+        Wait(3);
+        String titleUpdatePass = driver.findElement(By.xpath("//img[contains(@title,'Update Your Password')]")).getText();
+        verifyTxtPresent("Update Password Page Found: ","Update Your Password",titleUpdatePass);
     }
     public void gotoDashboard(String device){
         if(device.equals("desktop")){
@@ -700,6 +705,9 @@ public class TestBase {
             driver.findElement(By.xpath("//a[contains(.,'Dashboard')]")).click();
             System.out.println("Clicked on dashboard");
         }
+    }
+    public void clickGo(String device){
+        driver.findElement(By.xpath("//input[contains(@id,'GoButton')]")).click();
     }
     public void gotoOrderStatusHistory(String device){
         if(device.equals("desktop")){
@@ -2486,9 +2494,13 @@ public class TestBase {
         System.out.println("shipping address must = billing address ");
         Wait(5);
     }
-  public void verifyDeclinedCard(String device) {
-          driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
+  public void verifyDeclinedCard(String device, String error) {
+          try{driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
           System.out.println("Found CreditCard Error page");
+          }
+          catch (Throwable e){String actualError = driver.findElement(By.xpath("//ul[contains(@id,'errorMessagesUl')]")).getText();
+              verifyTxtPresent("Error Message for Card: ",error,actualError);}
+
   }
     public void verifyTestDeclinedCard(String device) {     //for the 4111111111 card
         driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
@@ -2827,7 +2839,7 @@ public class TestBase {
         Wait(14);
         System.out.println("Page title is: " + driver.getTitle());
         String verifyProdPDP =  driver.findElement(By.xpath("//h1[@class='product-heading']")).getText();
-        System.out.println("Brand is:" + verifyProdPDP);
+        System.out.println("Brand is: " + verifyProdPDP);
         verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
     }
     public void verifyTxtPresent(String identifier, String desired, String actual){
@@ -2836,9 +2848,9 @@ public class TestBase {
         Matcher m = p.matcher(actual);
         // try to find a match
         if (m.find())
-            System.out.println("VERIFIED " + identifier + "Found :" + desired + ", within, " + actual );
+            System.out.println("VERIFIED " + identifier + ". Found : " + desired + ", within, " + actual );
         else
-            System.out.println("FAIL " + identifier + "NOT FOUND :" + desired + ", within, " + actual );
+            System.out.println("FAIL " + identifier + ". NOT FOUND : " + desired + ", within, " + actual );
     }
     public void verifyCart(String device,String brand,String patientName,String price,String totalR, String totalL, String cartTotal) {
         Wait(14);

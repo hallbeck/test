@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="classes" thread-count="4">
-    <test name="WIN">
+<suite name="desktop" verbose="1" parallel="classes" thread-count="2">
+    <test name="account">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.SmokeNI1EyePrepAddTest"/>

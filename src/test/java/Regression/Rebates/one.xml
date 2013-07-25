@@ -3,7 +3,7 @@
 <suite name="rebates" verbose="1">
     <test name="RebateTests_B" >
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='no'/>
+        <parameter name="prod" value='yes'/>
         <classes>
             <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
             <class name="Regression.Rebates.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>

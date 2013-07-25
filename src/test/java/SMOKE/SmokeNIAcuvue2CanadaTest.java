@@ -18,7 +18,7 @@ public class SmokeNIAcuvue2CanadaTest extends TestBase {
     String typeOfTest = "SMOKE";
 String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "acuvue";
+    String searchAllBrand = "acuvue 2";
     String searchAllBrand2 = "";
     String brandToClickOn = "Acuvue2";
     String brandToClickOn2 = "";

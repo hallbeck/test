@@ -4,7 +4,7 @@
     <test name="NIINIDesktop">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="INIAutomation.ININIMultiBrand1EyeEachTest"/>
+            <class name="INIAutomation.INI_0_dollar_47761"/>
         </classes>
     </test>
 </suite>

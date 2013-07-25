@@ -15,7 +15,6 @@ public class Find_my_account_50468 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "50468";
-    String testNumberDependentOn = "48412_signin";
     String typeOfTest = "Regression";
     String typeOfCust = "RI";
     String typeOfPayment = "N_A";
@@ -61,7 +60,7 @@ public class Find_my_account_50468 extends TestBase {
     String lBoxes2 = "";
     String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
-    String CustID = "1496408";
+    String CustID = "14964083";
     String PatientFNameCart2 = "PatTwoFirst";
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);

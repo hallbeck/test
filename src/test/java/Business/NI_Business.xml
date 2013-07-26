@@ -17,6 +17,13 @@
             <class name="Business.NI_Business_Test_49945"/>
             <class name="Business.NI_Business_Test_49946"/>
             <class name="Business.NI_Business_Test_49947"/>
+            <class name="Business.NI_Business_Test_49948"/>
+            <class name="Business.NI_Business_Test_49949"/>
+            <class name="Business.NI_Business_Test_49951"/>
+            <class name="Business.NI_Business_Test_49952"/>
+            <class name="Business.NI_Business_Test_49954"/>
+            <class name="Business.NI_Business_Test_49955"/>
+            <class name="Business.NI_Business_Test_49956"/>
         </classes>
     </test>
 </suite>

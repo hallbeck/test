@@ -17,9 +17,12 @@ import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.*;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -202,6 +205,31 @@ public class TestBase {
         driver.get(desktopBaseUrl + addition);
         System.out.println("went to: " + desktopBaseUrl  + addition);
         Wait(2);
+    }
+    public void closeNewWindow (){
+        Wait(2);
+        String base = driver.getWindowHandle();
+
+        Set<String> set = driver.getWindowHandles();
+
+        set.remove(base);
+        assert set.size()==1;
+
+        driver.switchTo().window((String) set.toArray()[0]);
+
+        driver.close();
+        driver.switchTo().window(base);
+        Wait(2);
+    }
+    public void clickAndVerifyLink(String link,String expected,String tag){
+        driver.findElement(By.linkText(link)).click();
+        print ("Clicked on: " + link);
+        verifyTag(tag,expected);
+    }
+    public void clickAndVerifyName(String link,String expected,String tag){
+        driver.findElement(By.name(link)).click();
+        print ("Clicked on: " + link);
+        verifyTag(tag,expected);
     }
     public void gotoPageVTitle(String addition,String expected) {
         driver.get(desktopBaseUrl + addition);
@@ -478,13 +506,25 @@ public class TestBase {
     }
     public void verifyPageTitle(String expected) {
         try{
-        WebElement weText = driver.findElement(By.tagName("title"));
-        String toVerify = weText.getText();
-        verifyTxtPresent("Pages: ",expected,toVerify);
+            WebElement weText = driver.findElement(By.tagName("title"));
+            String toVerify = weText.getText();
+            verifyTxtPresent("Pages: ",expected,toVerify);
         }
         catch(Exception e)
         {
-            System.out.println("FAIL: " + expected + " NOT Found " );
+            print("FAIL: " + expected + " NOT Found " );
+        }
+    }
+    public void verifyTag(String tag,String expected) {
+        try{
+            WebElement weText = driver.findElement(By.tagName(tag));
+            String toVerify = weText.getText();
+            print("found this text: " + toVerify);
+            verifyTxtPresent("Pages: ",expected,toVerify);
+        }
+        catch(Exception e)
+        {
+            print("FAIL: " + expected + " NOT Found " );
         }
     }
     public void assertPageTitleError(String expected) {

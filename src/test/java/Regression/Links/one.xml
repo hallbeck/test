@@ -3,9 +3,9 @@
 
 <suite name="Links" verbose="1" >
     <test name="LinkTests" >
-        <parameter name="device" value='phone'/>
+        <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Links.Links47930"/>
+            <class name="Regression.Links.Links50356"/>
         </classes>
     </test>
 </suite>

@@ -74,10 +74,10 @@ public class SmokeRIColorPlanoDeclinedCardTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4111111111111111";
+    String creditCard = "prod";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String creditCardBad = "5424180279791740";
     String creditCardInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     String creditCardDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";

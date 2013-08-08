@@ -70,8 +70,8 @@ public class Rebates_Flextique55Asph_48580 extends TestBase {
 String password = "password";
     String creditCard = "373235387881007";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";

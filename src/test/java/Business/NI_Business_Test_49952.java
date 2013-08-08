@@ -91,8 +91,8 @@ public class NI_Business_Test_49952 extends TestBase {
     String drState = "UT";
     String creditCard = "4012000077777777";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Standard";
@@ -109,8 +109,6 @@ public class NI_Business_Test_49952 extends TestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

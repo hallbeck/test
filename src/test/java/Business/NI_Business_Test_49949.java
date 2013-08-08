@@ -19,10 +19,10 @@ public class NI_Business_Test_49949 extends TestBase {
     String typeOfTest = "BUSINESS";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "Air Optix Aqua";
-    String searchAllBrand2 = "eye drops";
-    String brandToClickOn = "AirOptixAqua";
     String reg = "®";
+    String searchAllBrand = "Air Optix Aqua";
+    String searchAllBrand2 = "OPTI-FREE"+reg+" PureMoist"+reg+" RewettingDrops";
+    String brandToClickOn = "AirOptixAqua";
     String brandToClickOn2 = "OPTI-FREE®PureMoist®RewettingDrops";
     String brandVerifyPDP = "Air Optix Aqua";
     String brandVerifyPDP2 = "OPTI-FREE"+reg+" PureMoist"+reg+" RewettingDrops";
@@ -92,8 +92,8 @@ public class NI_Business_Test_49949 extends TestBase {
     String drState = "UT";
     String creditCard = "4012000077777777";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Standard";
@@ -110,8 +110,6 @@ public class NI_Business_Test_49949 extends TestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

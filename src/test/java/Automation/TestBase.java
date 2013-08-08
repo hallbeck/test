@@ -29,6 +29,7 @@ import java.util.regex.Pattern;
 import static org.junit.Assert.assertEquals;
 
 
+
 /**
  * Created with IntelliJ IDEA.
  * User: KHALLBEC
@@ -71,7 +72,7 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-   /* public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    /*public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
@@ -85,7 +86,34 @@ public class TestBase {
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
+    public String emailFile = "./out/Aug_2013_email_addresses.txt";
+    public String prodVisa = "4111111111111111";
+    public String prodMC = "5111111111111118";
+    public String prodAmex = "300000000000007";
+    public String prodDiscover = "6000000000000007";
+    public String testCard = "4012000077777777";
+    public String badProdCard = "4012000077777777";
+    public String testAmex = "373235387881007";
+    public String testDiscover = "6011000990139424";
+    public String testMCForeign = "5434842555555556";
+    public String testVisaForeign = "4500600000000061";
+    public String testDeclinedVisa = "4111111111111103";
+    public String testDeclinedMC = "5111111111111126";
+    public String testDeclinedAmex = "300000000000015";
+    public String testDeclinedDiscover = "6000000000000015";
+    public String testDiners = "36259600000004";
+    public String testBlank = "";
 
+
+
+    //DB info
+    //Servertype Database Engine
+    //Server name 10.0.36.160
+    //Authentication Windows Authentication
+    //Connection Properties
+    // connect to database 800contacts
+    //network protocol default
+    //network packet size: 4096
 
     //profiles locations are stored in C:\Users\<user>\AppData\Roaming\Mozilla\Firefox
     //change this file to point to your personal profiles
@@ -110,6 +138,8 @@ public class TestBase {
     }*/
     public ChromeOptions options = new ChromeOptions();
     public DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+
+    //for reading datapool
 
     public void defineProfile(String TestNumber,String profile){
         printToExcel(TestNumber + profile, profile);
@@ -231,6 +261,12 @@ public class TestBase {
         print ("Clicked on: " + link);
         verifyTag(tag,expected);
     }
+    public void clickAndVerifyEmail(String link,String expected){
+
+        String stHref = driver.findElement(By.xpath("//a[contains(.,'"+link+"')]")).getAttribute("href");
+        print ("email found: " + stHref);
+        verifyTxtPresent("Email found: ",expected,stHref);
+    }
     public void gotoPageVTitle(String addition,String expected) {
         driver.get(desktopBaseUrl + addition);
         Wait(1);
@@ -239,8 +275,15 @@ public class TestBase {
     public void clickRemove (String device){
         driver.findElement(By.xpath("//a[contains(@id,'cartRemoveLink')]")).click();
     }
+    public void clickViewBrands(String device){
+        driver.findElement(By.xpath("//img[@alt='View brands']")).click();
+    }
     public static String removeCharAt(String s, int pos) {
         return s.substring(0, pos) + s.substring(pos + 1);
+    }
+    public void verifyLoggedIn(String device,String name){
+        String stLogin = driver.findElement(By.xpath("//li[@id='CustomerNavigationName']")).getText();
+        verifyTxtPresent("Name",name,stLogin);
     }
      public void verifyRebateCart(String device,String rebateAmount){
          if(rebateAmount.equals("0.0")){
@@ -731,6 +774,7 @@ public class TestBase {
         String titleUpdatePass = driver.findElement(By.xpath("//img[contains(@title,'Update Your Password')]")).getText();
         verifyTxtPresent("Update Password Page Found: ","Update Your Password",titleUpdatePass);
     }
+
     public void gotoDashboard(String device){
         if(device.equals("desktop")){
         driver.findElement(By.xpath("//a[contains(@id,'dashboardForm')]")).click();
@@ -1289,6 +1333,7 @@ public class TestBase {
         Wait(6);
     }
     public void clickPhoneBrand(String device,String brand) {
+        String reg = "®";
         Wait(6);
         if(device.equals("phone")){
             String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
@@ -1297,11 +1342,11 @@ public class TestBase {
         }
         if(device.equals("desktop")){
             try{
-                driver.findElement(By.id("BrandText_Acuvue")).click();
+                //driver.findElement(By.id("BrandText_Acuvue")).click();
 
                 //String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
                // WebElement weBrand = driver.findElement(By.xpath(theString));
-                String theString ="\"BrandText_" + brand + "\"";
+                String theString =("BrandText_" + brand);
                 WebElement weBrand = driver.findElement(By.id(theString));
                 weBrand.click();
                 System.out.println("Clicked on brand1: " + brand);
@@ -1318,8 +1363,11 @@ public class TestBase {
             }
         }
         if(device.equals("tablet")){
-            String theString = "//a[contains(@id,'BrandSelectButton_" + brand + "')]";
-            driver.findElement(By.xpath(theString)).click();
+
+            //String theString = "//a[contains(@id,'BrandSelectButton_" + brand + "')]";
+            String theString = "BrandText_" + brand + "";
+            driver.findElement(By.id(theString)).click();
+           // driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
         }
       Wait(6);
@@ -1332,6 +1380,7 @@ public class TestBase {
         driver.findElement(By.xpath("//input[contains(@class,'RightEyeCheckBox')]")).click();
     }
   public void clickRPower(String device,String posR,String power) {
+      if (!power.equals("")){
       if(device.equals("phone")){
           WebElement selectElement = driver.findElement
                     (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.SphericalPower')]"));
@@ -1400,9 +1449,14 @@ public class TestBase {
           }
           Wait(5);
       }
+      }
+      else {
+          print("Right Power not supplied");
+      }
   }
 
     public void clickLPower(String device,String posL,String power) {
+        if (!power.equals("")){
         if(device.equals("desktop")){
             Wait(5);
             try {
@@ -1458,25 +1512,41 @@ public class TestBase {
             }
             catch (Throwable E){}}
         }
+        }
+        else {
+            print("Left Power not supplied");
+        }
         Wait(1);
     }
     public void clickRDN(String device,String DN) {
+        if (!DN.equals("")){
         WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
         weDNNumber.click();
         weDNNumber.sendKeys(DN);
         System.out.println("Dom/NonDom for right eye: " + DN);
+        }
+
+        else {
+            print("Right DN not supplied");
+        }
         Wait(5);
     }
     public void clickLDN(String device,String DN) {
+        if (!DN.equals("")){
         WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
         //WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Dominant')]"));
         //weDNNumber.click();
         weDNNumber.sendKeys(DN);
         System.out.println("Dom/NonDom for left eye: " + DN);
         Wait(5);
+        }
+        else {
+            print("Left DN not supplied");
+        }
     }
 
   public void clickRBC(String bc) {
+      if (!bc.equals("")){
     String thePickerString = "//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.BaseCurve')]";
       WebElement weBc = driver.findElement(By.xpath(thePickerString));
       weBc.click();
@@ -1484,7 +1554,12 @@ public class TestBase {
       weBc.sendKeys(bc,Keys.ENTER);
       Wait(1);
   }
+    else {
+        print("Right BC not supplied");
+    }
+  }
     public void clickLBC(String bc) {
+        if (!bc.equals("")){
         String thePickerString = "//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.BaseCurve')]";
         WebElement weBc = driver.findElement(By.xpath(thePickerString));
         weBc.click();
@@ -1492,72 +1567,117 @@ public class TestBase {
         weBc.sendKeys(bc,Keys.ENTER);
         Wait(1);
     }
+    else {
+        print("Left BC not supplied");
+    }
+    }
     public void clickRDia(String dia) {
+        if (!dia.equals("")){
         WebElement weDia2 = driver.findElement
                 (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.DiameterLength')]"));
         weDia2.click();
         weDia2.sendKeys(dia,Keys.ENTER);
         System.out.println("Dia for right eye: " + dia);
         Wait(1);
+        }
+        else {
+            print("Right DIA not supplied");
+        }
     }
     public void clickLDia(String dia) {
+        if (!dia.equals("")){
             WebElement weDia2 = driver.findElement
                     (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.DiameterLength')]"));;
             weDia2.click();
             weDia2.sendKeys(dia,Keys.ENTER);
             System.out.println("Dia for left eye: " + dia);
         Wait(1);
+        }
+        else {
+            print("Left DIA not supplied");
+        }
     }
 
     public void clickRCyl(String cyl) {
+        if (!cyl.equals("")){
         WebElement weCyl = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
         weCyl.click();
         System.out.println("Cyl for right eye: " + cyl);
         weCyl.sendKeys(cyl,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Right CYL not supplied");
+        }
     }
     public void clickLCyl(String cyl) {
+        if (!cyl.equals("")){
         WebElement weCyl = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
         weCyl.click();
         System.out.println("Cyl for left eye: " + cyl);
         weCyl.sendKeys(cyl,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Left CYL not supplied");
+        }
     }
     public void clickRAxis(String axis) {
+        if (!axis.equals("")){
         WebElement weAxis = driver.findElement
                 (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AxisDegree')]"));
         weAxis.click();
         System.out.println("Axis for right eye: " + axis);
         weAxis.sendKeys(axis,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Right Axis not supplied");
+        }
     }
     public void clickLAxis(String axis) {
+        if (!axis.equals("")){
         WebElement weAxis = driver.findElement
                 (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AxisDegree')]"));
         weAxis.click();
         System.out.println("Axis for left eye: " + axis);
         weAxis.sendKeys(axis,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Left Axis not supplied");
+        }
     }
     public void clickRColor(String color) {
+        if (!color.equals("")){
         WebElement weColor = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.ColorId')]"));
         weColor.click();
         weColor.sendKeys(color,Keys.ENTER);
         System.out.println("Color for right eye: " + color);
         Wait(1);
+        }
+        else {
+            print("Right Color not supplied");
+        }
     }
     public void clickLColor(String color) {
+        if (!color.equals("")){
         WebElement weColor = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.ColorId')]"));
         weColor.click();
         System.out.println("Color for left eye: " + color);
         weColor.sendKeys(color,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Left Color not supplied");
+        }
     }
     public void clickRboxes(String box) {
+        if (!box.equals("")){
         WebElement weBox = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
         weBox.click();
@@ -1565,8 +1685,13 @@ public class TestBase {
         weBox.sendKeys(box,Keys.ENTER);
         System.out.println(box + " boxes Right Eye");
         Wait(1);
+        }
+        else {
+            print("Right Boxes not supplied");
+        }
     }
     public void clickLboxes(String box) {
+        if (!box.equals("")){
         WebElement weBox = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
         weBox.click();
@@ -1574,23 +1699,37 @@ public class TestBase {
         weBox.sendKeys(box,Keys.ENTER);
         System.out.println(box + " boxes Left Eye");
         Wait(1);
+        }
+        else {
+            print("Left Boxes not supplied");
+        }
     }
 
     public void clickRAdd(String add) {
+        if (!add.equals("")){
         WebElement weAdd = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
         weAdd.click();
         System.out.println("ADD for Right eye: " + add);
         weAdd.sendKeys(add,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Right ADD not supplied");
+        }
     }
     public void clickLAdd(String add) {
+        if (!add.equals("")){
         WebElement weAdd = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
         weAdd.click();
         System.out.println("ADD for left eye: " + add);
         weAdd.sendKeys(add,Keys.ENTER);
         Wait(1);
+        }
+        else {
+            print("Left ADD not supplied");
+        }
     }
   public void typePatientName(String first, String last) {
     WebElement firstPatientName = driver.findElement(By.xpath("//input[contains(@id,'firstNameInput')]"));
@@ -2026,6 +2165,7 @@ public class TestBase {
     driver.findElement(By.xpath("//input[contains(@name,'EmailAddress')]")).sendKeys(theEmailString);
     System.out.println("Email used is: " + theEmailString);
       printToExcel(testNumber,theEmailString);
+      appendToFile(emailFile,theEmailString);
   }
   public void typePassword_newcust(String password) {
       Wait(3);
@@ -2104,7 +2244,15 @@ public class TestBase {
     Wait(2);
   }
   public void addDoctor(String device){
-      driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
+      if(device.equals("desktop")){
+          driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
+      }
+      if(device.equals("tablet")){
+          driver.findElement(By.xpath("//a[contains(.,'Add a Doctor')]")).click();
+      }
+      if(device.equals("phone")){
+          driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
+      }
       print("click add doctor");
   }
     public void addDoctorInfo(String device, String lastName, String clinicName, String city, String state, String phone){
@@ -2119,7 +2267,15 @@ public class TestBase {
         new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
         driver.findElement(By.id("Phone")).clear();
         driver.findElement(By.id("Phone")).sendKeys(phone);
+        if(device.equals("desktop")){
         driver.findElement(By.id("addDoctorButton")).click();
+        }
+        if(device.equals("tablet")){
+            driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton')]")).click();
+        }
+        if(device.equals("phone")){
+            driver.findElement(By.id("addDoctorButton")).click();
+        }
     }
   public void typeDoctorStateAndFind(String device,String state) {
         // this is required for all
@@ -2429,7 +2585,57 @@ public class TestBase {
     }
 
 
-  public void typeCreditCard(String device,String cardNumber) {
+  public void typeCreditCard(String device,String card) {
+      String cardNumber ="";
+      if (card.equals("prodVisa")){
+          cardNumber = prodVisa;
+      }
+      if (card.equals("prodMC")){
+          cardNumber = prodMC;
+      }
+      if (card.equals("prodAmex")){
+          cardNumber = prodAmex;
+      }
+      if (card.equals("prodDiscover")){
+          cardNumber = prodDiscover;
+      }
+      if (card.equals("test")){
+          cardNumber = testCard;
+      }
+      if (card.equals("badProd")){
+          cardNumber = badProdCard;
+      }
+      if (card.equals("testAmex")){
+          cardNumber = testAmex;
+      }
+      if (card.equals("testDiscover")){
+          cardNumber = testDiscover;
+      }
+      if (card.equals("testMCForeign")){
+          cardNumber = testMCForeign;
+      }
+      if (card.equals("testVisaForeign")){
+          cardNumber = testVisaForeign;
+      }
+      if (card.equals("testDeclinedVisa")){
+          cardNumber = testDeclinedVisa;
+      }
+      if (card.equals("testDeclinedMC")){
+          cardNumber = testDeclinedMC;
+      }
+      if (card.equals("testDeclinedAmex")){
+          cardNumber = testDeclinedAmex;
+      }
+      if (card.equals("testDeclinedDiscover")){
+          cardNumber = testDeclinedDiscover;
+      }
+      if (card.equals("testDiners")){
+          cardNumber = testDiners;
+      }
+      if (card.equals("testBlank")){
+          cardNumber = testBlank;
+      }
+      //add part for prod cc. TODO
       Wait(4);
       if(device.equals("desktop")){
           Wait(2);
@@ -2477,6 +2683,21 @@ public class TestBase {
       System.out.println("CC Name Used: " + creditName);
   }
   public void pickCreditCardExpDate(String device,String month, String year) {
+      if (month.equals("")){
+          int imonth = iMoY;
+          if (imonth <10){
+              String smonth = Integer.toString(iMoY);
+              month = ("0"+smonth);
+          }
+          else{
+              month = Integer.toString(iMoY);
+          }
+
+      }
+      if (year.equals("")){
+          year = Integer.toString(iYr);
+      }
+      print(month + ".."+year);
       if(device.equals("phone")){
         driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
         driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationYear')]")).sendKeys(year);
@@ -3698,3 +3919,4 @@ public class TestBase {
         System.out.println(results);
     }
 }
+

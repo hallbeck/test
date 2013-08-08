@@ -38,8 +38,8 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.BrandCanvas_Click_Promo"/>
-            <class name="Promos.FreeExpeditedShipping_SolutionPromo"/>
+            <class name="Promos.current.BrandCanvas_Click_Promo"/>
+            <class name="Promos.old.FreeExpeditedShipping_SolutionPromo"/>
         </classes>
     </test>
     <test name="AccountTests" >

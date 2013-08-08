@@ -4,7 +4,7 @@
     <test name="desktopPaymentTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Payment.ApprovedVisaForeignCard47577"/>
+            <class name="Regression.Payment.ApprovedTestCard47577"/>
         </classes>
     </test>
 </suite>

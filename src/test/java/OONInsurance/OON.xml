@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="OON" verbose="1" >
+    <listeners>
+    </listeners>
+    <test name="OONTests" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="OONInsurance.OONTest"/>
+            <class name="OONInsurance.OON_50614"/>
+        </classes>
+    </test>
+</suite>

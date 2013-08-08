@@ -57,7 +57,7 @@ my $insertthis = '#content ul li span .pass {
  #foreach my $lines (@lines) {
     #foreach my $find (@find){
            #if ($lines =~  /$find/ ) {
-          # open (MYFILE, ">>$outfilename");
+          # open (FILE, ">>$outfilename");
           # print "$lines\n";
           # print MYFILE "$lines<br/>";
           #close (MYFILE);

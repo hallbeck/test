@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Doctor" verbose="1" >
+    <listeners>
+    </listeners>
+    <test name="DoctorTests" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Doctor.Doctor_Custom_44058"/>
+        </classes>
+    </test>
+</suite>

@@ -1,29 +1,30 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="WIN" verbose="1" parallel="classes" thread-count="5">
+<suite name="WIN" verbose="1" parallel="classes" thread-count="10">
     <test name="WIN">
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Business.NI_Business_Test_49935"/>
-            <class name="Business.NI_Business_Test_49936"/>
-            <class name="Business.NI_Business_Test_49937"/>
-            <class name="Business.NI_Business_Test_49938"/>
-            <class name="Business.NI_Business_Test_49939"/>
-            <class name="Business.NI_Business_Test_49940"/>
-            <class name="Business.NI_Business_Test_49941"/>
-            <class name="Business.NI_Business_Test_49943"/>
-            <class name="Business.NI_Business_Test_49944"/>
-            <class name="Business.NI_Business_Test_49945"/>
-            <class name="Business.NI_Business_Test_49946"/>
-            <class name="Business.NI_Business_Test_49947"/>
-            <class name="Business.NI_Business_Test_49948"/>
+            <class name="Business.done.NI_Business_Test_49935"/>
+            <class name="Business.done.NI_Business_Test_49936"/>
+            <class name="Business.done.NI_Business_Test_49937"/>
+            <class name="Business.done.NI_Business_Test_49938"/>
+            <class name="Business.done.NI_Business_Test_49939"/>
+            <class name="Business.done.NI_Business_Test_49940"/>
+            <class name="Business.done.NI_Business_Test_49941"/>
+            <class name="Business.done.NI_Business_Test_49943"/>
+            <class name="Business.done.NI_Business_Test_49944"/>
+            <class name="Business.done.NI_Business_Test_49945"/>
+            <class name="Business.done.NI_Business_Test_49946"/>
+            <class name="Business.done.NI_Business_Test_49947"/>
+            <class name="Business.done.NI_Business_Test_49948"/>
             <class name="Business.NI_Business_Test_49949"/>
-            <class name="Business.NI_Business_Test_49951"/>
+            <class name="Business.done.NI_Business_Test_49951"/>
             <class name="Business.NI_Business_Test_49952"/>
-            <class name="Business.NI_Business_Test_49954"/>
-            <class name="Business.NI_Business_Test_49955"/>
-            <class name="Business.NI_Business_Test_49956"/>
+            <class name="Business.done.NI_Business_Test_49954"/>
+            <class name="Business.done.NI_Business_Test_49955"/>
+            <class name="Business.done.NI_Business_Test_49956"/>
+            <class name="Business.done.NI_Business_Test_49962"/>
         </classes>
     </test>
 </suite>

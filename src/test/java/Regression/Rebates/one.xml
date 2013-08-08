@@ -5,10 +5,7 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='yes'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.Rebates_PureVision2HD_48580"/>
         </classes>
     </test>
 </suite>

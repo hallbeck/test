@@ -96,8 +96,8 @@ public class PDPBadPName47802 extends TestBase {
     String drState = "UT";
     String creditCard = "4012000077777777";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Next Day by Noon";

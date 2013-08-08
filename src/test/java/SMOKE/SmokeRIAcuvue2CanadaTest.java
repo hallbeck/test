@@ -75,10 +75,10 @@ public class SmokeRIAcuvue2CanadaTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "prod";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Canada Standard";

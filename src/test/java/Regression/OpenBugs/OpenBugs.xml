@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Links" verbose="1" >
+    <test name="LinkTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.OpenBugs.how_to_order_brands_46203"/>
+            <class name="Regression.Links.Links50356"/>
+            <class name="Regression.OpenBugs.Find_my_account_50468"/>
+            <class name="OONInsurance.OON_50614"/>
+        </classes>
+    </test>
+</suite>

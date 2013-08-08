@@ -95,8 +95,8 @@ public class lightbox_test extends TestBase {
     String drState = "UT";
     String creditCard = "4500600000000061";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";

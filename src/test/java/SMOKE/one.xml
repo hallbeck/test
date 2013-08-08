@@ -1,10 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1" parallel="methods" thread-count="1">
-    <test name="NIsmokeTablet">
+    <test name="Rerun_Smoke_Desktop">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.SmokeRIAcuvue2PlanoCanadaTest"/>
         </classes>
     </test>
 </suite>

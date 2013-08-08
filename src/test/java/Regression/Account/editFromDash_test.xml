@@ -8,10 +8,12 @@
             <class name="Regression.Account.editRxNI_49773"/>
             <class name="Regression.Account.editRxNI_49774"/>
             <class name="Regression.Account.editRxNI_49775"/>
+            <class name="Regression.Account.NILogin_48412"/>
             <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
             <class name="Regression.Account.editRxRI_49777"/>
             <class name="Regression.Account.editRxRI_49778"/>
             <class name="Regression.Account.editRxRI_49779"/>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
         </classes>
     </test>
 </suite>

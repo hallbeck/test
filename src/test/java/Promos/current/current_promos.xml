@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Account" verbose="1" >
+    <listeners>
+    </listeners>
+    <test name="AccountTests" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Promos.current.BrandCanvas_Click_Promo"/>
+            <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
+        </classes>
+    </test>
+</suite>

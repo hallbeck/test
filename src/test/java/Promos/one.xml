@@ -7,7 +7,7 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.AutoLogin1Test"/>
+            <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
         </classes>
     </test>
 </suite>

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class Links50356 extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "450356";
+    String testNumber = "50356";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Credit";
@@ -23,27 +23,26 @@ public class Links50356 extends TestBase {
     String amaLink = "American Medical Association";
     String amaTitle = "Opinion 8.06 - Prescribing and Dispensing Drugs and Devices"; //this is an H1 -- url is http://www.ama-assn.org/ama/pub/physician-resources/medical-ethics/code-medical-ethics/opinion806.page
     String ftcGov1 = "DocAndRx/DocRx-Charge.aspx";
-    String ftcLink = "i1";// <img alt="File a Complaint" name="i1" src="http://www.1800contactstest.com/Img/Static/docAndRx/docAndRx-DocNo-Complaint_0.gif" border="0" height="41" width="196">
-    String FTCTitle = "Complying with the Contact Lens Rule"; //H2 "Complying with the Contact Lens Rule"   http://business.ftc.gov/documents/bus63-complying-contact-lens-rule
+    String ftcLink = "i1";
+    String FTCTitle = "Complying with the Contact Lens Rule";
     String ftcGov2 = "DocAndRx/DocRx-Release.aspx";
     String ftcGov3 = "DocAndRx/DocRx-Release-1.aspx";
     String ftcGov4 = "DocAndRx/DocRx-release-2.aspx";
     String ftcGov5 = "DocAndRx/DocRx-Release-2.aspx";
     String ftcGov6 = "DocAndRx/DocRx-Release-3.aspx ";
     String jdPower = "ExternalRelations/CommunityAcc.aspx";
-    String jdPowerLink = "jdpower.com";// <a href="http://www.jdpower.com/corporate/callcenter" onclick="ensightenClientHelper.trackLink('e', 'JD Power Call Center Exit Link');" target="_blank">jdpower.com</a>
-    //bad page is <h1>This page is in the shop</h1> nmot sure where this should go
+    String jdPowerLink = "jdpower.com";//
+    //bad page is <h1>This page is in the shop</h1> not sure where this should go
     String jdTitle = "This page is in the shop";
     String affiliatesEmail = "Company/AffiliateRestrictedTerms";
-    String affiliatesEmailLink = ""; //<a href="mailto:Affiliates Marketing <affiliates@1800contacts.com>">dedicated Affiliate Manager</a>
-    String affEmail = "";
+    String affiliatesEmailLink = "dedicated Affiliate Manager"; //this is the text of the link that would be clicked on
+    String affEmail = "affiliates@1800contacts.com";
     String pressReleases = "PressReleases";
-    String pressRelEmailLink = "";// <a href="mailto:mgsullivan@utah.gov&quot;">mgsullivan@utah.gov</a>
-    String prEmail = "";
+    String pressRelEmailLink = "mgsullivan@utah.gov";
+    String prEmail = "mgsullivan@utah.gov";
     String shippingVerify = "Expedited";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
-
 
 
     @Test (singleThreaded = true)
@@ -91,12 +90,12 @@ public class Links50356 extends TestBase {
         takeScreenshot(screenshotTestName, "JDPower");
         closeNewWindow();
 
-        /*gotoPage(affiliatesEmail);
-        clickAndVerify(affiliatesEmailLink,affEmail);
+        gotoPage(affiliatesEmail);
+        clickAndVerifyEmail(affiliatesEmailLink,affEmail);
 
         gotoPage(pressReleases);
-        clickAndVerify(pressRelEmailLink,prEmail);
+        clickAndVerifyEmail(pressRelEmailLink,prEmail);
 
-        driver.quit();*/
+        driver.quit();
     }
 }

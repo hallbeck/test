@@ -91,8 +91,8 @@ public class ININIAsphericInternationalTest extends TestBase {
     String drState = "UT";
     String creditCard = "4012000077777777";
     String ccName = "Blah";
-    String ccExpMo = "03";
-    String ccExpYear = "2014";
+    String ccExpMo = "";
+    String ccExpYear = "";
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";

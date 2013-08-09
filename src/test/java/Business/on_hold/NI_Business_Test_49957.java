@@ -1,4 +1,4 @@
-package Business;
+package Business.on_hold;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,11 +11,11 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NI_Business_Test_49958 extends TestBase {
+public class NI_Business_Test_49957 extends TestBase {
 
 
     //change the Strings below to change the tests
-    String testNumber = "49958";
+    String testNumber = "49957";
     String typeOfTest = "SMOKE";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";

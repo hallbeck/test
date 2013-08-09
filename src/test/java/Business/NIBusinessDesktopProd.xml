@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NI Business Desktop" verbose="1" parallel="classes" thread-count="1">
+    <test name="NI Business Desktop Prod">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Business.NI_Business_Test_Desktop_Prod"/>
+        </classes>
+    </test>
+</suite>

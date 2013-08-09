@@ -3,22 +3,22 @@
 <suite name="desktop" verbose="1" >
     <test name="NIsmokeDesktop">
         <classes>
-            <class name="SMOKE.SmokeNIVialTest">
+            <class name="SMOKE.done.SmokeNIVialTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIToricTest">
+            <class name="SMOKE.done.SmokeNIToricTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIProgressiveInternationalTest">
+            <class name="SMOKE.done.SmokeNIProgressiveInternationalTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIProgressiveCanadaTest">
+            <class name="SMOKE.done.SmokeNIProgressiveCanadaTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>

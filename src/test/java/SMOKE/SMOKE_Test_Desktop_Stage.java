@@ -1,7 +1,10 @@
-package Business;
+package SMOKE;
 
 import Automation.TestBase;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,20 +13,20 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NI_Business_Test_composite extends TestBase {
+public class SMOKE_Test_Desktop_Stage extends TestBase {
 
 
     @DataProvider(name = "DP1")
     public Object[][] createData1() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\inputs.xls",
-                "inputs", "business");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "desktop1");
 
         return(retObjArr);
     }
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Oneinput.xls",
-                "inputs", "business");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
+                "inputs", "smoke1");
         return(retObjArr);
     }
 
@@ -69,7 +72,7 @@ public class NI_Business_Test_composite extends TestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        if (searchAllBrand.contains("Acuvue")||searchAllBrand.contains("drops")
+        if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
                 ||searchAllBrand.contains("solution")){
             clickPhoneBrand(device,brandclick);
         }
@@ -153,19 +156,21 @@ public class NI_Business_Test_composite extends TestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
+        if (country.equals("united states")){
         typeDoctorSearch(drName);
         typeDoctorStateAndFind(device,drState);
-        if(!drName.equals("test")){
-            typeDoctorSearch(drName);
-            typeDoctorStateAndFind(device,drState);
-            typeDoctorSearch(drName);
-            typeDoctorStateAndFind(device,drState);
-            addDoctor(device);
-            addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
-        }
+            if(!drName.equals("test")){
+                typeDoctorSearch(drName);
+                typeDoctorStateAndFind(device,drState);
+                typeDoctorSearch(drName);
+                typeDoctorStateAndFind(device,drState);
+                addDoctor(device);
+                addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
+            }
         takeScreenshot(screenshotTestName, "DoctorSearch");
-        if(drName.equals("test")){
-            selectDoctor(device);
+            if(drName.equals("test")){
+                selectDoctor(device);
+            }
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
@@ -182,10 +187,10 @@ public class NI_Business_Test_composite extends TestBase {
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    @AfterMethod
+    /*@AfterMethod
     public void tearDown(){
         driver.manage().deleteAllCookies();
-    }
+    }*/
     @org.junit.AfterClass
     public void shutDown(){
         //driver.quit();

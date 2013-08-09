@@ -10,13 +10,13 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NI_Business_Test_composite extends TestBase {
+public class NI_Business_Test_Desktop_Prod extends TestBase {
 
 
     @DataProvider(name = "DP1")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\inputs.xls",
-                "inputs", "business");
+                "inputsProd", "desktop1");
 
         return(retObjArr);
     }

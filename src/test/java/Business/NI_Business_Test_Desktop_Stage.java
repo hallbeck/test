@@ -10,13 +10,13 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NI_Business_Test_composite extends TestBase {
+public class NI_Business_Test_Desktop_Stage extends TestBase {
 
 
     @DataProvider(name = "DP1")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\inputs.xls",
-                "inputs", "business");
+                "inputsStage", "desktop1");
 
         return(retObjArr);
     }
@@ -69,7 +69,7 @@ public class NI_Business_Test_composite extends TestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        if (searchAllBrand.contains("Acuvue")||searchAllBrand.contains("drops")
+        if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
                 ||searchAllBrand.contains("solution")){
             clickPhoneBrand(device,brandclick);
         }
@@ -182,10 +182,10 @@ public class NI_Business_Test_composite extends TestBase {
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    @AfterMethod
+    /*@AfterMethod
     public void tearDown(){
         driver.manage().deleteAllCookies();
-    }
+    }*/
     @org.junit.AfterClass
     public void shutDown(){
         //driver.quit();

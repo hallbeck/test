@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,16 +11,16 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNIProgressiveInternationalTest extends TestBase {
+public class SmokeNIProgressiveCanadaTest extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "44035";
+    String testNumber = "44034";
     String typeOfTest = "SMOKE";
 String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "progressive";
-    String brandToClickOn = "FocusDAILIESProgressives30pack";
-    String brandVerifyPDP = "Focus DAILIES Progressives 30 pack";
+    String searchAllBrand = "multifocal";
+    String brandToClickOn = "PureVisionMulti-Focal";
+    String brandVerifyPDP = "PureVision Multi-Focal";
     String posR = "+";
     String posL = "+";
     String rPower = "0.25";
@@ -29,28 +29,29 @@ String typeOfCust = "NI";
     String lBC = "";
     String rDia = "";
     String lDia = "";
-    String rAdd = "";
-    String lAdd = "";
-    String rCyl = "";
-    String lCyl = "";
+    String rAdd = "2";
+    String lAdd = "2";
+    String rCyl;
+    String lCyl;
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String ShippingCart = "i";
-    String pricePerBox = "39.99";
-    String priceREye = "239.94";
-    String priceLEye = "239.94";
-    String priceTotal = "499.87";
-    String rsTotal = "499.87";
-    String rsTotalAfterRebate = "479.87";
+    String ShippingCart = "cc";
+    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+    String pricePerBox = "69.99";
+    String priceREye = "139.98";
+    String priceLEye = "139.98";
+    String priceTotal = "306.95";
+    String rsTotal = "306.95";
+    String rsTotalAfterRebate = "249.96";
     String rsTax = "";
-    String rsRebate = "";
-    String rsShipping = "19.99" ;
+    String rsRebate = "30";
+    String rsShipping = "26.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
-    String state = "Newberry";
-    String city = "whatever";
+    String country = "canada";
+    String state = "O";
+    String city = "Ottawa";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
@@ -62,30 +63,28 @@ String typeOfCust = "NI";
     String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Int'l Standard";
+    String shippingVerify = "Canada Express";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+
 
     @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
         openWebPage(device);
-        takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
         clickPhoneBrand(device,brandToClickOn);
-        takeScreenshot(screenshotTestName, "PDP1");
         verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRAdd(rAdd);
+        clickLAdd(lAdd);
         typePatientName(PatientFNameCart,PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
         selectShippingCart(ShippingCart);
-        takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
@@ -97,7 +96,6 @@ String typeOfCust = "NI";
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
         typePassword_newcust(password);
-        takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);

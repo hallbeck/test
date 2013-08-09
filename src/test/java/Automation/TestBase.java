@@ -1,5 +1,8 @@
 package Automation;
 
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
 import org.openqa.selenium.*;
@@ -140,6 +143,38 @@ public class TestBase {
     public DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
     //for reading datapool
+    public String[][] getTableArray(String xlFilePath, String sheetName, String tableName){
+        String[][] tabArray=null;
+        try{
+            Workbook workbook = Workbook.getWorkbook(new File(xlFilePath));
+            Sheet sheet = workbook.getSheet(sheetName);
+            int startRow,startCol, endRow, endCol,ci,cj;
+            Cell tableStart=sheet.findCell(tableName);
+            startRow=tableStart.getRow();
+            startCol=tableStart.getColumn();
+
+            Cell tableEnd= sheet.findCell(tableName, startCol+1,startRow+1, 100, 64000,  false);
+
+            endRow=tableEnd.getRow();
+            endCol=tableEnd.getColumn();
+            print("startRow="+startRow+", endRow="+endRow+", " +
+                    "startCol="+startCol+", endCol="+endCol);
+            tabArray=new String[endRow-startRow-1][endCol-startCol-1];
+            ci=0;
+
+            for (int i=startRow+1;i<endRow;i++,ci++){
+                cj=0;
+                for (int j=startCol+1;j<endCol;j++,cj++){
+                    tabArray[ci][cj]=sheet.getCell(j,i).getContents();
+                }
+            }
+        }
+        catch (Exception e)    {
+            print("error in getTableArray()" + e);
+        }
+
+        return(tabArray);
+    }
 
     public void defineProfile(String TestNumber,String profile){
         printToExcel(TestNumber + profile, profile);
@@ -1333,7 +1368,7 @@ public class TestBase {
         Wait(6);
     }
     public void clickPhoneBrand(String device,String brand) {
-        String reg = "®";
+
         Wait(6);
         if(device.equals("phone")){
             String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
@@ -1743,6 +1778,7 @@ public class TestBase {
   }
 
   public void clickAddRx(String device){
+      print("device is: "+device);
       if(device.equals("phone")){
         driver.findElement(By.xpath("//span[contains(.,'Add Another Rx')]")).click();
         System.out.println("Clicked Add Rx");
@@ -1752,6 +1788,7 @@ public class TestBase {
         System.out.println("Clicked Add Rx");
       }
       else if(device.equals("tablet")){
+          driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletLeftButton rd-grayButton')]"));
           driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletLeftButton rd-grayButton')]")).click();
         System.out.println("Clicked Add Rx");
       }
@@ -1821,10 +1858,11 @@ public class TestBase {
     }
   public void clickAddToCart(String device) {
       Wait(5);
+      print("Device Used is: " + device);
       if(device.equals("phone")){
       WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton rd-addToCartButton')]"));
        weAdd.click();
-          System.out.println("Clicked add to cart");
+          print("Clicked add to cart");
           Wait(5);
       }
       else if(device.equals("tablet")){
@@ -1917,11 +1955,21 @@ public class TestBase {
     // i = international, ii= international exp.
     public void selectShippingCart(String ship) {
         Wait(4);
+        if (!ship.equals("")){
+            try{
             WebElement weShipping = driver.findElement(By.xpath("//select[contains(@id,'ShippingViewModel_SelectedShipperCode')]"));
             weShipping.click();
             weShipping.sendKeys(ship,Keys.TAB);
             Wait(4);
         print("Method of shipping: " + ship);
+            }
+            catch (Throwable e){
+                print ("Couldnt find shipping " + ship);
+            }
+        }
+        if (ship.equals("")){
+        print ("Default Shipping used");
+        }
     }
     //change shipping method on the RS page DOES NOT WORK
     //enter the letter to type
@@ -2599,7 +2647,7 @@ public class TestBase {
       if (card.equals("prodDiscover")){
           cardNumber = prodDiscover;
       }
-      if (card.equals("test")){
+      if (card.equals("test")){   //4012...
           cardNumber = testCard;
       }
       if (card.equals("badProd")){

@@ -4,10 +4,10 @@
     <test name="NIsmokePhone">
         <parameter name="device" value='phone'/>
         <classes>
-            <class name="SMOKE.SmokeNIVialTest"/>
-            <class name="SMOKE.SmokeNIToricTest"/>
-            <class name="SMOKE.SmokeNIProgressiveInternationalTest"/>
-            <class name="SMOKE.SmokeNIProgressiveCanadaTest"/>
+            <class name="SMOKE.done.SmokeNIVialTest"/>
+            <class name="SMOKE.done.SmokeNIToricTest"/>
+            <class name="SMOKE.done.SmokeNIProgressiveInternationalTest"/>
+            <class name="SMOKE.done.SmokeNIProgressiveCanadaTest"/>
             <class name="SMOKE.SmokeNIMultiBrandPatientTest"/>
             <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest"/>
             <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest"/>

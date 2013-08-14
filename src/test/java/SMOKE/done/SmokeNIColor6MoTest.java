@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,25 +11,25 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNI1EyeAsphericTest extends TestBase {
+public class SmokeNIColor6MoTest extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "44039";
+    String testNumber = "44030";
     String typeOfTest = "SMOKE";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "Astigmatism";
-    String searchAllBrand2 = "";
-    String brandToClickOn = "AcuvueOasysforAstigmatism";
+    String searchAllBrand = "color";
+    String searchAllBrand2 = "Toric";
+    String brandToClickOn = "FreshLookColors";
     String brandToClickOn2 = "";
-    String brandVerifyPDP = "Acuvue Oasys for Astigmatism";
+    String brandVerifyPDP = "FreshLook Colors";
     String brandVerifyPDP2 = "";
-    String posR = "";
+    String posR = "+";
     String posL = "+";
-    String rPower = "";
-    String lPower = "0.75";
     String rPower2 = "";
     String lPower2 = "";
+    String rPower = "0.25";
+    String lPower = "0.75";
     String rBC = "";
     String lBC = "";
     String rBC2 = "";
@@ -38,8 +38,8 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
+    String rColor = "V";
+    String lColor = "V";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd = "";
@@ -47,16 +47,16 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String rAdd2 = "";
     String lAdd2 = "";
     String rCyl = "";
-    String lCyl = "--";
+    String lCyl = "";
     String rCyl2 = "";
     String lCyl2 = "";
     String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "11";
+    String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "";
+    String rBoxes = "2";
     String rBoxes2 = "";
-    String lBoxes = "";
+    String lBoxes = "2";
     String lBoxes2 = "";
     String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
@@ -65,17 +65,18 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
     String ShippingCart = "e";
-    String pricePerBox = "47.99";
-    String priceREye = "";
-    String priceLEye = "191.96";
-    String pricePerBox2 = "";
-    String priceREye2 = "";
-    String priceLEye2 = "";
-    String priceTotal = "206.95";
+    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+    String pricePerBox = "49.99";
+    String priceREye = "99.98";
+    String priceLEye = "199.96";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "99.98";
+    String priceLEye2 = "199.96";
+    String priceTotal = "314.93";
     String rsTotal = "230.77";
-    String rsTotalAfterRebate = "181.95";
-    String rsTax = "13.15";
-    String rsRebate = "25 Acuvue Rebate";
+    String rsTotalAfterRebate = "147.92";
+    String rsTax = "14.79";
+    String rsRebate = "";
     String rsShipping = "14.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
@@ -101,6 +102,7 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
 
+
     @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
@@ -113,18 +115,20 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
         takeScreenshot(screenshotTestName, "SearchBrand");
         clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
-        checkBoxRightEye(device);
+        clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickLCyl(lCyl);
-        clickLAxis(lAxis);
-        typePatientName(PatientFNameCart,PatientLNameCart);
+        clickRColor(rColor);
+        clickLColor(lColor);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
+        typePatientName(PatientFNameCart, PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
         selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
-        typeShippingName(shippingFName,shippingLName);
+        typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
         typeShippingAddress();
         typeShippingCity(city);
@@ -141,15 +145,9 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMoBad, ccExpYearBad);
-        clickBottomSubmitButton(device);
-        verifyExpiredCard(device);
-        takeScreenshot(screenshotTestName, "ExpiredCard");
-        typeCreditCard(device,creditCard);
-        typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
-        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
+        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");

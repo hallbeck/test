@@ -1,10 +1,7 @@
 package SMOKE;
 
 import Automation.TestBase;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,11 +13,16 @@ import org.testng.annotations.Test;
 public class SMOKE_Test_Desktop_Stage extends TestBase {
 
 
-    @DataProvider(name = "DP1")
+    @DataProvider(name = "NI")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
-                "inputsStage", "desktop1");
-
+                "inputsStage", "desktopNI");
+        return(retObjArr);
+    }
+    @DataProvider(name = "RI")
+    public Object[][] createData3() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "desktopRI");
         return(retObjArr);
     }
     @DataProvider(name = "OneTest")
@@ -37,12 +39,12 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "OneTest")
+    @Test (dataProvider = "NI")
     @Parameters(value = "device")
-    public void test(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
+    public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
                      String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String CCName,
+                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
                      String drName, String drState,
                      String emailPrefix, String password,
                      String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -172,9 +174,31 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
                 selectDoctor(device);
             }
         }
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            if(!BadCCNum.equals("")){
+                typeCreditCard(device,BadCCNum);
+            }
+            if(BadCCNum.equals("")){
+                typeCreditCard(device,CCNum);
+            }
+            typeCreditCardName(device, CCName);
+            if(BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear);
+            }
+            if(BadccExpMo.equals("")||BadccExpYear.equals("")){
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+            }
+            clickBottomSubmitButton(device);
+            verifyDeclinedCard(device, error);
+            takeScreenshot(screenshotTestName, "DeclinedCard");
+            goToCart1Item(device);
+            clickCart_Continue(device);
+        }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+
+
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -187,10 +211,174 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    /*@AfterMethod
+    @Test (dataProvider = "RI")
+    @Parameters(value = "device")
+    public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
+                       String searchAllBrand, String brandclick, String brandVerifyPDP,
+                       String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String drName, String drState,
+                       String emailPrefix, String password,
+                       String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
+                       String rBC, String lBC, String rBC2, String lBC2,
+                       String rDia, String lDia, String rDia2, String lDia2,
+                       String rColor, String lColor, String rColor2, String lColor2,
+                       String rAdd, String lAdd, String rAdd2, String lAdd2,
+                       String rCyl, String lCyl, String rCyl2, String lCyl2,
+                       String rAxis, String lAxis, String rAxis2, String lAxis2,
+                       String rDN, String lDN,
+                       String rBoxes, String lBoxes, String rBoxes2, String lBoxes2,
+                       String PatientFNameCart, String PatientLNameCart, String PatientFNameCart2, String PatientLNameCart2,
+                       String ShippingCart,
+                       String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
+                       String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String rebateNotShipped, String orderStatus, String shippingVerify,
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
+    {
+        String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+        String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
+        String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
+        String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+
+        takeScreenshot(screenshotTestName, "Interstitial");
+        clickNoThanksButton(device);
+        printTestNumber(printTestName);
+
+
+        goToSignInPage(device);
+        typeReturningPhoneEmail(testNumberDependentOn);
+        typeReturningPhonePassword(device,password);
+        clickSignIn(device);
+        takeScreenshot(screenshotTestName, "Cart1");
+        verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        cartRemove(device);
+        gotoMyAccount(device);
+        editRxDashboard(device);
+
+        if (!searchAllBrand.equals("")){
+        clickFindBrand(device);
+        searchAllBrand(device,searchAllBrand);
+        if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
+                ||searchAllBrand.contains("solution")){
+            clickPhoneBrand(device,brandclick);
+        }
+        }
+        takeScreenshot(screenshotTestName, "PDP1");
+        if (oneEyeFirstOrder.equals("R")){
+            checkBoxRightEye(device);
+        }
+        if (oneEyeFirstOrder.equals("L")){
+            checkBoxLeftEye(device);
+        }
+        clickRPower(device,posR,rPower);
+        clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
+        clickRDia(rDia);
+        clickLDia(lDia);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
+        clickRColor(rColor);
+        clickLColor(lColor);
+        clickRAdd(rAdd);
+        clickLAdd(lAdd);
+        clickRDN(device,rDN);
+        clickLDN(device,lDN);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
+        typePatientName(PatientFNameCart, PatientLNameCart);
+        takeScreenshot(screenshotTestName, "PDP2");
+        if (!searchAllBrand2.equals("")){
+            clickAddRx(device);
+            searchAllBrand(device,searchAllBrand2);
+            if (searchAllBrand2.contains("Acuvue")||searchAllBrand2.contains("drops")
+                    ||searchAllBrand2.contains("solution")){
+                clickPhoneBrand(device,brandclick2);
+            }
+            verifyPDP(brandVerifyPDP2);
+            if (oneEyeSecondOrder.equals("R")){
+                checkBoxRightEye(device);
+            }
+            if (oneEyeSecondOrder.equals("L")){
+                checkBoxLeftEye(device);
+            }
+            clickRPower(device,posR2,rPower2);
+            clickLPower(device,posL2,lPower2);
+            clickRBC(rBC2);
+            clickLBC(lBC2);
+            clickRDia(rDia2);
+            clickLDia(lDia2);
+            clickRCyl(rCyl2);
+            clickLCyl(lCyl2);
+            clickRAxis(rAxis2);
+            clickLAxis(lAxis2);
+            clickRColor(rColor2);
+            clickLColor(lColor2);
+            clickRAdd(rAdd2);
+            clickLAdd(lAdd2);
+            clickRDN(device,rDN);
+            clickLDN(device,lDN);
+            clickRboxes(rBoxes2);
+            clickLboxes(lBoxes2);
+            typePatientName(PatientFNameCart2,PatientLNameCart2);
+            takeScreenshot(screenshotTestName, "PDP3");
+        }
+        clickAddToCart(device);
+        if (!ShippingCart.equals("")){
+            selectShippingCart(ShippingCart);
+        }
+        takeScreenshot(screenshotTestName, "Cart");
+        verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        clickCart_Continue(device);
+        if (country.equals("united states")&&(!searchAllBrand.equals(""))){
+            selectDoctor(device);
+        }
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            if(!BadCCNum.equals("")){
+                typeCreditCard(device,BadCCNum);
+            }
+            if(BadCCNum.equals("")){
+                typeCreditCard(device,CCNum);
+            }
+            typeCreditCardName(device, CCName);
+            if(BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear);
+            }
+            if(BadccExpMo.equals("")||BadccExpYear.equals("")){
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+            }
+            clickBottomSubmitButton(device);
+            verifyDeclinedCard(device, error);
+            takeScreenshot(screenshotTestName, "DeclinedCard");
+            goToCart1Item(device);
+            clickCart_Continue(device);
+        }
+        typeCreditCard(device,CCNum);
+        if (!ccExpMo.equals("")|| !ccExpYear.equals("")){
+        typeCreditCardName(device,CCName);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        }
+
+
+        takeScreenshot(screenshotTestName, "ReviewSubmit");
+        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        clickBottomSubmitButton(device);
+        verifyThankYouPage(testNumber,shippingVerify);
+        takeScreenshot(screenshotTestName, "ThankYou");
+        gotoMyAccount(device);
+        takeScreenshot(screenshotTestName, "Dashboard");
+        verifyDashboard(device,brandVerifyPDP,fullPatientName);
+        gotoOrderStatusHistory(device);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        takeScreenshot(screenshotTestName, "OrderStatusHistory");
+    }
+    @AfterMethod
     public void tearDown(){
         driver.manage().deleteAllCookies();
-    }*/
+    }
     @org.junit.AfterClass
     public void shutDown(){
         //driver.quit();

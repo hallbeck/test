@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,27 +11,27 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNIAcuvue2CanadaTest extends TestBase {
+public class SmokeNI1EyeAsphericTest extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "44033";
+    String testNumber = "44039";
     String typeOfTest = "SMOKE";
-String typeOfCust = "NI";
+    String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "acuvue 2";
+    String searchAllBrand = "Astigmatism";
     String searchAllBrand2 = "";
-    String brandToClickOn = "Acuvue2";
+    String brandToClickOn = "AcuvueOasysforAstigmatism";
     String brandToClickOn2 = "";
-    String brandVerifyPDP = "Acuvue 2";
+    String brandVerifyPDP = "Acuvue Oasys for Astigmatism";
     String brandVerifyPDP2 = "";
-    String posR = "+";
-    String posL = "";
+    String posR = "";
+    String posL = "+";
+    String rPower = "";
+    String lPower = "0.75";
     String rPower2 = "";
     String lPower2 = "";
-    String rPower = "0.50";
-    String lPower = "-1.00";
-    String rBC = "8";
-    String lBC = "8";
+    String rBC = "";
+    String lBC = "";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -47,12 +47,12 @@ String typeOfCust = "NI";
     String rAdd2 = "";
     String lAdd2 = "";
     String rCyl = "";
-    String lCyl = "";
+    String lCyl = "--";
     String rCyl2 = "";
     String lCyl2 = "";
     String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "";
+    String lAxis = "11";
     String lAxis2 = "";
     String rBoxes = "";
     String rBoxes2 = "";
@@ -64,25 +64,25 @@ String typeOfCust = "NI";
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "c";
-    String pricePerBox = "20.99";
-    String priceREye = "83.96";
-    String priceLEye = "83.96";
-    String pricePerBox2 = "49.99";
-    String priceREye2 = "99.98";
-    String priceLEye2 = "199.96";
-    String priceTotal = "167.92";
-    String rsTotal = "167.92";
-    String rsTotalAfterRebate = "147.92";
-    String rsTax = "";
-    String rsRebate = "";
-    String rsShipping = "FREE" ;
+    String ShippingCart = "e";
+    String pricePerBox = "47.99";
+    String priceREye = "";
+    String priceLEye = "191.96";
+    String pricePerBox2 = "";
+    String priceREye2 = "";
+    String priceLEye2 = "";
+    String priceTotal = "206.95";
+    String rsTotal = "230.77";
+    String rsTotalAfterRebate = "181.95";
+    String rsTax = "13.15";
+    String rsRebate = "25 Acuvue Rebate";
+    String rsShipping = "14.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "canada";
-    String state = "O";
-    String city = "Ottawa";
-    String zip = "K1A 0G9";
+    String country = "united states";
+    String state = "utah";
+    String city = "slc";
+    String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
@@ -96,7 +96,7 @@ String typeOfCust = "NI";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Canada Standard";
+    String shippingVerify = "Expedited";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
@@ -104,7 +104,7 @@ String typeOfCust = "NI";
     @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
-      openWebPage(device);
+        openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
@@ -113,10 +113,10 @@ String typeOfCust = "NI";
         takeScreenshot(screenshotTestName, "SearchBrand");
         clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
-        clickRPower(device,posR,rPower);
+        checkBoxRightEye(device);
         clickLPower(device,posL,lPower);
-        clickRBC(rBC);
-        clickLBC(lBC);
+        clickLCyl(lCyl);
+        clickLAxis(lAxis);
         typePatientName(PatientFNameCart,PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
@@ -135,11 +135,21 @@ String typeOfCust = "NI";
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
+        typeDoctorSearch(drName);
+        typeDoctorStateAndFind(device,drState);
+        takeScreenshot(screenshotTestName, "DoctorSearch");
+        selectDoctor(device);
+        typeCreditCard(device,creditCard);
+        typeCreditCardName(device,ccName);
+        pickCreditCardExpDate(device,ccExpMoBad, ccExpYearBad);
+        clickBottomSubmitButton(device);
+        verifyExpiredCard(device);
+        takeScreenshot(screenshotTestName, "ExpiredCard");
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
-        takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        takeScreenshot(screenshotTestName, "ReviewSubmit");
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
@@ -150,5 +160,5 @@ String typeOfCust = "NI";
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
-  }
+    }
 }

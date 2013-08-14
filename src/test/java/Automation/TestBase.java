@@ -106,6 +106,8 @@ public class TestBase {
     public String testDeclinedDiscover = "6000000000000015";
     public String testDiners = "36259600000004";
     public String testBlank = "";
+    public String ccErrorInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
+    public String ccErrorDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
 
 
 
@@ -2686,18 +2688,20 @@ public class TestBase {
       //add part for prod cc. TODO
       Wait(4);
       if(device.equals("desktop")){
-          Wait(2);
-          WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
-          System.out.println("enter credit card2");
-          weNumber2.click();
-          weNumber2.sendKeys(cardNumber);
-        try {System.out.println("CC Used: " + cardNumber);
+        try {
+            Wait(2);
+            WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
+            System.out.println("enter credit card");
+            weNumber2.click();
+            weNumber2.sendKeys(cardNumber);
+            System.out.println("CC Used: " + cardNumber);
+        }
+        catch(Throwable e){
+
             WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
             weCreditCard.click();
             weCreditCard.sendKeys(cardNumber);
             System.out.println("CC Used2: " + cardNumber);
-        }
-        catch(Throwable e){
         }
       }
       else if(device.equals("phone")){
@@ -2744,6 +2748,22 @@ public class TestBase {
       }
       if (year.equals("")){
           year = Integer.toString(iYr);
+      }
+      print(month + ".."+year);
+      if (month.equals("bad")){
+          int imonth = (iMoY - 1);
+          if (imonth <10){
+              String smonth = Integer.toString(imonth);
+              month = ("0"+smonth);
+          }
+          else{
+              month = Integer.toString(imonth);
+          }
+
+      }
+      if (year.equals("bad")){
+          int iYear = (iYr - 1);
+          year = Integer.toString(iYear);
       }
       print(month + ".."+year);
       if(device.equals("phone")){
@@ -2822,7 +2842,15 @@ public class TestBase {
         System.out.println("shipping address must = billing address ");
         Wait(5);
     }
-  public void verifyDeclinedCard(String device, String error) {
+  public void verifyDeclinedCard(String device, String givenError) {
+      String error ="";
+      if (givenError.equals("decline")){
+              error = ccErrorDecline;
+          }
+      if (givenError.equals("invalid")){
+          error = ccErrorInvalid;
+      }
+
           try{driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
           System.out.println("Found CreditCard Error page");
           }

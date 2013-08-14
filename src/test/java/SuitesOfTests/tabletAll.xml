@@ -4,11 +4,11 @@
     <test name="WIN">
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
             <class name="Regression.Account.editRxNI_49773"/>
             <class name="Regression.Account.editRxNI_49774"/>
             <class name="Regression.Account.editRxNI_49775"/>
-            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
             <class name="Regression.Account.editRxRI_49777"/>
             <class name="Regression.Account.editRxRI_49778"/>
             <class name="Regression.Account.editRxRI_49779"/>

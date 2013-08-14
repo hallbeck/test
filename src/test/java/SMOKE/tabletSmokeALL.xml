@@ -8,21 +8,21 @@
             <class name="SMOKE.done.SmokeNIToricTest"/>
             <class name="SMOKE.done.SmokeNIProgressiveInternationalTest"/>
             <class name="SMOKE.done.SmokeNIProgressiveCanadaTest"/>
-            <class name="SMOKE.SmokeNIMultiBrandPatientTest"/>
-            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest"/>
-            <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest"/>
-            <class name="SMOKE.SmokeNIColorToricTest"/>
-            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
-            <class name="SMOKE.SmokeNIColor6MoTest"/>
-            <class name="SMOKE.SmokeNIAsphericInternationalTest"/>
-            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
-            <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
-            <class name="SMOKE.SmokeNI1EyeAsphericTest"/>
+            <class name="SMOKE.done.SmokeNIMultiBrandPatientTest"/>
+            <class name="SMOKE.done.SmokeNIMultiBrandPatientBoxTest"/>
+            <class name="SMOKE.done.SmokeNIMultiBrand1EyeEachTest"/>
+            <class name="SMOKE.done.SmokeNIColorToricTest"/>
+            <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.done.SmokeNIColor6MoTest"/>
+            <class name="SMOKE.done.SmokeNIAsphericInternationalTest"/>
+            <class name="SMOKE.done.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.done.SmokeNIAcuvue2CanadaTest"/>
+            <class name="SMOKE.done.SmokeNI1EyeAsphericTest"/>
             <class name="SMOKE.SmokeNIColorToricAccessoryTest"/>
             <class name="SMOKE.SmokeNIAcuvue2AccessoryCanadaTest"/>
             <class name="SMOKE.SmokeNIProgressiveAccessoryInternationalTest"/>
             <class name="SMOKE.SmokeNIMultiBrandPatientAccessoryTest"/>
-            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
         </classes>
     </test>
     <test name="RIsmokeTablet">
@@ -57,7 +57,7 @@
             <!--dependant on 44032-->
             <class name="SMOKE.SmokeRIVialTest"/>
             <!--dependant on 49709-->
-            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
         </classes>
     </test>
 </suite>

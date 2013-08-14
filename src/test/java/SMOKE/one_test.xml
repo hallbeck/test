@@ -5,9 +5,9 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
-            <class name="SMOKE.SmokeNIAcuvue2CanadaTest"/>
-            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest"/>
+            <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.done.SmokeNIAcuvue2CanadaTest"/>
+            <class name="SMOKE.done.SmokeNIMultiBrandPatientBoxTest"/>
             <class name="Regression.Rebates.Rebates_Frequency55MultiD_48580"/>
             <class name="Regression.Rebates.Rebates_Frequency55MultiN_48580"/>
         </classes>

@@ -23,52 +23,52 @@
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIMultiBrandPatientTest">
+            <class name="SMOKE.done.SmokeNIMultiBrandPatientTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIMultiBrandPatientBoxTest">
+            <class name="SMOKE.done.SmokeNIMultiBrandPatientBoxTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIMultiBrand1EyeEachTest">
+            <class name="SMOKE.done.SmokeNIMultiBrand1EyeEachTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIColorToricTest">
+            <class name="SMOKE.done.SmokeNIColorToricTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest">
+            <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIColor6MoTest">
+            <class name="SMOKE.done.SmokeNIColor6MoTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIAsphericInternationalTest">
+            <class name="SMOKE.done.SmokeNIAsphericInternationalTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest">
+            <class name="SMOKE.done.SmokeNIAcuvue2PlanoCanadaTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNIAcuvue2CanadaTest">
+            <class name="SMOKE.done.SmokeNIAcuvue2CanadaTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>
             </class>
-            <class name="SMOKE.SmokeNI1EyeAsphericTest">
+            <class name="SMOKE.done.SmokeNI1EyeAsphericTest">
                 <methods>
                     <include name=".*phone.*"/>
                 </methods>

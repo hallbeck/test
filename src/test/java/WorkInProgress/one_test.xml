@@ -4,9 +4,9 @@
     <test name="WIN">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.SmokeNI1EyePrepAddTest"/>
+            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
 <!--
-            <class name="SMOKE.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
 -->
         </classes>
     </test>

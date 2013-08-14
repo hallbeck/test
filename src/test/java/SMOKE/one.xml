@@ -4,8 +4,8 @@
     <test name="Rerun_Smoke_Desktop">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.SmokeNIAcuvue2PlanoCanadaTest"/>
-            <class name="SMOKE.SmokeNIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.done.SmokeNIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest"/>
             <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
             <class name="SMOKE.SmokeRIAcuvue2PlanoCanadaTest"/>
         </classes>

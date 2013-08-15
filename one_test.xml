@@ -6,7 +6,7 @@
         <parameter name="emailToUse" value='test_1368555764641@invalid.com'/>
         <!--dependant on 44030-->
         <classes>
-            <class name="SMOKE.SmokeRIColor6MoTest">
+            <class name="SMOKE.done.SmokeRIColor6MoTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>

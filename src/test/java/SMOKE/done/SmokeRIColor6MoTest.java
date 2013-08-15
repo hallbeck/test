@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;

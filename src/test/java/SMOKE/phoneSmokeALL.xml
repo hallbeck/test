@@ -37,7 +37,7 @@
             <!--dependant on 44036-->
             <class name="SMOKE.SmokeRIAsphericInternationalTest"/>
             <!--dependant on 44030-->
-            <class name="SMOKE.SmokeRIColor6MoTest"/>
+            <class name="SMOKE.done.SmokeRIColor6MoTest"/>
             <!--dependant on 44037-->
             <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
             <!--dependant on 44031-->
@@ -55,7 +55,7 @@
             <!--dependant on 44029-->
             <class name="SMOKE.SmokeRIToricTest"/>
             <!--dependant on 44032-->
-            <class name="SMOKE.SmokeRIVialTest"/>
+            <class name="SMOKE.done.SmokeRIVialTest"/>
             <!--dependant on 49709-->
             <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
         </classes>

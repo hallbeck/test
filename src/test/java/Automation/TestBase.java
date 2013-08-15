@@ -75,19 +75,19 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    /*public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    /*public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Aug_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";

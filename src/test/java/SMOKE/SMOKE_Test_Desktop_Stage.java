@@ -379,9 +379,9 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
     public void tearDown(){
         driver.manage().deleteAllCookies();
     }
-    @org.junit.AfterClass
+    @AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
 

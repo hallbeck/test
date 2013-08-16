@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -23,6 +24,7 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -45,7 +47,7 @@ import static org.junit.Assert.assertEquals;
 public class TestBase {
     //change this to whatever browser you want to test on
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
-    public String browser = "firefox";
+    public String browser = "html";  //ie,firefox,html,chrome,safari
     //only relevant to Firefox. otherwise enter the type of device for file name.
     public String deviceProfile = "desktopFF";   //desktopIE10, desktopFF
 
@@ -75,19 +77,19 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-    public String mobileBaseUrl = "https://www.1800contacts.com/";
+    //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+/*    public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-    /*public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Aug_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -201,6 +203,8 @@ public class TestBase {
             driver = new ChromeDriver();
         } else if (browser.equals("safari")) {
             driver = new SafariDriver();
+        } else if (browser.equals("html")) {
+            driver = new HtmlUnitDriver(true);
         }
         return driver;
     }
@@ -239,12 +243,18 @@ public class TestBase {
         System.out.println(text);
     }
 
+    //note that once the test starts, the time does not change.
     public DateTime dt = new DateTime();
     public int iToD = dt.getHourOfDay();
     public int iDay = dt.getDayOfMonth();
     public int iMoY = dt.getMonthOfYear();
     public int iYr = dt.getYear();
     public int iMill = dt.getMillisOfSecond();
+
+    /*public int iMin = new Date().getMinutes();
+    public int iHour = new Date().getHours();
+    public String now = "TIME: " + Integer.toString(iHour)+":"+Integer.toString(iMin);*/
+    public String stime = "TIME: " + Integer.toString(iToD)+":"+Integer.toString(iMill);
     public String pathForExcel = ("c:\\test\\emailAddresses\\" + iMoY + "\\" + iDay + "\\" + deviceProfile +"\\");
     public String pathForScreenshot = ("c:\\test\\screenshots\\"  + iMoY + "\\" + iDay + "\\" + browser + "\\" + deviceProfile +"\\");
 
@@ -269,6 +279,12 @@ public class TestBase {
         setCookie();
     }
     public void gotoPage(String addition) {
+        driver.get(desktopBaseUrl + addition);
+        System.out.println("went to: " + desktopBaseUrl  + addition);
+        Wait(2);
+    }
+    public void gotoPageCookie(String addition) {
+        setCookie();
         driver.get(desktopBaseUrl + addition);
         System.out.println("went to: " + desktopBaseUrl  + addition);
         Wait(2);
@@ -2376,13 +2392,20 @@ public class TestBase {
       }
     Wait(3);
   }
+    public void refresh (){
+        driver.navigate().refresh();
+        Calendar now = Calendar.getInstance();
+        String snow = now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE);
+        print(now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE));
+        print("TIME: " + snow);
+    }
     public String iniAvailable(String device){
         String y = "yes";
         String n = "no";
 
         //goToCart(device);
         //clickCartContinue(device);
-        driver.navigate().refresh();
+        refresh();
         try{
         driver.findElement(By.xpath("//div[contains(@id,'InNetworkInsuranceWidget')]"));
             return y;

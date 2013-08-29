@@ -2,10 +2,10 @@
 
 <suite name="WIN" verbose="1" parallel="classes" thread-count="1">
     <test name="WIN">
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='phone'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Business.NI_Business_Test_composite"/>
+            <class name="Business.NI_Business_Test_Phone_Stage"/>
         </classes>
     </test>
 </suite>

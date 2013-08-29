@@ -16,7 +16,9 @@ public class DiffShippingBillingColor47612 extends TestBase {
 
     String testNumber = "47612";
     String typeOfTest = "Regression";
-String typeOfCust = "NI"; String posR = "+"; String posL = "+";
+    String typeOfCust = "NI";
+    String posR = "";
+    String posL = "";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Color Toric";
     String searchAllBrand2 = "";
@@ -90,7 +92,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

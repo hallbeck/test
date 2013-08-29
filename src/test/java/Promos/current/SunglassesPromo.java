@@ -94,7 +94,7 @@ public class SunglassesPromo extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
@@ -153,7 +153,7 @@ public class SunglassesPromo extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
-        /*clickBottomSubmitButton(device);
+        clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         gotoMyAccount(device);
@@ -162,6 +162,6 @@ public class SunglassesPromo extends TestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();*/
+        driver.quit();
   }
 }

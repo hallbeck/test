@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Account" verbose="1" >
-    <listeners>
-    </listeners>
     <test name="AccountTests" >
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="Regression.Account.lightbox_test"/>
+            <class name="Regression.Account.editRxNI_49775"/>
+            <class name="Regression.Account.editRxRI_49779"/>
+            <class name="Regression.Account.NILogin_48412"/>
+            <class name="Regression.Account.NILogin_signinpage_48412"/>
         </classes>
     </test>
 </suite>

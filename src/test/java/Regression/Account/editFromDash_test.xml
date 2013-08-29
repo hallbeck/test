@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="WIN" verbose="1" parallel="classes" thread-count="4">
+<suite name="WIN" verbose="1" parallel="classes" thread-count="1">
     <test name="WIN">
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
             <class name="Regression.Account.editRxNI_49773"/>
             <class name="Regression.Account.editRxNI_49774"/>
-            <class name="Regression.Account.editRxNI_49775"/>
             <class name="Regression.Account.NILogin_48412"/>
+            <class name="Regression.Account.editRxNI_49775"/>
             <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
             <class name="Regression.Account.editRxRI_49777"/>
             <class name="Regression.Account.editRxRI_49778"/>

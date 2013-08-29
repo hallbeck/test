@@ -85,7 +85,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "test testacct";
     String ccExpMo = "";
     String ccExpYear = "";

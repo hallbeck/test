@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="tablet" verbose="1" parallel="classes" thread-count="4">
+<suite name="tablet" verbose="1" parallel="classes" thread-count="1">
     <test name="TabletPaymentTests" >
         <parameter name="device" value='tablet'/>
         <classes>

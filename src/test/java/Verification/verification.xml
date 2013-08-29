@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="verification" verbose="1" parallel="classes" thread-count="1">
+    <test name="verification">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Verification.DiffShippingBilling47612"/>
+            <class name="Verification.DiffShippingBillingColor47612"/>
+            <class name="Verification.EditShippingBilling44764"/>
+            <class name="Verification.OrderStatusHistory47655"/>
+            <class name="Verification.ShippingChanges47266"/>
+        </classes>
+    </test>
+</suite>

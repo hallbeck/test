@@ -16,9 +16,11 @@ public class EditShippingBilling44764 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "44764";
-    String testNumberDependentOn = "47577";
+    String testNumberDependentOn = "44030";
     String typeOfTest = "VERIFICATION";
-String typeOfCust = "NI"; String posR = "+"; String posL = "+";
+    String typeOfCust = "NI";
+    String posR = "+";
+    String posL = "";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Acuvue";
     String searchAllBrand2 = "";
@@ -26,9 +28,10 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String brandToClickOn2 = "";
     String brandVerifyPDP = "Acuvue Advance";
     String brandVerifyPDP2 = "";
+
     String rPower2 = "";
     String lPower2 = "";
-    String rPower = "+0.50";
+    String rPower = "0.50";
     String lPower = "-0.75";
     String rBC = "8";
     String lBC = "8";
@@ -85,7 +88,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String shippingFNameEdit = "test edit";
     String shippingLNameEdit = "testacct edit";
     String countryEdit = "united states";
-    String stateEdit = "california";
+    String stateEdit = "California";
     String stateAbrev = "CA";
     String cityEdit = "santa cruz";
     String zipEdit = "95066";
@@ -93,10 +96,12 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "test testacct";
     String ccExpMo = "";
     String ccExpYear = "";
+    String paymentNull = "No";
+    String paymentType = "Visa";
     String device,shippingVerify = "Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify+ " | ";
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
@@ -117,5 +122,13 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
         gotoShippingBilling(device);
         clickEditShipping(device);
         editShipping(device,shippingFNameEdit,shippingLNameEdit,countryEdit,cityEdit,stateEdit,stateAbrev,zipEdit);
+        clickSaveShipping(device);
+        verifyShipCityStateMyAcct(device,cityEdit,stateAbrev,zipEdit);
+        verifyPaymentInfo(device,paymentType);
+        clickEditBilling(device);
+        editBilling(device,shippingFNameEdit,shippingLNameEdit,countryEdit,cityEdit,stateEdit,stateAbrev,zipEdit);
+        clickSaveBilling(device);
+        verifyBillCityStateMyAcct(device,cityEdit,stateAbrev,zipEdit);
+        verifyPaymentInfo(device,paymentNull);
     }
 }

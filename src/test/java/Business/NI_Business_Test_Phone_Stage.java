@@ -80,6 +80,7 @@ public class NI_Business_Test_Phone_Stage extends TestBase {
         if (oneEyeFirstOrder.equals("L")){
             checkBoxLeftEye(device);
         }
+        checkAvailablitiy(device,"In Stock");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);
@@ -98,6 +99,7 @@ public class NI_Business_Test_Phone_Stage extends TestBase {
         clickLDN(device,lDN);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
+        checkAvailablitiy(device,"In Stock");
         typePatientName(PatientFNameCart, PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         if (!searchAllBrand2.equals("")){
@@ -132,7 +134,10 @@ public class NI_Business_Test_Phone_Stage extends TestBase {
             clickLDN(device,lDN);
             clickRboxes(rBoxes2);
             clickLboxes(lBoxes2);
-            typePatientName(PatientFNameCart2,PatientLNameCart2);
+            if (!searchAllBrand2.contains("drops")
+                    ||searchAllBrand2.contains("solution")){
+                typePatientName(PatientFNameCart2,PatientLNameCart2);
+            }
             takeScreenshot(screenshotTestName, "PDP3");
         }
         clickAddToCart(device);

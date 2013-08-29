@@ -16,7 +16,9 @@ public class OrderStatusHistory47655 extends TestBase {
 
     String testNumber = "47655";
     String typeOfTest = "Regression";
-String typeOfCust = "NI"; String posR = "+"; String posL = "+";
+    String typeOfCust = "NI";
+    String posR = "+";
+    String posL = "";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Icuity";
     String searchAllBrand2 = "";
@@ -26,7 +28,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String rPower2 = "";
     String lPower2 = "";
     String rPower = "-0.50";
-    String lPower = "+2.25";
+    String lPower = "2.25";
     String rBC = "8";
     String lBC = "8";
     String rBC2 = "";
@@ -89,7 +91,7 @@ String typeOfCust = "NI"; String posR = "+"; String posL = "+";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

@@ -1,13 +1,19 @@
 package Automation;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.javascript.*;
 import com.gargoylesoftware.htmlunit.WebAssert;
+
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.WebDriver.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.Assert;
 
 import java.io.File;
 import java.sql.Connection;
@@ -26,26 +32,8 @@ import java.util.Date;
 
 
 public class HTMLTestBase {
-    //change this to whatever browser you want to test on
-    //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
-    public String browser = "html";  //ie,firefox,html,chrome,safari
-    //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";   //desktopIE10, desktopFF
 
-    //public String browser = "";
-    public String mbrowser = "firefox";
-    public String tbrowser = "chrome";
-    public String dbrowser = "ie";
-    //change this for ff browser only
-    public String deviceProfilePhone = "iphoneOS61P";
-    public String deviceProfileTablet = "ipadP";
-    public String deviceProfileDesktop = "desktopFF";   //choices are iphoneP, iphoneL, iphoneOS61P, iphoneOS61L, - this is for firefox profiles only
 
-    //SQL setup
-    String userID = null;
-    Connection conn=null;
-    Statement stmt=null;
-    ResultSet rs=null;
 
    //PRODUCTION
    //public String desktopBaseUrl = "https://www.1800contacts.com/";
@@ -65,7 +53,10 @@ public class HTMLTestBase {
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+
+    public String desktopBaseUrl = "https://www.1800contactstest.com/"/*"http://DR0-EVASILEV-79.ctac.1800contacts.com/"*/;
+    //Garys machine
+    //SETEMPNAME.ctac.1800contacts.com
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
@@ -93,12 +84,23 @@ public class HTMLTestBase {
     public String ccErrorDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
 
 
-    WebClient webClient = new WebClient();
+    public WebClient webClient = new WebClient(/*BrowserVersion.FIREFOX_17*/);
+
     public void getLink(String addition,String text)throws Exception{
-        HtmlPage page = webClient.getPage(desktopBaseUrl+addition);
+        //webClient.setJavaScriptEnabled(true);
+        webClient.getCookieManager().setCookiesEnabled(true);
+        print("sarting");
+       final HtmlPage page = webClient.getPage(desktopBaseUrl+addition);
+        print("getting title");
         String pageTxt = page.getTitleText();
+        //WebAssert.assertTitleContains(page, text);
+        print(pageTxt+"\n");
+        //page.refresh();
+        //WebAssert.assertTitleContains(page, text);
+/*        page.refresh();
         WebAssert.assertTitleContains(page, text);
-        print(pageTxt);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
         page.refresh();
         WebAssert.assertTitleContains(page, text);
         page.refresh();
@@ -107,6 +109,27 @@ public class HTMLTestBase {
         WebAssert.assertTitleContains(page, text);
         page.refresh();
         WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);
+        page.refresh();
+        WebAssert.assertTitleContains(page, text);*/
+    }
+
+
+    public void runtest (String addition)throws Exception {
+        final WebClient webClient = new WebClient();
+        //final HtmlPage page = webClient.getPage("http://htmlunit.sourceforge.net");
+        final HtmlPage page1 = webClient.getPage(desktopBaseUrl+addition);
+        final String pageAsText = page1.getTitleText();
+        print(pageAsText);
     }
     public void quitme (){
         webClient.closeAllWindows();
@@ -115,36 +138,6 @@ public class HTMLTestBase {
         System.out.println(text);
     }
 
-    //DB info
-    //Servertype Database Engine
-    //Server name 10.0.36.160
-    //Authentication Windows Authentication
-    //Connection Properties
-    // connect to database 800contacts
-    //network protocol default
-    //network packet size: 4096
-
-    //profiles locations are stored in C:\Users\<user>\AppData\Roaming\Mozilla\Firefox
-    //change this file to point to your personal profiles
-     //I need to say if device is phone use device profile mobileProfile, if tablet tabletProfile, if desktop desktop
-   // @Entity
-    /*@NamedQuery(name="ship.Order", query="update orderhd set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'  where orderno = '" + orderNumber + "'")
-
-    private void hibernateNativeQueryUpdate(SessionFactory factory,String testNumber) {
-        String orderNumber = readFile(testNumber);
-        print("2a"+orderNumber);
-        String UPDATE = "update orderhd set TRACKINGNO = '542128381442', SHIPPER = 'FEDS', STATUS = 'G', TAKENBY = 'MOBILEAP'  where orderno = '" + orderNumber + "'";
-
-        Session session = factory.getCurrentSession();
-        session = factory.openSession();
-        session.beginTransaction();
-        SQLQuery sqlQuery = session.createSQLQuery(UPDATE);
-        int result = sqlQuery.executeUpdate();
-        System.out.println(result);
-        session.getTransaction().commit();
-        session.createSQLQuery("UPDATE ITEM set name='hib' WHERE itemid=1").executeUpdate();
-
-    }*/
     public ChromeOptions options = new ChromeOptions();
     public DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
@@ -180,6 +173,14 @@ public class HTMLTestBase {
         }
 
         return(tabArray);
+    }
+    public void Wait(long seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+            //System.out.println("Waiting " + seconds + " seconds");
+        } catch (Exception e) {
+            print("Sleep exception...its a nightmare");
+        }
     }
 
 

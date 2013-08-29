@@ -12,13 +12,23 @@ import org.testng.annotations.Test;
 public class CCBeginning extends CCBase {
      String searchTerm1 = "Geronimo";
 
-    @Test (singleThreaded = true)
+ /*   @Test (singleThreaded = true)
     @Parameters(value = "user")
     public void test(String user) {
         openCCR(user);
         searchFor(searchTerm1);
         submitButton();
         verifySearch(searchTerm1);
+
+
+
+    }*/
+    @Test (singleThreaded = true)
+    @Parameters(value = "user")
+    public void test2(String user) {
+        openCCR(user);
+        newCust();
+        enterPhone();
 
 
 

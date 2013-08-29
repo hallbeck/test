@@ -21,7 +21,7 @@ public class NILogin_signinpage_48412 extends TestBase {
     String typeOfPayment = "N_A";
     String searchAllBrand = "color";
     String searchAllBrand2 = "";
-    String brandToClickOn = "Acuvue2";
+    String brandToClickOn = "Acuvue2Colours";
     String brandToClickOn2 = "";
     String brandVerifyPDP = "Acuvue 2";
     String brandVerifyPDP2 = "";
@@ -89,7 +89,7 @@ public class NILogin_signinpage_48412 extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4500600000000061";
+    String creditCard = "testVisaForeign";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

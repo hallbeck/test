@@ -47,7 +47,7 @@ import static org.junit.Assert.assertEquals;
 public class TestBase {
     //change this to whatever browser you want to test on
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
-    public String browser = "html";  //ie,firefox,html,chrome,safari
+    public String browser = "firefox";  //ie,firefox,html,chrome,safari
     //only relevant to Firefox. otherwise enter the type of device for file name.
     public String deviceProfile = "desktopFF";   //desktopIE10, desktopFF
 
@@ -67,7 +67,9 @@ public class TestBase {
     ResultSet rs=null;
 
    //PRODUCTION
-   //public String desktopBaseUrl = "https://www.1800contacts.com/";
+/*
+   public String desktopBaseUrl = "https://www.1800contacts.com/";
+*/
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -78,7 +80,7 @@ public class TestBase {
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-/*    public String mobileBaseUrl = "https://www.1800contacts.com/";
+    /*public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
@@ -203,8 +205,6 @@ public class TestBase {
             driver = new ChromeDriver();
         } else if (browser.equals("safari")) {
             driver = new SafariDriver();
-        } else if (browser.equals("html")) {
-            driver = new HtmlUnitDriver(true);
         }
         return driver;
     }
@@ -289,6 +289,10 @@ public class TestBase {
         System.out.println("went to: " + desktopBaseUrl  + addition);
         Wait(2);
     }
+    public void pressKey(){
+        driver.findElement(By.tagName("H1")).sendKeys(Keys.F5,Keys.F5,Keys.F5);
+        print("refreshed");
+    }
     public void closeNewWindow (){
         Wait(2);
         String base = driver.getWindowHandle();
@@ -297,17 +301,35 @@ public class TestBase {
 
         set.remove(base);
         assert set.size()==1;
-
+        print("closing a window" + base );
         driver.switchTo().window((String) set.toArray()[0]);
 
         driver.close();
         driver.switchTo().window(base);
+
         Wait(2);
     }
     public void clickAndVerifyLink(String link,String expected,String tag){
-        driver.findElement(By.linkText(link)).click();
+        try {
+            driver.findElement(By.linkText(link)).click();
+        }
+        catch(Throwable e){
+            driver.findElement(By.name(link)).click();
+        }
         print ("Clicked on: " + link);
         verifyTag(tag,expected);
+    }
+    public void clickAndAssertLink(String link,String expected,String tag){
+        try {
+            driver.findElement(By.linkText(link)).click();
+        }
+        catch(Throwable e){
+            driver.findElement(By.name(link)).click();
+        }
+        print ("Clicked on: " + link);
+        Wait(5);
+        print("looking for1: " + tag);
+        assertTag(tag,expected);
     }
     public void clickAndVerifyName(String link,String expected,String tag){
         driver.findElement(By.name(link)).click();
@@ -600,6 +622,36 @@ public class TestBase {
         String fileName = (state + "_" + searchedFor+ "_" + expected);
         takeScreenshot(fileName, "SearchBrand");
     }
+    public void assertProduct(String device, String expected) {
+        String state = "";
+        Wait(2);
+
+/*            WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
+            String toVerify = weText.getText();
+            verifyTxtPresent("1st try Pages:  Searched for " + searchedFor,expected,toVerify);
+            new String (state = "PASS");*/
+
+               try{
+
+                WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
+                String toVerify = weText.getText();
+                verifyTxtPresent("1st try Pages:  Searched for ", expected, toVerify);
+               }
+               catch(Throwable e){
+                   try{
+                   WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-name')]"));
+                   String toVerify = weText.getText();
+                   verifyTxtPresent("2nd try Pages:  Searched for ", expected, toVerify);
+                   }
+                   catch(Throwable E) {
+                       WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
+                       String toVerify = weText.getText();
+                       verifyTxtPresent("1st try Pages:  Searched for ",expected,toVerify);
+                   }
+               }
+        String fileName = (expected);
+        takeScreenshot(fileName, "SearchBrand");
+    }
     public void verifyPageTitle(String expected) {
         try{
             WebElement weText = driver.findElement(By.tagName("title"));
@@ -620,8 +672,22 @@ public class TestBase {
         }
         catch(Exception e)
         {
+            try{
+            String errorText = driver.findElement(By.xpath("//div[@class='HeaderText']")).getText();
+            print("found this text: " + errorText);
+            verifyTxtPresent("Pages: ",expected,errorText);
+            }
+            catch(Throwable E){
             print("FAIL: " + expected + " NOT Found " );
+            }
         }
+    }
+    public void assertTag(String tag,String expected) {
+            WebElement weText = driver.findElement(By.tagName(tag));
+            String toVerify = weText.getText();
+        print("looking for tag: "+tag);
+            print("found this text: " + toVerify);
+            assertTxtPresent("Pages: ",expected,toVerify);
     }
     public void assertPageTitleError(String expected) {
             WebElement weText = driver.findElement(By.tagName("title"));
@@ -877,7 +943,23 @@ public class TestBase {
         }
     }
     public void clickEditBilling(String device){
-        driver.findElement(By.xpath("(//a[contains(text(),'Edit')])[3]")).click();
+        System.out.println("clicking on edit");
+        if(device.equals("tablet")){
+            driver.findElement(By.linkText("Edit")).click();
+        }
+        else if(device.equals("phone")){
+            driver.findElement(By.linkText("Edit")).click();
+        }
+        else if(device.equals("desktop")){
+            driver.findElement(By.xpath("//a[contains(@id,'billingEditLink')]")).click();
+            //driver.findElement(By.xpath("//a[contains(@class,'address-edit a41-edit-link popupTrigger')]")).click();
+        }
+        System.out.println("clicked on edit billing");
+        //driver.findElement(By.xpath("(//a[contains(text(),'Edit')])[3]")).click();
+    }
+    public void verifyPaymentInfo(String device,String paymentText){
+        String cctype = driver.findElement(By.xpath("//div[@id='ccType']")).getText();
+        assertTxtPresent("Payment type: ",paymentText,cctype);
     }
     public void removeBillingAddress(String device){
         //this is a placeholder. confirm that it works. nothing uses it currently
@@ -900,9 +982,10 @@ public class TestBase {
             driver.findElement(By.linkText("Edit")).click();
         }
         else if(device.equals("desktop")){
-        driver.findElement(By.xpath("//a[contains(@class,'address-edit a41-edit-link popupTrigger')]")).click();
+            driver.findElement(By.xpath("//a[@id='shippingEditLink']")).click();
+        //driver.findElement(By.xpath("//a[contains(@class,'address-edit a41-edit-link popupTrigger')]")).click();
         }
-        System.out.println("clicked on edit");
+        System.out.println("clicked on edit shipping");
     }
     public String editShipping(String device,String fName,String lName,String country,String city, String state, String stateAbrev,String zip){
         /*try{
@@ -926,8 +1009,10 @@ public class TestBase {
         WebElement weAddress = driver.findElement(By.cssSelector("#editShippingAddress > div.a41-checkout-row.a41-clearfix  > div > span.a41-checkout-half-col2 > #AddressDetailsViewModel_AddressLine1"));
         print("find city");
         WebElement weCity = driver.findElement(By.xpath("(//input[@id='AddressDetailsViewModel_City'])[2]"));
-
+        print("find zip");
         WebElement weZip = driver.findElement(By.xpath("(//input[@id='AddressDetailsViewModel_ZipOrPostalCode'])[2]"));
+        print("find State");
+        driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"));
 
         WebElement weCountry = null;
         WebElement wePhone = null;
@@ -1007,9 +1092,17 @@ public class TestBase {
         WebElement weAddress = driver.findElement(By.cssSelector("#editBillingAddress > div.a41-checkout-row.a41-clearfix  > div > span.a41-checkout-half-col2 > #AddressDetailsViewModel_AddressLine1"));
         print("find city");
         WebElement weCity = driver.findElement(By.xpath("(//input[@id='AddressDetailsViewModel_City'])[2]"));
-
+        print("find zip");
         WebElement weZip = driver.findElement(By.xpath("(//input[@id='AddressDetailsViewModel_ZipOrPostalCode'])[2]"));
+        try{
+            print("find stateid");
 
+        driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"));
+        }
+        catch(Throwable e){
+            print("find statename");
+        driver.findElement(By.xpath("(//select[@name='AddressDetailsViewModel.StateProvinceOrRegion'])[2]"));
+        }
         WebElement weCountry = null;
         WebElement wePhone = null;
 
@@ -1135,6 +1228,7 @@ public class TestBase {
     }
     public void clickFindBrand(String device) {
         printPageTitle();
+        print("device is: " + device);
         Wait(4);
         if(device.equals("phone")){
         driver.findElement(By.xpath("//a[contains(@class,'FindBrand-footer-link')]")).click();
@@ -1195,7 +1289,7 @@ public class TestBase {
         weNewCustomer.click();
         }
         else if(device.equals("tablet")){
-            WebElement weNewCustomer = driver.findElement(By.xpath("//div[contains(@class,'touchRadioBtn rd-phone rd-tablet')]"));
+            WebElement weNewCustomer = driver.findElement(By.xpath("//label[contains(@for,'rbNewCustomer')]"));
             weNewCustomer.click();
         }
         else if(device.equals("desktop")){
@@ -1246,7 +1340,7 @@ public class TestBase {
            emailInput.clear();
            System.out.println("clicked and cleared");
            emailInput.sendKeys(RIemail);
-        System.out.println("Email used is: " + RIemail);
+        System.out.println("RI Email used is: " + RIemail);
     }
     public void typeNewCustPassword(String device,String password){
         WebElement wePassword = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_SignIn1_tbNewCustomerPassword_tbPass')]"));
@@ -1256,11 +1350,14 @@ public class TestBase {
     }
     public void typeReturningPhonePassword(String device,String password) {
         Wait(4);
+        /*WebElement emailInput = driver.findElement(By.xpath("//input[(@id='ctl00_contentPlaceHolderContent_SignIn1_tbEmail_tbEmail')]"));
+        emailInput.sendKeys(Keys.TAB,password);*/
         WebElement passwordInput = driver.findElement(By.xpath("//input[(@id='ctl00_contentPlaceHolderContent_SignIn1_tbReturningCustomerPassword_tbPass')]"));
+        print("RI password1");
         passwordInput.click();
         passwordInput.clear();
         passwordInput.sendKeys(password);
-        System.out.println("Password used is: " + password);
+        print("Password used is: " + password);
     }
     public void typeReturningEmailLightbox(String device,String testNumberDependentOn) {
         printPageTitle();
@@ -1271,7 +1368,7 @@ public class TestBase {
         emailInput.clear();
         System.out.println("clicked and cleared");
         emailInput.sendKeys(RIemail);
-        System.out.println("Email used is: " + RIemail);
+        print("Email used is: " + RIemail);
     }
     public void typeReturningPasswordLightbox(String device,String password) {
         Wait(4);
@@ -1389,9 +1486,21 @@ public class TestBase {
 
         Wait(6);
         if(device.equals("phone")){
-            String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
+            try{
+                String theString = "BrandText_" + brand + "";
+                driver.findElement(By.id(theString)).click();
+                // driver.findElement(By.xpath(theString)).click();
+                System.out.println("Clicked on brand: " + brand);
+            }
+            catch (Throwable e){
+                String theString = "BrandSelectButton_" + brand + "";
+                driver.findElement(By.id(theString)).click();
+                // driver.findElement(By.xpath(theString)).click();
+                System.out.println("Clicked on brand: " + brand);
+            }
+            /*String theString = "//a[contains(@id,'BrandText_" + brand + "')]";
             driver.findElement(By.xpath(theString)).click();
-            System.out.println("Clicked on brand: " + brand);
+            System.out.println("Clicked on brand: " + brand);*/
         }
         if(device.equals("desktop")){
             try{
@@ -1418,11 +1527,20 @@ public class TestBase {
         if(device.equals("tablet")){
 
             //String theString = "//a[contains(@id,'BrandSelectButton_" + brand + "')]";
+           try{
             String theString = "BrandText_" + brand + "";
             driver.findElement(By.id(theString)).click();
            // driver.findElement(By.xpath(theString)).click();
             System.out.println("Clicked on brand: " + brand);
+           }
+           catch (Throwable e){
+               String theString = "BrandSelectButton_" + brand + "";
+               driver.findElement(By.id(theString)).click();
+               // driver.findElement(By.xpath(theString)).click();
+               System.out.println("Clicked on brand: " + brand);
+           }
         }
+
       Wait(6);
   }
    public void checkBoxLeftEye(String device) {
@@ -1600,11 +1718,21 @@ public class TestBase {
 
   public void clickRBC(String bc) {
       if (!bc.equals("")){
+          try{     //old
     String thePickerString = "//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.BaseCurve')]";
       WebElement weBc = driver.findElement(By.xpath(thePickerString));
-      weBc.click();
-      System.out.println("BC for right eye: " + bc);
-      weBc.sendKeys(bc,Keys.ENTER);
+              weBc.click();
+              System.out.println("BC for right eye: " + bc);
+              weBc.sendKeys(bc,Keys.ENTER);
+          }
+          catch (Throwable e){   //new
+              String thePickerString = "//select[@name='PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.BaseCurve']";
+              WebElement weBc = driver.findElement(By.xpath(thePickerString));
+              weBc.click();
+              System.out.println("BC for right eye: " + bc);
+              weBc.sendKeys(bc,Keys.ENTER);
+          }
+
       Wait(1);
   }
     else {
@@ -1613,13 +1741,22 @@ public class TestBase {
   }
     public void clickLBC(String bc) {
         if (!bc.equals("")){
-        String thePickerString = "//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.BaseCurve')]";
-        WebElement weBc = driver.findElement(By.xpath(thePickerString));
-        weBc.click();
-        System.out.println("BC for left eye: " + bc);
-        weBc.sendKeys(bc,Keys.ENTER);
-        Wait(1);
-    }
+            try{   //old
+                String thePickerString = "//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.BaseCurve')]";
+                WebElement weBc = driver.findElement(By.xpath(thePickerString));
+                weBc.click();
+                System.out.println("BC for left eye: " + bc);
+                weBc.sendKeys(bc,Keys.ENTER);
+            }
+            catch (Throwable e){ //new
+                String thePickerString = "//select[@name='PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.BaseCurve']";
+                WebElement weBc = driver.findElement(By.xpath(thePickerString));
+                weBc.click();
+                System.out.println("BC for left eye: " + bc);
+                weBc.sendKeys(bc,Keys.ENTER);
+            }
+            Wait(1);
+        }
     else {
         print("Left BC not supplied");
     }
@@ -1654,7 +1791,7 @@ public class TestBase {
     public void clickRCyl(String cyl) {
         if (!cyl.equals("")){
         WebElement weCyl = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
         weCyl.click();
         System.out.println("Cyl for right eye: " + cyl);
         weCyl.sendKeys(cyl,Keys.ENTER);
@@ -1667,7 +1804,7 @@ public class TestBase {
     public void clickLCyl(String cyl) {
         if (!cyl.equals("")){
         WebElement weCyl = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.CylinderPower')]"));
         weCyl.click();
         System.out.println("Cyl for left eye: " + cyl);
         weCyl.sendKeys(cyl,Keys.ENTER);
@@ -1705,12 +1842,21 @@ public class TestBase {
     }
     public void clickRColor(String color) {
         if (!color.equals("")){
+            try{
         WebElement weColor = driver.findElement
                 (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.ColorId')]"));
         weColor.click();
         weColor.sendKeys(color,Keys.ENTER);
         System.out.println("Color for right eye: " + color);
         Wait(1);
+            }
+            catch(Throwable e){
+                WebElement weColor = driver.findElement(By.xpath("//select[@name='PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.ColorId']"));
+                weColor.click();
+                weColor.sendKeys(color,Keys.ENTER);
+                System.out.println("Color for right eye: " + color);
+                Wait(1);
+            }
         }
         else {
             print("Right Color not supplied");
@@ -1718,12 +1864,21 @@ public class TestBase {
     }
     public void clickLColor(String color) {
         if (!color.equals("")){
-        WebElement weColor = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.ColorId')]"));
-        weColor.click();
-        System.out.println("Color for left eye: " + color);
-        weColor.sendKeys(color,Keys.ENTER);
-        Wait(1);
+            try{
+                WebElement weColor = driver.findElement
+                        (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.ColorId')]"));
+                weColor.click();
+                weColor.sendKeys(color,Keys.ENTER);
+                System.out.println("Color for left eye: " + color);
+                Wait(1);
+            }
+            catch(Throwable e){
+                WebElement weColor = driver.findElement(By.xpath("//select[@name='PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.ColorId']"));
+                weColor.click();
+                weColor.sendKeys(color,Keys.ENTER);
+                System.out.println("Color for left eye: " + color);
+                Wait(1);
+            }
         }
         else {
             print("Left Color not supplied");
@@ -1732,7 +1887,9 @@ public class TestBase {
     public void clickRboxes(String box) {
         if (!box.equals("")){
         WebElement weBox = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+        //WebElement weBox = driver.findElement
+                    //(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
         weBox.click();
         System.out.println("Boxes for right eye: " + box);
         weBox.sendKeys(box,Keys.ENTER);
@@ -1746,8 +1903,10 @@ public class TestBase {
     public void clickLboxes(String box) {
         if (!box.equals("")){
         WebElement weBox = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
-        weBox.click();
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+            //(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+
+            weBox.click();
         System.out.println("Boxes for left eye: " + box);
         weBox.sendKeys(box,Keys.ENTER);
         System.out.println(box + " boxes Left Eye");
@@ -1761,7 +1920,7 @@ public class TestBase {
     public void clickRAdd(String add) {
         if (!add.equals("")){
         WebElement weAdd = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
         weAdd.click();
         System.out.println("ADD for Right eye: " + add);
         weAdd.sendKeys(add,Keys.ENTER);
@@ -1774,7 +1933,7 @@ public class TestBase {
     public void clickLAdd(String add) {
         if (!add.equals("")){
         WebElement weAdd = driver.findElement
-                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+                (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
         weAdd.click();
         System.out.println("ADD for left eye: " + add);
         weAdd.sendKeys(add,Keys.ENTER);
@@ -1782,6 +1941,15 @@ public class TestBase {
         }
         else {
             print("Left ADD not supplied");
+        }
+    }
+    public void checkAvailablitiy(String device, String expected){
+        try{
+        String actual = driver.findElement(By.xpath("//div[@class='stock-availability']")).getText();
+        print(actual);
+        }
+        catch(Throwable e){
+            print("Cant find availability... must be old PDP");
         }
     }
   public void typePatientName(String first, String last) {
@@ -1806,6 +1974,7 @@ public class TestBase {
         System.out.println("Clicked Add Rx");
       }
       else if(device.equals("tablet")){
+         // driver.findElement(By.xpath("//span[contains(.,'Add Another Rx')]")).click();
           driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletLeftButton rd-grayButton')]"));
           driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletLeftButton rd-grayButton')]")).click();
         System.out.println("Clicked Add Rx");
@@ -1884,13 +2053,19 @@ public class TestBase {
           Wait(5);
       }
       else if(device.equals("tablet")){
+          //WebElement weAdd = driver.findElement(By.xpath("//button[@id='addToCartButtonClicked']"));
               WebElement weAdd = driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton rd-addToCartButton')]"));
               weAdd.click();
               print("Clicked add to cart");
           Wait(5);
           }
       else if(device.equals("desktop")){
+          try{
           driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
+          }
+          catch(Throwable e){
+          driver.findElement(By.xpath("//button[@value='Submit']")).click();
+          }
           print("Clicked add to cart");
           Wait(5);
       }
@@ -2248,8 +2423,9 @@ public class TestBase {
   }
 
   public void selectDiffBillingAddress(String device){
-      driver.findElement(By.xpath("//select[contains(@id,'selectBillingAddressType')]")).click();
-      driver.findElement(By.xpath("//option[contains(@value,'newBillingAddress')]")).click();
+      driver.findElement(By.xpath("//select[@id='selectBillingAddressType']")).sendKeys("n",Keys.TAB);
+      //driver.findElement(By.xpath("//select[contains(@id,'selectBillingAddressType')]")).click();
+      //driver.findElement(By.xpath("//option[contains(@value,'newBillingAddress')]")).click();
   }
     public void selectSameBillingAddress(String device){
         Wait(2);
@@ -2317,30 +2493,55 @@ public class TestBase {
           driver.findElement(By.xpath("//a[contains(.,'Add a Doctor')]")).click();
       }
       if(device.equals("phone")){
-          driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
+          driver.findElement(By.xpath("//a[contains(.,'Add a Doctor')]")).click();
+         // driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
       }
       print("click add doctor");
   }
     public void addDoctorInfo(String device, String lastName, String clinicName, String city, String state, String phone){
         Wait(3);
-        driver.findElement(By.xpath("//p[contains(@class,'a41-doctor-add-note')]")).click();
-        driver.findElement(By.id("LastName")).clear();
-        driver.findElement(By.id("LastName")).sendKeys(lastName);
-        driver.findElement(By.id("Clinic")).clear();
-        driver.findElement(By.id("Clinic")).sendKeys(clinicName);
-        driver.findElement(By.id("City")).clear();
-        driver.findElement(By.id("City")).sendKeys(city);
-        new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
-        driver.findElement(By.id("Phone")).clear();
-        driver.findElement(By.id("Phone")).sendKeys(phone);
         if(device.equals("desktop")){
+            driver.findElement(By.xpath("//p[contains(@class,'a41-doctor-add-note')]")).click();
+            driver.findElement(By.id("LastName")).clear();
+            driver.findElement(By.id("LastName")).sendKeys(lastName);
+            driver.findElement(By.id("Clinic")).clear();
+            driver.findElement(By.id("Clinic")).sendKeys(clinicName);
+            driver.findElement(By.id("City")).clear();
+            driver.findElement(By.id("City")).sendKeys(city);
+            new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
+            driver.findElement(By.id("Phone")).clear();
+            driver.findElement(By.id("Phone")).sendKeys(phone);
         driver.findElement(By.id("addDoctorButton")).click();
         }
         if(device.equals("tablet")){
+            driver.findElement(By.xpath("//p[contains(@class,'a41-doctor-add-note')]")).click();
+            driver.findElement(By.id("LastName")).clear();
+            driver.findElement(By.id("LastName")).sendKeys(lastName);
+            driver.findElement(By.id("Clinic")).clear();
+            driver.findElement(By.id("Clinic")).sendKeys(clinicName);
+            driver.findElement(By.id("City")).clear();
+            driver.findElement(By.id("City")).sendKeys(city);
+            new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
+            driver.findElement(By.id("Phone")).clear();
+            driver.findElement(By.id("Phone")).sendKeys(phone);
             driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton')]")).click();
         }
         if(device.equals("phone")){
-            driver.findElement(By.id("addDoctorButton")).click();
+            Wait(5);
+            driver.findElement(By.xpath("//p[contains(@class,'a41-doctor-add-note')]")).click();
+            print("click state");
+            new Select(driver.findElement(By.id("State"))).selectByVisibleText(state);
+            print("clicked state");
+            driver.findElement(By.xpath("//input[contains(@id,'LastName')]")).sendKeys("a");
+            print("click lastname");
+            driver.findElement(By.xpath("//input[contains(@id,'LastName')]")).sendKeys(lastName,Keys.TAB,clinicName,Keys.TAB,city,Keys.TAB,Keys.TAB,phone,Keys.TAB,Keys.RETURN);
+            print("entered all info");//driver.findElement(By.xpath("//input[contains(@name,'LastName')]")).sendKeys("a",Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB);
+            //driver.findElement(By.xpath("//input[contains(@placeholder,'Clinic name *')]")).sendKeys(clinicName);
+            //driver.findElement(By.xpath("//input[contains(@placeholder,'City *')]")).sendKeys(city,Keys.TAB,Keys.TAB,phone);
+            /*driver.findElement(By.xpath("//input[contains(@id,'Phone')]")).click();
+            driver.findElement(By.xpath("//input[contains(@id,'Phone')]"))*/
+            //driver.findElement(By.xpath("//input[contains(@placeholder,'City *')]")).sendKeys(Keys.TAB,Keys.TAB,phone);
+            //driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton')]")).submit();
         }
     }
   public void typeDoctorStateAndFind(String device,String state) {
@@ -2712,7 +2913,7 @@ public class TestBase {
       Wait(4);
       if(device.equals("desktop")){
         try {
-            Wait(2);
+            Wait(4);
             WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
             System.out.println("enter credit card");
             weNumber2.click();
@@ -3136,7 +3337,9 @@ public class TestBase {
         assertEquals(address, driver.findElement(By.xpath("//div[@id='shippingAddressInfo']/div[2]")).getText());
     }
     public void verifyShipCityStateMyAcct (String device,String city, String state, String zip){
+        Wait(3);
         assertEquals(city + ", " + state + " " + zip, driver.findElement(By.xpath("//div[@id='shippingAddressInfo']/div[3]")).getText());
+        print(driver.findElement(By.xpath("//div[@id='shippingAddressInfo']/div[3]")).getText());
     }
     public void verifyShipCountryMyAcct (String device,String country){
         if (country.equals("united states")) {
@@ -3217,9 +3420,16 @@ public class TestBase {
     public void verifyPDP(String brand) {
         Wait(14);
         System.out.println("Page title is: " + driver.getTitle());
+        try{
         String verifyProdPDP =  driver.findElement(By.xpath("//h1[@class='product-heading']")).getText();
-        System.out.println("Brand is: " + verifyProdPDP);
+            System.out.println("OLD PDP Brand is: " + verifyProdPDP);
+            verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
+        }
+        catch(Throwable e) {
+        String verifyProdPDP =  driver.findElement(By.xpath("//h1[@class='product-name']")).getText();
+        System.out.println("NEW PDP Brand is: " + verifyProdPDP);
         verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
+        }
     }
     public void verifyTxtPresent(String identifier, String desired, String actual){
         // the pattern we want to search for

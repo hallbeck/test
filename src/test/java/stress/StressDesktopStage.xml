@@ -3,7 +3,7 @@
 <suite name="stress Desktop" verbose="1" parallel="tests" thread-count="10">
     <test name="stress Desktop Stage1">
         <classes>
-            <class name="stress.stress_productpageHTML">
+            <class name="stress.stress_productpage">
             </class>
         </classes>
     </test>

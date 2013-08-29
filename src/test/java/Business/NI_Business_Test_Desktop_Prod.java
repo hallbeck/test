@@ -34,7 +34,7 @@ public class NI_Business_Test_Desktop_Prod extends TestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "OneTest")
+    @Test (dataProvider = "DP1")
     @Parameters(value = "device")
     public void test(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -80,6 +80,7 @@ public class NI_Business_Test_Desktop_Prod extends TestBase {
         if (oneEyeFirstOrder.equals("L")){
             checkBoxLeftEye(device);
         }
+        checkAvailablitiy(device,"In Stock");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);
@@ -99,6 +100,7 @@ public class NI_Business_Test_Desktop_Prod extends TestBase {
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
+        checkAvailablitiy(device,"In Stock");
         takeScreenshot(screenshotTestName, "PDP2");
         if (!searchAllBrand2.equals("")){
             clickAddRx(device);

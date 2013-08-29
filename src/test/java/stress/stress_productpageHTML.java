@@ -26,13 +26,15 @@ public class stress_productpageHTML extends HTMLTestBase {
                 "inputsStage", "AllProducts");
         return(retObjArr);
     }
-    @Test (singleThreaded = false,dataProvider = "products")
-    @Parameters(value = "device")
-    public void productPage(String testNumber,String device,String typeOfTest,String productPage,String title) throws Exception {
-
+    @Test (dataProvider = "products")
+    @Parameters()
+    public void productPage(String testNumber,String device,String typeOfTest,String productPage,String title) throws Exception{
         getLink(productPage,title);
-
     }
+/*    @Test  (dataProvider = "products")
+    public void newone(String testNumber,String device,String typeOfTest,String productPage,String title)throws Exception {
+        runtest(productPage);
+    }*/
     @AfterClass
     public void shutDown(){
         quitme();

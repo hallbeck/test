@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Links" verbose="1" parallel="methods" thread-count="2">
+<suite name="Links" verbose="1" parallel="methods" thread-count="1">
     <test name="LinkTests" >
         <parameter name="device" value='desktop'/>
         <classes>

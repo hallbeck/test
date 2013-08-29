@@ -28,17 +28,32 @@ public class stress_productpage extends TestBase {
                 "inputsStage", "AllProducts");
         return(retObjArr);
     }
-    @Test (singleThreaded = false,dataProvider = "products")
+    @Test (dataProvider = "products")
     @Parameters(value = "device")
-    public void test(String testNumber,String device,String typeOfTest,String productPage) {
+    public void test(String testNumber,String device,String typeOfTest,String productPage,String title) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + typeOfPayment;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + seperator;
-        //openWebPage(device);
+        openWebPage(device);
         printTestNumber(printTestName);
-
         gotoPageCookie(productPage);
+        assertTag("H1",title);
+        //pressKey();
         refresh();
+        verifyTag("H1",title);
         refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
+        refresh();
+        verifyTag("H1",title);
     }
     @AfterClass
     public void shutDown(){

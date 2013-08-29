@@ -87,7 +87,7 @@ public class editRxNI_49775 extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

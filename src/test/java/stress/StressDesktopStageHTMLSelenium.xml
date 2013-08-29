@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="stress Desktop" verbose="1" parallel="classes">
+    <test name="stress Desktop Stage1">
+        <classes>
+            <class name="stress.stress_productpageHTMLSelenium">
+            </class>
+        </classes>
+    </test>
+<!--    <test name="stress Desktop Stage2">
+        <classes>
+            <class name="stress.stress_productpageHTML">
+                <methods>
+                    <include name="productPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="stress Desktop Stage3">
+        <classes>
+            <class name="stress.stress_productpageHTML">
+                <methods>
+                    <include name="productPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="stress Desktop Stage4">
+        <classes>
+            <class name="stress.stress_productpageHTML">
+                <methods>
+                    <include name="productPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="stress Desktop Stage5">
+        <classes>
+            <class name="stress.stress_productpageHTML">
+                <methods>
+                    <include name="productPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="stress Desktop Stage6">
+        <classes>
+            <class name="stress.stress_productpageHTML">
+                <methods>
+                    <include name="productPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+</suite>

@@ -2,7 +2,7 @@
 
 <suite name="Account" verbose="1" >
     <test name="AccountTests" >
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='tablet'/>
         <classes>
             <class name="Regression.Account.NILogin_signinpage_48412"/>
             <class name="Regression.Account.NILogin_48412"/>

@@ -1,4 +1,4 @@
-package Business.on_hold;
+package Business.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -23,7 +23,7 @@ public class NI_Business_Test_49949 extends TestBase {
     String searchAllBrand = "Air Optix Aqua";
     String searchAllBrand2 = "OPTI-FREE"+reg+" PureMoist"+reg+" RewettingDrops";
     String brandToClickOn = "AirOptixAqua";
-    String brandToClickOn2 = "OPTI-FREE®PureMoist®RewettingDrops";
+    String brandToClickOn2 = "OPTI-FREEPureMoistRewettingDrops";
     String brandVerifyPDP = "Air Optix Aqua";
     String brandVerifyPDP2 = "OPTI-FREE"+reg+" PureMoist"+reg+" RewettingDrops";
     String posR = "+";

@@ -124,7 +124,7 @@ public class Links47930 extends TestBase {
         printTestNumber(printTestName);
         gotoPage(privacyPolicyLink);
         takeScreenshot(screenshotTestName, "Accessories_search");
-        verifyPageTitle("Privacy Policy | 1-800 CONTACTS");
+        verifyPageTitle("Privacy Policy");
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "accessories_search");

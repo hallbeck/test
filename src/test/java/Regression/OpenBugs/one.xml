@@ -5,7 +5,7 @@
     <test name="LinkTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.OpenBugs.how_to_order_brands_46203"/>
+            <class name="Regression.OpenBugs.howToOrder_brands_46203"/>
         </classes>
     </test>
 </suite>

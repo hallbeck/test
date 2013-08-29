@@ -1,6 +1,7 @@
 package Automation;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -86,5 +87,15 @@ public class CCBase {
             System.out.println("VERIFIED " + identifier + ". Found : " + desired + ", within, " + actual );
         else
             System.out.println("FAIL " + identifier + ". NOT FOUND : " + desired + ", within, " + actual );
+    }
+    public void newCust (){
+        driver.findElement(By.xpath("//span[@title='Create Customer Account']")).click();
+        Wait(5);
+    }
+    public void enterPhone (){
+        WebElement wePhone = driver.findElement(By.xpath("//input[@value='Phone']"));
+        wePhone.click();
+        wePhone.sendKeys(Keys.TAB,"12345678");
+
     }
 }

@@ -19,7 +19,8 @@ public class how_to_order_brands_46203 extends TestBase {
     String typeOfTest = "REGRESSION";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String BuyersGuideLink = "BuyersGuide";String searchAllBrand = "toric";
+    String BuyersGuideLink = "BuyersGuide";
+    String searchAllBrand = "toric";
     String reg = "®";
     String Acuvue30 = "1-Day Acuvue 30 pack";
     String AcuvueMoist30 = "1-Day Acuvue Moist 30 pack";
@@ -59,7 +60,6 @@ public class how_to_order_brands_46203 extends TestBase {
     String AvairaToric = "Avaira Toric";
     String Biofinity = "Biofinity";
     String BiofinityMulti = "Biofinity Multifocal";
-    //!!!String 2 of these = "Biofinity Multifocal";
     String BiofinityToric = "Biofinity Toric";
     String Biomedics = "Biomedics 1-Day 90 pack (National Brand)";
     String BiomedicsPdp = "Biomedics 1-Day 90 pack";
@@ -379,7 +379,6 @@ public class how_to_order_brands_46203 extends TestBase {
         chooseBrand(device,BiofinityMulti);
         clickGo(device);
         verifyProduct(device,BiofinityMulti,BiofinityMulti);
-        //!!!String 2 of these = "Biofinity Multifocal";
 
         gotoPage(BuyersGuideLink);
         chooseBrand(device,BiofinityToric);

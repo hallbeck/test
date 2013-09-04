@@ -5,16 +5,15 @@ import jxl.Sheet;
 import jxl.Workbook;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
-import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.ie.*;
+import org.openqa.selenium.safari.*;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.htmlunit.*;
-import org.openqa.selenium.ie.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
@@ -31,7 +30,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertEquals;
-
 
 
 /**
@@ -3199,21 +3197,21 @@ public class TestBase {
         //    Wait(5);
         //    driver.findElement(By.xpath("//img[contains(@src,'/images/AccountHub/OrderStatusAndHistory/orderStatusTrackerVerifyingLensAvailability.png')]"));
         //    String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-        //    verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+        //    verifyTxtPresent("Title is: ", "My 1?800 CONTACTS Account", verifyTitleOrderStatusHistory);
         //    Wait(5);
        // }
         if(device.equals("desktop")) {
                 Wait(5);
                 driver.findElement(By.xpath("//img[contains(@src,'/images/AccountHub/OrderStatusAndHistory/orderStatusTrackerVerifyingLensAvailability.png')]"));
                 String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-                verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+                verifyTxtPresent("Title is: ", "My 1?800 CONTACTS Account", verifyTitleOrderStatusHistory);
                 Wait(5);
             }
         else if(device.equals("phone")) {
             Wait(5);
             driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]"));
             String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-            verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+            verifyTxtPresent("Title is: ", "My 1?800 CONTACTS Account", verifyTitleOrderStatusHistory);
             Wait(5);
         }
     }
@@ -3228,7 +3226,7 @@ public class TestBase {
             Wait(5);
             driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]"));
             String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-            verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+            verifyTxtPresent("Title is: ", "My 1?800 CONTACTS Account", verifyTitleOrderStatusHistory);
             Wait(5);
         }
     }

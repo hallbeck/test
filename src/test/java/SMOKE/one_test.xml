@@ -3,7 +3,7 @@
 <suite name="desktop" verbose="1" parallel="methods" thread-count="1">
     <test name="NIsmokeTablet">
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='no'/>
+        <parameter name="test" value='no'/>
         <classes>
             <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest"/>
             <class name="SMOKE.done.SmokeNIAcuvue2CanadaTest"/>
@@ -16,7 +16,7 @@
         <parameter name="device" value='desktop'/>
         <classes>
             <!--dependant on 44037-->
-            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.done.SmokeRIColorPlanoDeclinedCardTest"/>
         </classes>
     </test>
 </suite>

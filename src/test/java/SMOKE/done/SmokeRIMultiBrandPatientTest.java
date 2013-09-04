@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,21 +11,22 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIAsphericInternationalTest extends TestBase {
-    String testNumber = "44050";
-    String testNumberDependentOn = "44036";
+public class SmokeRIMultiBrandPatientTest extends TestBase {
+    String testNumber = "44055";
+    String testNumberDependentOn = "44041";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "Biofinity";
-    String searchAllBrand2 = "Biofinity";
-    String brandToClickOn = "Biofinity";
-    String brandToClickOn2 = "AcuvueOasysforAstigmatism";
-    String brandVerifyPDP = "Air Optix for Astigmatism";
-    String brandVerifyPDP2 = "Acuvue Oasys for Astigmatism";
-    String posR = ""; String posL = "";
-    String rPower = "-0.25";
-    String lPower = "-0.75";
+    String searchAllBrand = "color";
+    String searchAllBrand2 = "Toric";
+    String brandToClickOn = "FreshLookColors";
+    String brandToClickOn2 = "VertexToricXR";
+    String brandVerifyPDP = "FreshLook Colors";
+    String brandVerifyPDP2 = "Vertex Toric XR";
+    String posR = "";
+    String posL = "";
+    String rPower = "";
+    String lPower = "";
     String rPower2 = "";
     String lPower2 = "";
     String rBC = "8";
@@ -38,30 +39,28 @@ public class SmokeRIAsphericInternationalTest extends TestBase {
     String lBoxes2 = "2";
     String rAdd = "2";
     String lAdd = "2";
-    String rAxis = "11";
-    String lAxis = "1";
-    String rCyl = "--";
-    String lCyl = "--";
+    String rCyl;
+    String lCyl;
     String rColor = "G";
-    String lColor = "G";
-    String PatientFNameCart = "PatientFirst";
+    String lColor = "B";
+    String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
     String PatientFNameCart2 = "PatTwoFirst";
-    String PatientLNameCart2 = "PatTwoLast";
-    String ShippingCart = "n";
+    String PatientLNameCart2 = "PatientLast";
+    String ShippingCart = "s";
     //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String pricePerBox = "59.99";
-    String priceREye = "119.98";
-    String priceLEye = "119.98";
-    String pricePerBox2 = "";
-    String priceREye2 = "";
-    String priceLEye2 = "";
-    String priceTotal = "239.96";
-    String rsTotal = "259.95";
-    String rsTotalAfterRebate = "214.95";
-    String rsTax = "";
-    String rsRebate = "45 Air Optix Rebate";
-    String rsShipping = "19.99" ;
+    String pricePerBox = "49.99";
+    String priceREye = "199.96";
+    String priceLEye = "199.96";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "199.96";
+    String priceLEye2 = "199.96";
+    String priceTotal = "2,527.68";
+    String rsTotal = "2,700.83";
+    String rsTotalAfterRebate = "2,580.83";
+    String rsTax = "173.15";
+    String rsRebate = "60 FreshLook Rebate";
+    String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";
@@ -72,21 +71,18 @@ public class SmokeRIAsphericInternationalTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
-    String creditCardBad = "badProd";
-    String ccExpMoBad = "01";
-    String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Int'l Standard";
+    String shippingVerify = "Expedited";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
 
-    @Test(singleThreaded = true)
+    @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
         openWebPage(device);
@@ -97,19 +93,17 @@ public class SmokeRIAsphericInternationalTest extends TestBase {
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
+        checkReorderCheckboxTwo(device);
         clickCartEdit(device);
-        clickRPower(device,posR,rPower);
-        clickLPower(device,posL,lPower);
-        clickRboxes(rBoxes);
-        clickLboxes(lBoxes);
-        typePatientName(PatientFNameCart, PatientLNameCart);
+        clickRColor(rColor);
+        clickLColor(lColor);
         takeScreenshot(screenshotTestName, "PDP1");
         clickUpdateCart(device);
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
-        takeScreenshot(screenshotTestName, "ReviewSubmit1");
-        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        takeScreenshot(screenshotTestName, "ReviewSubmit");
+        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox2, priceREye2, priceLEye2, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");

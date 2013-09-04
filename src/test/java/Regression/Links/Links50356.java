@@ -64,6 +64,6 @@ public class Links50356 extends TestBase {
     }
     @AfterClass
     public void shutDown(){
-       // driver.quit();
+        driver.quit();
     }
 }

@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -23,9 +23,9 @@ public class SmokeNIColorToricAccessoryTest extends TestBase {
     String searchAllBrand2 = "solution";
     String brandToClickOn = "FreshLookColorblendsToric";
     String reg = "®";
-    String brandToClickOn2 = "OPTI-FREE"+reg+"PureMoist"+reg+"Solution10oz";
+    String brandToClickOn2 = "OPTI-FREEPureMoistSolution10oz";
     String brandVerifyPDP = "FreshLook Colorblends Toric";
-    String brandVerifyPDP2 = "OPTI-FREE"+reg+" PureMoist";
+    String brandVerifyPDP2 = "PureMoist";
     String posR = "";
     String posL = "";
     String rPower2 = "";
@@ -90,7 +90,7 @@ public class SmokeNIColorToricAccessoryTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

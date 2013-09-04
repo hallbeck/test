@@ -70,7 +70,7 @@ public class Rebates_Frequency55MultiD_48580 extends TestBase {
     String zip = "K1A 0G9";
     String emailPrefix = "test";
 String password = "password";
-    String creditCard = "373235387881007";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";

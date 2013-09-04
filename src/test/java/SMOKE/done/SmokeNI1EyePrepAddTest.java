@@ -91,7 +91,7 @@ public class SmokeNI1EyePrepAddTest extends TestBase {
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
-    String creditCardBad = "badProd";
+    String creditCardBad = "badtest";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";

@@ -29,7 +29,7 @@ my $insertthis = '#content ul li span .pass {
  #get list of files in dir
  #opendir DIR, $root_dir;
 # my @file = readdir(DIR);
- my $file_to_read = "C:\/test\/logs\/how_to.html";
+ my $file_to_read = "C:\/test\/logs\/1.html";
  #closedir DIR;
  #List files
  #print map { "$_\n" } sort  @file;

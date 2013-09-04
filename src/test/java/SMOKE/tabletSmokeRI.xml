@@ -5,31 +5,31 @@
         <parameter name="device" value='tablet'/>
         <classes>
             <!--dependant on 44039-->
-            <class name="SMOKE.SmokeRI1EyeAsphericPlusColorTest"/>
+            <class name="SMOKE.done.SmokeRI1EyeAsphericPlusColorTest"/>
             <!--dependant on 44033-->
-            <class name="SMOKE.SmokeRIAcuvue2CanadaTest"/>
+            <class name="SMOKE.done.SmokeRIAcuvue2CanadaTest"/>
             <!--dependant on 44038-->
-            <class name="SMOKE.SmokeRIAcuvue2PlanoCanadaTest"/>
+            <class name="SMOKE.done.SmokeRIAcuvue2PlanoCanadaTest"/>
             <!--dependant on 44036-->
-            <class name="SMOKE.SmokeRIAsphericInternationalTest"/>
+            <class name="SMOKE.done.SmokeRIAsphericInternationalTest"/>
             <!--dependant on 44030-->
             <class name="SMOKE.done.SmokeRIColor6MoTest"/>
             <!--dependant on 44037-->
-            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
+            <class name="SMOKE.done.SmokeRIColorPlanoDeclinedCardTest"/>
             <!--dependant on 44031-->
-            <class name="SMOKE.SmokeRIColorToricTest"/>
+            <class name="SMOKE.done.SmokeRIColorToricTest"/>
             <!--dependant on 44040-->
-            <class name="SMOKE.SmokeRIMultiBrand1EyeEachTest"/>
+            <class name="SMOKE.done.SmokeRIMultiBrand1EyeEachTest"/>
             <!--dependant on 44042-->
-            <class name="SMOKE.SmokeRIMultiBrandPatientBoxTest"/>
+            <class name="SMOKE.done.SmokeRIMultiBrandPatientBoxTest"/>
             <!--dependant on 44041-->
-            <class name="SMOKE.SmokeRIMultiBrandPatientTest"/>
+            <class name="SMOKE.done.SmokeRIMultiBrandPatientTest"/>
             <!--dependant on 44034-->
-            <class name="SMOKE.SmokeRIMultiFocalCanadaTest"/>
+            <class name="SMOKE.done.SmokeRIMultiFocalCanadaTest"/>
             <!--dependant on 44035-->
-            <class name="SMOKE.SmokeRIProgressiveInternationalTest"/>
+            <class name="SMOKE.done.SmokeRIProgressiveInternationalTest"/>
             <!--dependant on 44029-->
-            <class name="SMOKE.SmokeRIToricTest"/>
+            <class name="SMOKE.done.SmokeRIToricTest"/>
             <!--dependant on 44032-->
             <class name="SMOKE.done.SmokeRIVialTest"/>
         </classes>

@@ -79,7 +79,7 @@
         <parameter name="emailToUse" value="test_1367869598991@invalid.com"/>
         <!--dependant on 44034-->
         <classes>
-            <class name="SMOKE.SmokeRIMultiFocalCanadaTest">
+            <class name="SMOKE.done.SmokeRIMultiFocalCanadaTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>

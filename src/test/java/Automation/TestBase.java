@@ -6,16 +6,15 @@ import jxl.Workbook;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.htmlunit.*;
+import org.openqa.selenium.ie.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
@@ -600,7 +599,7 @@ public class TestBase {
     }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";
-        Wait(2);
+        Wait(3);
         try{
             WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
             String toVerify = weText.getText();
@@ -609,7 +608,8 @@ public class TestBase {
         }
         catch(Exception e)
         {
-            try {WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
+            try {
+                WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
             String toVerify = weText.getText();
             verifyTxtPresent("2nd try Pages:  Searched for " + searchedFor, expected, toVerify);
             new String (state = "PASS");
@@ -1551,6 +1551,7 @@ public class TestBase {
         driver.findElement(By.xpath("//input[contains(@class,'RightEyeCheckBox')]")).click();
     }
   public void clickRPower(String device,String posR,String power) {
+      print("Power for right eye: "+ posR  + power);
       if (!power.equals("")){
       if(device.equals("phone")){
           WebElement selectElement = driver.findElement
@@ -1606,27 +1607,45 @@ public class TestBase {
           System.out.println("Power for right eye: " + posR + power);
           }
           catch (Throwable e){
-              WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+              try { WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
               Select select = new Select(selectElement);
               driver.findElement(By.xpath("//a[contains(.,power)]"));
               List<WebElement> options = select.getOptions();
               for (WebElement we : options) {
-              if (we.getText().equals(power)) {
-              we.click();
-              System.out.println("Power for right eye: " + posR + power);
-               break;
-               }
+                if (we.getText().equals(power)) {
+                    we.click();
+                    System.out.println("Power for right eye: " + posR + power);
+                    break;
+                    }
+                }
+              }
+                  catch(Throwable E){
+                      //for freshlook colors toric
+                      WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+                      Select select = new Select(selectElement);
+                      driver.findElement(By.xpath("//a[contains(.,power)]"));
+                      List<WebElement> options = select.getOptions();
+                      for (WebElement we : options) {
+                          if (we.getText().equals(power)) {
+                              we.click();
+                              System.out.println("Power for right eye: " + posR + power);
+                              break;
+                          }
+                      }
+                  }
+
               }
           }
           Wait(5);
       }
-      }
+
       else {
           print("Right Power not supplied");
       }
   }
 
     public void clickLPower(String device,String posL,String power) {
+        print("Power for left eye: "+ posL  + power);
         if (!power.equals("")){
         if(device.equals("desktop")){
             Wait(5);
@@ -1639,6 +1658,7 @@ public class TestBase {
             Wait(5);
             }
             catch (Throwable e){
+
                 WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
                 Select select = new Select(selectElement);
                 driver.findElement(By.xpath("//a[contains(.,power)]"));
@@ -1666,7 +1686,7 @@ public class TestBase {
                     break;
                 }
             }
-        System.out.println("Power for left eye: "+ posL  + power);
+        print("Power for left eye: "+ posL  + power);
             }
             catch (Throwable e){try {  //this is for freshlook colorblends toric
                 WebElement selectElement = driver.findElement
@@ -2208,7 +2228,7 @@ public class TestBase {
     public void verifyPromoRS(String device,String promoProdName,String pricePromo,String promoItemNumber,String promoText){
         if(!(promoText.equals(""))){
             verifyPromoProdNameRS(device,promoProdName);
-        verifyPricePromoRS(device,pricePromo);
+        verifyPricePromoRS(device,pricePromo,promoItemNumber);
         verifyPromoItemNumberRS(device,promoItemNumber);
         verifyPromoTextRS(device,pricePromo,promoText);
         }
@@ -2263,8 +2283,13 @@ public class TestBase {
         assertEquals("Total discount applied:", driver.findElement(By.cssSelector("#ReviewOrderPaymentSummaryDiv > #subtotals-top > dt.a41-total-savings")).getText());
         }
     }
-    public void verifyPricePromoRS(String device,String pricePromo){
-        assertEquals("$" + pricePromo, driver.findElement(By.xpath("//form[@id='CreditCardContentForm']/div[3]/div[3]/div[2]/div/div/div/div/div/div[2]/div/div/div[3]/div[3]/div/div[2]/div[3]/div/label")).getText());
+    public void verifyPricePromoRS(String device,String pricePromo,String promoItemNumber){
+        if (promoItemNumber.equals("002568")){
+            assertEquals("$" + pricePromo, driver.findElement(By.xpath("//form[@id='CreditCardContentForm']/div[3]/div[3]/div[2]/div/div/div/div/div/div[2]/div/div/div[3]/div[3]/div/div[2]/div[3]/div/label")).getText());
+        }
+        else if (promoItemNumber.equals("002574")){
+            assertEquals("$" + pricePromo, driver.findElement(By.xpath("//form[@id='CreditCardContentForm']/div[3]/div[3]/div[2]/div/div/div/div/div/div[2]/div/div/div[3]/div[3]/div/div[2]/div[2]/div/label")).getText());
+        }
     }
     public void verifyPromoItemNumberRS(String device,String promoItemNumber){
         String VerifyPromoItemNumber =

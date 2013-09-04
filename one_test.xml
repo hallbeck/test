@@ -18,7 +18,7 @@
         <parameter name="emailToUse" value='test_1368555221274@invalid.com'/>
         <!--dependant on 44037 -->
         <classes>
-            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest">
+            <class name="SMOKE.done.SmokeRIColorPlanoDeclinedCardTest">
                 <methods>
                     <include name=".*desktop.*"/>
                 </methods>

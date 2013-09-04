@@ -87,11 +87,11 @@ public class SmokeNI1EyeAsphericTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
-    String creditCardBad = "badProd";
+    String creditCardBad = "badtest";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";

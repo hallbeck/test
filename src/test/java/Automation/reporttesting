@@ -36,7 +36,7 @@ my $insert = "#content ul li span .pass {
  print map { "$_\n" } sort  @file;
  #for each do:
  #foreach my $file (@file) {
- edit_file { s/<\/style>/$insert<\/style>/g } "C:\/test\/logs\/Desktop_Smoke.html" ;
+ edit_file { s/<\/style>/$insert<\/style>/g } "C:\/test\/logs\/1.html" ;
 #}
 exit 0;
 

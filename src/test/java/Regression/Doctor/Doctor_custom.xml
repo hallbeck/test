@@ -4,7 +4,7 @@
     <listeners>
     </listeners>
     <test name="DoctorTests" >
-        <parameter name="device" value='tablet'/>
+        <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
             <class name="Regression.Doctor.Doctor_Custom_44058"/>

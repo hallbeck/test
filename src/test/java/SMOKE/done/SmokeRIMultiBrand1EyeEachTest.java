@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,19 +11,24 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIMultiFocalCanadaTest extends TestBase {
-    String testNumber = "44048";
-    String testNumberDependentOn = "44034";
+public class SmokeRIMultiBrand1EyeEachTest extends TestBase {
+    String testNumber = "44054";
+    String testNumberDependentOn = "44040";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "multifocal";
-    String brandToClickOn = "PureVisionMulti-Focal";
-    String brandVerifyPDP = "PureVision Multi-Focal";
+    String searchAllBrand = "color";
+    String searchAllBrand2 = "Astigmatism";
+    String brandToClickOn = "FreshLookColors";
+    String brandToClickOn2 = "AcuvueOasysforAstigmatism";
+    String brandVerifyPDP = "FreshLook Colors";
+    String brandVerifyPDP2 = "Acuvue Oasys for Astigmatism";
     String posR = "";
     String posL = "";
     String rPower = "";
     String lPower = "";
+    String rPower2 = "";
+    String lPower2 = "";
     String rBC = "8";
     String lBC = "8";
     String rDia = "1";
@@ -36,16 +41,24 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
     String lAdd = "2";
     String rCyl;
     String lCyl;
-    String PatientFNameCart = "PatientFirst";
+    String rColor = "G";
+    String lColor = "B";
+    String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
-    String ShippingCart = "s";
-    String pricePerBox = "69.99";
-    String priceREye = "139.98";
-    String priceLEye = "139.98";
-    String priceTotal = "279.96";
+    String PatientFNameCart2 = "PatTwoFirst";
+    String PatientLNameCart2 = "PatientLast";
+    String ShippingCart = "n";
+    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+    String pricePerBox = "49.99";
+    String priceREye = "199.96";
+    String priceLEye = "191.96";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "191.96";
+    String priceLEye2 = "191.96";
+    String priceTotal = "391.92";
     String rsTotal = "230.77";
     String rsTotalAfterRebate = "147.92";
-    String rsTax = "";
+    String rsTax = "14.79";
     String rsRebate = "";
     String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
@@ -58,18 +71,18 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Canada Standard";
+    String shippingVerify = "Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
 
-    @Test (singleThreaded = true)
+    @Test(singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
         openWebPage(device);
@@ -80,6 +93,7 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
+        checkReorderCheckboxTwo(device);
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
@@ -89,5 +103,5 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();
-  }
+    }
 }

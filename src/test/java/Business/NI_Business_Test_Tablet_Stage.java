@@ -193,7 +193,7 @@ public class NI_Business_Test_Tablet_Stage extends TestBase {
     }
     @org.junit.AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
 

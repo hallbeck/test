@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,60 +11,43 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIAcuvue2CanadaTest extends TestBase {
-
-    //change the Strings below to change the tests
-    String testNumber = "44047";
-    String testNumberDependentOn = "44033";
+public class SmokeRIProgressiveInternationalTest extends TestBase {
+ String testNumber = "44049";
+    String testNumberDependentOn = "44035";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "acuvue";
-    String searchAllBrand2 = "Astigmatism";
-    String brandToClickOn = "FreshLookColorblendsToric";
-    String brandToClickOn2 = "AcuvueOasysforAstigmatism";
-    String brandVerifyPDP = "Acuvue 2";
-    String brandVerifyPDP2 = "Acuvue Oasys for Astigmatism";
-    String posR = "+"; String posL = "+";
-    String posR2 = ""; String posL2 = "";
-    String rPower = "0.25";
-    String lPower = "0.75";
-    String rPower2 = "-0.25";
-    String lPower2 = "-0.75";
+    String searchAllBrand = "progressive";
+    String brandToClickOn = "FocusDAILIESProgressives30pack";
+    String brandVerifyPDP = "Focus DAILIES Progressives 30 pack";
+    String posR = "";
+    String posL = "";
+    String rPower = "-0.50";
+    String lPower = "-1.75";
     String rBC = "8";
     String lBC = "8";
     String rDia = "1";
     String lDia = "1";
-    String rBoxes = "3";
+    String rBoxes = "5";
     String rBoxes2 = "3";
-    String lBoxes = "1";
+    String lBoxes = "2";
     String lBoxes2 = "2";
-    String rAdd = "2";
-    String lAdd = "2";
-    String rAxis = "11";
-    String lAxis = "1";
-    String rCyl = "--";
-    String lCyl = "--";
-    String rColor = "B";
-    String lColor = "B";
-    String PatientFNameCart = "PatOneFirst";
+    String rAdd;
+    String lAdd;
+    String rCyl;
+    String lCyl;
+    String PatientFNameCart = "PatFirstNew";
     String PatientLNameCart = "PatientLast";
-    String PatientFNameCart2 = "PatTwoFirst";
-    String PatientLNameCart2 = "PatientLast";
-    String ShippingCart = "c";
-    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String pricePerBox = "20.99";
-    String priceREye = "83.96";
-    String priceLEye = "83.96";
-    String pricePerBox2 = "";
-    String priceREye2 = "";
-    String priceLEye2 = "";
-    String priceTotal = "167.92";
-    String rsTotal = "167.92";
+    String ShippingCart = "e";
+    String pricePerBox = "39.99";
+    String priceREye = "199.95";
+    String priceLEye = "799.80";
+    String priceTotal = "1,019.74";
+    String rsTotal = "230.77";
     String rsTotalAfterRebate = "147.92";
     String rsTax = "";
-    String rsRebate = "20 Acuvue Rebate";
-    String rsShipping = "FREE" ;
+    String rsRebate = "";
+    String rsShipping = "19.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";
@@ -75,15 +58,16 @@ public class SmokeRIAcuvue2CanadaTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Canada Standard";
+    String shippingVerify = "Int'l Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+
 
     @Test (singleThreaded = true)
     @Parameters(value = "device")
@@ -93,9 +77,17 @@ public class SmokeRIAcuvue2CanadaTest extends TestBase {
         clickNoThanksButton(device);
         printTestNumber(printTestName);
         goToSignInPage(device);
-        typeReturningPhoneEmail(testNumberDependentOn);
-        typeReturningPhonePassword(device,password);
+      typeReturningPhoneEmail(testNumberDependentOn);
+      typeReturningPhonePassword(device,password);
         clickSignIn(device);
+        clickCartEdit(device);
+      takeScreenshot(screenshotTestName, "PDP1");
+      clickRPower(device,posR,rPower);
+      clickLPower(device,posL,lPower);
+      clickRboxes(rBoxes);
+      clickLboxes(lBoxes);
+      typePatientName(PatientFNameCart, PatientLNameCart);
+      clickUpdateCart(device);
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
@@ -104,6 +96,6 @@ public class SmokeRIAcuvue2CanadaTest extends TestBase {
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
-        driver.quit();
-    }
+      driver.quit();
+  }
 }

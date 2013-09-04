@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,55 +11,58 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIMultiBrandPatientTest extends TestBase {
-    String testNumber = "44055";
-    String testNumberDependentOn = "44041";
+public class SmokeRIColorToricTest extends TestBase {
+
+    String testNumber = "44045";
+    String testNumberDependentOn = "44031";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
     String searchAllBrand = "color";
-    String searchAllBrand2 = "Toric";
-    String brandToClickOn = "FreshLookColors";
-    String brandToClickOn2 = "VertexToricXR";
-    String brandVerifyPDP = "FreshLook Colors";
-    String brandVerifyPDP2 = "Vertex Toric XR";
-    String posR = "";
-    String posL = "";
-    String rPower = "";
-    String lPower = "";
+    String searchAllBrand2 = "Astigmatism";
+    String brandToClickOn = "FreshLookColorblendsToric";
+    String brandToClickOn2 = "AcuvueOasysforAstigmatism";
+    String brandVerifyPDP = "FreshLook Colorblends Toric";
+    String brandVerifyPDP2 = "Acuvue Oasys for Astigmatism";
+    String posR = "+";
+    String posL = "+";
+    String rPower = "0.25";
+    String lPower = "0.75";
     String rPower2 = "";
     String lPower2 = "";
     String rBC = "8";
     String lBC = "8";
     String rDia = "1";
     String lDia = "1";
-    String rBoxes = "5";
+    String rBoxes = "4";
     String rBoxes2 = "3";
-    String lBoxes = "2";
+    String lBoxes = "4";
     String lBoxes2 = "2";
     String rAdd = "2";
     String lAdd = "2";
-    String rCyl;
-    String lCyl;
-    String rColor = "G";
+    String rAxis = "11";
+    String lAxis = "1";
+    String rCyl = "--";
+    String lCyl = "--";
+    String rColor = "B";
     String lColor = "B";
     String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
     String PatientFNameCart2 = "PatTwoFirst";
     String PatientLNameCart2 = "PatientLast";
-    String ShippingCart = "s";
+    String ShippingCart = "n";
     //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String pricePerBox = "49.99";
-    String priceREye = "199.96";
-    String priceLEye = "199.96";
-    String pricePerBox2 = "49.99";
-    String priceREye2 = "199.96";
-    String priceLEye2 = "199.96";
-    String priceTotal = "2,527.68";
-    String rsTotal = "2,700.83";
-    String rsTotalAfterRebate = "2,580.83";
-    String rsTax = "173.15";
-    String rsRebate = "60 FreshLook Rebate";
+    String pricePerBox = "79.99";
+    String priceREye = "319.96";
+    String priceLEye = "319.96";
+    String pricePerBox2 = "";
+    String priceREye2 = "";
+    String priceLEye2 = "";
+    String priceTotal = "639.92";
+    String rsTotal = "230.77";
+    String rsTotalAfterRebate = "147.92";
+    String rsTax = "14.79";
+    String rsRebate = "";
     String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
@@ -71,7 +74,7 @@ public class SmokeRIMultiBrandPatientTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
@@ -82,7 +85,7 @@ public class SmokeRIMultiBrandPatientTest extends TestBase {
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
 
-    @Test (singleThreaded = true)
+    @Test(singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
         openWebPage(device);
@@ -93,17 +96,24 @@ public class SmokeRIMultiBrandPatientTest extends TestBase {
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
-        checkReorderCheckboxTwo(device);
         clickCartEdit(device);
+        clickRPower(device,posR,rPower);
+        clickLPower(device,posL,lPower);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
         clickRColor(rColor);
         clickLColor(lColor);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
         takeScreenshot(screenshotTestName, "PDP1");
         clickUpdateCart(device);
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox2, priceREye2, priceLEye2, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");

@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,43 +11,59 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIToricTest extends TestBase {
+public class SmokeRIAcuvue2CanadaTest extends TestBase {
 
-    String testNumber = "44043";
-    String testNumberDependentOn = "44029";
+    //change the Strings below to change the tests
+    String testNumber = "44047";
+    String testNumberDependentOn = "44033";
     String typeOfTest = "SMOKE";
     String typeOfCust = "RI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "vial";
-    String brandToClickOn = "VertexToricXR";
-    String brandVerifyPDP = "Vertex Toric XR";
-    String posR = "";
-    String posL = "";
-    String rPower = "";
-    String lPower = "";
+    String searchAllBrand = "acuvue";
+    String searchAllBrand2 = "Astigmatism";
+    String brandToClickOn = "FreshLookColorblendsToric";
+    String brandToClickOn2 = "AcuvueOasysforAstigmatism";
+    String brandVerifyPDP = "Acuvue 2";
+    String brandVerifyPDP2 = "Acuvue Oasys for Astigmatism";
+    String posR = "+"; String posL = "+";
+    String posR2 = ""; String posL2 = "";
+    String rPower = "0.25";
+    String lPower = "0.75";
+    String rPower2 = "-0.25";
+    String lPower2 = "-0.75";
     String rBC = "8";
     String lBC = "8";
     String rDia = "1";
     String lDia = "1";
-    String rBoxes = "1";
+    String rBoxes = "3";
     String rBoxes2 = "3";
     String lBoxes = "1";
     String lBoxes2 = "2";
-    String rAdd;
-    String lAdd;
-    String rCyl;
-    String lCyl;
-    String PatientFNameCart = "PatientFirst";
+    String rAdd = "2";
+    String lAdd = "2";
+    String rAxis = "11";
+    String lAxis = "1";
+    String rCyl = "--";
+    String lCyl = "--";
+    String rColor = "B";
+    String lColor = "B";
+    String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
-    String ShippingCart = "nn";
-    String pricePerBox = "107.99";
-    String priceREye = "431.96";
-    String priceLEye = "431.96";
-    String priceTotal = "863.92";
-    String rsTotal = "230.77";
+    String PatientFNameCart2 = "PatTwoFirst";
+    String PatientLNameCart2 = "PatientLast";
+    String ShippingCart = "c";
+    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+    String pricePerBox = "20.99";
+    String priceREye = "83.96";
+    String priceLEye = "83.96";
+    String pricePerBox2 = "";
+    String priceREye2 = "";
+    String priceLEye2 = "";
+    String priceTotal = "167.92";
+    String rsTotal = "167.92";
     String rsTotalAfterRebate = "147.92";
-    String rsTax = "14.79";
-    String rsRebate = "";
+    String rsTax = "";
+    String rsRebate = "20 Acuvue Rebate";
     String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
@@ -59,16 +75,15 @@ public class SmokeRIToricTest extends TestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Expedited";
+    String shippingVerify = "Canada Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
-
 
     @Test (singleThreaded = true)
     @Parameters(value = "device")

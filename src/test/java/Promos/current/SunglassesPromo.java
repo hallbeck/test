@@ -1,8 +1,7 @@
 package Promos.current;
 
 import Automation.TestBase;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,104 +13,47 @@ import org.testng.annotations.Test;
 public class SunglassesPromo extends TestBase {
 
 
-    //change the Strings below to change the tests
-    String testNumber = "48970";
-    String typeOfTest = "Promo";
-    String typeOfCust = "NI";
-    String typeOfPayment = "Credit";
-    String searchAllBrand = "acuvue 2";
-    String brandToClickOn = "Acuvue2";
-    String brandVerifyPDP = "Acuvue 2";
-    String brandVerifyPDP2 = "";
-    String posR = "+";
-    String posL = "";
-    String rPower2 = "";
-    String lPower2 = "";
-    String rPower = "0.50";
-    String lPower = "-1.00";
-    String rBC = "8";
-    String lBC = "8";
-    String rBC2 = "";
-    String lBC2 = "";
-    String rDia = "";
-    String lDia = "";
-    String rDia2 = "";
-    String lDia2 = "";
-    String rColor = "";
-    String lColor = "";
-    String rColor2 = "";
-    String lColor2 = "";
-    String rAdd = "";
-    String lAdd = "";
-    String rAdd2 = "";
-    String lAdd2 = "";
-    String rCyl = "--";
-    String lCyl = "--";
-    String rCyl2 = "";
-    String lCyl2 = "";
-    String rAxis = "11";
-    String rAxis2 = "";
-    String lAxis = "11";
-    String lAxis2 = "";
-    String rBoxes = "";
-    String rBoxes2 = "";
-    String lBoxes = "";
-    String lBoxes2 = "";
-    String PatientFNameCart = "PatOneFirst";
-    String PatientLNameCart = "PatientLast";
-    String PatientFNameCart2 = "PatTwoFirst";
-    String PatientLNameCart2 = "PatientLast";
-    String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "ii";
-    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpagerbslot%5Facfsw2013%5Fimage";
-    String promoProdName = "Suncloud Cookie";
-    String pricePromoCart = "49.99";
-    String promoItemNumber = "002568";
-    String promoText = "FREE Polarized Sunglasses:";
-    //osta.1800contactstest.com/?rb=ACFSM2013
-    String sunglassesPromoLink = "?rb=ACFSW2013";
-    String promoCode = "ACFS2013";
-    String pricePerBox = "59.99";
-    String priceREye = "119.98";
-    String priceLEye = "119.98";
-    String pricePerBox2 = "49.99";
-    String priceREye2 = "99.98";
-    String priceLEye2 = "199.96";
-    String priceTotal = "275.95";
-    String rsTotal = "275.95";
-    String rsTotalAfterRebate = "230.95";
-    String rsTax = "";
-    String rsRebate = "";
-    String rsShipping = "35.99" ;
-    String shippingFName = "ShipFirst";
-    String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
-    String state = "whatever";
-    String city = "newberry";
-    String zip = "K1A 0G9";
-    String emailPrefix = "test";
-    String password = "password";
-    String drName = "test";
-    String drState = "UT";
-    String creditCard = "test";
-    String ccName = "Blah";
-    String ccExpMo = "";
-    String ccExpYear = "";
-    String creditCardBad = "4111111111111111";
-    String ccExpMoBad = "01";
-    String ccExpYearBad = "2013";
-        String rebateNotShipped = "Your order has not shipped yet.";
-    String orderStatus = "Checking Stock";
-    String shippingVerify = "Int'l Express";
-    String seperator = "/";
-    String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify + seperator;
+    @DataProvider(name = "sunglasses")
+    public Object[][] createData1() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Promos.xls",
+                "inputsStage", "smoke1");
+        return(retObjArr);
+    }
 
 
-    @Test (singleThreaded = true)
+    @BeforeMethod
     @Parameters(value = "device")
-    public void test(String device) {
+    public void setUp(String device) throws Exception {
+        print("===========START TEST============="+device);
+        openWebPage(device);
+    }
+    @Test (dataProvider = "sunglasses")
+    @Parameters(value = "device")
+    public void sunglassesTest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
+                       String searchAllBrand, String brandclick, String brandVerifyPDP,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String emailPrefix, String password,
+                       String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
+                       String rBC, String lBC, String rBC2, String lBC2,
+                       String rDia, String lDia, String rDia2, String lDia2,
+                       String rColor, String lColor, String rColor2, String lColor2,
+                       String rAdd, String lAdd, String rAdd2, String lAdd2,
+                       String rCyl, String lCyl, String rCyl2, String lCyl2,
+                       String rAxis, String lAxis, String rAxis2, String lAxis2,
+                       String rDN, String lDN,
+                       String rBoxes, String lBoxes, String rBoxes2, String lBoxes2,
+                       String PatientFNameCart, String PatientLNameCart, String PatientFNameCart2, String PatientLNameCart2,
+                       String ShippingCart,
+                       String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
+                       String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String rebateNotShipped, String orderStatus, String shippingVerify,
+                       String promoName, String promoProdName, String pricePromoCart, String promoItemNumber, String promoText, String sunglassesPromoLink, String promoCode)
+    {
+        String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
+        String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + promoProdName;
+        String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + promoProdName;
+
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
@@ -147,8 +89,8 @@ public class SunglassesPromo extends TestBase {
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
 
-        typeCreditCard(device,creditCard);
-        typeCreditCardName(device,ccName);
+        typeCreditCard(device,CCNum);
+        typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
@@ -162,6 +104,13 @@ public class SunglassesPromo extends TestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();
-  }
-}
+    }
+        @AfterMethod
+        public void tearDown(){
+        driver.manage().deleteAllCookies();
+    }
+        @AfterClass
+        public void shutDown(){
+        //driver.quit();
+    }
+    }

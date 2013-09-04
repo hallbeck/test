@@ -3,61 +3,19 @@
 <suite name="desktop" verbose="1"  parallel="methods" thread-count="1">
     <test name="NIsmokeDesktop">
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
-            <class name="SMOKE.done.SmokeNIVialTest"/>
-            <class name="SMOKE.done.SmokeNIToricTest"/>
-            <class name="SMOKE.done.SmokeNIProgressiveInternationalTest"/>
-            <class name="SMOKE.done.SmokeNIProgressiveCanadaTest"/>
-            <class name="SMOKE.done.SmokeNIMultiBrandPatientTest"/>
-            <class name="SMOKE.done.SmokeNIMultiBrandPatientBoxTest"/>
-            <class name="SMOKE.done.SmokeNIMultiBrand1EyeEachTest"/>
-            <class name="SMOKE.done.SmokeNIColorToricTest"/>
-            <class name="SMOKE.done.SmokeNIColorPlanoDeclinedCardTest"/>
-            <class name="SMOKE.done.SmokeNIColor6MoTest"/>
-            <class name="SMOKE.done.SmokeNIAsphericInternationalTest"/>
-            <class name="SMOKE.done.SmokeNIAcuvue2PlanoCanadaTest"/>
-            <class name="SMOKE.done.SmokeNIAcuvue2CanadaTest"/>
-            <class name="SMOKE.done.SmokeNI1EyeAsphericTest"/>
-            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
             <class name="Regression.Rebates.Rebates_Frequency55MultiD_48580"/>
             <class name="Regression.Rebates.Rebates_Frequency55MultiN_48580"/>
         </classes>
     </test>
     <test name="RIsmokeDesktop">
         <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
+        <parameter name="prod" value='no'/>
         <classes>
-            <!--dependant on 44039-->
-            <class name="SMOKE.SmokeRI1EyeAsphericPlusColorTest"/>
-            <!--dependant on 44033-->
-            <class name="SMOKE.SmokeRIAcuvue2CanadaTest"/>
-            <!--dependant on 44038-->
-            <class name="SMOKE.SmokeRIAcuvue2PlanoCanadaTest"/>
-            <!--dependant on 44036-->
-            <class name="SMOKE.SmokeRIAsphericInternationalTest"/>
-            <!--dependant on 44030-->
-            <class name="SMOKE.done.SmokeRIColor6MoTest"/>
-            <!--dependant on 44037-->
-            <class name="SMOKE.SmokeRIColorPlanoDeclinedCardTest"/>
-            <!--dependant on 44031-->
-            <class name="SMOKE.SmokeRIColorToricTest"/>
-            <!--dependant on 44040-->
-            <class name="SMOKE.SmokeRIMultiBrand1EyeEachTest"/>
-            <!--dependant on 44042-->
-            <class name="SMOKE.SmokeRIMultiBrandPatientBoxTest"/>
-            <!--dependant on 44041-->
-            <class name="SMOKE.SmokeRIMultiBrandPatientTest"/>
-            <!--dependant on 44034-->
-            <class name="SMOKE.SmokeRIMultiFocalCanadaTest"/>
-            <!--dependant on 44035-->
-            <class name="SMOKE.SmokeRIProgressiveInternationalTest"/>
-            <!--dependant on 44029-->
-            <class name="SMOKE.SmokeRIToricTest"/>
-            <!--dependant on 44032-->
-            <class name="SMOKE.done.SmokeRIVialTest"/>
-            <!--dependant on 49709-->
-            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
+            <class name="SMOKE.SmokeRIAcuvue2AccessoryCanadaTest"/>
+            <class name="SMOKE.SmokeRIColorToricAccessoryTest"/>
+            <class name="SMOKE.SmokeRIProgressiveAccessoryInternationalTest"/>
         </classes>
     </test>
 </suite>

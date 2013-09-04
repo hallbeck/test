@@ -1,4 +1,4 @@
-package SMOKE;
+package SMOKE.done;
 
 import Automation.TestBase;
 import org.testng.annotations.Parameters;
@@ -11,69 +11,100 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNIProgressiveAccessoryInternationalTest extends TestBase {
+public class SmokeNIAcuvue2AccessoryCanadaTest extends TestBase {
 
     //change the Strings below to change the tests
-    String testNumber = "48930";
+    String testNumber = "48932";
     String typeOfTest = "SMOKE";
 String typeOfCust = "NI";
     String typeOfPayment = "Credit";
-    String searchAllBrand = "progressive";
+    String searchAllBrand = "acuvue";
     String searchAllBrand2 = "eye drops";
-    String brandToClickOn = "FocusDAILIESProgressives30pack";
-    String reg = "®";
-    String brandToClickOn2 = "OPTI-FREE"+reg+"RepleniSH"+reg+"Solution2pack2-10oz";
-    String brandVerifyPDP = "Focus DAILIES Progressives 30 pack";
-    String brandVerifyPDP2 = "OPTI-FREE"+reg+" RepleniSH"+reg+" Solution 2pack";
+    String brandToClickOn = "Acuvue2";
+    String brandToClickOn2 = "OPTI-FREEPureMoistRewettingDrops";
+    String brandVerifyPDP = "Acuvue 2";
+    String brandVerifyPDP2 = "RewettingDrops";
     String posR = "+";
-    String posL = "+";
-    String rPower = "0.25";
-    String lPower = "0.75";
-    String rBC = "";
-    String lBC = "";
+    String posL = "";
+    String rPower2 = "";
+    String lPower2 = "";
+    String rPower = "0.50";
+    String lPower = "-1.00";
+    String rBC = "8";
+    String lBC = "8";
+    String rBC2 = "";
+    String lBC2 = "";
     String rDia = "";
     String lDia = "";
+    String rDia2 = "";
+    String lDia2 = "";
+    String rColor = "";
+    String lColor = "";
+    String rColor2 = "";
+    String lColor2 = "";
     String rAdd = "";
     String lAdd = "";
+    String rAdd2 = "";
+    String lAdd2 = "";
     String rCyl = "";
     String lCyl = "";
-    String PatientFNameCart = "PatientFirst";
+    String rCyl2 = "";
+    String lCyl2 = "";
+    String rAxis = "";
+    String rAxis2 = "";
+    String lAxis = "";
+    String lAxis2 = "";
+    String rBoxes = "";
+    String rBoxes2 = "";
+    String lBoxes = "";
+    String lBoxes2 = "";
+    String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
+    String PatientFNameCart2 = "PatTwoFirst";
+    String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String ShippingCart = "i";
-    String pricePerBox = "39.99";
-    String priceREye = "239.94";
-    String priceLEye = "239.94";
-    String priceTotal = "499.87";
-    String rsTotal = "499.87";
-    String rsTotalAfterRebate = "479.87";
+    String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
+    String ShippingCart = "c";
+    String pricePerBox = "7.99";
+    String priceREye = "83.96";
+    String priceLEye = "83.96";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "99.98";
+    String priceLEye2 = "199.96";
+    String priceTotal = "175.91";
+    String rsTotal = "175.91";
+    String rsTotalAfterRebate = "155.91";
     String rsTax = "";
-    String rsRebate = "";
-    String rsShipping = "19.99" ;
+    String rsRebate = "20.00";
+    String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
-    String state = "Newberry";
-    String city = "whatever";
+    String country = "canada";
+    String state = "O";
+    String city = "Ottawa";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "prod";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
-        String rebateNotShipped = "Your order has not shipped yet.";
+    String creditCardBad = "badProd";
+    String ccExpMoBad = "01";
+    String ccExpYearBad = "2013";
+    String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Int'l Standard";
+    String shippingVerify = "Canada Standard";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
     String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+
 
     @Test (singleThreaded = true)
     @Parameters(value = "device")
     public void test(String device) {
-        openWebPage(device);
+      openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
@@ -82,9 +113,10 @@ String typeOfCust = "NI";
         takeScreenshot(screenshotTestName, "SearchBrand");
         clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
-        verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         typePatientName(PatientFNameCart,PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddRx(device);
@@ -96,7 +128,7 @@ String typeOfCust = "NI";
         clickAddAccessoryToCart(device);
         selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
-        verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
@@ -124,5 +156,5 @@ String typeOfCust = "NI";
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
-    }
+  }
 }

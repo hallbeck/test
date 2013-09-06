@@ -5,10 +5,10 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='yes'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_Acuvue2_48580"/>
-            <class name="Regression.Rebates.Rebates_Acuvue2Colours_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvance_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvanceAstigmatism_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Acuvue2_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Acuvue2Colours_48580"/>
+            <class name="Regression.Rebates.done.Rebates_AcuvueAdvance_48580"/>
+            <class name="Regression.Rebates.done.Rebates_AcuvueAdvanceAstigmatism_48580"/>
             <class name="Regression.Rebates.Rebates_AcuvueOasysAstigmatism_48580"/>
             <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus6pk_48580"/>
             <class name="Regression.Rebates.Rebates_AcuvueOasysHydraclearPlus24pk_48580"/>
@@ -25,9 +25,9 @@
             <class name="Regression.Rebates.Rebates_Aqualite55ProAspheric_48580"/>
             <class name="Regression.Rebates.Rebates_Avaira_48580"/>
             <class name="Regression.Rebates.Rebates_AvairaToric_48580"/>
-            <class name="Regression.Rebates.Rebates_Acuvue_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus24pk_48580"/>
-            <class name="Regression.Rebates.Rebates_AcuvueAdvancePlus6pk_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Acuvue_48580"/>
+            <class name="Regression.Rebates.done.Rebates_AcuvueAdvancePlus24pk_48580"/>
+            <class name="Regression.Rebates.done.Rebates_AcuvueAdvancePlus6pk_48580"/>
             <class name="Regression.Rebates.Rebates_AcuvueBifocals_48580"/>
         </classes>
     </test>

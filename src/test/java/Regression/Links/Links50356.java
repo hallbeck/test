@@ -1,6 +1,6 @@
 package Regression.Links;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.*;
 
 /**

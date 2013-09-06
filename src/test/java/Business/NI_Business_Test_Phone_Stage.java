@@ -1,6 +1,6 @@
 package Business;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.*;
 
 /**

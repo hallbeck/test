@@ -1,6 +1,6 @@
 package Regression.TitleTagProducts;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 

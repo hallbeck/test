@@ -1,7 +1,8 @@
 package SMOKE;
 
-import Automation.TestBase;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +11,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SMOKE_Test_Desktop_Stage extends TestBase {
+public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
 
 
     @DataProvider(name = "NI")
@@ -45,7 +46,7 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "OneTestNI")
+    @Test(dataProvider = "NI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -159,40 +160,14 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
         if (!searchAllBrand3.equals("")){
             clickAddRx(device);
             searchAllBrand(device,searchAllBrand3);
-            if (searchAllBrand3.equals("Acuvue")||searchAllBrand3.contains("drops")
-                    ||searchAllBrand2.contains("solution")){
+            if (searchAllBrand3.contains("drops")
+                    ||searchAllBrand3.contains("solution")){
                 clickPhoneBrand(device,brandclick3);
             }
             verifyPDP(brandVerifyPDP3);
-            if (oneEyeSecondOrder.equals("R")){
-                checkBoxRightEye(device);
-            }
-            if (oneEyeSecondOrder.equals("L")){
-                checkBoxLeftEye(device);
-            }
-            clickRPower(device,posR2,rPower2);
-            clickLPower(device,posL2,lPower2);
-            clickRBC(rBC2);
-            clickLBC(lBC2);
-            clickRDia(rDia2);
-            clickLDia(lDia2);
-            clickRCyl(rCyl2);
-            clickLCyl(lCyl2);
-            clickRAxis(rAxis2);
-            clickLAxis(lAxis2);
-            clickRColor(rColor2);
-            clickLColor(lColor2);
-            clickRAdd(rAdd2);
-            clickLAdd(lAdd2);
-            clickRDN(device,rDN);
-            clickLDN(device,lDN);
+            //removed power and other settings because this is intended for accessories.
             clickRboxes(rBoxes2);
             clickLboxes(lBoxes2);
-            try{
-                typePatientName(PatientFNameCart2,PatientLNameCart2);
-            }
-            catch(Throwable e){print("must be solution, no place for a name.");
-            }
             takeScreenshot(screenshotTestName, "PDP3");
         }
         clickAddToCart(device);
@@ -266,7 +241,7 @@ public class SMOKE_Test_Desktop_Stage extends TestBase {
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    @Test (dataProvider = "OneTestRI")
+    @Test (dataProvider = "RI")
     @Parameters(value = "device")
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,

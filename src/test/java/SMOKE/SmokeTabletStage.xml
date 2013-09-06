@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Tablet" verbose="1" parallel="methods" thread-count="1">
+    <test name="SMOKE Tablet Stage">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SMOKE_Test_Tablet_Stage">
+            <methods>
+                <include name="NItest"/>
+                <include name="RItest"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

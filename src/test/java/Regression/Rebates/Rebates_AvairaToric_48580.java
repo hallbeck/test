@@ -1,6 +1,6 @@
 package Regression.Rebates;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -149,7 +149,7 @@ String password = "password";
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(testNumber,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        checkoutAndVerify(testNumber,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(testNumber);
         //getRebate(device,orderNumberPlaceholder,rebateShipped);

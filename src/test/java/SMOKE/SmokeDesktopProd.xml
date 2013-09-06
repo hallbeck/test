@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke Desktop Stage" verbose="1" parallel="methods" thread-count="1">
+<suite name="Smoke Desktop Prod" verbose="1" parallel="methods" thread-count="1">
     <test name="SMOKE Desktop Prod">
         <parameter name="device" value='desktop'/>
         <classes>

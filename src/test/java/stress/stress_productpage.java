@@ -1,6 +1,6 @@
 package stress;
 
-import Automation.TestBase;
+import Base.ContactsTestBase;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class stress_productpage extends TestBase {
+public class stress_productpage extends ContactsTestBase {
 
 
     String typeOfTest = "Regression";

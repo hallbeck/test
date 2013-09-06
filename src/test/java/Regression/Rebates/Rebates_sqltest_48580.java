@@ -1,6 +1,6 @@
 package Regression.Rebates;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -126,7 +126,7 @@ public class Rebates_sqltest_48580 extends TestBase {
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(orderNumberPlaceholder,prod,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(orderNumberPlaceholder);
         getRebate(device,orderNumberPlaceholder,rebateShipped);

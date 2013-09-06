@@ -1,3 +1,4 @@
+
 package Automation;
 
 import jxl.Cell;
@@ -581,19 +582,13 @@ public class TestBase {
         if (con != null) try { con.close(); } catch(Exception e) {}
     }
 }*/
-    public void checkoutAndVerify (String testNumber,String prod,String device,
-    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus){
-        if (prod.equals("no")){
+    public void checkoutAndVerify (String testNumber,String device, String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus){
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         gotoMyAccount(device);
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
-        }
-        else if(prod.equals("yes")){
-            print("Production... We won't place an order");
-        }
     }
     public void verifyProduct(String device, String expected, String searchedFor) {
         String state = "";

@@ -1,6 +1,6 @@
 package Regression.OpenBugs;
 
-import Automation.TestBase;
+import Automation.*;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;

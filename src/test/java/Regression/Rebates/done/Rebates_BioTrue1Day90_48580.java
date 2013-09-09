@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
+public class Rebates_BioTrue1Day90_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,18 +20,18 @@ public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String AcuvueOasysHydraclearPlus24pk="lens/acuvue-oasys-24";
-    String rebatesAvailable = "Rebate expected--save $75 on 2";
-    String RebateTextRS = "Acuvue Rebate";
-    String rebate6Month = "75.0";
-    String rebate12Month = "";
+    String BioTrue="lens/biotrue-oneday-90" ;
+    String rebatesAvailable = "Rebate expected--save $40 on 4 -- save $100 on 8";
+    String RebateTextRS = "Biotrue Rebate";
+    String rebate6Month = "40.0";
+    String rebate12Month = "100.0";
         String brandVerifyPDP = "Acuvue 2";
     String posR = "";
-    String posL = "+";
+    String posL = "";
     String rPower = "-0.50";
-    String lPower = "2.25";
-    String rBC = "8.8";
-    String lBC = "8.8";
+    String lPower = "-2.25";
+    String rBC = "";
+    String lBC = "";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -50,14 +50,14 @@ public class Rebates_AcuvueOasysHydraclearPlus24pk_48580 extends TestBase {
     String lCyl = "-";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "";
+    String rAxis = "1";
     String rAxis2 = "";
-    String lAxis = "";
+    String lAxis = "1";
     String lAxis2 = "";
-    String rBoxes = "1";
-    String rBoxes2 = "";
-    String lBoxes = "1";
-    String lBoxes2 = "";
+    String rBoxes = "2";
+    String rBoxes2 = "4";
+    String lBoxes = "2";
+    String lBoxes2 = "4";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -81,6 +81,7 @@ String password = "password";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
     String rsShipping = "14.99" ;
+
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Title tag";
@@ -96,15 +97,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(AcuvueOasysHydraclearPlus24pk);
+        gotoPage(BioTrue);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRBC(rBC);
-        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
-
         typePatientName(PatientFNameCart, PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP1_");
         clickAddToCart(device);
@@ -122,6 +120,21 @@ String password = "password";
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month,RebateTextRS);
+        goToCart(device);
+        clickRemove(device);
+
+        gotoPage(BioTrue);
+        print(rebatesAvailable);
+        clickRPower(device,posR,rPower);
+        clickLPower(device,posL,lPower);
+        clickRboxes(rBoxes2);
+        clickLboxes(lBoxes2);
+        typePatientName(PatientFNameCart, PatientLNameCart);
+        takeScreenshot(screenshotTestName, "PDP2_");
+        clickAddToCart(device);
+        verifyRebateCart(device,rebate12Month);
+        clickCart_Continue(device);
+        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
                 typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);

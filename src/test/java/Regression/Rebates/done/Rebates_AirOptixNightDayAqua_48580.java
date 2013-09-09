@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Aqualens55Aspheric_48580 extends TestBase {
+public class Rebates_AirOptixNightDayAqua_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,18 +20,18 @@ public class Rebates_Aqualens55Aspheric_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Aqualens55Aspheric="lens/aqualens-55-aspheric";
-    String rebatesAvailable = "Rebate expected--save $30 on 8";
-    String RebateTextRS = "Biomedics Rebate";
-    String rebate6Month = "30.0";
+    String AirOptixNightDayAqua="lens/air-optix-night-day-aqua";
+    String rebatesAvailable = "Rebate expected--save $40 on 4";
+    String RebateTextRS = "Air Optix Rebate";
+    String rebate6Month = "40.0";
     String rebate12Month = "";
         String brandVerifyPDP = "Acuvue 2";
-    String posR = "+";
+    String posR = "";
     String posL = "+";
-    String rPower = "0.50";
+    String rPower = "-0.50";
     String lPower = "2.25";
-    String rBC = "88";
-    String lBC = "88";
+    String rBC = "8";
+    String lBC = "8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -54,10 +54,10 @@ public class Rebates_Aqualens55Aspheric_48580 extends TestBase {
     String rAxis2 = "";
     String lAxis = "";
     String lAxis2 = "";
-    String rBoxes = "4";
-    String rBoxes2 = "12";
-    String lBoxes = "4";
-    String lBoxes2 = "12";
+    String rBoxes = "2";
+    String rBoxes2 = "";
+    String lBoxes = "2";
+    String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -96,7 +96,7 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Aqualens55Aspheric);
+        gotoPage(AirOptixNightDayAqua);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

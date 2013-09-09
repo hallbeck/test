@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Biomedics1day90pk_48580 extends TestBase {
+public class Rebates_BiofinityMultiN_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,11 +20,11 @@ public class Rebates_Biomedics1day90pk_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Biomedics1Day90pk="lens/biomedics-1-day-90";
-    String rebatesAvailable = "Rebate expected--save $20 on 4 -- save $65 on 8";
-    String RebateTextRS = "Biomedics Rebate";
-    String rebate6Month = "20.0";
-    String rebate12Month = "65.0";
+    String BiofinityMultifocal="lens/biofinity-multifocal";
+    String rebatesAvailable = "Rebate expected--save $60 on 4";
+    String RebateTextRS = "Biofinity Rebate";
+    String rebate6Month = "60.0";
+    String rebate12Month = "";
         String brandVerifyPDP = "Acuvue 2";
     String posR = "";
     String posL = "+";
@@ -42,8 +42,10 @@ public class Rebates_Biomedics1day90pk_48580 extends TestBase {
     String lColor = "";
     String rColor2 = "";
     String lColor2 = "";
-    String rAdd;
-    String lAdd;
+    String rAdd = "2.00";
+    String lAdd = "2.00";
+    String rDN = "N";
+    String lDN = "N";
     String rAdd2;
     String lAdd2;
     String rCyl = "-";
@@ -55,9 +57,9 @@ public class Rebates_Biomedics1day90pk_48580 extends TestBase {
     String lAxis = "";
     String lAxis2 = "";
     String rBoxes = "2";
-    String rBoxes2 = "4";
+    String rBoxes2 = "";
     String lBoxes = "2";
-    String lBoxes2 = "4";
+    String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
@@ -96,10 +98,14 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Biomedics1Day90pk);
+        gotoPage(BiofinityMultifocal);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRDN(device,rDN);
+        clickLDN(device,lDN);
+        clickRAdd(rAdd);
+        clickLAdd(lAdd);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -119,21 +125,6 @@ String password = "password";
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month,RebateTextRS);
-        goToCart(device);
-        clickRemove(device);
-
-        gotoPage(Biomedics1Day90pk);
-        print(rebatesAvailable);
-        clickRPower(device,posR,rPower);
-        clickLPower(device,posL,lPower);
-        clickRboxes(rBoxes2);
-        clickLboxes(lBoxes2);
-        typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2_");
-        clickAddToCart(device);
-        verifyRebateCart(device,rebate12Month);
-        clickCart_Continue(device);
-        verifyRebateRS(device,rebate12Month,RebateTextRS);
 
                 typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);

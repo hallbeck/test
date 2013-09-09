@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Biomedics38_48580 extends TestBase {
+public class Rebates_Biomedics55Evo_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,18 +20,18 @@ public class Rebates_Biomedics38_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Biomedics38="lens/biomedics-38" ;
+    String Biomedics55Evolution="lens/biomedics-55-evolution";
     String rebatesAvailable = "Rebate expected--save $30 on 8";
     String RebateTextRS = "Biomedics Rebate";
     String rebate6Month = "30.0";
     String rebate12Month = "";
         String brandVerifyPDP = "Acuvue 2";
     String posR = "";
-    String posL = "";
+    String posL = "+";
     String rPower = "-0.50";
-    String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String lPower = "2.25";
+    String rBC = "8.6";
+    String lBC = "8.8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -96,10 +96,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Biomedics38);
+        gotoPage(Biomedics55Evolution);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

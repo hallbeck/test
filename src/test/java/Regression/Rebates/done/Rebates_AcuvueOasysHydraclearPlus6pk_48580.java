@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,27 +11,27 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Avaira_48580 extends TestBase {
+public class Rebates_AcuvueOasysHydraclearPlus6pk_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
-    String orderNumberPlaceholder = "48580Avira_rebate";
+    String orderNumberPlaceholder = "48580Acuvue2_rebate";
     String typeOfTest = "Regression";
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Avaira="lens/avaira";
-    String rebatesAvailable = "Rebate expected--save $60 on 8";
-    String RebateTextRS = "Avaira Rebate";
-    String rebate6Month = "60.0";
+    String AcuvueOasysHydraclearPlus6pk="lens/acuvue-oasys";
+    String rebatesAvailable = "Rebate expected--save $75 on 8";
+    String RebateTextRS = "Acuvue Rebate";
+    String rebate6Month = "75.0";
     String rebate12Month = "";
-        String brandVerifyPDP = "Avira";
-    String posR = "+";
+        String brandVerifyPDP = "Acuvue 2";
+    String posR = "";
     String posL = "+";
-    String rPower = "0.50";
+    String rPower = "-0.50";
     String lPower = "2.25";
-    String rBC = "8.4";
-    String lBC = "8.4";
+    String rBC = "8";
+    String lBC = "8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -96,7 +96,7 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Avaira);
+        gotoPage(AcuvueOasysHydraclearPlus6pk);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

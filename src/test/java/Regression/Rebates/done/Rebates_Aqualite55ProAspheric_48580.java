@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_BiomedicsToric_48580 extends TestBase {
+public class Rebates_Aqualite55ProAspheric_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,7 +20,7 @@ public class Rebates_BiomedicsToric_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String BiomedicsToric="lens/biomedics-toric" ;
+    String Aqualite55ProAspheric="lens/aqualite-55-pro-aspheric" ;
     String rebatesAvailable = "Rebate expected--save $30 on 8";
     String RebateTextRS = "Biomedics Rebate";
     String rebate6Month = "30.0";
@@ -29,9 +29,9 @@ public class Rebates_BiomedicsToric_48580 extends TestBase {
     String posR = "";
     String posL = "";
     String rPower = "-0.50";
-    String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String lPower = "-1.00";
+    String rBC = "8.6";
+    String lBC = "8.6";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -50,9 +50,9 @@ public class Rebates_BiomedicsToric_48580 extends TestBase {
     String lCyl = "-";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "1";
+    String rAxis = "";
     String rAxis2 = "";
-    String lAxis = "1";
+    String lAxis = "";
     String lAxis2 = "";
     String rBoxes = "4";
     String rBoxes2 = "";
@@ -81,8 +81,6 @@ String password = "password";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
     String rsShipping = "14.99" ;
-
-
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Title tag";
@@ -98,14 +96,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(BiomedicsToric);
+        gotoPage(Aqualite55ProAspheric);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRAxis(rAxis);
-        clickLAxis(lAxis);
-        clickRCyl(rCyl);
-        clickLCyl(lCyl);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

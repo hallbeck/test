@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_AirOptixAqua_48580 extends TestBase {
+public class Rebates_BiomedicsToric_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,18 +20,18 @@ public class Rebates_AirOptixAqua_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String AirOptixAqua="lens/air-optix-aqua";
-    String rebatesAvailable = "Rebate expected--save $20 on 4";
-    String RebateTextRS = "Air Optix Rebate";
-    String rebate6Month = "20.0";
+    String BiomedicsToric="lens/biomedics-toric" ;
+    String rebatesAvailable = "Rebate expected--save $30 on 8";
+    String RebateTextRS = "Biomedics Rebate";
+    String rebate6Month = "30.0";
     String rebate12Month = "";
         String brandVerifyPDP = "Acuvue 2";
     String posR = "";
-    String posL = "+";
+    String posL = "";
     String rPower = "-0.50";
-    String lPower = "2.25";
-    String rBC = "8";
-    String lBC = "8";
+    String lPower = "-2.25";
+    String rBC = "";
+    String lBC = "";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -50,13 +50,13 @@ public class Rebates_AirOptixAqua_48580 extends TestBase {
     String lCyl = "-";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "";
+    String rAxis = "1";
     String rAxis2 = "";
-    String lAxis = "";
+    String lAxis = "1";
     String lAxis2 = "";
-    String rBoxes = "2";
+    String rBoxes = "4";
     String rBoxes2 = "";
-    String lBoxes = "2";
+    String lBoxes = "4";
     String lBoxes2 = "";
     String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
@@ -98,10 +98,14 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(AirOptixAqua);
+        gotoPage(BiomedicsToric);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRAxis(rAxis);
+        clickLAxis(lAxis);
+        clickRCyl(rCyl);
+        clickLCyl(lCyl);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

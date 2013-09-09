@@ -1932,11 +1932,18 @@ public class ContactsTestBase {
 
     public void clickRAdd(String add) {
         if (!add.equals("")){
-            WebElement weAdd = driver.findElement
-                    (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+            try {
+                WebElement weAdd = driver.findElement
+                        (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
             weAdd.click();
-            System.out.println("ADD for Right eye: " + add);
             weAdd.sendKeys(add,Keys.ENTER);
+        }
+            catch(Throwable e){
+                WebElement weAdd = driver.findElement(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+                weAdd.click();
+                weAdd.sendKeys(add,Keys.ENTER);
+            }
+            System.out.println("ADD for Right eye: " + add);
             Wait(1);
         }
         else {
@@ -1945,11 +1952,18 @@ public class ContactsTestBase {
     }
     public void clickLAdd(String add) {
         if (!add.equals("")){
-            WebElement weAdd = driver.findElement
-                    (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
-            weAdd.click();
-            System.out.println("ADD for left eye: " + add);
-            weAdd.sendKeys(add,Keys.ENTER);
+            try {
+                WebElement weAdd = driver.findElement
+                        (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+                weAdd.click();
+                weAdd.sendKeys(add,Keys.ENTER);
+            }
+            catch(Throwable e){
+                WebElement weAdd = driver.findElement(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.AddPower')]"));
+                weAdd.click();
+                weAdd.sendKeys(add,Keys.ENTER);
+            }
+            System.out.println("ADD for Left eye: " + add);
             Wait(1);
         }
         else {

@@ -38,7 +38,7 @@
         <parameter name="device" value='tablet'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.current.BrandCanvas_Click_Promo"/>
+            <class name="Promos.old.BrandCanvas_Click_Promo"/>
             <class name="Promos.old.FreeExpeditedShipping_SolutionPromo"/>
         </classes>
     </test>

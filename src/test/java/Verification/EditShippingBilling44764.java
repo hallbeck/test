@@ -1,6 +1,6 @@
 package Verification;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,12 +11,12 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class EditShippingBilling44764 extends TestBase {
+public class EditShippingBilling44764 extends ContactsTestBase {
 
 
     //change the Strings below to change the tests
     String testNumber = "44764";
-    String testNumberDependentOn = "44030";
+    String testNumberDependentOn = "47577_VisaForeign";
     String typeOfTest = "VERIFICATION";
     String typeOfCust = "NI";
     String posR = "+";
@@ -127,8 +127,8 @@ public class EditShippingBilling44764 extends TestBase {
         verifyPaymentInfo(device,paymentType);
         clickEditBilling(device);
         editBilling(device,shippingFNameEdit,shippingLNameEdit,countryEdit,cityEdit,stateEdit,stateAbrev,zipEdit);
-        clickSaveBilling(device);
+        //clickSaveBilling(device);
         verifyBillCityStateMyAcct(device,cityEdit,stateAbrev,zipEdit);
-        verifyPaymentInfo(device,paymentNull);
+        verifyPaymentInfo(device,paymentType);
     }
 }

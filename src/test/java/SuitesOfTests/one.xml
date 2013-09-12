@@ -1,25 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="tablet" verbose="1" parallel="classes" thread-count="1">
-    <test name="WIN">
-        <parameter name="device" value='tablet'/>
+<suite name="desktop" verbose="1" parallel="classes" thread-count="2">
+    <test name="SMOKE Desktop Stage">
+        <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
-            <class name="Regression.Account.editRxNI_49773"/>
-            <class name="Regression.Account.editRxNI_49774"/>
-            <class name="Regression.Account.editRxNI_49775"/>
-            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
-            <class name="Regression.Account.editRxRI_49777"/>
-            <class name="Regression.Account.editRxRI_49778"/>
-            <class name="Regression.Account.editRxRI_49779"/>
+            <class name="SMOKE.SMOKE_Test_Desktop_Stage">
+                <methods>
+                    <include name="NItest"/>
+                    <include name="RItest"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
-    <test name="tabletOONTests" >
-        <parameter name="device" value='tablet'/>
-        <classes>
-            <class name="OONInsurance.OONTest"/>
-        </classes>
-    </test>
-
 </suite>

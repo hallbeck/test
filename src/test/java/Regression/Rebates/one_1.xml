@@ -1,31 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
-    <test name="RebateTests_E" >
-        <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54136_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54Toric_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54ToricMC_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O59Thin_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O59Extra_48580"/>
-            <class name="Regression.Rebates.Rebates_ExtremeH2O54142_48580"/>
-            <class name="Regression.Rebates.Rebates_EncorePremium_48580"/>
-            <class name="Regression.Rebates.Rebates_Expressions_48580"/>
-        </classes>
-    </test>
-    <test name="RebateTests_I_O" >
-        <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='yes'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_IcuityH2O_48580"/>
-            <class name="Regression.Rebates.Rebates_Mediflex38_48580"/>
-            <class name="Regression.Rebates.Rebates_Mediflex55_48580"/>
-            <class name="Regression.Rebates.Rebates_O2Optix_48580"/>
-            <class name="Regression.Rebates.Rebates_Optima38SP_48580"/>
-            <class name="Regression.Rebates.Rebates_OptimaFW_48580"/>
-            <class name="Regression.Rebates.Rebates_OptimaToric_48580"/>
-        </classes>
-    </test>
+<suite name="rebates" verbose="1" parallel="methods" thread-count="1">
+        <test name="RebateTests" >
+            <parameter name="device" value='desktop'/>
+            <classes>
+                <class name="Regression.Rebates.Rebates_48580_Prod"/>
+            </classes>
+        </test>
 </suite>

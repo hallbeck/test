@@ -1,4 +1,4 @@
-package Regression.Rebates;
+package Regression.Rebates.done;
 
 import Automation.*;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Clear58_48580 extends TestBase {
+public class Rebates_ClarityH2O_48580 extends TestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,22 +20,22 @@ public class Rebates_Clear58_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Clear58="lens/clear-58";
-    String rebatesAvailable = "Rebate expected--save $25 on 8";
-    String RebateTextRS = "Clear Rebate";
-    String rebate6Month = "25.0";
+    String ClarityH2O="lens/clarity-h2o";
+    String rebatesAvailable = "Rebate expected--save $20 on 4";
+    String RebateTextRS = "H2O Rebate";
+    String rebate6Month = "20.0";
     String rebate12Month = "";
         String brandVerifyPDP = "Acuvue 2";
     String posR = "";
-    String posL = "";
+    String posL = "+";
     String rPower = "-0.50";
-    String lPower = "-2.25";
-    String rBC = "8.7";
-    String lBC = "8.7";
+    String lPower = "2.25";
+    String rBC = "8.4";
+    String lBC = "8.4";
     String rBC2 = "";
     String lBC2 = "";
-    String rDia = "14.0";
-    String lDia = "14.0";
+    String rDia = "";
+    String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
     String rColor = "";
@@ -96,14 +96,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Clear58);
+        gotoPage(ClarityH2O);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);
         clickLBC(lBC);
-        clickRDia(rDia);
-        clickLDia(lDia);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);

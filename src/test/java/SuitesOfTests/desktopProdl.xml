@@ -18,4 +18,10 @@
             <class name="Business.NI_Business_Test_Desktop_Prod"/>
         </classes>
     </test>
+    <test name="RebateTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_48580_Prod"/>
+        </classes>
+    </test>
 </suite>

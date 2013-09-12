@@ -28,14 +28,14 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
     }
     @DataProvider(name = "OneTestRI")
          public Object[][] createData3() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeRI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestRI");
         return(retObjArr);
     }
     @DataProvider(name = "OneTestNI")
     public Object[][] createData4() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeNI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestNI");
         return(retObjArr);
     }
 
@@ -46,7 +46,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "NI")
+    @Test(dataProvider = "OneTestNI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -241,7 +241,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    @Test (dataProvider = "RI")
+    @Test (dataProvider = "OneTestRI")
     @Parameters(value = "device")
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -465,7 +465,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+        //driver.quit();
     }
 }
 

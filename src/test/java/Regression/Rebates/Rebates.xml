@@ -67,11 +67,11 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='yes'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_ClarityH2O_48580"/>
-            <class name="Regression.Rebates.Rebates_Clear55A_48580"/>
-            <class name="Regression.Rebates.Rebates_Clear58_48580"/>
-            <class name="Regression.Rebates.Rebates_ClearAllDay_48580"/>
-            <class name="Regression.Rebates.Rebates_ClearSightDay30Pk_48580"/>
+            <class name="Regression.Rebates.done.Rebates_ClarityH2O_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Clear55A_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Clear58_48580"/>
+            <class name="Regression.Rebates.done.Rebates_ClearAllDay_48580"/>
+            <class name="Regression.Rebates.done.Rebates_ClearSightDay30Pk_48580"/>
             <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
             <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
 

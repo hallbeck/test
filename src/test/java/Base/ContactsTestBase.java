@@ -61,9 +61,7 @@ public class ContactsTestBase {
     ResultSet rs=null;
 
     //PRODUCTION
-/*
    public String desktopBaseUrl = "https://www.1800contacts.com/";
-*/
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -73,19 +71,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-    /*public String mobileBaseUrl = "https://www.1800contacts.com/";
+   // public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    /*public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Sept_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -275,6 +273,11 @@ public class ContactsTestBase {
     public void gotoPage(String addition) {
         driver.get(desktopBaseUrl + addition);
         System.out.println("went to: " + desktopBaseUrl  + addition);
+        Wait(2);
+    }
+    public void openPage(String page) {
+        driver.get(page);
+        System.out.println("went to: " + page);
         Wait(2);
     }
     public void gotoPageCookie(String addition) {
@@ -1090,21 +1093,22 @@ public class ContactsTestBase {
         try{
             print("find stateid");
 
-            driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"));
+            WebElement weState = driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"));
         }
         catch(Throwable e){
             print("find statename");
-            driver.findElement(By.xpath("(//select[@name='AddressDetailsViewModel.StateProvinceOrRegion'])[2]"));
+            WebElement weState = driver.findElement(By.xpath("(//select[@name='AddressDetailsViewModel.StateProvinceOrRegion'])[2]"));
         }
         WebElement weCountry = null;
         WebElement wePhone = null;
 
         if (country.equals("united states")){
+
             new Select(driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"))).selectByVisibleText(state);
             String strState =  "(//option[@value='" + stateAbrev + "'])[2]";
             driver.findElement(By.xpath(strState)).click();
             System.out.println("State is: " + state);
-        }
+            }
         else if (country.equals("canada")) {
             print("find province");
             new Select(driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"))).selectByVisibleText(state);
@@ -1144,7 +1148,7 @@ public class ContactsTestBase {
         weCity.clear();
         weCity.sendKeys(city);
         weZip.clear();
-        weZip.sendKeys(zip);
+        weZip.sendKeys(zip,Keys.ENTER);
         return (theNumberString + " address");
     }
     public void clickSaveBilling (String device){
@@ -1345,7 +1349,7 @@ public class ContactsTestBase {
         Wait(4);
         /*WebElement emailInput = driver.findElement(By.xpath("//input[(@id='ctl00_contentPlaceHolderContent_SignIn1_tbEmail_tbEmail')]"));
         emailInput.sendKeys(Keys.TAB,password);*/
-        WebElement passwordInput = driver.findElement(By.xpath("//input[(@id='ctl00_contentPlaceHolderContent_SignIn1_tbReturningCustomerPassword_tbPass')]"));
+        WebElement passwordInput = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_SignIn1_tbReturningCustomerPassword_tbPass')]"));
         print("RI password1");
         passwordInput.click();
         passwordInput.clear();
@@ -1899,13 +1903,20 @@ public class ContactsTestBase {
     }
     public void clickRboxes(String box) {
         if (!box.equals("")){
+            try{
             WebElement weBox = driver.findElement
                     (By.xpath("//select[contains(@name,'PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
-            //WebElement weBox = driver.findElement
-            //(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
             weBox.click();
             System.out.println("Boxes for right eye: " + box);
             weBox.sendKeys(box,Keys.ENTER);
+            }
+            catch(Throwable e) {
+                WebElement weBox = driver.findElement
+                (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.RightEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+                weBox.click();
+                System.out.println("Boxes for right eye: " + box);
+                weBox.sendKeys(box,Keys.ENTER);
+            }
             System.out.println(box + " boxes Right Eye");
             Wait(1);
         }
@@ -1915,6 +1926,7 @@ public class ContactsTestBase {
     }
     public void clickLboxes(String box) {
         if (!box.equals("")){
+            try{
             WebElement weBox = driver.findElement
                     (By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
             //(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
@@ -1922,6 +1934,14 @@ public class ContactsTestBase {
             weBox.click();
             System.out.println("Boxes for left eye: " + box);
             weBox.sendKeys(box,Keys.ENTER);
+            }
+            catch(Throwable e) {
+                WebElement weBox = driver.findElement
+                        (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Quantity')]"));
+                weBox.click();
+                System.out.println("Boxes for left eye: " + box);
+                weBox.sendKeys(box,Keys.ENTER);
+            }
             System.out.println(box + " boxes Left Eye");
             Wait(1);
         }
@@ -3343,6 +3363,7 @@ public class ContactsTestBase {
     }
     public void verifyTitleDash(String device){
         if(device.equals("desktop")){
+            Wait(5);
             String titleDash =  driver.findElement(By.xpath("//div[contains(@id,'welcome')]")).getText();
             verifyTxtPresent("Title is: ", "Welcome to your personal contact lens dashboard.", titleDash);
         }
@@ -3460,9 +3481,14 @@ public class ContactsTestBase {
             verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
         }
         catch(Throwable e) {
+            try{
             String verifyProdPDP =  driver.findElement(By.xpath("//h1[@class='product-name']")).getText();
             System.out.println("NEW PDP Brand is: " + verifyProdPDP);
             verifyTxtPresent("Title or Brand is: ", brand, verifyProdPDP);
+            }
+            catch(Throwable E) {
+                print("FAIL didnt find product: " + brand);
+            }
         }
     }
     public void verifyTxtPresent(String identifier, String desired, String actual){

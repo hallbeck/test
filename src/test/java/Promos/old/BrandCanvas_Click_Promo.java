@@ -1,4 +1,4 @@
-package Promos.current;
+package Promos.old;
 
 import Automation.*;
 import org.testng.annotations.Parameters;

@@ -1,6 +1,6 @@
 package Regression.PDP;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PDPBadPName47802 extends TestBase {
+public class PDPBadPName47802 extends ContactsTestBase {
 
 
     String testNumber = "47802_name";
@@ -127,6 +127,8 @@ public class PDPBadPName47802 extends TestBase {
         takeScreenshot(screenshotTestName, "PDP1");
         verifyCartNameError(device);
         typePatientName(PatientFNameCart, PatientLNameCart);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddToCart(device);
         selectShippingCart(ShippingCart);

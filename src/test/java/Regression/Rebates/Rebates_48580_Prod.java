@@ -10,12 +10,12 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_48580 extends ContactsTestBase {
+public class Rebates_48580_Prod extends ContactsTestBase {
 
     @DataProvider(name = "Rebates")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Rebates.xls",
-                "inputsStage", "rebatesNI");
+                "inputsProd", "rebatesNI");
         return(retObjArr);
     }
 
@@ -33,7 +33,7 @@ public class Rebates_48580 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "OneTestRebates")
+    @Test(dataProvider = "Rebates")
     @Parameters(value = "device")
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String link, String rebatesAvailable, String rebateTextRS,
@@ -146,6 +146,6 @@ public class Rebates_48580 extends ContactsTestBase {
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+        //driver.quit();
     }
 }

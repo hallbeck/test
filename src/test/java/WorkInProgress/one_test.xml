@@ -1,10 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="WIN" verbose="1" parallel="classes" thread-count="1">
-    <test name="WIN">
+    <test name="Hit_Servers">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
+            <class name="WorkInProgress.hitServers">
+                <methods>
+<!--
+                    <include name="StageServers"/>
+-->
+                    <include name="ProdServers"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

@@ -12,7 +12,6 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='no'/>
         <classes>
-            <class name="Promos.current.BrandCanvas_Click_Promo"/>
             <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
             <class name="Promos.current.SunglassesPromo"/>
         </classes>
@@ -38,6 +37,12 @@
             <class name="Regression.Links.Links47930"/>
             <class name="Regression.Links.Links50356"/>
             <class name="Regression.Doctor.Doctor_Custom_44058"/>
+        </classes>
+    </test>
+    <test name="DesktopPaymentTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Payment.Payment47577"/>
         </classes>
     </test>
     <test name="Shipping Billing">
@@ -93,12 +98,6 @@
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="Business.NI_Business_Test_Desktop_Stage"/>
-        </classes>
-    </test>
-    <test name="DesktopPaymentTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Payment.Payment47577"/>
         </classes>
     </test>
 </suite>

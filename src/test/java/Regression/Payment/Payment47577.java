@@ -1,6 +1,6 @@
 package Regression.Payment;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
 
 /**
@@ -10,7 +10,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Payment47577 extends TestBase {
+public class Payment47577 extends ContactsTestBase {
 
     @DataProvider(name = "NI")
     public Object[][] createData1() throws Exception{
@@ -27,7 +27,7 @@ public class Payment47577 extends TestBase {
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smoke1");
+                "inputs", "payment");
         return(retObjArr);
     }
 
@@ -38,7 +38,7 @@ public class Payment47577 extends TestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "NI")
+    @Test (dataProvider = "OneTest")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,

@@ -46,7 +46,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "OneTestNI")
+    @Test(dataProvider = "NI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -241,7 +241,11 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
-    @Test (dataProvider = "OneTestRI")
+    @Test
+    public void blah (){
+        Wait(900);
+    }
+    @Test (dataProvider = "RI")
     @Parameters(value = "device")
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,

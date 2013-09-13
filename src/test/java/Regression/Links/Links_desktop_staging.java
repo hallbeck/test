@@ -1,6 +1,6 @@
 package Regression.Links;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
 
 /**
@@ -10,7 +10,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Links50356 extends TestBase {
+public class Links_desktop_staging extends ContactsTestBase {
 
     @DataProvider(name = "Links")
     public Object[][] createData1() throws Exception{
@@ -24,10 +24,16 @@ public class Links50356 extends TestBase {
                 "inputsStage", "email");
         return(retObjArr);
     }
+    @DataProvider(name = "ClickLinks")
+    public Object[][] createData4() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Links.xls",
+                "inputsStage", "clicklinks");
+        return(retObjArr);
+    }
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smoke1");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Links.xls",
+                "inputsStage", "onetest");
         return(retObjArr);
     }
 
@@ -58,14 +64,14 @@ public class Links50356 extends TestBase {
         gotoPage(page);
         clickAndVerifyEmail(link,title);
     }
-    @Test (dataProvider = "ClickLinks")
+    @Test (dataProvider = "OneTest")
     @Parameters(value = "device")
-    public void ClickLinkTest(String testNumber, String device, String typeOfTest, String page, String link, String title, String tag) {
-        String printTestName = typeOfTest + " | " + testNumber + " | " + page + " | " + link + " | " + title;
+    public void ClickLinkTest(String testNumber, String device, String typeOfTest, String link1, String verify1, String expected1, String tag1) {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + link1 + " | " + expected1;
         openWebPage(device);
         printTestNumber(printTestName);
-        gotoPage(page);
-        clickAndVerifyEmail(link,title);
+        clickLink(link1);
+        verifyTagContains(tag1,verify1,expected1);
     }
     @AfterMethod
     public void tearDown(){
@@ -73,6 +79,6 @@ public class Links50356 extends TestBase {
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+        //driver.quit();
     }
 }

@@ -2,10 +2,16 @@
 
 
 <suite name="Links" verbose="1" >
-    <test name="LinkTests" >
+    <test name="Links">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Links.Links50356"/>
+            <class name="Regression.Links.Links_desktop_staging">
+                <methods>
+<!--                    <include name="LinksTest"/>
+                    <include name="EmailLinkTest"/>-->
+                    <include name="ClickLinkTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

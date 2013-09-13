@@ -1,6 +1,6 @@
 package Promos.current;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
 
 /**
@@ -10,7 +10,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SunglassesPromo extends TestBase {
+public class SunglassesPromo extends ContactsTestBase {
 
 
     @DataProvider(name = "sunglasses")

@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Account" verbose="1" >
-    <test name="promos" >
+    <test name="promos9" >
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="Promos.current.SunglassesPromo"/>

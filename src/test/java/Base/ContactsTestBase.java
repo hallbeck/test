@@ -61,7 +61,9 @@ public class ContactsTestBase {
     ResultSet rs=null;
 
     //PRODUCTION
+/*
    public String desktopBaseUrl = "https://www.1800contacts.com/";
+*/
     //public String desktopBaseUrl = "https://dr0-web-30.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-31.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-32.ctac.1800contacts.com/";
@@ -71,19 +73,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-   // public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-    public String mobileBaseUrl = "https://www.1800contacts.com/";
+    //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    /*public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-    /*public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Sept_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -184,6 +186,7 @@ public class ContactsTestBase {
         String emailLink = readFile(sFileName);
         driver.get(emailLink);
     }
+
     public WebDriver driver = makeDriver(browser,deviceProfile);
     public WebDriver makeDriver(String browser, String deviceProfile) {
         ProfilesIni allProfiles = new ProfilesIni();
@@ -306,6 +309,10 @@ public class ContactsTestBase {
 
         Wait(2);
     }
+    public void clickLink(String linkName){
+        driver.findElement(By.xpath(linkName)).click();
+    }
+
     public void clickAndVerifyLink(String link,String expected,String tag){
         try {
             driver.findElement(By.linkText(link)).click();
@@ -677,6 +684,14 @@ public class ContactsTestBase {
                 print("FAIL: " + expected + " NOT Found " );
             }
         }
+    }
+    public void verifyTagContains(String tag,String verify1,String expected1) {
+        print("looking for1: " + expected1);
+            WebElement weText = driver.findElement(By.xpath("//*[contains(@"+tag+",'"+verify1+"')]"));
+        print("lookign for: " + weText);
+        String toVerify = weText.getText();
+            print("found this text: " + toVerify);
+            verifyTxtPresent("Pages: ",expected1,toVerify);
     }
     public void assertTag(String tag,String expected) {
         WebElement weText = driver.findElement(By.tagName(tag));
@@ -2963,11 +2978,11 @@ public class ContactsTestBase {
         if (card.equals("testBlank")){
             cardNumber = testBlank;
         }
-        //add part for prod cc. TODO
+        //add part for prod cc. TODO  Right now Prod and test are seperate tables
         Wait(4);
         if(device.equals("desktop")){
             try {
-                Wait(4);
+                Wait(10);
                 WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
                 System.out.println("enter credit card");
                 weNumber2.click();

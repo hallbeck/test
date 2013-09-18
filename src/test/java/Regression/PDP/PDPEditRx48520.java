@@ -1,6 +1,6 @@
 package Regression.PDP;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PDPEditRx48520 extends TestBase {
+public class PDPEditRx48520 extends ContactsTestBase {
 
 
     String testNumber = "47802_rx";
@@ -49,10 +49,10 @@ public class PDPEditRx48520 extends TestBase {
     String rCyl2 = "";
     String lCyl2 = "";
     String rAxis = "";
-    String rBCBad = "8.8";
+    String rBCBad = "9.1";
     String rAxis2 = "";
     String lAxis = "";
-    String lBCBad = "8.8";
+    String lBCBad = "9.1";
     String lAxis2 = "";
     String rBoxes = "4";
     String rBoxes2 = "";
@@ -116,8 +116,8 @@ public class PDPEditRx48520 extends TestBase {
         gotoPage("lens/acuvue");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
-        clickRBC(rBCBad);
-        clickLBC(lBCBad);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRDia(rDia);
         clickLDia(lDia);
         clickRboxes(rBoxes);

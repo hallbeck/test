@@ -64,7 +64,7 @@ public class Links_desktop_staging extends ContactsTestBase {
         gotoPage(page);
         clickAndVerifyEmail(link,title);
     }
-    @Test (dataProvider = "OneTest")
+    @Test (dataProvider = "ClickLinks")
     @Parameters(value = "device")
     public void ClickLinkTest(String testNumber, String device, String typeOfTest, String link1, String verify1, String expected1, String tag1) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + link1 + " | " + expected1;

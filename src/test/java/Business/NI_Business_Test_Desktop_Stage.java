@@ -13,14 +13,14 @@ import org.testng.annotations.*;
 public class NI_Business_Test_Desktop_Stage extends ContactsTestBase {
 
 
-    @DataProvider(name = "DP1")
+    @DataProvider(name = "Business")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\inputs.xls",
                 "inputsStage", "desktop1");
 
         return(retObjArr);
     }
-    @DataProvider(name = "OneTest")
+    @DataProvider(name = "OneTestBusiness")
     public Object[][] createData2() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Oneinput.xls",
                 "inputs", "business");
@@ -34,7 +34,7 @@ public class NI_Business_Test_Desktop_Stage extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "OneTest")
+    @Test (dataProvider = "Business")
     @Parameters(value = "device")
     public void test(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,

@@ -16,7 +16,7 @@ public class SunglassesPromo extends ContactsTestBase {
     @DataProvider(name = "sunglasses")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Promos.xls",
-                "inputsStage", "smoke1");
+                "inputsStage", "PromoSunglasses");
         return(retObjArr);
     }
 

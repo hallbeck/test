@@ -1,6 +1,6 @@
 package Regression.Account;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class editRxRI_49779 extends TestBase {
+public class editRxRI_49779 extends ContactsTestBase {
 
     String testNumber = "49779";
     String testNumberDependentOn = "49775";

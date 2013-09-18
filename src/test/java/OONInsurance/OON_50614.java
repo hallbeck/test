@@ -161,7 +161,7 @@ public class OON_50614 extends TestBase {
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
-        takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();*/
+        takeScreenshot(screenshotTestName, "OrderStatusHistory");*/
+        driver.quit();
     }
 }

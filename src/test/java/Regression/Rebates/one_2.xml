@@ -35,14 +35,14 @@
         <parameter name="device" value='desktop'/>
         <parameter name="prod" value='yes'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_DayAcuvue30Pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoist30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoist90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayClearSight90pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayClearSightToric30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DayAcuvueTruEye30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvue30Pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoist30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoist90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueTruEye90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayClearSightToric30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueTruEye30pk_48580"/>
         </classes>
     </test>
     <test name="RebateTests_B" >
@@ -72,8 +72,8 @@
             <class name="Regression.Rebates.done.Rebates_Clear58_48580"/>
             <class name="Regression.Rebates.done.Rebates_ClearAllDay_48580"/>
             <class name="Regression.Rebates.done.Rebates_ClearSightDay30Pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus30pk_48580"/>
-            <class name="Regression.Rebates.Rebates_DaliesAquaComfortPlus90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DaliesAquaComfortPlus30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DaliesAquaComfortPlus90pk_48580"/>
 
         </classes>
     </test>

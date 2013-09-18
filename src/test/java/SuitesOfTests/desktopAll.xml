@@ -1,6 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="classes" thread-count="1">
+<suite name="desktop" verbose="1" parallel="tests" thread-count="3">
+    <test name="RebateTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Rebates.Rebates_48580"/>
+        </classes>
+    </test>
     <test name="DesktopOONTests" >
         <parameter name="device" value='desktop'/>
         <classes>
@@ -35,14 +41,19 @@
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="Regression.Links.Links47930"/>
-            <class name="Regression.Links.Links50356"/>
+            <class name="Regression.Links.Links_desktop_staging"/>
             <class name="Regression.Doctor.Doctor_Custom_44058"/>
         </classes>
     </test>
     <test name="DesktopPaymentTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Payment.Payment47577"/>
+            <class name="Regression.Payment.Payment47577">
+                <methods>
+                    <include name="NItest"/>
+                    <include name="RItest"/>
+                </methods>
+            </class>
         </classes>
     </test>
     <test name="Shipping Billing">
@@ -52,7 +63,17 @@
             <class name="Verification.DiffShippingBillingColor47612"/>
             <class name="Verification.EditShippingBilling44764"/>
             <class name="Verification.OrderStatusHistory47655"/>
-            <class name="Verification.ShippingChanges47266"/>
+            <!--<class name="Verification.ShippingChanges47266"/>-->
+        </classes>
+    </test>
+    <test name="SMOKE Desktop StageNI">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="SMOKE.SMOKE_Test_Desktop_Stage">
+                <methods>
+                    <include name="NItest"/>
+                </methods>
+            </class>
         </classes>
     </test>
     <test name="stress Desktop Stage">
@@ -77,18 +98,12 @@
             <class name="Regression.PDP.PDPAccessoriesAll48553"/>
         </classes>
     </test>
-    <test name="RebateTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Rebates.Rebates_48580"/>
-        </classes>
-    </test>
-    <test name="SMOKE Desktop Stage">
+    <test name="SMOKE Desktop StageRI">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.SMOKE_Test_Desktop_Stage">
                 <methods>
-                    <include name="NItest"/>
+                    <include name="blah"/>
                     <include name="RItest"/>
                 </methods>
             </class>

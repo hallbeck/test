@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="4">
+
+    <test name="RebateTests_OneDay" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvue30Pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoist30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoist90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueMoistforAstigmatism30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueTruEye90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayClearSight90pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayClearSightToric30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DayAcuvueTruEye30pk_48580"/>
+        </classes>
+    </test>
+
+</suite>

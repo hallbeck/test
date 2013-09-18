@@ -21,8 +21,8 @@ public class Rebates_48580 extends ContactsTestBase {
 
     @DataProvider(name = "OneTestRebates")
     public Object[][] createData4() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\RebatesOneinput.xls",
-                "inputs", "rebatesNI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Rebates.xls",
+                "inputsStage", "OneNI");
         return(retObjArr);
     }
 
@@ -33,7 +33,7 @@ public class Rebates_48580 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "OneTestRebates")
+    @Test(dataProvider = "Rebates")
     @Parameters(value = "device")
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String link, String rebatesAvailable, String rebateTextRS,
@@ -146,6 +146,6 @@ public class Rebates_48580 extends ContactsTestBase {
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+       // driver.quit();
     }
 }

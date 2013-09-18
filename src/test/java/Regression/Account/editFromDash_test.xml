@@ -2,7 +2,7 @@
 
 <suite name="WIN" verbose="1" parallel="classes" thread-count="1">
     <test name="WIN">
-        <parameter name="device" value='tablet'/>
+        <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
             <class name="Regression.Account.editRxNI_49773"/>

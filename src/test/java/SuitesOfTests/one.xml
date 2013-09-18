@@ -1,15 +1,29 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="classes" thread-count="2">
-    <test name="SMOKE Desktop Stage">
+<suite name="desktop" verbose="1" parallel="tests" thread-count="3">
+    <test name="Account">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="SMOKE.SMOKE_Test_Desktop_Stage">
+            <class name="Regression.Account.editRxNI_49773"/>
+            <class name="Regression.Account.editRxRI_49777"/>
+        </classes>
+    </test>
+    <test name="DesktopPaymentTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.Payment.Payment47577">
                 <methods>
-                    <include name="NItest"/>
                     <include name="RItest"/>
                 </methods>
             </class>
+            <class name="Verification.ShippingChanges47266"/>
+            <class name="Regression.PDP.PDPEditRx48520"/>
+        </classes>
+    </test>
+    <test name="NI Business Desktop Stage">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Business.NI_Business_Test_Desktop_Stage"/>
         </classes>
     </test>
 </suite>

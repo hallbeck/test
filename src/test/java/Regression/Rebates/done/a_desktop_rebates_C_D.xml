@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rebates" verbose="1" parallel="methods" thread-count="10">
+
+    <test name="RebateTests_C_D" >
+        <parameter name="device" value='desktop'/>
+        <parameter name="prod" value='no'/>
+        <classes>
+            <class name="Regression.Rebates.done.Rebates_ClarityH2O_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Clear55A_48580"/>
+            <class name="Regression.Rebates.done.Rebates_Clear58_48580"/>
+            <class name="Regression.Rebates.done.Rebates_ClearAllDay_48580"/>
+            <class name="Regression.Rebates.done.Rebates_ClearSightDay30Pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DaliesAquaComfortPlus30pk_48580"/>
+            <class name="Regression.Rebates.done_d_e.Rebates_DaliesAquaComfortPlus90pk_48580"/>
+
+        </classes>
+    </test>
+</suite>

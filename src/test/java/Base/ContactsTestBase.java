@@ -73,19 +73,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-    /*public String mobileBaseUrl = "https://www.1800contacts.com/";
+    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+/*    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Sept_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -590,6 +590,12 @@ public class ContactsTestBase {
         if (con != null) try { con.close(); } catch(Exception e) {}
     }
 }*/
+    public void verifyWhiteHeader(String device){
+        print("Looking for Logo");
+        WebElement weLogo = driver.findElement(By.xpath("//a[@id='SiteLogoLink']"));
+        weLogo.click();
+        goToCart(device);
+    }
     public void checkoutAndVerify (String testNumber,String device,String shippingVerify, String brandVerifyPDP, String fullPatientName,
                                    String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus){
             clickBottomSubmitButton(device);
@@ -1659,48 +1665,37 @@ public class ContactsTestBase {
     public void clickLPower(String device,String posL,String power) {
         print("Power for left eye: "+ posL  + power);
         if (!power.equals("")){
-            if(device.equals("desktop")){
-                Wait(5);
-                try {
-                    driver.findElement(By.xpath("//input[contains(@id,'LeftPowerPicker')]")).click();
-                    //WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
-                    WebElement wePower = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
-                    wePower.click();
-                    System.out.println("Power for Left eye: " + posL + power);
-                    Wait(5);
-                }
-                catch (Throwable e){
-
-                    WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
-                    Select select = new Select(selectElement);
-                    driver.findElement(By.xpath("//a[contains(.,power)]"));
-                    List<WebElement> options = select.getOptions();
-                    for (WebElement we : options) {
-                        if (we.getText().equals(power)) {
-                            we.click();
-                            System.out.println("Power for Left eye: " + posL + power);
-                            break;
-                        }
+            if(device.equals("phone")){
+                WebElement selectElement = driver.findElement
+                        (By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.SphericalPower')]"));
+// Then instantiate the Select class with that WebElement
+                Select select = new Select(selectElement);
+// Get a list of the options
+                List<WebElement> options = select.getOptions();
+// For each option in the list, verify if it's the one you want and then click it
+                for (WebElement we : options) {
+                    if (we.getText().equals(posL+power)) {
+                        we.click();
+                        break;
                     }
                 }
             }
-            else{
-                try {WebElement selectElement =
-                        driver.findElement(By.xpath("//select[contains(@name,'PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.SphericalPower')]"));
-// Then instantiate the Select class with that WebElement
+            else if(device.equals("tablet")){
+                try {
+                    WebElement selectElement = driver.findElement
+                            (By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
                     Select select = new Select(selectElement);
-// Get a list of the options
                     List<WebElement> options = select.getOptions();
-// For each option in the list, verify if it's the one you want and then click it
                     for (WebElement we : options) {
-                        if (we.getText().equals(posL + power)) {
+                        if (we.getText().equals(posL+power)) {
                             we.click();
                             break;
                         }
                     }
-                    print("Power for left eye: "+ posL  + power);
+                    System.out.println("Power for left eye: " + posL + power);
                 }
-                catch (Throwable e){try {  //this is for freshlook colorblends toric
+                catch (Throwable e){
+                    //this is for freshlook colorblends toric
                     WebElement selectElement = driver.findElement
                             (By.xpath("//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
                     Select select = new Select(selectElement);
@@ -1711,11 +1706,51 @@ public class ContactsTestBase {
                             break;
                         }
                     }
-                    System.out.println("Power for left eye: " + posL  + power);
+                    System.out.println("Power for left eye: " + posL + power);
                 }
-                catch (Throwable E){}}
             }
+            else if(device.equals("desktop")){
+                Wait(5);
+                try {
+                    driver.findElement(By.xpath("//input[contains(@id,'LeftPowerPicker')]")).click();
+                    //WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+                    WebElement wePower = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
+                    wePower.click();
+                    System.out.println("Power for left eye: " + posL + power);
+                }
+                catch (Throwable e){
+                    try { WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+                        Select select = new Select(selectElement);
+                        driver.findElement(By.xpath("//a[contains(.,power)]"));
+                        List<WebElement> options = select.getOptions();
+                        for (WebElement we : options) {
+                            if (we.getText().equals(power)) {
+                                we.click();
+                                System.out.println("Power for left eye: " + posL + power);
+                                break;
+                            }
+                        }
+                    }
+                    catch(Throwable E){
+                        //for freshlook colors toric
+                        WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
+                        Select select = new Select(selectElement);
+                        driver.findElement(By.xpath("//a[contains(.,power)]"));
+                        List<WebElement> options = select.getOptions();
+                        for (WebElement we : options) {
+                            if (we.getText().equals(power)) {
+                                we.click();
+                                System.out.println("Power for left eye: " + posL + power);
+                                break;
+                            }
+                        }
+                    }
+
+                }
+            }
+            Wait(5);
         }
+
         else {
             print("Left Power not supplied");
         }
@@ -2077,7 +2112,7 @@ public class ContactsTestBase {
         Wait(5);
     }
     public void clickEditRx(String device){
-        Wait(5);
+        Wait(10);
         if(device.equals("phone")){
             WebElement weEdit = driver.findElement(By.xpath("//a[contains(@id,'cartEditLink')]"));
             weEdit.click();
@@ -2251,9 +2286,8 @@ public class ContactsTestBase {
 
     public void selectPromoCart(String device,String promoName){
         Wait(5);
-        WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'"+promoName+"')]"));
-        driver.findElement(By.xpath("//img[contains(@src,'')]"));
-
+        WebElement wePromo = /*driver.findElement(By.xpath("//img[@id='"+promoName+"')]"));*/
+        driver.findElement(By.xpath("//img[contains(@id,'FreeSunglassesLink')]"));
         print("Promo link: " + wePromo);
         wePromo.click();
         print("Clicked Promo in Cart");

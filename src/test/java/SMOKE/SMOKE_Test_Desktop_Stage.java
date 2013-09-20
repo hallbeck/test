@@ -46,7 +46,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "NI")
+    @Test(dataProvider = "OneTestNI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -245,7 +245,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
     public void blah (){
         Wait(900);
     }
-    @Test (dataProvider = "RI")
+    @Test (dataProvider = "OneTestRI")
     @Parameters(value = "device")
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,

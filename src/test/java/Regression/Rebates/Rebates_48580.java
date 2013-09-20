@@ -33,7 +33,7 @@ public class Rebates_48580 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "Rebates")
+    @Test(dataProvider = "OneTestRebates")
     @Parameters(value = "device")
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String link, String rebatesAvailable, String rebateTextRS,

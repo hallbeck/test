@@ -6,10 +6,10 @@
         <classes>
             <class name="WorkInProgress.hitServers">
                 <methods>
-<!--
                     <include name="StageServers"/>
--->
+<!--
                     <include name="ProdServers"/>
+-->
                 </methods>
             </class>
         </classes>

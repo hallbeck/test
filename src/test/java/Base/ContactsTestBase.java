@@ -73,19 +73,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
-    public String mobileBaseUrl = "https://www.1800contacts.com/";
+    //public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    /*public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-/*    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Sept_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -671,6 +671,22 @@ public class ContactsTestBase {
         {
             print("FAIL: " + expected + " NOT Found " );
         }
+    }
+    public String getVersion(String tag,String expected) {
+            WebElement weText = driver.findElement(By.tagName(tag));
+            String toVerify = weText.getText();
+            print("found this text: " + toVerify);
+            verifyTxtPresent("Pages: ",expected,toVerify);
+        return toVerify;
+    }
+    public String getMasterMinVersion() {
+        //String scriptText = driver.getPageSource();
+        WebElement weLink = driver.findElement(By.tagName("link"));
+        String scriptText = weLink.getAttribute("href");
+
+        print("found this text: " + scriptText);
+        //verifyTxtPresent("Pages: ",expected,scriptText);
+        return scriptText;
     }
     public void verifyTag(String tag,String expected) {
         try{
@@ -1716,7 +1732,7 @@ public class ContactsTestBase {
                     //WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
                     WebElement wePower = driver.findElement(By.xpath("//a[contains(@id,'Left_" + power +"')]"));
                     wePower.click();
-                    System.out.println("Power for left eye: " + posL + power);
+                    print("Power for left eye#1: " + posL + power);
                 }
                 catch (Throwable e){
                     try { WebElement selectElement = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_SphericalPower')]"));
@@ -1726,7 +1742,7 @@ public class ContactsTestBase {
                         for (WebElement we : options) {
                             if (we.getText().equals(power)) {
                                 we.click();
-                                System.out.println("Power for left eye: " + posL + power);
+                                System.out.println("Power for left eye#2: " + posL + power);
                                 break;
                             }
                         }
@@ -1740,7 +1756,7 @@ public class ContactsTestBase {
                         for (WebElement we : options) {
                             if (we.getText().equals(power)) {
                                 we.click();
-                                System.out.println("Power for left eye: " + posL + power);
+                                System.out.println("Power for left eye#3: " + posL + power);
                                 break;
                             }
                         }
@@ -1758,10 +1774,18 @@ public class ContactsTestBase {
     }
     public void clickRDN(String device,String DN) {
         if (!DN.equals("")){
+            try{
             WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
             weDNNumber.click();
             weDNNumber.sendKeys(DN);
             System.out.println("Dom/NonDom for right eye: " + DN);
+            }
+            catch(Throwable e){
+                WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_RightEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
+                weDNNumber.click();
+                weDNNumber.sendKeys(DN);
+                System.out.println("Dom/NonDom for right eye: " + DN);
+            }
         }
 
         else {
@@ -1771,11 +1795,20 @@ public class ContactsTestBase {
     }
     public void clickLDN(String device,String DN) {
         if (!DN.equals("")){
+            try{
             WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'ProductPageViewModel_PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
             //WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@name,'ProductPageViewModel.PrescriptionViewModel.LeftEyeViewModel.EyePrescriptionViewModel.Dominant')]"));
             //weDNNumber.click();
             weDNNumber.sendKeys(DN);
             System.out.println("Dom/NonDom for left eye: " + DN);
+            }
+
+            catch(Throwable e){
+                WebElement weDNNumber = driver.findElement(By.xpath("//select[contains(@id,'PrescriptionViewModel_LeftEyeViewModel_EyePrescriptionViewModel_Dominant')]"));
+                weDNNumber.click();
+                weDNNumber.sendKeys(DN);
+                System.out.println("Dom/NonDom for left eye: " + DN);
+            }
             Wait(5);
         }
         else {
@@ -2169,6 +2202,19 @@ public class ContactsTestBase {
             Wait(5);
         }
         Wait(5);
+    }
+    public void verifyVersion(String device,String page,String tag,String version){
+        if (page.contains("version")){
+            String webVersion = getVersion(tag,version);
+            webVersion = webVersion.replace("Website_", "");
+            String[] output = webVersion.split("_");
+            webVersion = output[0];
+            openWebPage(device);
+            String masterMinVersion = getMasterMinVersion() ;
+            assertTxtPresent("Pages: ",webVersion,masterMinVersion);
+            //<script src="/js/Master.min.js?v=4.9.32.1" type="text/javascript" ></script>
+            //Website_4.9.32.4_2013.09.17_14.15
+        }
     }
     public void verifyToolTip(String device,String xpathId,String toolTip){
         try{

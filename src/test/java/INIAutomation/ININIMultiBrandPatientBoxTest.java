@@ -1,6 +1,6 @@
 package INIAutomation;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class ININIMultiBrandPatientBoxTest extends TestBase {
+public class ININIMultiBrandPatientBoxTest extends ContactsTestBase {
 
 
     //change the Strings below to change the tests
@@ -93,7 +93,7 @@ public class ININIMultiBrandPatientBoxTest extends TestBase {
     String creditCard = "4012000077777777";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Next";
@@ -159,7 +159,7 @@ public class ININIMultiBrandPatientBoxTest extends TestBase {
         takeScreenshot(screenshotTestName, "RS2");
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

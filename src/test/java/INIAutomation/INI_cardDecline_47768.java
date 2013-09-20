@@ -1,6 +1,6 @@
 package INIAutomation;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class INI_cardDecline_47768 extends TestBase {
+public class INI_cardDecline_47768 extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "47768";
@@ -99,7 +99,7 @@ String typeOfCust = "NI";
     String creditCard = "4012000077777777";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "5424180279791740";
     String creditCardInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     String creditCardDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
@@ -153,14 +153,14 @@ String typeOfCust = "NI";
         takeScreenshot(screenshotTestName, "RS2");
         typeCreditCard(device,creditCardBad);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         clickBottomSubmitButton(device);
          verifyDeclinedCard(device,creditCardDecline);
         takeScreenshot(screenshotTestName, "DeclinedCard");
         goback();
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

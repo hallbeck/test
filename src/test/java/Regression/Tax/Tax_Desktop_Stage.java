@@ -40,7 +40,7 @@ public class Tax_Desktop_Stage extends ContactsTestBase{
     public void NItest(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
                      String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                      String drName, String drState,
                      String emailPrefix, String password,
                      String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -148,7 +148,7 @@ public class Tax_Desktop_Stage extends ContactsTestBase{
 
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

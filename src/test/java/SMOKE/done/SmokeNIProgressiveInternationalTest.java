@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNIProgressiveInternationalTest extends TestBase {
+public class SmokeNIProgressiveInternationalTest extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "44035";
@@ -59,7 +59,7 @@ String typeOfCust = "NI";
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Int'l Standard";
@@ -101,7 +101,7 @@ String typeOfCust = "NI";
         clickNewAddress_Continue();
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

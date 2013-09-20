@@ -1,6 +1,6 @@
-package Regression.Rebates;
+package Regression.Rebates.done_p;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Proflex38_48580 extends TestBase {
+public class Rebates_Prosite55Asph_48580 extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -20,18 +20,18 @@ public class Rebates_Proflex38_48580 extends TestBase {
     String typeOfCust = "NA";
     String typeOfPayment = "Rebates";   
     //LENS//
-    String Proflex38="lens/proflex-38" ;
+    String Prosite55Aspheric="lens/prosite-55-aspheric" ;
     String rebatesAvailable = "No rebate expected";
     String RebateTextRS = "Biomedics Rebate";
     String rebate6Month = "0.0";
     String rebate12Month = "0.0";
         String brandVerifyPDP = "Acuvue 2";
-    String posR = "";
-    String posL = "";
-    String rPower = "-0.50";
-    String lPower = "-2.25";
-    String rBC = "";
-    String lBC = "";
+    String posR = "+";
+    String posL = "+";
+    String rPower = "0.50";
+    String lPower = "2.25";
+    String rBC = "8.8";
+    String lBC = "8.8";
     String rBC2 = "";
     String lBC2 = "";
     String rDia = "";
@@ -71,7 +71,7 @@ String password = "password";
     String creditCard = "373235387881007";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
@@ -96,10 +96,12 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Proflex38);
+        gotoPage(Prosite55Aspheric);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
+        clickRBC(rBC);
+        clickLBC(lBC);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
@@ -122,7 +124,7 @@ String password = "password";
 
                typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         checkoutAndVerify(testNumber,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);

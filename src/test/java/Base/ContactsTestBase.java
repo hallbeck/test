@@ -103,6 +103,8 @@ public class ContactsTestBase {
     public String testDeclinedAmex = "300000000000015";
     public String testDeclinedDiscover = "6000000000000015";
     public String testDiners = "36259600000004";
+    public String testPayPal = "webtest@a.co";
+    public String testPayPalPassword = "contacts";
     public String testBlank = "";
     public String ccErrorInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     public String ccErrorDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
@@ -471,6 +473,7 @@ public class ContactsTestBase {
         print(testNumber+": "+orderNumber);
         driver.findElement(By.xpath("//input[contains(@class,'get-rebate-cert-text')]")).sendKeys(orderNumber);
         driver.findElement(By.xpath("//input[contains(@id,'RebatesGetRebateListButton')]")).click();
+        Wait(5);
 
         if (expected.contains("not shipped")){
             print("Order should not have shipped");
@@ -3006,9 +3009,29 @@ public class ContactsTestBase {
             System.out.println("FAIL: " + expected + "NOT Found " );
         }
     }
+    public void payPalRadiobutton(String device){
+        Wait(5);
+        driver.findElement(By.xpath("(//input[@id='payPal_radio'])[2]")).click();
+    }
+    public void continueToPayPalButton (String device){
+        driver.findElement(By.xpath("//input[contains(@id,'BottomButton')]")).click();
+    }
 
+    public void payPalPayment(String device){
+        payPalRadiobutton(device);
+        continueToPayPalButton(device);
+        Wait(25);
+        driver.findElement(By.id("login_email")).clear();
+        driver.findElement(By.id("login_email")).sendKeys(testPayPal);
+        Wait(2);
+        driver.findElement(By.id("login_password")).clear();
+        driver.findElement(By.id("login_password")).sendKeys(testPayPalPassword);
+        driver.findElement(By.id("submitLogin")).click();
+        driver.findElement(By.xpath("//input[@value='Agree and Continue']")).click();
+    }
 
     public void typeCreditCard(String device,String card) {
+        if (!card.equals("paypal")){
         String cardNumber ="";
         if (card.equals("prodVisa")){
             cardNumber = prodVisa;
@@ -3090,8 +3113,10 @@ public class ContactsTestBase {
             weNumber2.sendKeys(cardNumber);
             System.out.println("CC Used: " + cardNumber);
         }
+        }
     }
     public void typeCreditCardName(String device,String creditName) {
+        if (!creditName.equals("")){
         if(device.equals("desktop")){
             WebElement weName = driver.findElement(By.xpath("(//input[@id='CreditCardName'])[2]"));
             weName.click();
@@ -3106,8 +3131,9 @@ public class ContactsTestBase {
             driver.findElement(By.xpath("//input[contains(@id,'CreditCardName')]")).sendKeys(creditName);
         }
         System.out.println("CC Name Used: " + creditName);
+        }
     }
-    public void pickCreditCardExpDate(String device,String month, String year) {
+    public void pickCreditCardExpDate(String device,String month, String year, String paymentType) {
         if (month.equals("")){
             int imonth = iMoY;
             if (imonth <10){

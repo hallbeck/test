@@ -1,6 +1,6 @@
 package play;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -16,7 +16,7 @@ import java.io.File;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class composite extends TestBase {
+public class composite extends ContactsTestBase {
 
 
   @DataProvider(name = "DP1")
@@ -76,7 +76,7 @@ public class composite extends TestBase {
     public void test(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
         String searchAllBrand, String brandclick, String brandVerifyPDP,
         String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-        String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String CCName,
+        String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String CCName, String paymentType,
         String drName, String drState,
         String emailPrefix, String password,
         String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -191,7 +191,7 @@ public class composite extends TestBase {
         selectDoctor(device);
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRI1EyeAddEyeColorTest extends TestBase {
+public class SmokeRI1EyeAddEyeColorTest extends ContactsTestBase {
 
     String testNumber = "49710";
     String testNumberDependentOn = "49709";
@@ -77,7 +77,7 @@ public class SmokeRI1EyeAddEyeColorTest extends TestBase {
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String ccExpMoBad = "02";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";

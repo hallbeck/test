@@ -1,6 +1,6 @@
 package Regression.PDP;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PDPAccessories_R48553 extends TestBase {
+public class PDPAccessories_R48553 extends ContactsTestBase {
 
 
     String testNumber = "48553_R";

@@ -115,11 +115,11 @@
             <class name="Regression.Rebates.done_p.Rebates_ProClearMultiD_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_ProClearMultiN_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_ProClearToric_48580"/>
-            <class name="Regression.Rebates.Rebates_PureVision2HD_48580"/>
-            <class name="Regression.Rebates.Rebates_PureVision2HDAstig_48580"/>
-            <class name="Regression.Rebates.Rebates_PureVision_48580"/>
-            <class name="Regression.Rebates.Rebates_PureVisionMulti_48580"/>
-            <class name="Regression.Rebates.Rebates_PureVisionToric_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_PureVision2HD_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_PureVision2HDAstig_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_PureVision_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_PureVisionMulti_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_PureVisionToric_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_Perspecta55Asph_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_PolySoft38_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_Polysoft55_48580"/>
@@ -128,13 +128,13 @@
             <class name="Regression.Rebates.done_p.Rebates_PreferenceStandard_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_PreferenceToric_48580"/>
             <class name="Regression.Rebates.done_p.Rebates_ProclearToricXR_48580"/>
-            <class name="Regression.Rebates.Rebates_Proflex38_48580"/>
-            <class name="Regression.Rebates.Rebates_Proflex55_48580"/>
-            <class name="Regression.Rebates.Rebates_Prosite55_48580"/>
-            <class name="Regression.Rebates.Rebates_Prosite55Asph_48580"/>
-            <class name="Regression.Rebates.Rebates_ProSite38_48580"/>
-            <class name="Regression.Rebates.Rebates_Provision55_48580"/>
-            <class name="Regression.Rebates.Rebates_ProVisionPremium_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_Proflex38_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_Proflex55_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_Prosite55_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_Prosite55Asph_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_ProSite38_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_Provision55_48580"/>
+            <class name="Regression.Rebates.done_p.Rebates_ProVisionPremium_48580"/>
         </classes>
     </test>
     <test name="RebateTests_S" >

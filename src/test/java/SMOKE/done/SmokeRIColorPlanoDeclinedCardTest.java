@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIColorPlanoDeclinedCardTest extends TestBase {
+public class SmokeRIColorPlanoDeclinedCardTest extends ContactsTestBase {
 
     String testNumber = "44051";
     String testNumberDependentOn = "44037";
@@ -77,7 +77,7 @@ public class SmokeRIColorPlanoDeclinedCardTest extends TestBase {
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "testDeclinedVisa";
     String creditCardInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     String creditCardDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
@@ -117,7 +117,7 @@ public class SmokeRIColorPlanoDeclinedCardTest extends TestBase {
         takeScreenshot(screenshotTestName, "ReviewSubmit1");
         typeCreditCard(device,creditCardBad);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "DeclinedCard");
          verifyDeclinedCard(device,creditCardDecline);
@@ -125,7 +125,7 @@ public class SmokeRIColorPlanoDeclinedCardTest extends TestBase {
         clickCart_Continue(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit2");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

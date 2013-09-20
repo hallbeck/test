@@ -98,6 +98,7 @@ public class PDPBadPName47802 extends ContactsTestBase {
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
+    String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Next Day by Noon";
@@ -152,7 +153,7 @@ public class PDPBadPName47802 extends ContactsTestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         /*clickBottomSubmitButton(device);

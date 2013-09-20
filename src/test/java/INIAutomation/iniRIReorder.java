@@ -1,6 +1,6 @@
 package INIAutomation;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class iniRIReorder extends TestBase {
+public class iniRIReorder extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48300";
@@ -101,7 +101,7 @@ public class iniRIReorder extends TestBase {
     String creditCard = "4012000077777777";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";

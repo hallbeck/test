@@ -1,6 +1,6 @@
 package Verification;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class ShippingChanges47266 extends TestBase {
+public class ShippingChanges47266 extends ContactsTestBase {
 
 
     //change the Strings below to change the tests
@@ -91,6 +91,7 @@ public class ShippingChanges47266 extends TestBase {
     String ccName = "test testacct";
     String ccExpMo = "";
     String ccExpYear = "";
+    String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Next";
@@ -142,7 +143,7 @@ public class ShippingChanges47266 extends TestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         clickBottomSubmitButton(device);

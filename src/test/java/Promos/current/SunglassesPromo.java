@@ -31,7 +31,7 @@ public class SunglassesPromo extends ContactsTestBase {
     @Parameters(value = "device")
     public void sunglassesTest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
                        String rBC, String lBC, String rBC2, String lBC2,
@@ -91,7 +91,7 @@ public class SunglassesPromo extends ContactsTestBase {
 
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);

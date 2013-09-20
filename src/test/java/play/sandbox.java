@@ -1,6 +1,6 @@
 package play;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Date: 7/26/13
  * Time: 1:28 PM
  */
-public class sandbox extends TestBase {
+public class sandbox extends ContactsTestBase {
     @Test
     public void test() {
     driver.get("https://admin.dev.glasses.com/order/verify-line/?ordr_id=151905&orli_id=950462%20%3Chttps://admin.dev.glasses.com/order/verify-line/?ordr_id=151905&orli_id=950462");

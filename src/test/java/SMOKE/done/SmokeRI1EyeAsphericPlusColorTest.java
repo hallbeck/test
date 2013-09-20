@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRI1EyeAsphericPlusColorTest extends TestBase {
+public class SmokeRI1EyeAsphericPlusColorTest extends ContactsTestBase {
 
     String testNumber = "44053";
     String testNumberDependentOn = "44039";
@@ -77,7 +77,7 @@ public class SmokeRI1EyeAsphericPlusColorTest extends TestBase {
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String ccExpMoBad = "02";
     String ccExpYearBad = "2013";
         String rebateNotShipped = "Your order has not shipped yet.";
@@ -116,13 +116,13 @@ public class SmokeRI1EyeAsphericPlusColorTest extends TestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMoBad,ccExpYearBad);
+        pickCreditCardExpDate(device,ccExpMoBad,ccExpYearBad,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit1");
         clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "ExpCard");
         verifyExpiredCard(device);
         typeCreditCard(device,creditCard);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit2");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

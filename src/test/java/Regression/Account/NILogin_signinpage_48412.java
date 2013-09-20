@@ -93,6 +93,7 @@ public class NILogin_signinpage_48412 extends ContactsTestBase {
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
+    String paymentType = "";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
@@ -156,7 +157,7 @@ public class NILogin_signinpage_48412 extends ContactsTestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

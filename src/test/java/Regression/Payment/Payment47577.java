@@ -26,8 +26,8 @@ public class Payment47577 extends ContactsTestBase {
     }
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "payment");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Payment.xls",
+                "inputsStage", "CcardOne");
         return(retObjArr);
     }
 
@@ -38,12 +38,12 @@ public class Payment47577 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "NI")
+    @Test (dataProvider = "OneTest")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
                        String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String drName, String drState,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -114,10 +114,14 @@ public class Payment47577 extends ContactsTestBase {
                 selectDoctor(device);
             }
         }
-
-        typeCreditCard(device,CCNum);
-        typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        if (!paymentType.equals("paypal")){
+            typeCreditCard(device,CCNum);
+            typeCreditCardName(device,CCName);
+            pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        }
+        if (paymentType.equals("paypal")){
+            payPalPayment(device);
+        }
         if(!error.equals("")){
             verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
             clickBottomSubmitButton(device);
@@ -143,7 +147,7 @@ public class Payment47577 extends ContactsTestBase {
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
                        String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String drName, String drState,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -185,10 +189,10 @@ public class Payment47577 extends ContactsTestBase {
     }
     @AfterMethod
     public void tearDown(){
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+        //driver.quit();
     }
 }

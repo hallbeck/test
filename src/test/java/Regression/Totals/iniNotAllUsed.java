@@ -1,6 +1,6 @@
 package Regression.Totals;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class iniNotAllUsed extends TestBase {
+public class iniNotAllUsed extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "NEEDTESTCASE";
@@ -103,6 +103,7 @@ public class iniNotAllUsed extends TestBase {
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
+    String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Standard";
@@ -150,7 +151,7 @@ public class iniNotAllUsed extends TestBase {
         takeScreenshot(screenshotTestName, "RS2");
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         verifyRS(device, brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "RS3");
         clickBottomSubmitButton(device);

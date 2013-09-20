@@ -1,10 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1" parallel="classes" thread-count="1">
-    <test name="DesktopPaymentTests" >
+    <test name="DesktopPaymentTestNI" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Payment.Payment47577"/>
+            <class name="Regression.Payment.Payment47577">
+                <methods>
+                    <include name="NItest"/>
+                    <!--<include name="RItest"/>-->
+                </methods>
+            </class>
         </classes>
     </test>
+
 </suite>

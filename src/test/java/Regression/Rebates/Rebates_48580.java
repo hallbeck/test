@@ -38,7 +38,7 @@ public class Rebates_48580 extends ContactsTestBase {
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String link, String rebatesAvailable, String rebateTextRS,
                        String rebate6Month, String rebate12Month, String rebateShipped, String brandVerifyPDP,
-                       String ccExpMo, String ccExpYear, String CCNum, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String CCName, String paymentType,
                        String emailPrefix, String password,
                        String posR, String posL, String rPower, String lPower,
                        String rBC, String lBC,
@@ -133,7 +133,7 @@ public class Rebates_48580 extends ContactsTestBase {
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);

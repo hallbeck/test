@@ -91,6 +91,7 @@ public class editRxNI_49775 extends ContactsTestBase {
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
+    String paymentType = "";
     String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
@@ -143,7 +144,7 @@ public class editRxNI_49775 extends ContactsTestBase {
         selectDoctor(device);
         typeCreditCard(device, creditCard);
         typeCreditCardName(device, ccName);
-        pickCreditCardExpDate(device, ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device, ccExpMo, ccExpYear,paymentType);
         verifyRS(device, brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit");

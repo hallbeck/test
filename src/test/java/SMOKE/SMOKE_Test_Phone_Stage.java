@@ -52,7 +52,7 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
                      String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
                      String searchAllBrand3, String brandclick3, String brandVerifyPDP3,
-                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                      String drName, String drState,
                      String emailPrefix, String password,
                      String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -213,10 +213,10 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
             }
             typeCreditCardName(device, CCName);
             if(BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
-                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear);
+                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear,paymentType);
             }
             if(BadccExpMo.equals("")||BadccExpYear.equals("")){
-                pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
             }
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
@@ -226,7 +226,7 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
 
 
         takeScreenshot(screenshotTestName, "ReviewSubmit");
@@ -247,7 +247,7 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
                        String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
                        String searchAllBrand3, String brandclick3, String brandVerifyPDP3,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String drName, String drState,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -429,10 +429,10 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
             }
             typeCreditCardName(device, CCName);
             if(BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
-                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear);
+                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear,paymentType);
             }
             if(BadccExpMo.equals("")||BadccExpYear.equals("")){
-                pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
             }
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
@@ -443,7 +443,7 @@ public class SMOKE_Test_Phone_Stage extends ContactsTestBase{
         typeCreditCard(device,CCNum);
         if (!ccExpMo.equals("")|| !ccExpYear.equals("")){
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }
 
 

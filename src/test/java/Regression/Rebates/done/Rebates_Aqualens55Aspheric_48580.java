@@ -1,6 +1,6 @@
 package Regression.Rebates.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Rebates_Aqualens55Aspheric_48580 extends TestBase {
+public class Rebates_Aqualens55Aspheric_48580 extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "48580";
@@ -71,7 +71,7 @@ String password = "password";
     String creditCard = "373235387881007";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "36259600";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
@@ -124,7 +124,7 @@ String password = "password";
 
                 typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         checkoutAndVerify(testNumber,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);

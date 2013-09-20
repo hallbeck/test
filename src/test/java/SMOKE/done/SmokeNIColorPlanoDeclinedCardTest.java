@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeNIColorPlanoDeclinedCardTest extends TestBase {
+public class SmokeNIColorPlanoDeclinedCardTest extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "44037";
@@ -91,7 +91,7 @@ String typeOfCust = "NI";
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
     String creditCardBad = "5424180279791740";
     String creditCardInvalid = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
     String creditCardDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
@@ -146,7 +146,7 @@ String typeOfCust = "NI";
         selectDoctor(device);
         typeCreditCard(device,creditCardBad);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         clickBottomSubmitButton(device);
          verifyDeclinedCard(device,creditCardDecline);
         takeScreenshot(screenshotTestName, "DeclinedCard");
@@ -154,7 +154,7 @@ String typeOfCust = "NI";
         clickCart_Continue(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

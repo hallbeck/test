@@ -1,6 +1,6 @@
 package Regression.Payment;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
 
 /**
@@ -10,7 +10,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NotAcceptedDinersCard47577 extends TestBase {
+public class NotAcceptedDinersCard47577 extends ContactsTestBase {
 
     @DataProvider(name = "NI")
     public Object[][] createData1() throws Exception{
@@ -43,7 +43,7 @@ public class NotAcceptedDinersCard47577 extends TestBase {
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
                        String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String drName, String drState,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
@@ -117,7 +117,7 @@ public class NotAcceptedDinersCard47577 extends TestBase {
 
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear);
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         if(!error.equals("")){
             verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
             clickBottomSubmitButton(device);
@@ -143,7 +143,7 @@ public class NotAcceptedDinersCard47577 extends TestBase {
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
                        String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,
+                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
                        String drName, String drState,
                        String emailPrefix, String password,
                        String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,

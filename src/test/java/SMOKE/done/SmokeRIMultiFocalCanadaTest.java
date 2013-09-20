@@ -1,6 +1,6 @@
 package SMOKE.done;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SmokeRIMultiFocalCanadaTest extends TestBase {
+public class SmokeRIMultiFocalCanadaTest extends ContactsTestBase {
     String testNumber = "44048";
     String testNumberDependentOn = "44034";
     String typeOfTest = "SMOKE";
@@ -61,7 +61,7 @@ public class SmokeRIMultiFocalCanadaTest extends TestBase {
     String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
-    String ccExpYear = "";
+    String ccExpYear = "";  String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Canada Standard";

@@ -1,6 +1,6 @@
 package Regression.Links;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.*;
 
 /**
@@ -10,7 +10,7 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Links50356 extends TestBase {
+public class Links50356 extends ContactsTestBase {
 
     @DataProvider(name = "Links")
     public Object[][] createData1() throws Exception{

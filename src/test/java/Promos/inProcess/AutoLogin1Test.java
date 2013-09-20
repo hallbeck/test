@@ -1,6 +1,6 @@
 package Promos.inProcess;
 
-import Automation.*;
+import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class AutoLogin1Test extends TestBase {
+public class AutoLogin1Test extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "44039";

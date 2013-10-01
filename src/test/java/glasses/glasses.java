@@ -163,7 +163,7 @@ public class glasses extends TestBaseGlasses {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();*/
   }

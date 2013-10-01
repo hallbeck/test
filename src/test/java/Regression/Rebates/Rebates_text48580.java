@@ -65,6 +65,8 @@ public class Rebates_text48580 extends ContactsTestBase {
     String country = "BOLIVIA";
     String state = "Newberry";
     String city = "whatever";
+    String bState = "Newberry";
+    String bCity = "whatever";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
 String password = "password";
@@ -153,7 +155,7 @@ String password = "password";
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(testNumber,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        checkoutAndVerify(testNumber,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(testNumber);
         //getRebate(device,orderNumberPlaceholder,rebateShipped);

@@ -112,6 +112,6 @@ public class Find_my_account_50468 extends ContactsTestBase {
         printTestNumber(printTestName);
         gotoPage(findAccount);
         findAccountCI(device,PatientFNameCart,PatientLNameCart,CustID);
-        //driver.quit();
+        driver.quit();
     }
 }

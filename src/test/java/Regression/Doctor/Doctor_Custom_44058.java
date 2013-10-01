@@ -54,6 +54,8 @@ String typeOfCust = "NI";
     String country = "united states";
     String state = "utah";
     String city = "slc";
+    String bState = "utah";
+    String bCity = "slc";
     String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
@@ -131,7 +133,7 @@ String typeOfCust = "NI";
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
     }

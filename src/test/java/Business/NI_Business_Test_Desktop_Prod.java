@@ -13,14 +13,14 @@ import org.testng.annotations.*;
 public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
 
 
-    @DataProvider(name = "DP1")
+    @DataProvider(name = "Business")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\inputs.xls",
                 "inputsProd", "desktop1");
 
         return(retObjArr);
     }
-    @DataProvider(name = "OneTest")
+    @DataProvider(name = "OneTestBusiness")
     public Object[][] createData2() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Oneinput.xls",
                 "inputs", "business");
@@ -34,7 +34,7 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "DP1")
+    @Test (dataProvider = "Business")
     @Parameters(value = "device")
     public void test(String testNumber, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -55,7 +55,7 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
                      String ShippingCart,
                      String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                      String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                     String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                     String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
                      String rebateNotShipped, String orderStatus, String shippingVerify,
                      String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
     {
@@ -69,7 +69,7 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        if (searchAllBrand.contains("Acuvue")||searchAllBrand.contains("drops")
+        if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
                 ||searchAllBrand.contains("solution")){
             clickPhoneBrand(device,brandclick);
         }
@@ -99,8 +99,8 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
         clickLDN(device,lDN);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
-        typePatientName(PatientFNameCart, PatientLNameCart);
         checkAvailablitiy(device,"In Stock");
+        typePatientName(PatientFNameCart, PatientLNameCart);
         takeScreenshot(screenshotTestName, "PDP2");
         if (!searchAllBrand2.equals("")){
             clickAddRx(device);
@@ -134,7 +134,10 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
             clickLDN(device,lDN);
             clickRboxes(rBoxes2);
             clickLboxes(lBoxes2);
-            typePatientName(PatientFNameCart2,PatientLNameCart2);
+            if (!searchAllBrand2.contains("drops")
+                    ||searchAllBrand2.contains("solution")){
+                typePatientName(PatientFNameCart2,PatientLNameCart2);
+            }
             takeScreenshot(screenshotTestName, "PDP3");
         }
         clickAddToCart(device);
@@ -181,7 +184,7 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @AfterMethod
@@ -190,7 +193,7 @@ public class NI_Business_Test_Desktop_Prod extends ContactsTestBase {
     }
     @org.junit.AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
 

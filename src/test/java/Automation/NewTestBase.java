@@ -583,7 +583,7 @@ public class NewTestBase {
     }
 }*/
     public void checkoutAndVerify (String testNumber,String prod,String device,
-    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus){
+    String shippingVerify, String brandVerifyPDP, String fullPatientName, String rsShipping, String zip, String city, String rsTax, String rsTotal, String rsRebate, String rsTotalAfterRebate, String orderStatus,String bState, String bCity){
         if (prod.equals("no")){
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);

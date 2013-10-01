@@ -1,11 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Links" verbose="1" parallel="methods" thread-count="1">
-    <test name="LinkTests" >
+<suite name="Links" verbose="1">
+    <test name="Links">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Links.Links47930"/>
-            <class name="Regression.Links.Links50356"/>
+            <class name="Regression.Links.Links_desktop_staging">
+                <methods>
+                    <include name="LinksTest"/>
+                    <include name="EmailLinkTest"/>
+                    <include name="ClickLinkTest"/>
+                    <include name="OtherLinkTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

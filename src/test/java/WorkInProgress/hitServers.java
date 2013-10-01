@@ -24,7 +24,12 @@ public class hitServers extends ContactsTestBase {
                 "inputsStage", "linksStage");
         return(retObjArr);
     }
-
+    @DataProvider(name = "39")
+    public Object[][] createData2() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\servers.xls",
+                "inputsStage", "links39");
+        return(retObjArr);
+    }
 
     @BeforeMethod
     @Parameters(value = "device")
@@ -42,13 +47,23 @@ public class hitServers extends ContactsTestBase {
         verifyVersion(device,page,tag,version);
     }
     @Test (dataProvider = "Prod")
-    @Parameters(value = "device")
-    public void ProdServers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
+         @Parameters(value = "device")
+         public void ProdServers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
         openWebPage(device);
         printTestNumber(printTestName);
         openPage(page);
-        verifyVersion(device,page,tag,"version");
+        verifyVersion(device,page,tag,version);
+
+    }
+    @Test (dataProvider = "39")
+    @Parameters(value = "device")
+    public void prod39Servers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + page;
+        openWebPage(device);
+        printTestNumber(printTestName);
+        openPage(page);
+        verifyVersion(device,page,tag,version);
 
     }
     @AfterMethod

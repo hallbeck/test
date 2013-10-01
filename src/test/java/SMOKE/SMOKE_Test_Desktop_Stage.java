@@ -46,7 +46,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "OneTestNI")
+    @Test(dataProvider = "NI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                      String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -59,7 +59,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
                      String rBC, String lBC, String rBC2, String lBC2,
                      String rDia, String lDia, String rDia2, String lDia2,
                      String rColor, String lColor, String rColor2, String lColor2,
-                     String rAdd, String lAdd, String rAdd2, String lAdd2,
+                     String rAdd, String lAdd, String rAdd2, String lAdd2,  //52
                      String rCyl, String lCyl, String rCyl2, String lCyl2,
                      String rAxis, String lAxis, String rAxis2, String lAxis2,
                      String rDN, String lDN,
@@ -68,9 +68,9 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
                      String ShippingCart,
                      String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                      String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                     String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                     String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
                      String rebateNotShipped, String orderStatus, String shippingVerify,
-                     String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
+                     String oneEyeFirstOrder,String oneEyeSecondOrder,
                      String multiRxReorder)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -197,7 +197,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
                 typeDoctorSearch(drName);
                 typeDoctorStateAndFind(device,drState);
                 addDoctor(device);
-                addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
+                //addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
             }
         takeScreenshot(screenshotTestName, "DoctorSearch");
             if(drName.equals("test")){
@@ -238,14 +238,14 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @Test
     public void blah (){
         Wait(900);
     }
-    @Test (dataProvider = "OneTestRI")
+    @Test (dataProvider = "RI")
     @Parameters(value = "device")
     public void RItest(String testNumber, String testNumberDependentOn,String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -267,9 +267,9 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
                        String ShippingCart,
                        String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,
                        String multiRxReorder)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -280,8 +280,6 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-
-
         goToSignInPage(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
@@ -290,6 +288,11 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         if (multiRxReorder.equals("yes")){
             checkReorderCheckboxTwo(device);
             clickCartEdit(device);
+        }
+        //remove this IF when bug  52481 is fixed.
+        if (multiRxReorder.equals("")){
+            gotoMyAccount(device);
+            reorderRx(device);
         }
         if (!multiRxReorder.equals("yes")){
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
@@ -460,7 +463,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @AfterMethod
@@ -469,7 +472,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
     }
     @AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
 

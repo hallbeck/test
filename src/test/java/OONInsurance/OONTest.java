@@ -15,7 +15,7 @@ public class OONTest extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "oon";
-    String typeOfTest = "OONInsurance";
+    String typeOfTest = "OONInsurance_fail_52122";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Astigmatism";
@@ -142,17 +142,10 @@ public class OONTest extends ContactsTestBase {
         selectDoctor(device);
         typeCreditCard(device,creditCard);
         typeCreditCardName(device,ccName);
-        pickCreditCardExpDate(device,ccExpMoBad, ccExpYearBad,paymentType);
-        clickBottomSubmitButton(device);
-        verifyExpiredCard(device);
-        takeScreenshot(screenshotTestName, "ExpiredCard");
-        typeCreditCard(device,creditCard);
-        typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         clickBottomSubmitButton(device);
-
         verifyThankYouPage(testNumber,shippingVerify);
         oonStartNowButton(device);
         oonForm(device);
@@ -161,7 +154,7 @@ public class OONTest extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory"); */
         driver.quit();
     }

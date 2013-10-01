@@ -83,12 +83,14 @@ public class ININIAcuvue2PlanoCanadaTest extends ContactsTestBase {
     String country = "canada";
     String state = "O";
     String city = "Ottawa";
+    String bState = "Ontario";
+    String bCity = "Ottawa";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";  String paymentType = "";
@@ -153,7 +155,7 @@ public class ININIAcuvue2PlanoCanadaTest extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
   }

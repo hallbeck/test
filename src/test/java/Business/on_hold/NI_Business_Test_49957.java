@@ -82,6 +82,8 @@ public class NI_Business_Test_49957 extends ContactsTestBase {
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";
+    String bState = "utah";
+    String bCity = "slc";
     String state = "utah";
     String city = "slc";
     String zip = "84121";
@@ -156,7 +158,7 @@ public class NI_Business_Test_49957 extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
     }

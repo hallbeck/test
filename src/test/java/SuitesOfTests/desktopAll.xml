@@ -1,72 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="tests" thread-count="3">
-    <test name="RebateTests" >
+<suite name="desktop" verbose="1" parallel="tests" thread-count="1">
+    <test name="Hit_Servers">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.Rebates.Rebates_48580"/>
-        </classes>
-    </test>
-    <test name="DesktopOONTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="OONInsurance.OONTest"/>
-            <class name="OONInsurance.OON_50614"/>
-        </classes>
-    </test>
-    <test name="DesktopPromoTests" >
-        <parameter name="device" value='desktop'/>
-        <parameter name="prod" value='no'/>
-        <classes>
-            <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
-            <class name="Promos.current.SunglassesPromo"/>
-        </classes>
-    </test>
-    <test name="Account">
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="SMOKE.done.SmokeNI1EyePrepAddTest"/>
-            <class name="Regression.Account.editRxNI_49773"/>
-            <class name="Regression.Account.editRxNI_49774"/>
-            <class name="Regression.Account.NILogin_48412"/>
-            <class name="Regression.Account.editRxNI_49775"/>
-            <class name="SMOKE.done.SmokeRI1EyeAddEyeColorTest"/>
-            <class name="Regression.Account.editRxRI_49777"/>
-            <class name="Regression.Account.editRxRI_49778"/>
-            <class name="Regression.Account.editRxRI_49779"/>
-            <class name="Regression.Account.NILogin_signinpage_48412"/>
-        </classes>
-    </test>
-    <test name="DesktopLinksTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Links.Links47930"/>
-            <class name="Regression.Links.Links_desktop_staging"/>
-            <class name="Regression.Doctor.Doctor_Custom_44058"/>
-        </classes>
-    </test>
-    <test name="DesktopPaymentTests" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.Payment.Payment47577">
+            <class name="WorkInProgress.hitServers">
                 <methods>
-                    <include name="NItest"/>
-                    <include name="RItest"/>
+                    <include name="StageServers"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="Shipping Billing">
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Verification.DiffShippingBilling47612"/>
-            <class name="Verification.DiffShippingBillingColor47612"/>
-            <class name="Verification.EditShippingBilling44764"/>
-            <class name="Verification.OrderStatusHistory47655"/>
-            <!--<class name="Verification.ShippingChanges47266"/>-->
-        </classes>
-    </test>
-    <test name="SMOKE Desktop StageNI">
+<test name="SMOKE Desktop StageNI">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.SMOKE_Test_Desktop_Stage">
@@ -74,45 +19,6 @@
                     <include name="NItest"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test name="stress Desktop Stage">
-        <classes>
-            <class name="stress.stress_productpageHTMLSelenium">
-            </class>
-        </classes>
-    </test>
-    <test name="Open Bugs" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.OpenBugs.howToOrder_brands_46203"/>
-            <class name="Regression.OpenBugs.Find_my_account_50468"/>
-        </classes>
-    </test>
-    <test name="PDP">
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.PDP.PDPBadRx47802"/>
-            <class name="Regression.PDP.PDPBadPName47802"/>
-            <class name="Regression.PDP.PDPEditRx48520"/>
-            <class name="Regression.PDP.PDPAccessoriesAll48553"/>
-        </classes>
-    </test>
-    <test name="SMOKE Desktop StageRI">
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="SMOKE.SMOKE_Test_Desktop_Stage">
-                <methods>
-                    <include name="blah"/>
-                    <include name="RItest"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="NI Business Desktop Stage">
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Business.NI_Business_Test_Desktop_Stage"/>
         </classes>
     </test>
 </suite>

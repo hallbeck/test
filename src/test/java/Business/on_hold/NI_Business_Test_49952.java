@@ -84,6 +84,8 @@ public class NI_Business_Test_49952 extends ContactsTestBase {
     String country = "canada";
     String state = "O";
     String city = "Ottawa";
+    String bState = "O";
+    String bCity = "Ottawa";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
@@ -143,7 +145,7 @@ public class NI_Business_Test_49952 extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
     }

@@ -97,6 +97,8 @@ public class editRxRI_49779 extends ContactsTestBase {
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device, password);
         clickSignIn(device);
+        gotoMyAccount(device);
+        reorderRx(device);
         takeScreenshot(screenshotTestName, "Cart1");
         verifyCart(device, brandVerifyPDP2, PatientFNameCart + " " + PatientLNameCart, pricePerBox, priceREye, priceLEye, priceTotal);
         cartRemove(device);

@@ -6,34 +6,255 @@
   <component name="ChangeListManager">
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_ProSite38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProSite38_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_ProVisionPremium_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProVisionPremium_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Proflex38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Proflex38_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Proflex55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Proflex55_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Prosite55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Prosite55Asph_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Prosite55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Prosite55_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Provision55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Provision55_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_PureVision2HDAstig_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PureVision2HDAstig_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_PureVision2HD_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PureVision2HD_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_PureVisionMulti_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PureVisionMulti_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_PureVisionToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PureVisionToric_48580.java" />
-      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_PureVision_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PureVision_48580.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/Insurance_test_Desktop_Stage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49935.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49936.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49937.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49938.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49939.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49940.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49941.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49942.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49943.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49944.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49945.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49946.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49947.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49948.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49949.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49951.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49954.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49955.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49956.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49960.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49961.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Business\done\NI_Business_Test_49962.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Links\Links47930.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Links\Links50356.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Links\one.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ApprovedAmexCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ApprovedDiscoverCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ApprovedMCForeignCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ApprovedTestCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ApprovedVisaForeignCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\DeclinedCardMC47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\DeclinedCardVisa47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\ExpRICardVisa47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\NoCard47577.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Payment\one.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Phone.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Tablet.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_desktop.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Acuvue2Colours_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Acuvue2_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueAdvanceAstigmatism_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueAdvancePlus24pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueAdvancePlus6pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueAdvance_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueBifocals_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueOasysAstigmatism_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueOasysHydraclearPlus24pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueOasysHydraclearPlus6pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AcuvueOasysPresbyopia_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Acuvue_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AirOptixAquaMultifocal_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AirOptixAqua_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AirOptixAstigmatism_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AirOptixNightDayAqua_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualens38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualens55Aspheric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualens55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualite38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualite55ProAspheric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Aqualite55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_AvairaToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Avaira_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BioTrue1Day90_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiofinityMultiN_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiofinityMulti_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiofinityToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biofinity_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biomedics1day90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biomedics38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biomedics55Evo_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biomedics55Premier_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Biomedics55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiomedicsEP_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiomedicsToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_BiomedicsXC_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_ClarityH2O_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Clear55A_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_Clear58_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_ClearAllDay_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\Rebates_ClearSightDay30Pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_1Day.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_A.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_B.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_C_D.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_E_O.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_P.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_S.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done\a_desktop_rebates_T_Z.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DaliesAquaComfortPlus30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DaliesAquaComfortPlus90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvue30Pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvueMoist30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvueMoist90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvueMoistforAstigmatism30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvueTruEye30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayAcuvueTruEye90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayClearSight90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_DayClearSightToric30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_EncorePremium_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_Expressions_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O54136_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O54142_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O54ToricMC_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O54Toric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O59Extra_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_d_e\Rebates_ExtremeH2O59Thin_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Flextique38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Flextique55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Flextique55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusDailies30_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusDailies90_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusDailiesProgressives30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusDailiesToric30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusDailiesToric90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FocusMonthlySoftcolors_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55MultiD_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55MultiN_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55ToricXR_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55Toric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_Frequency55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookColorblendToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookColorblends_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookColors_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookDimensions_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookLiteTint_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookOneDay_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_f\Rebates_FreshlookToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_IcuityH2O_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_Mediflex38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_Mediflex55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_O2Optix_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_Optima38SP_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_OptimaFW_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_i_o\Rebates_OptimaToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Perspecta55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PolySoft38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Polysoft55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Polysoft55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PreferenceDWFW_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PreferenceStandard_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PreferenceToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClear1Day90pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClear1DayMulti30pk_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClearEP_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClearMultiD_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClearMultiN_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClearToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProClear_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProSite38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProVisionPremium_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_ProclearToricXR_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Proflex38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Proflex55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Prosite55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Prosite55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_Provision55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PureVision2HDAstig_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PureVision2HD_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PureVisionMulti_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PureVisionToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_p\Rebates_PureVision_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNI1EyeAsphericTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIAcuvue2AccessoryCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIAcuvue2CanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIAcuvue2PlanoCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIAsphericInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIColor6MoTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIColorPlanoDeclinedCardTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIColorToricAccessoryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIColorToricTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIMultiBrand1EyeEachTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIMultiBrandPatientAccessoryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIMultiBrandPatientBoxTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIMultiBrandPatientTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIProgressiveAccessoryInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIProgressiveCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIProgressiveInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIToricTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNIVialTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRI1EyeAddEyeColorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRI1EyeAsphericPlusColorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIAcuvue2AccessoryCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIAcuvue2CanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIAcuvue2PlanoCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIAsphericInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIColor6MoTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIColorPlanoDeclinedCardTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIColorToricAccessoryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIColorToricTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIMultiBrand1EyeEachTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIMultiBrandAccessoryPatientTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIMultiBrandPatientBoxTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIMultiBrandPatientTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIMultiFocalCanadaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIProgressiveAccessoryInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIProgressiveInternationalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIToricTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeRIVialTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\stress\old\StressDesktopStageHTML.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\stress\old\stress_productpageHTML.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_A48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_A48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_B_C48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_B_C48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_D_E48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_D_E48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_F_L48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_F_L48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_M_N48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_M_N48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_O_P48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_O_P48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_R48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_R48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_S48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_S48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_T48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_T48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\PDP\PDPAccessories_U_Z48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/done/PDPAccessories_U_Z48553.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Payment\NotAcceptedDinersCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Soflens38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Soflens38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_SoflensDaily90_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_SoflensDaily90_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_SoflensDailyAstig30_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_SoflensDailyAstig30_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_SoflensMultiFocal_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_SoflensMultiFocal_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_SoflensToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_SoflensToric_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sofmed38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sofmed38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sofmed55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sofmed55Asph_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sofmed55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sofmed55_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_SoftconEW_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_SoftconEW_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sterling38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sterling38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sterling55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sterling55Asph_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Sterling55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Sterling55_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Target38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Target38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Target55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Target55Asph_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Target55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Target55_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_UltraFlex55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_UltraFlex55_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_UltraFlex7_14_38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_UltraFlex7_14_38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_UltraFlexIIAspheric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_UltraFlexIIAspheric_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_UltraFlexToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_UltraFlexToric_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_UltraFlexXC_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_UltraFlexXC_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Versaflax55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Versaflax55_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Versaflex38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Versaflex38_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_Versaflex55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_Versaflex55Asph_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_sqltest_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_s/Rebates_sqltest_48580.java" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\SMOKE\done\SmokeNI1EyePrepAddTest.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/dashboard_52493.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedAmexCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedAmexCard47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedDiscoverCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedDiscoverCard47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedMCForeignCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedMCForeignCard47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedTestCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedTestCard47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedVisaForeignCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedVisaForeignCard47577.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/inProcess/AutoLogin1Test.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/inProcess/AutoLogin1Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/old/BrandCanvas_Click_Promo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/old/BrandCanvas_Click_Promo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/CanadaShipping47326.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/CanadaShipping47326.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBillingColor47612.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBillingColor47612.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom_44058.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Doctor/Doctor_Custom_44058.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/ExpRICardVisa47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/ExpRICardVisa47577.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/old/FreeExpeditedShipping_SolutionPromo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/old/FreeExpeditedShipping_SolutionPromo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/current/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/current/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" />
@@ -59,38 +280,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_RIReorder_48300.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_RIReorder_48300.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_cardDecline_47768.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_cardDecline_47768.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_dob_entry48496.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_dob_entry48496.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links47930.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links47930.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links50356.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links50356.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_desktop_staging.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_desktop_staging.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49935.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49935.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49936.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49936.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49937.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49937.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49938.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49938.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49939.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49939.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49940.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49940.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49941.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49941.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49942.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49942.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49943.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49943.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49944.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49944.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49945.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49945.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49946.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49946.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49947.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49947.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49948.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49948.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49949.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49949.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49950.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49950.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49951.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49951.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49952.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49952.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49953.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49953.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49954.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49954.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49955.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49955.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49956.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49956.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49957.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49957.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49958.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49958.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49959.java" afterPath="$PROJECT_DIR$/src/test/java/Business/on_hold/NI_Business_Test_49959.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49960.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49960.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49961.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49961.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49962.java" afterPath="$PROJECT_DIR$/src/test/java/Business/done/NI_Business_Test_49962.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Desktop_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Desktop_Prod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Desktop_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Desktop_Stage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Prod.java" />
@@ -98,165 +297,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Prod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Stage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_composite.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_composite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/NoCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/NoCard47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/NotAcceptedDinersCard47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/NotAcceptedDinersCard47577.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Automation/NewTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Automation/NewTestBase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/OONInsurance/OONTest.java" afterPath="$PROJECT_DIR$/src/test/java/OONInsurance/OONTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/OONInsurance/OON_50614.java" afterPath="$PROJECT_DIR$/src/test/java/OONInsurance/OON_50614.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/OrderStatusHistory47655.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/OrderStatusHistory47655.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_A48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_A48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_B_C48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_B_C48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_D_E48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_D_E48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_F_L48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_F_L48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_M_N48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_M_N48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_O_P48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_O_P48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_R48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_R48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_S48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_S48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_T48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_T48553.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_U_Z48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessories_U_Z48553.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadPName47802.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadPName47802.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadRx47802.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadRx47802.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPEditRx48520.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPEditRx48520.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPToolTips_45370.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPToolTips_45370.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue2Colours_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue2Colours_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue2_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue2_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvanceAstigmatism_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvanceAstigmatism_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvancePlus24pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvancePlus24pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvancePlus6pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvancePlus6pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvance_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueAdvance_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueBifocals_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueBifocals_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysAstigmatism_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysAstigmatism_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysHydraclearPlus24pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysHydraclearPlus24pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysHydraclearPlus6pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysHydraclearPlus6pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysPresbyopia_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AcuvueOasysPresbyopia_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Acuvue_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAquaMultifocal_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAquaMultifocal_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAqua_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAqua_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAstigmatism_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixAstigmatism_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixNightDayAqua_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AirOptixNightDayAqua_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens55Aspheric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens55Aspheric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualens55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite55ProAspheric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite55ProAspheric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Aqualite55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AvairaToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_AvairaToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Avaira_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Avaira_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BioTrue1Day90_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BioTrue1Day90_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityMultiN_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityMultiN_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityMulti_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityMulti_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiofinityToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biofinity_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biofinity_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics1day90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics1day90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55Evo_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55Evo_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55Premier_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55Premier_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Biomedics55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsEP_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsEP_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsXC_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_BiomedicsXC_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClarityH2O_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClarityH2O_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Clear55A_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Clear55A_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Clear58_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_Clear58_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClearAllDay_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClearAllDay_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClearSightDay30Pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/Rebates_ClearSightDay30Pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DaliesAquaComfortPlus30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DaliesAquaComfortPlus30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DaliesAquaComfortPlus90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DaliesAquaComfortPlus90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvue30Pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvue30Pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoist30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoist30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoist90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoist90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoistforAstigmatism30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueMoistforAstigmatism30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueTruEye30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueTruEye30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueTruEye90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayAcuvueTruEye90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayClearSight90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayClearSight90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayClearSightToric30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_DayClearSightToric30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_EncorePremium_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_EncorePremium_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_Expressions_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_Expressions_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54136_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54136_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54142_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54142_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54ToricMC_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54ToricMC_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54Toric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O54Toric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O59Extra_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O59Extra_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O59Thin_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_d_e/Rebates_ExtremeH2O59Thin_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Flextique55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailies30_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailies30_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailies90_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailies90_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesProgressives30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesProgressives30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesToric30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesToric30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesToric90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusDailiesToric90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusMonthlySoftcolors_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FocusMonthlySoftcolors_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55MultiD_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55MultiD_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55MultiN_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55MultiN_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55ToricXR_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55ToricXR_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55Toric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55Toric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_Frequency55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColorblendToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColorblendToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColorblends_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColorblends_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColors_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookColors_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookDimensions_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookDimensions_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookLiteTint_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookLiteTint_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookOneDay_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookOneDay_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_f/Rebates_FreshlookToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_IcuityH2O_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_IcuityH2O_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Mediflex38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Mediflex38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Mediflex55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Mediflex55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_O2Optix_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_O2Optix_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Optima38SP_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_Optima38SP_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_OptimaFW_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_OptimaFW_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_OptimaToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_i_o/Rebates_OptimaToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Perspecta55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Perspecta55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Phone.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Phone.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PolySoft38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PolySoft38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Polysoft55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Polysoft55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Polysoft55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_Polysoft55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceDWFW_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceDWFW_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceStandard_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceStandard_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_PreferenceToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear1Day90pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear1Day90pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear1DayMulti30pk_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear1DayMulti30pk_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearEP_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearEP_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearMultiD_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearMultiD_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearMultiN_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearMultiN_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClearToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProClear_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProclearToricXR_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done_p/Rebates_ProclearToricXR_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Soflens38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Soflens38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensDaily90_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensDaily90_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensDailyAstig30_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensDailyAstig30_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensMultiFocal_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensMultiFocal_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoflensToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sofmed55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoftconEW_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_SoftconEW_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Sterling55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target55Asph_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Target55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlex55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlex55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlex7_14_38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlex7_14_38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexIIAspheric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexIIAspheric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexXC_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_UltraFlexXC_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflax55_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflax55_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflex38_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflex38_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflex55Asph_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Versaflex55Asph_48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexSphere_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexSphere_48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexToricXR_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexToricXR_48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexToric_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_VertexToric_48580.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_desktop.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_desktop.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_sqltest_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_sqltest_48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_text48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_text48580.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Prod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java" />
@@ -264,79 +315,51 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Stage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Prod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/ShippingChanges47266.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/ShippingChanges47266.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNI1EyeAsphericTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNI1EyeAsphericTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNI1EyePrepAddTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNI1EyePrepAddTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2AccessoryCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2AccessoryCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2CanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2CanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2PlanoCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAcuvue2PlanoCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAsphericInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIAsphericInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColor6MoTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColor6MoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorPlanoDeclinedCardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorToricAccessoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorToricAccessoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorToricTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIColorToricTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrand1EyeEachTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrand1EyeEachTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientAccessoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientAccessoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientBoxTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientBoxTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIMultiBrandPatientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveAccessoryInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveAccessoryInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIProgressiveInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIToricTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIToricTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIVialTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeNIVialTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRI1EyeAddEyeColorTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRI1EyeAddEyeColorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRI1EyeAsphericPlusColorTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRI1EyeAsphericPlusColorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2AccessoryCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2AccessoryCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2CanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2CanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2PlanoCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAcuvue2PlanoCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAsphericInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIAsphericInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColor6MoTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColor6MoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorPlanoDeclinedCardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorToricAccessoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorToricAccessoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorToricTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIColorToricTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrand1EyeEachTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrand1EyeEachTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandAccessoryPatientTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandAccessoryPatientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandPatientBoxTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandPatientBoxTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandPatientTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiBrandPatientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiFocalCanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIMultiFocalCanadaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIProgressiveAccessoryInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIProgressiveAccessoryInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIProgressiveInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIProgressiveInternationalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIToricTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIToricTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIVialTest.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/done/SmokeRIVialTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stress/StressDesktopStageHTMLSelenium.xml" afterPath="$PROJECT_DIR$/src/test/java/stress/StressDesktopStageHTMLSelenium.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Tax/Tax_Desktop_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Tax/Tax_Desktop_Stage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/TitleTagProducts/TitleTags48150.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/TitleTagProducts/TitleTags48150.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/a_desktop_rebates_P.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/done/a_desktop_rebates_P.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/play/composite.java" afterPath="$PROJECT_DIR$/src/test/java/play/composite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/deleteRxNI_50300.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/deleteRxNI_50300.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProdl.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProdl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editFromDash_test.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editFromDash_test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49773.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49773.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49774.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49774.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49775.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49775.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49777.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49777.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49778.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49778.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49779.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49779.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/glasses/glasses.java" afterPath="$PROJECT_DIR$/src/test/java/glasses/glasses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java" afterPath="$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/howToOrder_brands_46203.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/howToOrder_brands_46203.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniApplied.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniApplied.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniAppliedTax.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniAppliedTax.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniNotAllUsed.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Totals/iniNotAllUsed.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/iniRIReorder.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/iniRIReorder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/lightbox_test.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/lightbox_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/play/sandbox.java" afterPath="$PROJECT_DIR$/src/test/java/play/sandbox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/WorkInProgress/one_test.xml" afterPath="$PROJECT_DIR$/src/test/java/WorkInProgress/one_test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/pdp.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/phoneAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/phoneAll.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Totals/standardOrder.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Totals/standardOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/tabletAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/tabletAll.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566663577" ignored="false" />
-    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379453824971" ignored="false" />
+    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380561156556" ignored="false" />
     <file path="/TestUrlOpener.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362958090030" ignored="false" />
     <file path="/ResponsiveSuggest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362959303229" ignored="false" />
     <file path="/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366834471457" ignored="false" />
     <file path="/Utils.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566622203" ignored="false" />
     <file path="/pom.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378331057650" ignored="false" />
-    <file path="/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378915772124" ignored="false" />
+    <file path="/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956129183" ignored="false" />
     <file path="/a.groovy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376666531992" ignored="false" />
     <file path="/a.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378321940371" ignored="false" />
-    <file path="/a.dummy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379704641816" ignored="false" />
+    <file path="/a.dummy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380661279184" ignored="false" />
     <file path="C:/SeleniumCookbook/src/test/java/seleniumcookbook/example/test/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571047280" ignored="false" />
     <file path="/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364570914506" ignored="false" />
     <file path="C:/AndroidAutomation/First/src/test/java/Automation/First.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571203804" ignored="false" />
@@ -380,7 +403,7 @@
     <file path="/SmokeNIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368483380908" ignored="false" />
     <file path="/SmokeRIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369942264733" ignored="false" />
     <file path="/SmokeNIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043943977" ignored="false" />
-    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379693991082" ignored="false" />
+    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380640430235" ignored="false" />
     <file path="/testng.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366823962680" ignored="false" />
     <file path="/SmokeRIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042248603" ignored="false" />
     <file path="/phoneSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367261367068" ignored="false" />
@@ -390,7 +413,7 @@
     <file path="/ShippingChanges47266.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122156533" ignored="false" />
     <file path="/verification.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377098565320" ignored="false" />
     <file path="/CanadaShipping.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367856348287" ignored="false" />
-    <file path="/one_test.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378916403961" ignored="false" />
+    <file path="/one_test.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380212427709" ignored="false" />
     <file path="/CanadaShipping47326.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368122136652" ignored="false" />
     <file path="/desktopSmokeRI.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378320888916" ignored="false" />
     <file path="/tabletSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369866823359" ignored="false" />
@@ -406,30 +429,30 @@
     <file path="/INI_cardDecline_47768.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368650213723" ignored="false" />
     <file path="/PDPBadRx47802.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369782471059" ignored="false" />
     <file path="/tabletPayment.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368743167989" ignored="false" />
-    <file path="/phonePayment.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778521005" ignored="false" />
+    <file path="/phonePayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380055041946" ignored="false" />
     <file path="/DeclinedCardMC47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414968976" ignored="false" />
     <file path="/DeclinedCardVisa47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414944911" ignored="false" />
     <file path="/ApprovedVisaForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414975608" ignored="false" />
     <file path="/ApprovedDinersCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368812123641" ignored="false" />
     <file path="/ApprovedMCForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414927932" ignored="false" />
-    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379603326522" ignored="false" />
+    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639539147" ignored="false" />
     <file path="/Links47930.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369327364378" ignored="false" />
-    <file path="/Links.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377187636416" ignored="false" />
+    <file path="/Links.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380227090185" ignored="false" />
     <file path="/TitleTags.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369337395766" ignored="false" />
     <file path="/ApprovedDiscoverCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414935999" ignored="false" />
     <file path="/NotAcceptedDinersCard47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377786883626" ignored="false" />
     <file path="/ApprovedAmexCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415024338" ignored="false" />
     <file path="/TitleTags48150.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369415366716" ignored="false" />
-    <file path="/INI_130_dollar_47766.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705221515" ignored="false" />
-    <file path="/desktopPayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379708566429" ignored="false" />
+    <file path="/INI_130_dollar_47766.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956388360" ignored="false" />
+    <file path="/desktopPayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380054981478" ignored="false" />
     <file path="/NoCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369778190090" ignored="false" />
-    <file path="/desktopAll.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379445033843" ignored="false" />
+    <file path="/desktopAll.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379960550340" ignored="false" />
     <file path="/tabletAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370279288634" ignored="false" />
     <file path="/tabletIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858276182" ignored="false" />
     <file path="/desktopIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858284028" ignored="false" />
     <file path="/phoneIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858325838" ignored="false" />
     <file path="/pdp.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377793580105" ignored="false" />
-    <file path="/iniNotAllUsed.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369935169190" ignored="false" />
+    <file path="/iniNotAllUsed.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956594951" ignored="false" />
     <file path="/NILogin_48412.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370273989405" ignored="false" />
     <file path="/NILogin_signinpage_48412.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379355546098" ignored="false" />
     <file path="/phoneAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370299087074" ignored="false" />
@@ -479,7 +502,7 @@
     <file path="/Rebates.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372346565513" ignored="false" />
     <file path="/Interstitial_App_48773.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371160239138" ignored="false" />
     <file path="/lightbox_test.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371501971859" ignored="false" />
-    <file path="/SunglassesPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705757258" ignored="false" />
+    <file path="/SunglassesPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379962965014" ignored="false" />
     <file path="/SmokeNIAcuvue2AccessoryCanadaTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373477516241" ignored="false" />
     <file path="/SmokeNIMultiBrandPatientAccessoryTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371589195216" ignored="false" />
     <file path="/PDPAccessories_A48553.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371755421570" ignored="false" />
@@ -525,7 +548,7 @@
     <file path="/Rebates_PureVisionMulti_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372174624516" ignored="false" />
     <file path="/Rebates_BioTrue1Day90_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372182420253" ignored="false" />
     <file path="/Rebates_Tablet.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372197089857" ignored="false" />
-    <file path="/*.regexp" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705553208" ignored="false" />
+    <file path="/*.regexp" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380661135820" ignored="false" />
     <file path="/desktopSmokeALL.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378331470452" ignored="false" />
     <file path="/phoneSmokeALL.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372201864954" ignored="false" />
     <file path="/tabletSmokeALL.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373415413108" ignored="false" />
@@ -545,7 +568,7 @@
     <file path="/a_desktop_rebates_T_Z.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378305773049" ignored="false" />
     <file path="/FreeExpeditedShipping_SolutionPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372806609251" ignored="false" />
     <file path="/BrandCanvas_Click_Promo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372886233658" ignored="false" />
-    <file path="/OONTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706281736" ignored="false" />
+    <file path="/OONTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380658591440" ignored="false" />
     <file path="/SmokeRI1EyeAddEyeColorTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373057569727" ignored="false" />
     <file path="/SmokeNIPrepAddTest1.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373047998711" ignored="false" />
     <file path="/SmokeRICardErrorTest1.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373048104243" ignored="false" />
@@ -603,7 +626,7 @@
     <file path="/NI_Business_Test_Phone_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376074083543" ignored="false" />
     <file path="/NI_Business_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378917872351" ignored="false" />
     <file path="/SmokeDesktopStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379012878279" ignored="false" />
-    <file path="/SMOKE_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705894049" ignored="false" />
+    <file path="/SMOKE_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380558967461" ignored="false" />
     <file path="/SmokeDesktopProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379602648415" ignored="false" />
     <file path="/StressDesktopStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376604190009" ignored="false" />
     <file path="/stress_productpage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378484035346" ignored="false" />
@@ -625,30 +648,60 @@
     <file path="/SMOKE_Test_Desktop_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706099956" ignored="false" />
     <file path="/SmokeNI1EyePrepAddTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378330823080" ignored="false" />
     <file path="/SMOKE_Test_Desktop_Stage_new.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378332807494" ignored="false" />
-    <file path="/ContactsTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379713862904" ignored="false" />
+    <file path="/ContactsTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380654711557" ignored="false" />
     <file path="/SmokePhoneStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483854723" ignored="false" />
     <file path="/SmokePhoneProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483876375" ignored="false" />
     <file path="/SmokeTabletStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483897337" ignored="false" />
     <file path="/SmokeTabletProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483924385" ignored="false" />
     <file path="/Rebates_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378488016140" ignored="false" />
     <file path="/PDPBadPName47802.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378825583789" ignored="false" />
-    <file path="/desktopProdl.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378845873891" ignored="false" />
-    <file path="/hitServers.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379610672021" ignored="false" />
-    <file path="/Payment47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379708457776" ignored="false" />
-    <file path="/Tax_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706328044" ignored="false" />
-    <file path="/Links_desktop_staging.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379095717064" ignored="false" />
+    <file path="/desktopProdl.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380209978666" ignored="false" />
+    <file path="/hitServers.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380213346341" ignored="false" />
+    <file path="/Payment47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380649481938" ignored="false" />
+    <file path="/Tax_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956718604" ignored="false" />
+    <file path="/Links_desktop_staging.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380224000326" ignored="false" />
     <file path="/editRxRI_49779.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379350337607" ignored="false" />
-    <file path="/ININIMultiBrandPatientTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379704156078" ignored="false" />
-    <file path="/editRxNI_49774.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705354629" ignored="false" />
+    <file path="/ININIMultiBrandPatientTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956231114" ignored="false" />
+    <file path="/editRxNI_49774.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956917287" ignored="false" />
     <file path="/editRxNI_49775.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705598355" ignored="false" />
     <file path="/Rebates_48580_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705699770" ignored="false" />
     <file path="/SMOKE_Test_Phone_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705825765" ignored="false" />
     <file path="/SMOKE_Test_Tablet_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705939272" ignored="false" />
     <file path="/SMOKE_Test_Phone_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706047625" ignored="false" />
     <file path="/SMOKE_Test_Tablet_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706166818" ignored="false" />
-    <file path="/editRxNI_49773.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706198976" ignored="false" />
+    <file path="/editRxNI_49773.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956644152" ignored="false" />
     <file path="/OON_50614.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706298019" ignored="false" />
     <file path="/ININI1EyeAsphericTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706314782" ignored="false" />
+    <file path="/Rebates_VertexToricXR_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379955478418" ignored="false" />
+    <file path="/ININIMultiBrandPatientBoxTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379955801732" ignored="false" />
+    <file path="/NewTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956016083" ignored="false" />
+    <file path="/NI_Business_Test_49959.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956040595" ignored="false" />
+    <file path="/ININIAcuvue2PlanoCanadaTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956067685" ignored="false" />
+    <file path="/NI_Business_Test_49950.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956505540" ignored="false" />
+    <file path="/ININIAcuvue2CanadaTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956543380" ignored="false" />
+    <file path="/standardOrder.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956576246" ignored="false" />
+    <file path="/ININIProgressiveCanadaTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956626252" ignored="false" />
+    <file path="/ININIProgressiveInternationalTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956678138" ignored="false" />
+    <file path="/NI_Business_Test_49952.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956760701" ignored="false" />
+    <file path="/NI_Business_Test_49957.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956780245" ignored="false" />
+    <file path="/ININIAsphericInternationalTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956799072" ignored="false" />
+    <file path="/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956828842" ignored="false" />
+    <file path="/Insurance_test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380230864734" ignored="false" />
+    <file path="/dashboard_52493.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380562490802" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Automation/sqlStuff.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639504568" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Automation/HTMLSeleniumTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639504569" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Automation/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639121508" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Automation/HTMLGlassesTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639504569" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Automation/HTMLTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639504570" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/glasses/TestBaseGlasses.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639121519" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524907" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/CanadaShipping47326.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524915" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524872" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/OrderStatusHistory47655.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524873" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBillingColor47612.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524873" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/Verification/ShippingChanges47266.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524874" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-plugin.jar!/resources/standardSchemas/testng-1.0.dtd" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380640430236" ignored="false" />
+    <file path="/desktopAll3.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380649585102" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -719,7 +772,7 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out/9_19" userTempatePath="" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out/10_3" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="test">
       <favorite_root url="SMOKE.SMOKE_Test_Desktop_Stage" module="test" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
@@ -727,28 +780,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContactsTestBase.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ContactsTestBase.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="48" selection-start="4883" selection-end="4883" vertical-scroll-proportion="-4.08">
+            <state line="128" column="30" selection-start="5507" selection-end="5507" vertical-scroll-proportion="0.52535886">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Payment47577.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java">
+      <file leaf-file-name="desktopAll.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="43" selection-start="2284" selection-end="2284" vertical-scroll-proportion="1.0841837">
+            <state line="16" column="37" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desktopPayment.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml">
+      <file leaf-file-name="desktopAll2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+            <state line="6" column="51" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktopAll3.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="58" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktopAll4.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="130" selection-end="428" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktopAll5.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="61" selection-start="460" selection-end="486" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktopAll6.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="58" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -775,22 +864,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBillingColor47612.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedVisaForeignCard47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardVisa47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedAmexCard47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Totals/iniNotAllUsed.java" />
-        <option value="$PROJECT_DIR$/src/test/java/OONInsurance/OONTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/OONInsurance/OON_50614.java" />
-        <option value="$PROJECT_DIR$/src/test/java/INIAutomation/ININI1EyeAsphericTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Tax/Tax_Desktop_Stage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedMCForeignCard47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/OONInsurance/OON_50614.java" />
+        <option value="$PROJECT_DIR$/src/test/java/OONInsurance/OONTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_composite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Desktop_Prod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Prod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Stage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Prod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/INIAutomation/Insurance_test_Desktop_Stage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Promos/inProcess/AutoLogin1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java" />
       </list>
     </option>
   </component>
@@ -915,8 +1004,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1053,7 +1140,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SMOKE" />
+              <option name="myItemId" value="Promos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1079,7 +1166,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Regression" />
+              <option name="myItemId" value="OONInsurance" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1105,41 +1192,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Regression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rebates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Regression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Payment" />
+              <option name="myItemId" value="Business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1185,6 +1238,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1192,7 +1247,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="vcs.TFS" />
+    <property name="options.lastSelected" value="File.Encoding" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/SMOKE/done" />
@@ -1209,15 +1264,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Regression.OpenBugs" />
+      <recent name="INIAutomation" />
+      <recent name="Regression.Payment" />
       <recent name="Regression.Links" />
       <recent name="Regression.Account" />
-      <recent name="Regression.Tax" />
-      <recent name="WorkInProgress" />
-      <recent name="Regression.Rebates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\test\src\test\java\SMOKE" />
       <recent name="C:\test\src\test\java\SuitesOfTests" />
+      <recent name="C:\test\src\test\java\SMOKE" />
       <recent name="C:\test\src\test\java\Verification" />
       <recent name="C:\test\src\test\java\stress" />
       <recent name="C:\test\src\test\java\Business" />
@@ -1230,13 +1285,13 @@
       <recent name="C:\test\src\test\java\Regression\PDP" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml">
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopProd.xml" type="TestNG" factoryName="TestNG" temporary="true">
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll.xml">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopProd.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1261,12 +1316,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/WorkInProgress/one_test.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/WorkInProgress/one_test.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1291,12 +1346,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/one.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1321,12 +1376,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1351,12 +1406,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1664,19 +1719,19 @@
       <item index="1" class="java.lang.String" itemvalue="TestNG.All Tests desktop stage" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.NIBusinessdesktop" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.SmokedesktopStage" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SMOKE/SmokeDesktopProd.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/WorkInProgress/one_test.xml" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/one.xml" />
-      <item index="7" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Rebates/one.xml" />
-      <item index="8" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll5.xml" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll6.xml" />
+      <item index="7" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
+      <item index="8" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1766,7 +1821,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1783,8 +1838,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29829243" sideWeight="0.25417075" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6855524" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40021345" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31875" sideWeight="0.7472325" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25276753" sideWeight="0.25453576" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.6918819" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24261993" sideWeight="0.25453576" order="2" side_tool="false" content_ui="tabs" x="1914" y="910" width="1920" height="274" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2001,114 +2056,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/DeclinedCardMC47577.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Prod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="28" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.25611326">
+        <state line="190" column="8" selection-start="8689" selection-end="8689" vertical-scroll-proportion="0.76519334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Totals/iniNotAllUsed.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Phone_Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="28" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.36550838">
+        <state line="195" column="8" selection-start="8913" selection-end="8913" vertical-scroll-proportion="0.76519334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/OONInsurance/OON_50614.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Prod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="28" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.8249678">
+        <state line="190" column="8" selection-start="8693" selection-end="8693" vertical-scroll-proportion="0.76519334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/OONInsurance/OONTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/Insurance_test_Desktop_Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="8" selection-start="5113" selection-end="5113" vertical-scroll-proportion="0.34362933">
+        <state line="244" column="8" selection-start="10924" selection-end="10924" vertical-scroll-proportion="0.76519334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/ININI1EyeAsphericTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="63" selection-start="4626" selection-end="4626" vertical-scroll-proportion="0.4967825">
+        <state line="113" column="8" selection-start="5977" selection-end="5977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Tax/Tax_Desktop_Stage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Promos/inProcess/AutoLogin1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="174" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.62805665">
+        <state line="110" column="8" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="28" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.6718147">
+        <state line="283" column="8" selection-start="16666" selection-end="16666" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/ApprovedMCForeignCard47577.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="28" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.25611326">
+        <state line="470" column="46" selection-start="21476" selection-end="21476" vertical-scroll-proportion="0.6614509">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/one.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="228" selection-end="228" vertical-scroll-proportion="0.13010204">
+        <state line="148" column="8" selection-start="6348" selection-end="6348" vertical-scroll-proportion="0.78867406">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/one.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6" column="58" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopStage.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="142" selection-end="806" vertical-scroll-proportion="0.0">
+        <state line="9" column="61" selection-start="460" selection-end="486" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="48" selection-start="4883" selection-end="4883" vertical-scroll-proportion="-4.08">
+        <state line="3" column="0" selection-start="130" selection-end="428" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SmokePhoneProd.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="28" column="58" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="584" selection-end="584" vertical-scroll-proportion="0.3469388">
+        <state line="16" column="37" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="43" selection-start="2284" selection-end="2284" vertical-scroll-proportion="1.0841837">
+        <state line="128" column="30" selection-start="5507" selection-end="5507" vertical-scroll-proportion="0.52535886">
           <folding />
         </state>
       </provider>

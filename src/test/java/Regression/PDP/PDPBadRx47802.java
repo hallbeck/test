@@ -91,7 +91,7 @@ public class PDPBadRx47802 extends ContactsTestBase {
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
@@ -153,9 +153,9 @@ public class PDPBadRx47802 extends ContactsTestBase {
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        /*clickBottomSubmitButton(device);
+        clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
-        takeScreenshot(screenshotTestName, "ThankYou");*/
+        takeScreenshot(screenshotTestName, "ThankYou");
         driver.quit();
     }
 }

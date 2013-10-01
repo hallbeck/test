@@ -54,12 +54,14 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
     String country = "BOLIVIA";
     String state = "Newberry";
     String city = "whatever";
+    String bState = "Newberry";
+    String bCity = "whatever";
     String zip = "K1A 0G9";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";  String paymentType = "";
@@ -117,7 +119,7 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
     }

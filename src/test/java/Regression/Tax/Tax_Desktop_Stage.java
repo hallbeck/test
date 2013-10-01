@@ -55,7 +55,7 @@ public class Tax_Desktop_Stage extends ContactsTestBase{
                      String PatientFNameCart, String PatientLNameCart, String PatientFNameCart2, String PatientLNameCart2,
                      String pricePerBox, String priceREye, String priceLEye,
                      String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                     String shippingFName, String shippingLName, String country, String state, String city, String zip)
+                     String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust;
@@ -158,7 +158,7 @@ public class Tax_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,"standard",zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,"blah");
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,"standard",zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,"blah",bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @AfterMethod

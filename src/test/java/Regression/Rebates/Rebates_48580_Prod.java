@@ -53,9 +53,9 @@ public class Rebates_48580_Prod extends ContactsTestBase {
                        String ShippingCart,
                        String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsShipping,
-                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify)
-                       {
+    {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
@@ -135,7 +135,7 @@ public class Rebates_48580_Prod extends ContactsTestBase {
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus);
+        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus,bState,bCity);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(testNumber);
         //getRebate(device,orderNumberPlaceholder,rebateShipped);
@@ -146,6 +146,6 @@ public class Rebates_48580_Prod extends ContactsTestBase {
     }
     @AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }

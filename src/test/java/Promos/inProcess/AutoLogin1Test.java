@@ -108,6 +108,6 @@ public class AutoLogin1Test extends ContactsTestBase {
         clickEmailLink(email1);
         takeScreenshot(screenshotTestName, "autoLogin1");
 
-        //driver.quit();
+        driver.quit();
     }
 }

@@ -68,7 +68,7 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
                      String ShippingCart,
                      String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                      String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                     String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                     String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                      String rebateNotShipped, String orderStatus, String shippingVerify,
                      String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
                      String multiRxReorder)
@@ -238,7 +238,7 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @Test (dataProvider = "RI")
@@ -263,7 +263,7 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
                        String ShippingCart,
                        String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
                        String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
                        String multiRxReorder)
@@ -456,7 +456,7 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @AfterMethod

@@ -15,7 +15,7 @@ public class editRxNI_49773 extends ContactsTestBase {
 
     //change the Strings below to change the tests
     String testNumber = "49773";
-    String typeOfTest = "SMOKE";
+    String typeOfTest = "account";
     String typeOfCust = "NI";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Astigmatism";
@@ -82,6 +82,8 @@ public class editRxNI_49773 extends ContactsTestBase {
     String country = "united states";
     String state = "utah";
     String city = "slc";
+    String bState = "utah";
+    String bCity = "slc";
     String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
@@ -154,7 +156,7 @@ public class editRxNI_49773 extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
     }

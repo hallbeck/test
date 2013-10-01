@@ -30,6 +30,12 @@ public class Links_desktop_staging extends ContactsTestBase {
                 "inputsStage", "clicklinks");
         return(retObjArr);
     }
+    @DataProvider(name = "Other")
+    public Object[][] createData5() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Links.xls",
+                "inputsStage", "otherlinks");
+        return(retObjArr);
+    }
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Links.xls",
@@ -73,12 +79,27 @@ public class Links_desktop_staging extends ContactsTestBase {
         clickLink(link1);
         verifyTagContains(tag1,verify1,expected1);
     }
+    @Test (dataProvider = "Other")
+    @Parameters(value = "device")
+    public void OtherLinkTest(String testNumber, String device, String typeOfTest, String page, String para, String title, String tag) {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + page + " | " + para + " | " + title;
+        openWebPage(device);
+        clickNoThanksButton(device);
+        printTestNumber(printTestName);
+        gotoPage(page);
+        if (!title.equals("")){
+            verifyPageTitle(title);
+        }
+        if (!para.equals("")){
+            verifyPagePara(para);
+        }
+    }
     @AfterMethod
     public void tearDown(){
         driver.manage().deleteAllCookies();
     }
     @AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }

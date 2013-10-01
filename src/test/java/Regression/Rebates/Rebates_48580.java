@@ -33,7 +33,7 @@ public class Rebates_48580 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test(dataProvider = "OneTestRebates")
+    @Test(dataProvider = "Rebates")
     @Parameters(value = "device")
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String link, String rebatesAvailable, String rebateTextRS,
@@ -53,7 +53,7 @@ public class Rebates_48580 extends ContactsTestBase {
                        String ShippingCart,
                        String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsShipping,
-                       String shippingFName, String shippingLName, String country, String state, String city, String zip,
+                       String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify)
                        {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -135,7 +135,7 @@ public class Rebates_48580 extends ContactsTestBase {
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus);
+        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus,bState,bCity);
         getRebate(device,orderNumberPlaceholder,rebateNotShipped);
         //shipOrder(testNumber);
         //getRebate(device,orderNumberPlaceholder,rebateShipped);
@@ -146,6 +146,6 @@ public class Rebates_48580 extends ContactsTestBase {
     }
     @AfterClass
     public void shutDown(){
-       // driver.quit();
+        driver.quit();
     }
 }

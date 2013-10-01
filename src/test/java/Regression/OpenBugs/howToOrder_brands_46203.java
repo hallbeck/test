@@ -1,10 +1,7 @@
 package Regression.OpenBugs;
 
 import Base.ContactsTestBase;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,7 +15,7 @@ public class howToOrder_brands_46203 extends ContactsTestBase {
     String BuyersGuideLink = "BuyersGuide";
 
     //change the Strings below to change the tests
-    @DataProvider(name = "DP1")
+    @DataProvider(name = "HowToOrder")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\HowToOrderInputs.xls",
                 "inputsStage", "AllProducts");
@@ -27,12 +24,10 @@ public class howToOrder_brands_46203 extends ContactsTestBase {
     }
     @DataProvider(name = "OneTest")
     public Object[][] createData2() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Oneinput.xls",
-                "inputs", "business");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\HowToOrderInputs.xls",
+                "inputsStage", "oneTest");
         return(retObjArr);
     }
-
-
 
     @BeforeMethod
     @Parameters(value = "device")
@@ -40,11 +35,10 @@ public class howToOrder_brands_46203 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "DP1")
+    @Test (dataProvider = "HowToOrder")
     @Parameters(value = "device")
     public void test(String testNumber, String device,String typeOfTest, String brand, String title)
     {
-
         String printTestName = typeOfTest + " | " + testNumber + " | " + brand ;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_"  + brand ;
         openWebPage(device);
@@ -55,7 +49,13 @@ public class howToOrder_brands_46203 extends ContactsTestBase {
         chooseBrand(device,brand);
         clickGo(device);
         assertProduct(device,title);
-
-//driver.quit();
+    }
+    @AfterMethod
+    public void tearDown(){
+        driver.manage().deleteAllCookies();
+    }
+    @AfterClass
+    public void shutDown(){
+        driver.quit();
     }
 }

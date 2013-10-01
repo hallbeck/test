@@ -52,14 +52,16 @@ public class ININIVialTest extends ContactsTestBase {
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";
-    String state = "utah";
+String state = "utah";
     String city = "slc";
+    String bState = "utah";
+    String bCity = "slc";
     String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "4012000077777777";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";  String paymentType = "";
@@ -126,7 +128,7 @@ public class ININIVialTest extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Dashboard");
         verifyDashboard(device,brandVerifyPDP,fullPatientName);
         gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
   }

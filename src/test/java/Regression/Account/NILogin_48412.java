@@ -167,6 +167,6 @@ public class NILogin_48412 extends ContactsTestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
-        driver.quit();
+        //driver.quit();
     }
 }

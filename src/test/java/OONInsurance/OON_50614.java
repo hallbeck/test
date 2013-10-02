@@ -144,7 +144,6 @@ public class OON_50614 extends ContactsTestBase {
         typeCreditCardName(device,ccName);
         pickCreditCardExpDate(device,ccExpMo,ccExpYear,paymentType);
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        clickBottomSubmitButton(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);

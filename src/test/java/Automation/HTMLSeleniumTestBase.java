@@ -91,6 +91,7 @@ public class HTMLSeleniumTestBase {
     public void getLink(String addition,String text){
        driver.get(desktopBaseUrl + addition);
         String pageTxt = driver.getTitle();
+        Wait(3);
         print(pageTxt + "\n");
         assertTxtPresent("Looked for and ", text, pageTxt);
         driver.navigate().refresh();
@@ -139,10 +140,10 @@ public class HTMLSeleniumTestBase {
         Matcher m = p.matcher(actual);
         // try to find a match
         if (m.find()){
-            System.out.println("VERIFIED " + identifier + "Found " + desired + " within " + actual + "." );
+            print("VERIFIED " + identifier + "Found " + desired + " within " + actual + "." );
         }
         else {
-            System.out.println("FAIL " + identifier + "NOT FOUND " + desired + " within " + actual + "." );
+            print("FAIL " + identifier + "NOT FOUND " + desired + " within " + actual + "." );
             assert false;
         }
     }
@@ -198,7 +199,7 @@ public class HTMLSeleniumTestBase {
     }
     public void Wait(long seconds) {
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(seconds * 100);
             //System.out.println("Waiting " + seconds + " seconds");
         } catch (Exception e) {
             print("Sleep exception...its a nightmare");

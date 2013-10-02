@@ -73,19 +73,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    /*public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+/*    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Oct_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -3291,9 +3291,15 @@ public class ContactsTestBase {
     public void typeCreditCardName(String device,String creditName) {
         if (!creditName.equals("")){
         if(device.equals("desktop")){
-            WebElement weName = driver.findElement(By.xpath("//input[contains(@id,'CreditCardName')]"));
-            weName.click();
-            weName.sendKeys(creditName);
+            try{WebElement weName = driver.findElement(By.xpath("//input[contains(@id,'CreditCardName')]"));
+                weName.click();
+                weName.sendKeys(creditName);}
+            catch(Throwable e) {
+            WebElement weName = driver.findElement(By.xpath("(//input[@id='CreditCardName'])[2]"));
+                weName.click();
+                weName.sendKeys(creditName);
+            }
+
         }
         else if(device.equals("tablet")){
             WebElement weName = driver.findElement(By.xpath("(//input[@id='CreditCardName'])[2]"));
@@ -3348,8 +3354,14 @@ public class ContactsTestBase {
             System.out.println("CC exp date:" + month + " " + year);
         }
         else if(device.equals("desktop")){
+            try{
             driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
             driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationYear')]")).sendKeys(year);
+            }
+            catch(Throwable e){
+                driver.findElement(By.xpath("(//select[@id='CreditCardExpirationMonth'])[2]")).sendKeys(month);
+                driver.findElement(By.xpath("(//select[@id='CreditCardExpirationYear'])[2]")).sendKeys(year);
+            }
             System.out.println("CC exp date:" + month + " " + year);
         }
     }
@@ -4058,6 +4070,7 @@ public class ContactsTestBase {
             verifyTxtPresent("Rebate text RS: " + device, rsRebate, verifyRebateRS);
         }
         else {System.out.println("No Rebate");}
+        driver.manage();
         // }
     }
     private void verifyShipping(String device,String rsShipping){

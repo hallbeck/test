@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="desktop" verbose="1" parallel="tests" thread-count="3">
+<suite name="desktop" verbose="1">
     <test name="SMOKE Desktop ProdNI">
         <parameter name="device" value='desktop'/>
         <classes>
@@ -44,5 +44,4 @@
             </class>
         </classes>
     </test>
-
 </suite>

@@ -4,15 +4,15 @@
     <test name="NI_INI_Desktop">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="INIAutomation.ININIVialTest"/>
+<!--            <class name="INIAutomation.ININIVialTest"/>
             <class name="INIAutomation.ININIToricTest"/>
             <class name="INIAutomation.ININIProgressiveInternationalTest"/>
             <class name="INIAutomation.ININIProgressiveCanadaTest"/>
             <class name="INIAutomation.ININIMultiBrandPatientTest"/>
-            <class name="INIAutomation.ININIColorToricTest"/>
+            <class name="INIAutomation.ININIColorToricTest"/>-->
             <class name="INIAutomation.ININIColorPlanoDeclinedCardTest"/>
-            <class name="INIAutomation.ININIAcuvue2PlanoCanadaTest"/>
-            <class name="INIAutomation.ININIAcuvue2CanadaTest"/>
+<!--            <class name="INIAutomation.ININIAcuvue2PlanoCanadaTest"/>
+            <class name="INIAutomation.ININIAcuvue2CanadaTest"/>-->
             <class name="INIAutomation.ININI1EyeAsphericTest"/>
         </classes>
     </test>

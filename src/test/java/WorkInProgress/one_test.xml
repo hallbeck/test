@@ -1,15 +1,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="WIN" verbose="1" parallel="classes" thread-count="1">
-    <test name="Hit_Servers">
+<!--    <test name="Hit_Servers">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="WorkInProgress.hitServers">
                 <methods>
                     <include name="ProdServers"/>
-<!--
                     <include name="StageServers"/>
--->
+
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    <test name="HoverSignin">
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="WorkInProgress.hover_SignIN_Test_Desktop_Stage">
+                <methods>
+                 <include name="SigninTest"/>
                 </methods>
             </class>
         </classes>

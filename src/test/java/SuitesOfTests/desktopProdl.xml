@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1">
-    <test name="SMOKE Desktop ProdNI">
+<!--    <test name="SMOKE Desktop ProdNI">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.SMOKE_Test_Desktop_Prod">
@@ -10,19 +10,20 @@
                 </methods>
             </class>
         </classes>
-    </test>
-<!--    <test name="Hit_Servers">
+    </test>-->
+    <test name="Hit_Servers">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="WorkInProgress.hitServers">
                 <methods>
                     <include name="ProdServers"/>
-                    &lt;!&ndash;<include name="Prod39Servers"/>&ndash;&gt;
+                    <!--<include name="ProdServers2"/>-->
+                    <!--<include name="Prod39Servers"/>-->
                 </methods>
             </class>
         </classes>
-    </test>-->
-    <test name="NI Business Desktop Prod">
+    </test>
+<!--    <test name="NI Business Desktop Prod">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="Business.NI_Business_Test_Desktop_Prod"/>
@@ -33,8 +34,8 @@
         <classes>
             <class name="Regression.Rebates.Rebates_48580_Prod"/>
         </classes>
-    </test>
-    <test name="SMOKE Desktop ProdRI">
+    </test>-->
+<!--    <test name="SMOKE Desktop ProdRI">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="SMOKE.SMOKE_Test_Desktop_Prod">
@@ -43,5 +44,5 @@
                 </methods>
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>

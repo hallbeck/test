@@ -73,7 +73,7 @@ public class Payment47577 extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String CardNumber)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
@@ -113,29 +113,35 @@ public class Payment47577 extends ContactsTestBase {
         if (country.equals("united states")){
             typeDoctorSearch(drName);
             typeDoctorStateAndFind(device,drState);
-            if(!drName.equals("test")){
-                typeDoctorSearch(drName);
-                typeDoctorStateAndFind(device,drState);
-                typeDoctorSearch(drName);
-                typeDoctorStateAndFind(device,drState);
-                addDoctor(device);
-                addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
-            }
             takeScreenshot(screenshotTestName, "DoctorSearch");
             if(drName.equals("test")){
                 selectDoctor(device);
             }
         }
-            typeCreditCard(device,CCNum);
-            typeCreditCardName(device,CCName);
-            pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-        if(!error.equals("")){
-            verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            if(!BadCCNum.equals("")){
+                typeCreditCard(device,BadCCNum);
+            }
+            if(BadCCNum.equals("")){
+                typeCreditCard(device,CCNum);
+            }
+            typeCreditCardName(device, CCName);
+            if(BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+                pickCreditCardExpDate(device, BadccExpMo, BadccExpYear,paymentType);
+            }
+            if(BadccExpMo.equals("")||BadccExpYear.equals("")){
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+            }
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
         }
-        if(error.equals("")){
+        if (!CCNum.equals("")){
+        typeCreditCard(device,CCNum);
+            if (!paymentType.equals("cardonly")){
+                typeCreditCardName(device,CCName);
+                pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+            }
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -172,7 +178,7 @@ public class Payment47577 extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String CardNumber)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
@@ -192,9 +198,27 @@ public class Payment47577 extends ContactsTestBase {
         clickCart_Continue(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        if(paymentType.equals("expired")) {
         clickBottomSubmitButton(device);
         verifyExpiredCard(device);
         takeScreenshot(screenshotTestName, "Exp_cardRI");
+        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        }
+        if (paymentType.equals("cardonly")){
+                typeCreditCard(device,CCNum);
+            }
+        clickBottomSubmitButton(device);
+        verifyThankYouPage(testNumber,shippingVerify);
+        takeScreenshot(screenshotTestName, "ThankYou");
+        gotoMyAccount(device);
+        takeScreenshot(screenshotTestName, "Dashboard");
+        verifyDashboard(device,brandVerifyPDP,fullPatientName);
+        gotoOrderStatusHistory(device);
+        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
+        if (!CardNumber.equals("")){
+        verifyCCused(device,CardNumber);
+        }
+        takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @Test (dataProvider = "PayPal")
     @Parameters(value = "device")
@@ -219,7 +243,7 @@ public class Payment47577 extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String CardNumber)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
@@ -306,7 +330,7 @@ public class Payment47577 extends ContactsTestBase {
                            String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                            String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
                            String rebateNotShipped, String orderStatus, String shippingVerify,
-                           String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone)
+                           String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String CardNumber)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
@@ -371,6 +395,6 @@ public class Payment47577 extends ContactsTestBase {
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+        //driver.quit();
     }
 }

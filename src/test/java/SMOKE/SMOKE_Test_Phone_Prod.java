@@ -265,7 +265,7 @@ public class SMOKE_Test_Phone_Prod extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,
                        String multiRxReorder)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -276,8 +276,6 @@ public class SMOKE_Test_Phone_Prod extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-
-
         goToSignInPage(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
@@ -286,6 +284,11 @@ public class SMOKE_Test_Phone_Prod extends ContactsTestBase {
         if (multiRxReorder.equals("yes")){
             checkReorderCheckboxTwo(device);
             clickCartEdit(device);
+        }
+        //remove this IF when bug  52481 is fixed.
+        if (multiRxReorder.equals("")){
+            gotoMyAccount(device);
+            reorderRx(device);
         }
         if (!multiRxReorder.equals("yes")){
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
@@ -322,8 +325,8 @@ public class SMOKE_Test_Phone_Prod extends ContactsTestBase {
         clickLColor(lColor);
         clickRAdd(rAdd);
         clickLAdd(lAdd);
-        clickRDN(device, rDN);
-        clickLDN(device, lDN);
+        clickRDN(device,rDN);
+        clickLDN(device,lDN);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         try{
@@ -374,7 +377,7 @@ public class SMOKE_Test_Phone_Prod extends ContactsTestBase {
         if (!searchAllBrand3.equals("")){
             clickAddRx(device);
             searchAllBrand(device,searchAllBrand3);
-            if (searchAllBrand3.contains("drops")
+            if (searchAllBrand3.equals("Acuvue")||searchAllBrand3.contains("drops")
                     ||searchAllBrand2.contains("solution")){
                 clickPhoneBrand(device,brandclick3);
             }

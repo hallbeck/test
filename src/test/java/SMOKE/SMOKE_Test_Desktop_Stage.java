@@ -221,14 +221,10 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -444,16 +440,10 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
         typeCreditCard(device,CCNum);
-        if (!ccExpMo.equals("")|| !ccExpYear.equals("")){
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-        }
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

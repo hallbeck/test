@@ -12,10 +12,16 @@ import org.testng.annotations.*;
  */
 public class hitServers extends ContactsTestBase {
 
-    @DataProvider(name = "Prod")
+    @DataProvider(name = "Prod30_35")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\servers.xls",
-                "inputsStage", "linksProd");
+                "inputsStage", "linksProd1");
+        return(retObjArr);
+    }
+    @DataProvider(name = "Prod36_38")
+    public Object[][] createData4() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\servers.xls",
+                "inputsStage", "linksProd2");
         return(retObjArr);
     }
     @DataProvider(name = "Stage")
@@ -46,7 +52,7 @@ public class hitServers extends ContactsTestBase {
         openPage(page);
         verifyVersion(device,page,tag,version);
     }
-    @Test (dataProvider = "Prod")
+    @Test (dataProvider = "Prod30_35")
          @Parameters(value = "device")
          public void ProdServers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
@@ -54,7 +60,15 @@ public class hitServers extends ContactsTestBase {
         printTestNumber(printTestName);
         openPage(page);
         verifyVersion(device,page,tag,version);
-
+    }
+    @Test (dataProvider = "Prod36_38")
+    @Parameters(value = "device")
+    public void ProdServers2(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + page;
+        openWebPage(device);
+        printTestNumber(printTestName);
+        openPage(page);
+        verifyVersion(device,page,tag,version);
     }
     @Test (dataProvider = "39")
     @Parameters(value = "device")

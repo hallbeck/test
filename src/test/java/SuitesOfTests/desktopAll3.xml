@@ -1,22 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1">
-<!--        <test name="DesktopOONTests" >
+        <test name="DesktopOONTests" >
             <parameter name="device" value='desktop'/>
             <classes>
-                &lt;!&ndash;<class name="OONInsurance.OONTest"/>&ndash;&gt;
+                <class name="OONInsurance.OONTest"/>
                 <class name="OONInsurance.OON_50614"/>
             </classes>
-        </test>-->
- <!--       <test name="DesktopPromoTests" >
+        </test>
+        <test name="DesktopPromoTests" >
             <parameter name="device" value='desktop'/>
             <parameter name="prod" value='no'/>
             <classes>
                 <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
                 <class name="Promos.current.SunglassesPromo"/>
             </classes>
-        </test>-->
-    <!--        <test name="Account">
+        </test>
+            <test name="Account">
                <parameter name="device" value='desktop'/>
                <classes>
                   <class name="Regression.Account.editRxNI_49773"/>
@@ -28,8 +28,8 @@
                    <class name="Regression.Account.editRxRI_49779"/>
                    <class name="Regression.Account.NILogin_signinpage_48412"/>
                </classes>
-           </test>  -->
-<!--        <test name="Links">
+           </test>
+        <test name="Links">
             <parameter name="device" value='desktop'/>
             <classes>
                 <class name="Regression.Links.Links_desktop_staging">
@@ -42,8 +42,8 @@
                 </class>
                 <class name="Regression.Doctor.Doctor_Custom_44058"/>
             </classes>
-        </test>-->
-    <!--       <test name="DesktopPaymentTests" >
+        </test>
+           <test name="DesktopPaymentTests" >
                <parameter name="device" value='desktop'/>
                <classes>
                    <class name="Regression.Payment.Payment47577">
@@ -55,17 +55,17 @@
                        </methods>
                    </class>
                </classes>
-           </test> -->
-<!--        <test name="Shipping Billing">
+           </test>
+        <test name="Shipping Billing">
             <parameter name="device" value='desktop'/>
             <classes>
                 <class name="Verification.DiffShippingBilling47612"/>
                 <class name="Verification.DiffShippingBillingColor47612"/>
                 <class name="Verification.EditShippingBilling44764"/>
                 <class name="Verification.OrderStatusHistory47655"/>
-                &lt;!&ndash;<class name="Verification.ShippingChanges47266"/>&ndash;&gt;
+                <!--<class name="Verification.ShippingChanges47266"/>-->
             </classes>
-        </test>-->
+        </test>
         <test name="stress Desktop Stage">
             <classes>
                 <class name="stress.stress_productpageHTMLSelenium">

@@ -280,8 +280,6 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-
-
         goToSignInPage(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
@@ -290,6 +288,11 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
         if (multiRxReorder.equals("yes")){
             checkReorderCheckboxTwo(device);
             clickCartEdit(device);
+        }
+        //remove this IF when bug  52481 is fixed.
+        if (multiRxReorder.equals("")){
+            gotoMyAccount(device);
+            reorderRx(device);
         }
         if (!multiRxReorder.equals("yes")){
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
@@ -449,8 +452,6 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
             typeCreditCardName(device,CCName);
             pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

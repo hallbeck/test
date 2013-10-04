@@ -73,19 +73,19 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";
-    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+/*    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-/*    public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
 
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Oct_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";
@@ -93,6 +93,7 @@ public class ContactsTestBase {
     public String prodAmex = "300000000000007";
     public String prodDiscover = "6000000000000007";
     public String testCard = "4012000077777777";
+    public String badTestCard = "40120000777777";
     public String badProdCard = "4012000077777777";
     public String testAmex = "373235387881007";
     public String testDiscover = "6011000990139424";
@@ -1350,6 +1351,15 @@ public class ContactsTestBase {
         System.out.println("Clicked" + weNewCust);
         Wait(2);
     }
+    public void hoverSignin(String device,String riEmail,String password){
+        if(device.equals("desktop")) {
+        String email = getRIEmail(riEmail);
+        WebElement weSignIn = driver.findElement(By.xpath("//div[contains(.,'Sign In')]"));
+        weSignIn.click();
+        weSignIn.sendKeys(Keys.TAB,email,Keys.TAB,password);
+        driver.findElement(By.xpath("//button[contains(.,'Sign in')]")).click();
+        }
+    }
 
     public void goToSignInPage(String device){
         if(device.equals("phone")){
@@ -1414,10 +1424,13 @@ public class ContactsTestBase {
         weRetCustomerButton.click();
         print("clicked returning customer");
     }
-
+    private String getRIEmail(String testNumberDependentOn){
+        String RIemail = readFile(testNumberDependentOn);
+        return RIemail;
+    }
     public void typeReturningPhoneEmail(String testNumberDependentOn) {
         printPageTitle();
-        String RIemail = readFile(testNumberDependentOn);
+        String RIemail = getRIEmail(testNumberDependentOn);
         Wait(2);
         WebElement emailInput = driver.findElement(By.xpath("//input[(@id='ctl00_contentPlaceHolderContent_SignIn1_tbEmail_tbEmail')]"));
         emailInput.click();
@@ -1489,6 +1502,7 @@ public class ContactsTestBase {
         }
         else if(device.equals("desktop")){
             try{   //desktop
+
                 driver.findElement(By.xpath("//input[contains(@class,'btnSignIn')]")).click();
                 System.out.println("Clicked Sign In desktop");
                 Wait(3);
@@ -2827,7 +2841,7 @@ public class ContactsTestBase {
 
     //select doctor  this will just take the first result
     public void selectDoctor(String device) {
-        Wait(2);
+        Wait(4);
         if(device.equals("phone")){
             driver.findElement(By.xpath("//a[contains(@id,'SelectDoctorButton2595945')]")).click();
             System.out.println("selected Doctor 2595945");
@@ -3224,6 +3238,9 @@ public class ContactsTestBase {
         if (card.equals("badProd")){
             cardNumber = badProdCard;
         }
+            if (card.equals("badTest")){
+                cardNumber = badTestCard;
+            }
         if (card.equals("testAmex")){
             cardNumber = testAmex;
         }
@@ -3266,7 +3283,7 @@ public class ContactsTestBase {
                 System.out.println("CC Used: " + cardNumber);
             }
             catch(Throwable e){
-
+                print("didn't find ccnumber[2]");
                 WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
                 weCreditCard.click();
                 weCreditCard.sendKeys(cardNumber);
@@ -3530,6 +3547,10 @@ public class ContactsTestBase {
         //verifyRebateTextStatusHistory(device, rebateText);
         //verifyTotalARebateOrderStatusHistory(device, totalAfterRebate);
     }
+    public void verifyCCused (String device,String CCnum){
+        String CCNumOrderStatusHistory =  driver.findElement(By.xpath("//div[contains(@id,'billingDetails')]")).getText();
+        assertTxtPresent("CCNumber: ",CCnum,CCNumOrderStatusHistory);
+    }
     public void verifyTitleOrderStatusHistory(String device){
         //if(device.equals("tablet")){
         //    Wait(3);
@@ -3635,9 +3656,9 @@ public class ContactsTestBase {
     }
     public void verifyBillingOrderStatusHistory(String device,String bCity,String bZip){
         //if(device.equals("desktop")){
-        String shippingValidationOrderStatusHistory =  driver.findElement(By.xpath("//div[contains(@id,'billingDetails')]")).getText();
-        verifyTxtPresent("Billing City on Order Status and History: ", bCity, shippingValidationOrderStatusHistory);
-        verifyTxtPresent("Billing Zip on Order Status and History: ", bZip, shippingValidationOrderStatusHistory);
+        String billingValidationOrderStatusHistory =  driver.findElement(By.xpath("//div[contains(@id,'billingDetails')]")).getText();
+        verifyTxtPresent("Billing City on Order Status and History: ", bCity, billingValidationOrderStatusHistory);
+        verifyTxtPresent("Billing Zip on Order Status and History: ", bZip, billingValidationOrderStatusHistory);
         Wait(3);
     }
 

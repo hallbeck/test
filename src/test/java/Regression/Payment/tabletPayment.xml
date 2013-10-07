@@ -1,19 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="tablet" verbose="1" parallel="classes" thread-count="1">
-    <test name="TabletPaymentTests" >
+    <test name="TabletPaymentTestNI" >
         <parameter name="device" value='tablet'/>
         <classes>
-            <class name="Regression.Payment.done.DeclinedCardMC47577"/>
-            <class name="Regression.Payment.done.DeclinedCardVisa47577"/>
-            <class name="Regression.Payment.done.ApprovedAmexCard47577"/>
-            <class name="Regression.Payment.done.NotAcceptedDinersCard47577"/>
-            <class name="Regression.Payment.done.ApprovedDiscoverCard47577"/>
-            <class name="Regression.Payment.done.ApprovedMCForeignCard47577"/>
-            <class name="Regression.Payment.done.ApprovedVisaForeignCard47577"/>
-            <class name="Regression.Payment.done.NoCard47577"/>
-            <class name="Regression.Payment.done.ExpRICardVisa47577"/>
-            <class name="Regression.Payment.done.ApprovedTestCard47577"/>
+            <class name="Regression.Payment.Payment_Tablet47577">
+                <methods>
+                    <include name="NItest"/>
+                    <include name="RItest"/>
+                    <include name="PayPaltest"/>
+                    <include name="PayPalCarttest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

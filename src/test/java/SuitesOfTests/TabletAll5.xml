@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tablet" verbose="1" parallel="tests" thread-count="1">
+    <test name="NI_INI_Tablet">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="INIAutomation.ININIVialTest"/>
+            <class name="INIAutomation.ININIToricTest"/>
+            <class name="INIAutomation.ININIProgressiveInternationalTest"/>
+            <class name="INIAutomation.ININIProgressiveCanadaTest"/>
+            <class name="INIAutomation.ININIMultiBrandPatientTest"/>
+            <class name="INIAutomation.ININIColorToricTest"/>
+            <class name="INIAutomation.ININIColorPlanoDeclinedCardTest"/>
+            <class name="INIAutomation.ININIAcuvue2PlanoCanadaTest"/>
+            <class name="INIAutomation.ININIAcuvue2CanadaTest"/>
+            <class name="INIAutomation.ININI1EyeAsphericTest"/>
+        </classes>
+    </test>
+    <test name="SMOKE Tablet StageRI">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="SMOKE.SMOKE_Test_Tablet_Stage">
+                <methods>
+                    <include name="RItest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

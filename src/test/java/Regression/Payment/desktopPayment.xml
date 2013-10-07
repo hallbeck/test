@@ -8,7 +8,8 @@
                 <methods>
                     <include name="NItest"/>
                     <include name="RItest"/>
-                    <!--<include name="PayPaltest"/>-->
+                    <include name="PayPaltest"/>
+                    <include name="PayPalCarttest"/>
                 </methods>
             </class>
         </classes>

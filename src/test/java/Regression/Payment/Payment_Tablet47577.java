@@ -10,30 +10,30 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Payment_Phone47577 extends ContactsTestBase {
+public class Payment_Tablet47577 extends ContactsTestBase {
 
     @DataProvider(name = "PayPal")
     public Object[][] createData4() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Payment.xls",
-                "inputsStage", "PhonePayPalTest");
+                "inputsStage", "TabletPayPalTest");
         return(retObjArr);
     }
     @DataProvider(name = "PayPalCart")
     public Object[][] createData5() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Payment.xls",
-                "inputsStage", "PhonePayPalTest");
+                "inputsStage", "TabletPayPalTest");
         return(retObjArr);
     }
     @DataProvider(name = "RI")
     public Object[][] createData3() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Payment.xls",
-                "inputsStage", "PhoneCcardRI");
+                "inputsStage", "TabletCcardRI");
         return(retObjArr);
     }
     @DataProvider(name = "NI")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Payment.xls",
-                "inputsStage", "PhoneCcard");
+                "inputsStage", "TabletCcard");
         return(retObjArr);
     }
     @DataProvider(name = "OneTest")
@@ -110,7 +110,7 @@ public class Payment_Phone47577 extends ContactsTestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        if (country.equals("united states")||country.equals("")){
+        if (country.equals("united states")){
             typeDoctorSearch(drName);
             typeDoctorStateAndFind(device,drState);
             takeScreenshot(screenshotTestName, "DoctorSearch");

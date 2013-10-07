@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tablet" verbose="1" parallel="tests" thread-count="1">
+        <test name="Open Bugs" >
+            <parameter name="device" value='tablet'/>
+            <classes>
+                <class name="Regression.OpenBugs.howToOrder_brands_46203"/>
+                <class name="Regression.OpenBugs.Find_my_account_50468"/>
+            </classes>
+        </test>
+        <test name="PDP">
+            <parameter name="device" value='tablet'/>
+            <classes>
+                <class name="Regression.PDP.PDPBadRx47802"/>
+                <class name="Regression.PDP.PDPBadPName47802"/>
+                <class name="Regression.PDP.PDPEditRx48520"/>
+                <class name="Regression.PDP.PDPAccessoriesAll48553"/>
+            </classes>
+        </test>
+</suite>

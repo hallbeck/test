@@ -43,7 +43,7 @@ public class ContactsTestBase {
     //choices are ie,firefox,chrome,safari         -- SAFARI DOES NOT SELECT RX VALUES WELL. DO NOT USE
     public String browser = "firefox";  //ie,firefox,html,chrome,safari
     //only relevant to Firefox. otherwise enter the type of device for file name.
-    public String deviceProfile = "desktopFF";   //desktopIE10, desktopFF
+    public String deviceProfile = "ipadP";   //desktopIE10, desktopFF
 
     //public String browser = "";
     public String mbrowser = "firefox";
@@ -88,7 +88,7 @@ public class ContactsTestBase {
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Oct_2013_email_addresses.txt";
-    public String prodVisa = "4111111111111111";
+    public String prodVisa = "4111111111111111";   //ccg
     public String prodMC = "5111111111111118";
     public String prodAmex = "300000000000007";
     public String prodDiscover = "6000000000000007";
@@ -101,8 +101,8 @@ public class ContactsTestBase {
     public String testVisaForeign = "4500600000000061";
     public String testDeclinedVisa = "4111111111111103";
     public String testDeclinedMC = "5111111111111126";
-    public String testDeclinedAmex = "300000000000015";
-    public String testDeclinedDiscover = "6000000000000015";
+    public String testDeclinedAmex = "300000000000015";    //first
+    public String testDeclinedDiscover = "6000000000000015";  //first
     public String testDiners = "36259600000004";
     public String testPayPal = "webtest@a.co";
     public String testPayPalCA = "canadatest@a.co";
@@ -2391,7 +2391,15 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//a[contains(@id,'cartRemoveLink')]")).click();
     }
     public void reorderRx(String device){
+        if(device.equals("desktop")){
         driver.findElement(By.xpath("//input[contains(@id,'reorderRx')]")).click();
+        }
+        else if(device.equals("tablet")){
+            driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-orangeButton rd-tabletRightButton')]")).click();
+        }
+        else if(device.equals("phone")){
+            driver.findElement(By.xpath("//input[contains(@id,'reorderRx')]")).click();
+        }
     }
     //change shipping method on the cart page
     //enter the letter to type
@@ -2576,9 +2584,13 @@ public class ContactsTestBase {
         Wait(3);
     }
     public void clickCountry(String country) {
-        WebElement weTheCountryString = driver.findElement(By.xpath("//select[contains(@name,'ShippingAddress.Country')]"));
+        if (country.equals("")){
+            System.out.println("Country is US no country specified.");
+        }
+        else{WebElement weTheCountryString = driver.findElement(By.xpath("//select[contains(@name,'ShippingAddress.Country')]"));
         weTheCountryString.click();
         weTheCountryString.sendKeys(country,Keys.ARROW_UP,Keys.ARROW_DOWN,Keys.ENTER);
+
         Wait(3);
         String countrySelected = weTheCountryString.getText();
         if (!countrySelected.equals(country)){
@@ -2586,7 +2598,7 @@ public class ContactsTestBase {
             weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);
             Wait(3);
         }
-
+        }
         //driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.AddressLine1')]")).click();
         //weTheCountryString.sendKeys(country, Keys.ENTER,Keys.TAB);
         //Wait(3);
@@ -2614,8 +2626,7 @@ public class ContactsTestBase {
 
     public void typeShippingState(String country,String state) {
         Wait(3);
-
-        if (country.equals("united states")){
+        if (country.equals("united states")||country.equals("")){
             driver.findElement(By.xpath("//select[contains(@id,'ShippingAddress_StateProvinceOrRegion')]")).sendKeys(state,Keys.TAB);
             System.out.println("State is: " + state);
         }
@@ -3134,6 +3145,7 @@ public class ContactsTestBase {
         if(device.equals("tablet")){
             Wait(5);
             driver.findElement(By.xpath("(//input[@id='payPal_radio'])[2]")).click();
+
         }
         if(device.equals("phone")){
             Wait(5);
@@ -3145,10 +3157,10 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//button[contains(@id,'ReviewAndSubmit_BottomButton')]")).click();
         }
         if(device.equals("tablet")){
-            driver.findElement(By.xpath("//button[contains(@id,'ReviewAndSubmit_BottomButton')]")).click();
+            driver.findElement(By.xpath("(//a[contains(text(),'Continue to PayPal')])[2]")).click();
         }
         if(device.equals("phone")){
-            driver.findElement(By.xpath("//button[contains(@id,'ReviewAndSubmit_BottomButton')]")).click();
+            driver.findElement(By.xpath("(//a[contains(text(),'Continue to PayPal')])[2]")).click();
         }
     }
     public void clickCheckoutPaypal(String device){
@@ -3161,7 +3173,6 @@ public class ContactsTestBase {
         print("about to click paypal radio button");
         payPalRadiobutton(device);
         print("about to click continue to paypal button");
-
         String ppLogin = "";
         String ppPassword = "";
 
@@ -3287,22 +3298,28 @@ public class ContactsTestBase {
                 WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
                 weCreditCard.click();
                 weCreditCard.sendKeys(cardNumber);
-                System.out.println("CC Used2: " + cardNumber);
+                print("CC Used2: " + cardNumber);
             }
         }
         else if(device.equals("phone")){
-            WebElement weCreditCard = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
-            weCreditCard.click();
-            weCreditCard.sendKeys(cardNumber);
-            System.out.println("CC Used: " + cardNumber);
+            Wait(5);
+            print("looking for cc");
+                WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
+                System.out.println("enter credit card");
+                weNumber2.click();
+                weNumber2.click();
+                weNumber2.sendKeys(cardNumber);
+                System.out.println("CC Used: " + cardNumber);
         }
         else if(device.equals("tablet")){
-            WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
-            System.out.println("enter credit card2");
-            weNumber2.click();
-            weNumber2.sendKeys(cardNumber);
-            System.out.println("CC Used: " + cardNumber);
-        }
+
+                Wait(5);
+                WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
+                System.out.println("enter credit card");
+                weNumber2.click();
+                weNumber2.sendKeys(cardNumber);
+                System.out.println("CC Used: " + cardNumber);
+            }
         }
     }
     public void typeCreditCardName(String device,String creditName) {
@@ -3324,7 +3341,9 @@ public class ContactsTestBase {
             weName.sendKeys(creditName);
         }
         else if(device.equals("phone")){
-            driver.findElement(By.xpath("//input[contains(@id,'CreditCardName')]")).sendKeys(creditName);
+            WebElement weName = driver.findElement(By.xpath("(//input[@id='CreditCardName'])[2]"));
+            weName.click();
+            weName.sendKeys(creditName);
         }
         System.out.println("CC Name Used: " + creditName);
         }
@@ -3362,8 +3381,13 @@ public class ContactsTestBase {
         }
         print(month + ".."+year);
         if(device.equals("phone")){
-            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
-            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationYear')]")).sendKeys(year);
+            print("looking for credit card");
+            WebElement weNumber2 = driver.findElement(By.xpath("(//input[@id='CreditCardNumber'])[2]"));
+            weNumber2.click();
+                print("looking for month1");
+                weNumber2.sendKeys(Keys.TAB,month);
+                weNumber2.sendKeys(Keys.TAB,Keys.TAB,year);
+                print("CC exp date1:" + month + " " + year);
         }
         else if(device.equals("tablet")){
             driver.findElement(By.xpath("(//select[@id='CreditCardExpirationMonth'])[2]")).sendKeys(month);
@@ -3382,31 +3406,52 @@ public class ContactsTestBase {
             System.out.println("CC exp date:" + month + " " + year);
         }
     }
+    public void clickTopSubmitButton(String device) {
+        if(device.equals("phone")){
+            Wait(3);
+            //WebElement weSubmit =
+                    //driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton')]"));
+            //weSubmit.click();
+            //System.out.println("Clicked the Submit button");
+        }
+        else if(device.equals("tablet")){
+                WebElement weSubmit =
+                        driver.findElement(By.xpath("(//button[@id='ReviewAndSubmit_SelectPayment_PlaceMyOrderButton'])[2]"));
+                weSubmit.click();
+            print("Clicked the Top Submit button");
+        }
+        else if(device.equals("desktop")){
+           //driver.findElement(By.xpath("//button[contains(@id,'ReviewAndSubmit_BottomButton')]")).click();
+            //print("Clicked the Submit button");
+        }
+        Wait(10);
+    }
     public void clickBottomSubmitButton(String device) {
         if(device.equals("phone")){
             Wait(3);
             WebElement weSubmit =
-                    driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton')]"));
+                    driver.findElement(By.xpath("//div[@class='rd-button reviewOrderbutton rd-phone rd-stretchButton rd-orangeButton']"));
             weSubmit.click();
-            System.out.println("Clicked the Submit button");
+            print("Clicked the Submit button");
         }
         else if(device.equals("tablet")){
-            try{
+            try{     //this is the top button
                 WebElement weSubmit =
-                        driver.findElement(By.xpath("(//input[@id='ReviewAndSubmit_SelectPayment_PlaceMyOrderButton'])[2]"));
+                        driver.findElement(By.xpath("(//button[@id='ReviewAndSubmit_SelectPayment_PlaceMyOrderButton'])[2]"));
                 weSubmit.click();
-                System.out.println("Clicked the Submit button");
+                print("Clicked the Submit button");
             }
             catch (Throwable e){
                 WebElement weSubmit =
-                        driver.findElement(By.xpath("//div[@class='rd-button rd-tablet rd-tabletRightButton rd-orangeButton']"));
+                        driver.findElement(By.xpath("//span[contains(.,'Place my order')]"));
+                        //driver.findElement(By.xpath("//div[@class='rd-button reviewOrderbutton rd-phone rd-stretchButton rd-orangeButton']"));
                 weSubmit.click();
-                System.out.println("Clicked the Submit button");
+                print("Clicked the Submit button");
             }
         }
         else if(device.equals("desktop")){
             driver.findElement(By.xpath("//button[contains(@id,'ReviewAndSubmit_BottomButton')]")).click();
-            System.out.println("Clicked the Submit button");
+            print("Clicked the Submit button");
         }
         Wait(10);
     }
@@ -4131,6 +4176,7 @@ public class ContactsTestBase {
     }
 
     public void verifyRS(String device,String brand,String patientName,String price,String totalR, String totalL, String rsSubTotal, String rsTax, String rsTotal,String rsTotalAfterRebate,String rsRebate,String rsShipping) {
+        print("Waiting for RS");
         Wait(14);
         verifyBrandRS(device,brand,patientName);
         verifyIniMembers(device, patientName);

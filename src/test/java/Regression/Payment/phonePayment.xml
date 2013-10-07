@@ -1,14 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="phone" verbose="1" parallel="classes" thread-count="1">
-    <test name="PhonePaymentTestNI" >
+    <test name="PhonePaymentTests" >
         <parameter name="device" value='phone'/>
         <classes>
             <class name="Regression.Payment.Payment_Phone47577">
                 <methods>
-                    <!--<include name="NItest"/>-->
-                    <!--<include name="RItest"/>-->
+                    <include name="NItest"/>
+                    <include name="RItest"/>
                     <include name="PayPaltest"/>
+                    <include name="PayPalCarttest"/>
                 </methods>
             </class>
         </classes>

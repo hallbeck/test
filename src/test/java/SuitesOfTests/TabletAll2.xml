@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tabletRebates" verbose="1" parallel="tests" thread-count="1">
+        <test name="RebateTests" >
+            <parameter name="device" value='tablet'/>
+            <classes>
+                <class name="Regression.Rebates.Rebates_Tablet48580"/>
+            </classes>
+        </test>
+</suite>

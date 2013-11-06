@@ -58,9 +58,9 @@ public class Find_my_account_50468 extends ContactsTestBase {
     String rBoxes2 = "";
     String lBoxes = "";
     String lBoxes2 = "";
-    String PatientFNameCart = "PatOneFirst";
+    String PatientFNameCart = "PatientFirst";
     String PatientLNameCart = "PatientLast";
-    String CustID = "14964083";
+    String CustID = "15027224";
     String PatientFNameCart2 = "PatTwoFirst";
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -110,8 +110,9 @@ public class Find_my_account_50468 extends ContactsTestBase {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         printTestNumber(printTestName);
-        gotoPage(findAccount);
+        gotoMyAccount(device);
         findAccountCI(device,PatientFNameCart,PatientLNameCart,CustID);
+        takeScreenshot(screenshotTestName, "end");
         driver.quit();
     }
 }

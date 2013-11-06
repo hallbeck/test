@@ -114,7 +114,7 @@ public class PDPEditRx48520 extends ContactsTestBase {
         clickNoThanksButton(device);
         printTestNumber(printTestName);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        gotoPage("lens/acuvue");
+        gotoPage(device,"lens/acuvue");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);

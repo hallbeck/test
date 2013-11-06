@@ -90,7 +90,7 @@ public class BrandCanvas_Click_Promo extends ContactsTestBase {
     String rsShipping = "35.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
+    String country = "Bolivia";
     String state = "whatever";
     String city = "newberry";
     String zip = "K1A 0G9";
@@ -122,13 +122,13 @@ public class BrandCanvas_Click_Promo extends ContactsTestBase {
         printTestNumber(printTestName);
         clickBC(device,bcButton1);
         assertPDP(device,brandVerifyPDP);
-        gotoPage("");
+        openWebPagePlain(device);
         clickBC(device,bcButton2);
         assertPDP(device,brandVerifyPDP2);
-        gotoPage("");
+        openWebPagePlain(device);
         clickBC(device,bcButton3);
         assertPDP(device,brandVerifyPDP3);
-        gotoPage("");
+        openWebPagePlain(device);
         clickBC(device,bcButton4);
         assertPDP(device,brandVerifyPDP4);
         driver.quit();

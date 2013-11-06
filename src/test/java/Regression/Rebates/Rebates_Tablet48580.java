@@ -55,15 +55,14 @@ public class Rebates_Tablet48580 extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify)
-                       {
+    {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
-        openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(link);
+        gotoPage(device,link);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
@@ -90,9 +89,9 @@ public class Rebates_Tablet48580 extends ContactsTestBase {
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -104,7 +103,7 @@ public class Rebates_Tablet48580 extends ContactsTestBase {
             goToCart(device);
             clickRemove(device);
 
-            gotoPage(link);
+            gotoPage(device,link);
             print(rebatesAvailable);
             clickRPower(device,posR,rPower);
             clickLPower(device,posL,lPower);
@@ -142,10 +141,10 @@ public class Rebates_Tablet48580 extends ContactsTestBase {
     }
     @AfterMethod
     public void tearDown(){
-        driver.manage().deleteAllCookies();
+       driver.manage().deleteAllCookies();
     }
     @AfterClass
     public void shutDown(){
-        driver.quit();
+       driver.quit();
     }
 }

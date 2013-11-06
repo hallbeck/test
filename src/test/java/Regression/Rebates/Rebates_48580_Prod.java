@@ -59,11 +59,10 @@ public class Rebates_48580_Prod extends ContactsTestBase {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
-        openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(link);
+        gotoPage(device,link);
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
@@ -89,10 +88,10 @@ public class Rebates_48580_Prod extends ContactsTestBase {
         verifyRebateCart(device,rebate6Month);
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
-        clickCountry(country);
         typeShippingAddress();
-        typeShippingCity(city);
+        clickCountry(country);
         typeShippingState(country,state);
+        typeShippingCity(city);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -104,7 +103,7 @@ public class Rebates_48580_Prod extends ContactsTestBase {
             goToCart(device);
             clickRemove(device);
 
-            gotoPage(link);
+            gotoPage(device,link);
             print(rebatesAvailable);
             clickRPower(device,posR,rPower);
             clickLPower(device,posL,lPower);

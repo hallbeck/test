@@ -43,11 +43,10 @@ public class hitServers extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "Stage")
+@Test (dataProvider = "Stage")
     @Parameters(value = "device")
-    public void StageServers (String testNumber, String device, String typeOfTest, String page, String tag, String version) {
+public void StageServers (String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
-        openWebPage(device);
         printTestNumber(printTestName);
         openPage(page);
         verifyVersion(device,page,tag,version);
@@ -56,25 +55,22 @@ public class hitServers extends ContactsTestBase {
          @Parameters(value = "device")
          public void ProdServers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
-        openWebPage(device);
         printTestNumber(printTestName);
         openPage(page);
         verifyVersion(device,page,tag,version);
     }
-    @Test (dataProvider = "Prod36_38")
-    @Parameters(value = "device")
-    public void ProdServers2(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
-        String printTestName = typeOfTest + " | " + testNumber + " | " + page;
-        openWebPage(device);
-        printTestNumber(printTestName);
-        openPage(page);
-        verifyVersion(device,page,tag,version);
-    }
+       @Test (dataProvider = "Prod36_38")
+      @Parameters(value = "device")
+      public void ProdServers2(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
+          String printTestName = typeOfTest + " | " + testNumber + " | " + page;
+          printTestNumber(printTestName);
+          openPage(page);
+          verifyVersion(device,page,tag,version);
+      }
     @Test (dataProvider = "39")
     @Parameters(value = "device")
     public void prod39Servers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
-        openWebPage(device);
         printTestNumber(printTestName);
         openPage(page);
         verifyVersion(device,page,tag,version);

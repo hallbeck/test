@@ -17,8 +17,8 @@ public class OrderStatusHistory47655 extends ContactsTestBase {
     String testNumber = "47655";
     String typeOfTest = "Regression";
     String typeOfCust = "NI";
-    String posR = "+";
-    String posL = "";
+    String posR = "";
+    String posL = "+";
     String typeOfPayment = "Credit";
     String searchAllBrand = "Icuity";
     String searchAllBrand2 = "";
@@ -112,8 +112,6 @@ public class OrderStatusHistory47655 extends ContactsTestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

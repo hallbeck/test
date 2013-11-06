@@ -62,7 +62,7 @@ public class Rebates_text48580 extends ContactsTestBase {
     String PatientLNameCart = "PatientLast";
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
+    String country = "Bolivia";
     String state = "Newberry";
     String city = "whatever";
     String bState = "Newberry";
@@ -83,16 +83,6 @@ String password = "password";
     String rsTax = "20.82";
     String rsRebate = "20 Acuvue Rebate";
     String rsShipping = "14.99" ;
-
-
-
-
-
-
-
-
-
-
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
     String shippingVerify = "Title tag";
@@ -108,7 +98,7 @@ String password = "password";
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(DayAcuvue30pk);
+        gotoPage(device,DayAcuvue30pk);
         print("Rebate expected--save $30 on 12 -- save 65 on 24");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
@@ -136,7 +126,7 @@ String password = "password";
         goToCart(device);
         clickRemove(device);
 
-        gotoPage(DayAcuvue30pk);
+        gotoPage(device,DayAcuvue30pk);
         print("Rebate expected--save $30 on 12 -- save 65 on 24");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

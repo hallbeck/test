@@ -28,14 +28,14 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
     }
     @DataProvider(name = "OneTestRI")
          public Object[][] createData3() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeRI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestRI");
         return(retObjArr);
     }
     @DataProvider(name = "OneTestNI")
     public Object[][] createData4() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeNI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestNI");
         return(retObjArr);
     }
 
@@ -179,9 +179,9 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
         clickCart_Continue(device);
         typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -276,7 +276,7 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
@@ -286,10 +286,10 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
             clickCartEdit(device);
         }
         //remove this IF when bug  52481 is fixed.
-        if (multiRxReorder.equals("")){
+/*        if (multiRxReorder.equals("")){
             gotoMyAccount(device);
             reorderRx(device);
-        }
+        }*/
         if (!multiRxReorder.equals("yes")){
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
             cartRemove(device);
@@ -413,7 +413,12 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
             }
             takeScreenshot(screenshotTestName, "PDP3");
         }
-        clickAddToCart(device);
+        if (searchAllBrand.equals("")){
+            clickUpdateCart(device);
+        }
+        if (!searchAllBrand.equals("")){
+            clickAddToCart(device);
+        }
         if (!ShippingCart.equals("")){
             selectShippingCart(ShippingCart);
         }
@@ -441,9 +446,11 @@ public class SMOKE_Test_Tablet_Stage extends ContactsTestBase{
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
         }
-        typeCreditCard(device,CCNum);
-        typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            typeCreditCard(device,CCNum);
+            typeCreditCardName(device,CCName);
+            pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        }
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

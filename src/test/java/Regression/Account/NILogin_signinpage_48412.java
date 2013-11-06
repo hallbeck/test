@@ -113,13 +113,13 @@ public class NILogin_signinpage_48412 extends ContactsTestBase {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         selectNewCustomer(device);
         typeNewCustomerSigninPage(device,emailPrefix,testNumber,password);
         clickSignIn(device);
         //you are now signed in
         clickSignOut(device);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);

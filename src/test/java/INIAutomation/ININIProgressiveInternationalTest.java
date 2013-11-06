@@ -51,7 +51,7 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
     String rsShipping = "19.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
+    String country = "Bolivia";
     String state = "Newberry";
     String city = "whatever";
     String bState = "Newberry";
@@ -95,9 +95,9 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
         clickCart_Continue(device);
         typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);

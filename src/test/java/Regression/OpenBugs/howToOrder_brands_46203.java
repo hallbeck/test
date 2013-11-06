@@ -12,7 +12,7 @@ import org.testng.annotations.*;
  */
 public class howToOrder_brands_46203 extends ContactsTestBase {
 
-    String BuyersGuideLink = "BuyersGuide";
+    String BuyersGuideLink = "BuyersGuide/default.aspx";
 
     //change the Strings below to change the tests
     @DataProvider(name = "HowToOrder")
@@ -37,18 +37,16 @@ public class howToOrder_brands_46203 extends ContactsTestBase {
     }
     @Test (dataProvider = "HowToOrder")
     @Parameters(value = "device")
-    public void test(String testNumber, String device,String typeOfTest, String brand, String title)
+    public void howToOrderTest(String testNumber, String device,String typeOfTest, String brand, String title)
     {
         String printTestName = typeOfTest + " | " + testNumber + " | " + brand ;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_"  + brand ;
-        openWebPage(device);
-        takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(BuyersGuideLink);
+        gotoPage(device,BuyersGuideLink);
         chooseBrand(device,brand);
         clickGo(device);
-        assertProduct(device,title);
+        assertProductTitlePDP(device,title);
     }
     @AfterMethod
     public void tearDown(){

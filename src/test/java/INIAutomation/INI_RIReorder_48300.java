@@ -120,7 +120,7 @@ String state = "utah";
         openWebPage(device);
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);

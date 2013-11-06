@@ -120,7 +120,7 @@ public class FreeExpeditedShipping_SolutionPromo extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(Acuvue2Colours);
+        gotoPage(device,Acuvue2Colours);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);

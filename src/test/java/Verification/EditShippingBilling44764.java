@@ -114,7 +114,7 @@ public class EditShippingBilling44764 extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);

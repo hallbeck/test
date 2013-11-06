@@ -185,11 +185,10 @@ public class Payment_Tablet47577 extends ContactsTestBase {
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
 
-        openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
@@ -198,10 +197,12 @@ public class Payment_Tablet47577 extends ContactsTestBase {
         clickCart_Continue(device);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        print(paymentType);
         if(paymentType.equals("expired")) {
             clickBottomSubmitButton(device);
             verifyExpiredCard(device);
             takeScreenshot(screenshotTestName, "Exp_cardRI");
+            typeCreditCard(device,CCNum);
             pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }
         if (paymentType.equals("cardonly")){
@@ -271,9 +272,9 @@ public class Payment_Tablet47577 extends ContactsTestBase {
         clickCart_Continue(device);
         typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -287,8 +288,14 @@ public class Payment_Tablet47577 extends ContactsTestBase {
             selectDoctor(device);
         }
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        payPalPayment(device,badEmail,badPassword);
+        if(badEmail.equals("")&&badPassword.equals("")){
+            payPalPayment(device,badEmail,badPassword);
+            takeScreenshot(screenshotTestName, "ReviewSubmit_after_bad_Paypal");
+            verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        }
         if(badEmail.equals("bad")||badPassword.equals("bad")){
+            payPalBadPayment(device,badEmail,badPassword);
+            Wait(3);
             goback();
             goback();
             takeScreenshot(screenshotTestName, "ReviewSubmit_after_bad_Paypal");
@@ -355,39 +362,44 @@ public class Payment_Tablet47577 extends ContactsTestBase {
         }
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
-        clickCheckoutPaypal(device);
-        payPalPayment(device,badEmail,badPassword);
+        //clickCheckoutPaypal(device);
+        if(badEmail.equals("")&&badPassword.equals("")){
+            payPalCartPayment(device,badEmail,badPassword);
+            takeScreenshot(screenshotTestName, "Cart_after_Paypal");
+        }
         if(badEmail.equals("bad")||badPassword.equals("bad")){
+            payPalCartBadPayment(device,badEmail,badPassword);
+            Wait(3);
             goback();
             goback();
-            takeScreenshot(screenshotTestName, "cart_after_bad_Paypal");
-            verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
-            clickCheckoutPaypal(device);
-            payPalPayment(device,"","");
+            takeScreenshot(screenshotTestName, "Cart_after_bad_Paypal");
         }
-        clickCart_Continue(device);
-        typeShippingPhone(device);
-        typeShippingEmail(emailPrefix,testNumber);
-        typePassword_newcust(password);
-        takeScreenshot(screenshotTestName, "NewAddress");
-        clickNewAddress_Continue();
-        if (country.equals("united states")){
-            typeDoctorSearch(drName);
-            typeDoctorStateAndFind(device,drState);
-            takeScreenshot(screenshotTestName, "DoctorSearch");
-            selectDoctor(device);
+        if(error.equals("")){
+            //clickCart_Continue(device);
+            //typeShippingPhone(device);
+            typeShippingEmail(emailPrefix,testNumber);
+            typePassword_newcust(password);
+            takeScreenshot(screenshotTestName, "NewAddress");
+            clickNewAddress_Continue();
+            if (country.equals("united states")){
+                typeDoctorSearch(drName);
+                typeDoctorStateAndFind(device,drState);
+                takeScreenshot(screenshotTestName, "DoctorSearch");
+                selectDoctor(device);
+            }
+            verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+
+            takeScreenshot(screenshotTestName, "ReviewSubmit");
+            clickBottomSubmitButton(device);
+            verifyThankYouPage(testNumber,shippingVerify);
+            takeScreenshot(screenshotTestName, "ThankYou");
+            gotoMyAccount(device);
+            takeScreenshot(screenshotTestName, "Dashboard");
+            verifyDashboard(device,brandVerifyPDP,fullPatientName);
+            gotoOrderStatusHistory(device);
+            verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
+            takeScreenshot(screenshotTestName, "OrderStatusHistory");
         }
-        verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
-        takeScreenshot(screenshotTestName, "ReviewSubmit");
-        clickBottomSubmitButton(device);
-        verifyThankYouPage(testNumber,shippingVerify);
-        takeScreenshot(screenshotTestName, "ThankYou");
-        gotoMyAccount(device);
-        takeScreenshot(screenshotTestName, "Dashboard");
-        verifyDashboard(device,brandVerifyPDP,fullPatientName);
-        gotoOrderStatusHistory(device);
-        verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
-        takeScreenshot(screenshotTestName, "OrderStatusHistory");
     }
     @AfterMethod
     public void tearDown(){

@@ -6,29 +6,114 @@
   <component name="ChangeListManager">
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_tablet_staging.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Tablet47577.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/PDPEditRx53128.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/PDPEditRx53128_53484.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Dev.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopDev.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesTabletPromo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3_Payment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3_stress.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_stress.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd5.xml" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_VertexSphere_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_VertexToricXR_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\Rebates_VertexToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Soflens38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_SoflensDaily90_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_SoflensDailyAstig30_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_SoflensMultiFocal_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_SoflensToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sofmed38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sofmed55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sofmed55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_SoftconEW_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sterling38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sterling55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Sterling55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Target38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Target55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Target55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_UltraFlex55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_UltraFlex7_14_38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_UltraFlexIIAspheric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_UltraFlexToric_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_UltraFlexXC_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Versaflax55_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Versaflex38_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_Versaflex55Asph_48580.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\test\src\test\java\Regression\Rebates\done_s\Rebates_sqltest_48580.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\SuitesOfTests\desktopAll.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll1.xml" />
+      <change type="MOVED" beforePath="C:\test\src\test\java\SuitesOfTests\desktopProdl.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/old/BrandCanvas_Click_Promo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/old/BrandCanvas_Click_Promo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/old/FreeExpeditedShipping_SolutionPromo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/old/FreeExpeditedShipping_SolutionPromo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/current/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/current/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIAcuvue2CanadaTest.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIAcuvue2CanadaTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIAsphericInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIAsphericInternationalTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIColorPlanoDeclinedCardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIProgressiveInternationalTest.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/ININIProgressiveInternationalTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_RIReorder_48300.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/INI_RIReorder_48300.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_desktop_staging.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_desktop_staging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_tablet_staging.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Links/Links_tablet_staging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_48412.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/Business/NI_Business_Test_Tablet_Stage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/OrderStatusHistory47655.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/OrderStatusHistory47655.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadRx47802.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPBadRx47802.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPEditRx48520.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/PDPEditRx48520.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Tablet47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Tablet47577.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580_Prod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_text48580.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_text48580.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Prod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Prod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Phone_Stage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Prod.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Prod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopStage.xml" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopStage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeTabletStage.xml" afterPath="$PROJECT_DIR$/src/test/java/SMOKE/SmokeTabletStage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java" afterPath="$PROJECT_DIR$/src/test/java/Promos/current/SunglassesPromo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll5.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/dashboard_52493.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/dashboard_52493.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/deleteRxNI_50300.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/deleteRxNI_50300.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" afterPath="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49777.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49777.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49778.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49778.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49779.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49779.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/glasses/glasses.java" afterPath="$PROJECT_DIR$/src/test/java/glasses/glasses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java" afterPath="$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/WorkInProgress/hover_SignIN_Test_Desktop_Stage.java" afterPath="$PROJECT_DIR$/src/test/java/WorkInProgress/hover_SignIN_Test_Desktop_Stage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/howToOrder_brands_46203.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/howToOrder_brands_46203.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/iniRIReorder.java" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/iniRIReorder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/one.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FirstTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1363566663577" ignored="false" />
-    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381175400121" ignored="false" />
+    <file path="/fragment.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383325568469" ignored="false" />
     <file path="/TestUrlOpener.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362958090030" ignored="false" />
     <file path="/ResponsiveSuggest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1362959303229" ignored="false" />
     <file path="/MainScreenTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366834471457" ignored="false" />
@@ -37,7 +122,7 @@
     <file path="/TestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956129183" ignored="false" />
     <file path="/a.groovy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376666531992" ignored="false" />
     <file path="/a.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378321940371" ignored="false" />
-    <file path="/a.dummy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380661279184" ignored="false" />
+    <file path="/a.dummy" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382543030916" ignored="false" />
     <file path="C:/SeleniumCookbook/src/test/java/seleniumcookbook/example/test/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571047280" ignored="false" />
     <file path="/GoogleSearchTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364570914506" ignored="false" />
     <file path="C:/AndroidAutomation/First/src/test/java/Automation/First.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1364571203804" ignored="false" />
@@ -81,7 +166,7 @@
     <file path="/SmokeNIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368483380908" ignored="false" />
     <file path="/SmokeRIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369942264733" ignored="false" />
     <file path="/SmokeNIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043943977" ignored="false" />
-    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381155120848" ignored="false" />
+    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383669429385" ignored="false" />
     <file path="/testng.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366823962680" ignored="false" />
     <file path="/SmokeRIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042248603" ignored="false" />
     <file path="/phoneSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367261367068" ignored="false" />
@@ -97,7 +182,7 @@
     <file path="/tabletSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369866823359" ignored="false" />
     <file path="/phoneSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369953510514" ignored="false" />
     <file path="/phoneSmokeRI.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378324404512" ignored="false" />
-    <file path="/EditShippingBilling44764.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378837045559" ignored="false" />
+    <file path="/EditShippingBilling44764.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382718958754" ignored="false" />
     <file path="/DiffShippingBillingColor47612.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368747020126" ignored="false" />
     <file path="/DiffShippingBilling47612.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368462014317" ignored="false" />
     <file path="/desktopSmokeNI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369953534711" ignored="false" />
@@ -105,7 +190,7 @@
     <file path="/ini_test.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858239572" ignored="false" />
     <file path="/INI_ColorPlano_47767.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369862371551" ignored="false" />
     <file path="/INI_cardDecline_47768.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368650213723" ignored="false" />
-    <file path="/PDPBadRx47802.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369782471059" ignored="false" />
+    <file path="/PDPBadRx47802.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727001753" ignored="false" />
     <file path="/tabletPayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380904732037" ignored="false" />
     <file path="/phonePayment.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380904747624" ignored="false" />
     <file path="/DeclinedCardMC47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414968976" ignored="false" />
@@ -113,7 +198,7 @@
     <file path="/ApprovedVisaForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414975608" ignored="false" />
     <file path="/ApprovedDinersCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368812123641" ignored="false" />
     <file path="/ApprovedMCForeignCard47577.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369414927932" ignored="false" />
-    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639539147" ignored="false" />
+    <file path="/one.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383326172525" ignored="false" />
     <file path="/Links47930.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369327364378" ignored="false" />
     <file path="/Links.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380227090185" ignored="false" />
     <file path="/TitleTags.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369337395766" ignored="false" />
@@ -131,17 +216,17 @@
     <file path="/phoneIni.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369858325838" ignored="false" />
     <file path="/pdp.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377793580105" ignored="false" />
     <file path="/iniNotAllUsed.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956594951" ignored="false" />
-    <file path="/NILogin_48412.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370273989405" ignored="false" />
-    <file path="/NILogin_signinpage_48412.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379355546098" ignored="false" />
+    <file path="/NILogin_48412.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382726898182" ignored="false" />
+    <file path="/NILogin_signinpage_48412.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382716393703" ignored="false" />
     <file path="/phoneAll.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370299087074" ignored="false" />
     <file path="/account.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377028330569" ignored="false" />
     <file path="/phoneINI_NI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370284019589" ignored="false" />
     <file path="/iniAppliedTax.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370290244269" ignored="false" />
     <file path="/desktopINI_NI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370383579774" ignored="false" />
-    <file path="/PDPEditRx48520.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379345494123" ignored="false" />
+    <file path="/PDPEditRx48520.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727011056" ignored="false" />
     <file path="/PDPAccessories48553.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371572185286" ignored="false" />
     <file path="/tabletSmokeRI.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370471169056" ignored="false" />
-    <file path="/Rebates_text48580.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370554642492" ignored="false" />
+    <file path="/Rebates_text48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727092134" ignored="false" />
     <file path="/Rebates_DayAcuvueMoist30pk_48580.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370558486694" ignored="false" />
     <file path="/Rebates_DayAcuvueMoist90pk_48580.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370558497775" ignored="false" />
     <file path="/Rebates_DayAcuvue30Pk_48580.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1370558535032" ignored="false" />
@@ -180,7 +265,7 @@
     <file path="/Rebates.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372346565513" ignored="false" />
     <file path="/Interstitial_App_48773.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371160239138" ignored="false" />
     <file path="/lightbox_test.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371501971859" ignored="false" />
-    <file path="/SunglassesPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379962965014" ignored="false" />
+    <file path="/SunglassesPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727140138" ignored="false" />
     <file path="/SmokeNIAcuvue2AccessoryCanadaTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373477516241" ignored="false" />
     <file path="/SmokeNIMultiBrandPatientAccessoryTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371589195216" ignored="false" />
     <file path="/PDPAccessories_A48553.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1371755421570" ignored="false" />
@@ -244,14 +329,14 @@
     <file path="/a_desktop_rebates_P.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378305762421" ignored="false" />
     <file path="/a_desktop_rebates_S.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378305768899" ignored="false" />
     <file path="/a_desktop_rebates_T_Z.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378305773049" ignored="false" />
-    <file path="/FreeExpeditedShipping_SolutionPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372806609251" ignored="false" />
-    <file path="/BrandCanvas_Click_Promo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1372886233658" ignored="false" />
+    <file path="/FreeExpeditedShipping_SolutionPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727189530" ignored="false" />
+    <file path="/BrandCanvas_Click_Promo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727155288" ignored="false" />
     <file path="/OONTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380658591440" ignored="false" />
     <file path="/SmokeRI1EyeAddEyeColorTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373057569727" ignored="false" />
     <file path="/SmokeNIPrepAddTest1.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373047998711" ignored="false" />
     <file path="/SmokeRICardErrorTest1.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373048104243" ignored="false" />
     <file path="/SmokeRICardErrorTest3.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373053144039" ignored="false" />
-    <file path="/editRxRI_49777.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379350265941" ignored="false" />
+    <file path="/editRxRI_49777.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719340586" ignored="false" />
     <file path="/PDPToolTips_45370.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373302417569" ignored="false" />
     <file path="/AutoLogin1Test.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1373320987272" ignored="false" />
     <file path="/editFromDash_test.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379350436981" ignored="false" />
@@ -274,7 +359,7 @@
     <file path="C:/tutorial/src/test/java/SandBox/First.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374705254041" ignored="false" />
     <file path="C:/tutorial/.idea/workspace.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374602511107" ignored="false" />
     <file path="/how_to_order_brands_46203.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374701888603" ignored="false" />
-    <file path="/Find_my_account_50468.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374618221811" ignored="false" />
+    <file path="/Find_my_account_50468.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382733464148" ignored="false" />
     <file path="/First.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374705231256" ignored="false" />
     <file path="/NI_Business_Test_49948.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374773491427" ignored="false" />
     <file path="/Doctor_Custom_44058.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374790568565" ignored="false" />
@@ -282,7 +367,7 @@
     <file path="/sandbox.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1374874712569" ignored="false" />
     <file path="/Links50356.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379091737257" ignored="false" />
     <file path="/OpenBugs.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377728640975" ignored="false" />
-    <file path="/deleteRxNI_50300.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1375205324452" ignored="false" />
+    <file path="/deleteRxNI_50300.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719379724" ignored="false" />
     <file path="/CCBeginning.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377190411065" ignored="false" />
     <file path="/CCBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377190622425" ignored="false" />
     <file path="/NI_Business.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1375468292072" ignored="false" />
@@ -304,7 +389,7 @@
     <file path="/NI_Business_Test_Phone_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376074083543" ignored="false" />
     <file path="/NI_Business_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378917872351" ignored="false" />
     <file path="/SmokeDesktopStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379012878279" ignored="false" />
-    <file path="/SMOKE_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380558967461" ignored="false" />
+    <file path="/SMOKE_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719324853" ignored="false" />
     <file path="/SmokeDesktopProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379602648415" ignored="false" />
     <file path="/StressDesktopStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376604190009" ignored="false" />
     <file path="/stress_productpage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378484035346" ignored="false" />
@@ -319,34 +404,34 @@
     <file path="/HTMLGlassesTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376945916668" ignored="false" />
     <file path="/glassesHTML.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1376944730377" ignored="false" />
     <file path="/Doctor_custom.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377810217350" ignored="false" />
-    <file path="/howToOrder_brands_46203.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377206513889" ignored="false" />
+    <file path="/howToOrder_brands_46203.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382726974440" ignored="false" />
     <file path="/NI_Business_Test_Desktop_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379703988378" ignored="false" />
-    <file path="/PDPAccessoriesAll48553.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1377812914535" ignored="false" />
+    <file path="/PDPAccessoriesAll48553.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382987609428" ignored="false" />
     <file path="/one_2.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378305695966" ignored="false" />
-    <file path="/SMOKE_Test_Desktop_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706099956" ignored="false" />
+    <file path="/SMOKE_Test_Desktop_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719308545" ignored="false" />
     <file path="/SmokeNI1EyePrepAddTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378330823080" ignored="false" />
     <file path="/SMOKE_Test_Desktop_Stage_new.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378332807494" ignored="false" />
-    <file path="/ContactsTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381168708823" ignored="false" />
+    <file path="/ContactsTestBase.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383752240802" ignored="false" />
     <file path="/SmokePhoneStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483854723" ignored="false" />
     <file path="/SmokePhoneProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483876375" ignored="false" />
     <file path="/SmokeTabletStage.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483897337" ignored="false" />
     <file path="/SmokeTabletProd.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378483924385" ignored="false" />
-    <file path="/Rebates_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378488016140" ignored="false" />
+    <file path="/Rebates_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727041812" ignored="false" />
     <file path="/PDPBadPName47802.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1378825583789" ignored="false" />
     <file path="/desktopProdl.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380209978666" ignored="false" />
     <file path="/hitServers.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380213346341" ignored="false" />
-    <file path="/Payment47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380900126153" ignored="false" />
+    <file path="/Payment47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719333939" ignored="false" />
     <file path="/Tax_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956718604" ignored="false" />
-    <file path="/Links_desktop_staging.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380224000326" ignored="false" />
-    <file path="/editRxRI_49779.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379350337607" ignored="false" />
+    <file path="/Links_desktop_staging.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382726933743" ignored="false" />
+    <file path="/editRxRI_49779.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719456857" ignored="false" />
     <file path="/ININIMultiBrandPatientTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956231114" ignored="false" />
     <file path="/editRxNI_49774.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956917287" ignored="false" />
     <file path="/editRxNI_49775.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705598355" ignored="false" />
-    <file path="/Rebates_48580_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705699770" ignored="false" />
-    <file path="/SMOKE_Test_Phone_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705825765" ignored="false" />
-    <file path="/SMOKE_Test_Tablet_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379705939272" ignored="false" />
-    <file path="/SMOKE_Test_Phone_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706047625" ignored="false" />
-    <file path="/SMOKE_Test_Tablet_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706166818" ignored="false" />
+    <file path="/Rebates_48580_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727122815" ignored="false" />
+    <file path="/SMOKE_Test_Phone_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719348354" ignored="false" />
+    <file path="/SMOKE_Test_Tablet_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719391355" ignored="false" />
+    <file path="/SMOKE_Test_Phone_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719467286" ignored="false" />
+    <file path="/SMOKE_Test_Tablet_Prod.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719415186" ignored="false" />
     <file path="/editRxNI_49773.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956644152" ignored="false" />
     <file path="/OON_50614.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706298019" ignored="false" />
     <file path="/ININI1EyeAsphericTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379706314782" ignored="false" />
@@ -363,23 +448,36 @@
     <file path="/NI_Business_Test_49952.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956760701" ignored="false" />
     <file path="/NI_Business_Test_49957.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956780245" ignored="false" />
     <file path="/ININIAsphericInternationalTest.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956799072" ignored="false" />
-    <file path="/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1379956828842" ignored="false" />
+    <file path="/FreeExpeditedShipping_SolutionPromo_2pk_50712.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727201109" ignored="false" />
     <file path="/Insurance_test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380230864734" ignored="false" />
-    <file path="/dashboard_52493.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380562490802" ignored="false" />
+    <file path="/dashboard_52493.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719316005" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/glasses/TestBaseGlasses.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639121519" ignored="false" />
-    <file path="$PROJECT_DIR$/src/test/java/Verification/CanadaShipping47326.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524915" ignored="false" />
-    <file path="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524872" ignored="false" />
-    <file path="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBillingColor47612.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524873" ignored="false" />
-    <file path="$PROJECT_DIR$/src/test/java/Verification/ShippingChanges47266.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380639524874" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-plugin.jar!/resources/standardSchemas/testng-1.0.dtd" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380640430236" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-plugin.jar!/resources/standardSchemas/testng-1.0.dtd" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381242675668" ignored="false" />
     <file path="/desktopAll3.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380649585102" ignored="false" />
     <file path="/desktopAll2.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380724734666" ignored="false" />
-    <file path="/hover_SignIN_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1380837788398" ignored="false" />
+    <file path="/hover_SignIN_Test_Desktop_Stage.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383333222329" ignored="false" />
     <file path="/TabletAll6.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381174947710" ignored="false" />
     <file path="/TabletAll5.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381174990872" ignored="false" />
-    <file path="/TabletAll3.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381175114932" ignored="false" />
+    <file path="/TabletAll3.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381254836748" ignored="false" />
     <file path="/TabletAll2.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381175471149" ignored="false" />
-    <file path="/TabletAll1.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381175459777" ignored="false" />
+    <file path="/TabletAll1.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381246634713" ignored="false" />
+    <file path="/desktopProd2.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1381419855137" ignored="false" />
+    <file path="/Payment_Tablet47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719475753" ignored="false" />
+    <file path="$PROJECT_DIR$/logs/Run--Smoke.html" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382543095197" ignored="false" />
+    <file path="/desktopProd5.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382584738683" ignored="false" />
+    <file path="/TabletAll4.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382646538558" ignored="false" />
+    <file path="/editRxRI_49778.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719297307" ignored="false" />
+    <file path="/iniRIReorder.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719368298" ignored="false" />
+    <file path="/Payment_Phone47577.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719405282" ignored="false" />
+    <file path="/INI_RIReorder_48300.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382719447548" ignored="false" />
+    <file path="/Rebates_Sterling55_48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382726860889" ignored="false" />
+    <file path="/Links_tablet_staging.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382726955281" ignored="false" />
+    <file path="/Rebates_Tablet48580.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727106918" ignored="false" />
+    <file path="/SunglassesTabletPromo.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382727208600" ignored="false" />
+    <file path="/PDPEditRx53128.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1382995606224" ignored="false" />
+    <file path="/SmokeDesktopDev.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383230619563" ignored="false" />
+    <file path="/PDPEditRx53128_53484.java" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383327172337" ignored="false" />
+    <file path="/desktopAll4.xml" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1383326102883" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,6 +502,8 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -441,7 +541,6 @@
       </breakpoint>
     </breakpoint_any>
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -450,7 +549,7 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/out/10_3" userTempatePath="" />
+  <component name="ExportTestResults" outputFolder="B:/Wiki/Web_Test_Results/11_07" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="test">
       <favorite_root url="SMOKE.SMOKE_Test_Desktop_Stage" module="test" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
@@ -461,34 +560,25 @@
       <file leaf-file-name="ContactsTestBase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3399" column="49" selection-start="160961" selection-end="160961" vertical-scroll-proportion="-22.44">
+            <state line="4200" column="249" selection-start="200806" selection-end="200806" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TabletAll1.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml">
+      <file leaf-file-name="desktopAll3_Payment.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+            <state line="8" column="43" selection-start="367" selection-end="367" vertical-scroll-proportion="0.20389806">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TabletAll2.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml">
+      <file leaf-file-name="Payment47577.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="365" selection-end="365" vertical-scroll-proportion="0.1900621">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rebates_Tablet48580.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="22" selection-start="5651" selection-end="5665" vertical-scroll-proportion="0.0">
+            <state line="132" column="37" selection-start="6645" selection-end="6666" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -515,21 +605,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Tablet47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll6.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll5.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Links/Links_tablet_staging.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SmokeDesktopDev.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Dev.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopProd5.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/one.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/OpenBugs/PDPEditRx53128_53484.java" />
+        <option value="$PROJECT_DIR$/src/test/java/WorkInProgress/hover_SignIN_Test_Desktop_Stage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll1.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" />
       </list>
     </option>
@@ -591,10 +681,10 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -656,6 +746,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -762,7 +853,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Verification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SuitesOfTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stress" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,6 +958,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Totals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TitleTagProducts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,7 +1081,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Payment" />
+              <option name="myItemId" value="PDP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -901,36 +1108,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Regression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Links" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -976,7 +1153,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -992,24 +1168,24 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Regression.OpenBugs" />
+      <recent name="SMOKE" />
+      <recent name="Promos.current" />
       <recent name="Regression.Rebates" />
       <recent name="Regression.Links" />
-      <recent name="Regression.Payment" />
-      <recent name="WorkInProgress" />
-      <recent name="Regression.OpenBugs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\test\src\test\java\SuitesOfTests" />
       <recent name="C:\test\src\test\java\SMOKE" />
+      <recent name="C:\test\src\test\java\SuitesOfTests" />
       <recent name="C:\test\src\test\java\Verification" />
       <recent name="C:\test\src\test\java\stress" />
       <recent name="C:\test\src\test\java\Business" />
@@ -1022,13 +1198,13 @@
       <recent name="C:\test\src\test\java\Regression\PDP" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml">
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+  <component name="RunManager" selected="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/desktopPayment.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1053,12 +1229,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1083,12 +1259,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1113,12 +1289,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1143,12 +1319,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1171,6 +1347,12 @@
       <listeners />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -1180,12 +1362,6 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -1227,35 +1403,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" />
-      <option name="myWorkingDirectory" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1282,6 +1429,35 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1456,19 +1632,19 @@
       <item index="1" class="java.lang.String" itemvalue="TestNG.All Tests desktop stage" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.NIBusinessdesktop" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.SmokedesktopStage" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/desktopPayment.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/tabletPayment.xml" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/Regression/Payment/phonePayment.xml" />
-      <item index="7" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll1.xml" />
-      <item index="8" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll5.xml" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll2.xml" />
+      <item index="7" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
+      <item index="8" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll1.xml" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/TabletAll2.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll3_Payment.xml" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/test/src/test/java/SuitesOfTests/desktopAll4.xml" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1557,25 +1733,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.7554296" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14427084" sideWeight="0.7472325" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31355932" sideWeight="0.74546427" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31273064" sideWeight="0.74546427" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2813653" sideWeight="0.1125" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29829243" sideWeight="0.25417075" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2592251" sideWeight="0.17662753" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25830257" sideWeight="0.17662753" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29829243" sideWeight="0.25417075" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6855524" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40021345" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.76660514" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23339483" sideWeight="0.25453576" order="2" side_tool="false" content_ui="tabs" x="1914" y="910" width="1920" height="274" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.6637931" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33620688" sideWeight="0.25453576" order="2" side_tool="false" content_ui="tabs" x="1914" y="910" width="1920" height="274" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1793,116 +1969,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/tabletPayment.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/WorkInProgress/hitServers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="53" selection-start="468" selection-end="468" vertical-scroll-proportion="0.21383648">
+        <state line="74" column="41" selection-start="3065" selection-end="3065" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Phone47577.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="15" selection-start="23682" selection-end="23682" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/phonePayment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="408" selection-end="408" vertical-scroll-proportion="0.1900621">
+        <state line="16" column="55" selection-start="581" selection-end="605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll6.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_stress.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="80" selection-end="80" vertical-scroll-proportion="0.042236026">
+        <state line="5" column="52" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12839879">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll5.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0">
+        <state line="14" column="50" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Links/Links.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll6.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6" column="52" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Links/Links_tablet_staging.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll5.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="521" selection-end="521" vertical-scroll-proportion="0.3378882">
+        <state line="15" column="47" selection-start="876" selection-end="876" vertical-scroll-proportion="0.38345864">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment_Tablet47577.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_48580.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="532" selection-end="532" vertical-scroll-proportion="0.3378882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="47" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.38757765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Tablet_Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="30" selection-start="20918" selection-end="20918" vertical-scroll-proportion="0.57763976">
+        <state line="136" column="25" selection-start="5835" selection-end="5852" vertical-scroll-proportion="0.48872182">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SMOKE/SMOKE_Test_Desktop_Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="465" column="33" selection-start="1555" selection-end="21333" vertical-scroll-proportion="0.89440995">
+        <state line="251" column="51" selection-start="11755" selection-end="11755" vertical-scroll-proportion="0.562406">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll1.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/OpenBugs/Find_my_account_50468.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+        <state line="113" column="21" selection-start="3771" selection-end="3784" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="291" selection-end="291" vertical-scroll-proportion="0.15292354">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Rebates/Rebates_Tablet48580.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="22" selection-start="5651" selection-end="5665" vertical-scroll-proportion="0.0">
+        <state line="43" column="21" selection-start="1542" selection-end="1555" vertical-scroll-proportion="0.5667167">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WorkInProgress/one_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="632" selection-end="632" vertical-scroll-proportion="0.4587706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="742" selection-end="742" vertical-scroll-proportion="0.4077961">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="37" selection-start="6645" selection-end="6666" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3399" column="49" selection-start="160961" selection-end="160961" vertical-scroll-proportion="-22.44">
+        <state line="4200" column="249" selection-start="200806" selection-end="200806" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/TabletAll2.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="365" selection-end="365" vertical-scroll-proportion="0.1900621">
+        <state line="8" column="43" selection-start="367" selection-end="367" vertical-scroll-proportion="0.20389806">
           <folding />
         </state>
       </provider>

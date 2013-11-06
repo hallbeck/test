@@ -113,8 +113,6 @@ String typeOfCust = "NI";
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

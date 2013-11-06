@@ -38,10 +38,10 @@ public class PDPAccessoriesAll48553 extends ContactsTestBase {
     public void AccessoriesTest(String testNumber, String device, String typeOfTest, String product, String expected) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + product;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_Accessories_" + product;
-        openWebPage(device);
         printTestNumber(printTestName);
         searchAllBrand(device,product);
-        verifyProduct(device,expected,product);
+        //assertProductTitlePDP(device,expected);
+        assertProduct(device,expected);
     }
     @AfterMethod
     public void tearDown(){

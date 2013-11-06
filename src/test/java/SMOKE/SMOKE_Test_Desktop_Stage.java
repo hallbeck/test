@@ -179,9 +179,9 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         clickCart_Continue(device);
         typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -276,7 +276,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
@@ -286,23 +286,24 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
             clickCartEdit(device);
         }
         //remove this IF when bug  52481 is fixed.
-        if (multiRxReorder.equals("")){
-            gotoMyAccount(device);
-            reorderRx(device);
+       if (multiRxReorder.equals("")){
+            //gotoMyAccount(device);
+           // reorderRx(device);
         }
-        if (!multiRxReorder.equals("yes")){
+         if (!multiRxReorder.equals("yes")){
+
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
             cartRemove(device);
             gotoMyAccount(device);
             editRxDashboard(device);
         }
         if (!searchAllBrand.equals("")){
-        clickFindBrand(device);
-        searchAllBrand(device,searchAllBrand);
-        if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
-                ||searchAllBrand.contains("solution")){
-            clickPhoneBrand(device,brandclick);
-        }
+            clickFindBrand(device);
+            searchAllBrand(device,searchAllBrand);
+            if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
+                    ||searchAllBrand.contains("solution")){
+                clickPhoneBrand(device,brandclick);
+            }
         }
         takeScreenshot(screenshotTestName, "PDP1");
         if (oneEyeFirstOrder.equals("R")){
@@ -407,13 +408,18 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
             clickRboxes(rBoxes2);
             clickLboxes(lBoxes2);
             try{
-            typePatientName(PatientFNameCart2,PatientLNameCart2);
+                typePatientName(PatientFNameCart2,PatientLNameCart2);
             }
             catch(Throwable e){print("must be solution, no place for a name.");
             }
             takeScreenshot(screenshotTestName, "PDP3");
         }
-        clickAddToCart(device);
+        if (searchAllBrand.equals("")){
+            clickUpdateCart(device);
+        }
+        if (!searchAllBrand.equals("")){
+            clickAddToCart(device);
+        }
         if (!ShippingCart.equals("")){
             selectShippingCart(ShippingCart);
         }
@@ -441,9 +447,11 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
         }
-        typeCreditCard(device,CCNum);
-        typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            typeCreditCard(device,CCNum);
+            typeCreditCardName(device,CCName);
+            pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        }
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);

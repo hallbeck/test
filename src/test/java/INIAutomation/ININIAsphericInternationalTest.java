@@ -81,7 +81,7 @@ public class ININIAsphericInternationalTest extends ContactsTestBase {
     String rsShipping = "35.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
+    String country = "Bolivia";
     String state = "whatever";
     String city = "newberry";
     String bState = "whatever";

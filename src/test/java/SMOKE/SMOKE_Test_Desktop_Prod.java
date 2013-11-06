@@ -179,9 +179,9 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
         clickCart_Continue(device);
         typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -221,14 +221,10 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -280,7 +276,7 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        goToSignInPage(device);
+        gotoMyAccount(device);
         typeReturningPhoneEmail(testNumberDependentOn);
         typeReturningPhonePassword(device,password);
         clickSignIn(device);
@@ -291,10 +287,11 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
         }
         //remove this IF when bug  52481 is fixed.
         if (multiRxReorder.equals("")){
-            gotoMyAccount(device);
+            //gotoMyAccount(device);
             reorderRx(device);
         }
         if (!multiRxReorder.equals("yes")){
+
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
             cartRemove(device);
             gotoMyAccount(device);
@@ -417,7 +414,12 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
             }
             takeScreenshot(screenshotTestName, "PDP3");
         }
-        clickAddToCart(device);
+        if (searchAllBrand.equals("")){
+            clickUpdateCart(device);
+        }
+        if (!searchAllBrand.equals("")){
+            clickAddToCart(device);
+        }
         if (!ShippingCart.equals("")){
             selectShippingCart(ShippingCart);
         }
@@ -444,11 +446,9 @@ public class SMOKE_Test_Desktop_Prod extends ContactsTestBase {
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
-        typeCreditCard(device,CCNum);
-        if (!ccExpMo.equals("")|| !ccExpYear.equals("")){
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            typeCreditCard(device,CCNum);
             typeCreditCardName(device,CCName);
             pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }

@@ -1,8 +1,8 @@
 package SMOKE;
 
-
 import Base.ContactsTestBase;
 import org.testng.annotations.*;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,31 +11,31 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
+public class SMOKE_Test_Desktop_Dev extends ContactsTestBase{
 
 
     @DataProvider(name = "NI")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
-                "inputsProd", "tabletNI");
+                "inputsDev", "desktopNI");
         return(retObjArr);
     }
     @DataProvider(name = "RI")
-    public Object[][] createData3() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
-                "inputsProd", "tabletRI");
-        return(retObjArr);
-    }
-    @DataProvider(name = "OneTestNI")
     public Object[][] createData2() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeNI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsDev", "desktopRI");
         return(retObjArr);
     }
     @DataProvider(name = "OneTestRI")
+         public Object[][] createData3() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestRI");
+        return(retObjArr);
+    }
+    @DataProvider(name = "OneTestNI")
     public Object[][] createData4() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeOneinput.xls",
-                "inputs", "smokeRI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\SmokeInputs.xls",
+                "inputsStage", "OneTestNI");
         return(retObjArr);
     }
 
@@ -46,32 +46,32 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "NI")
+    @Test(dataProvider = "NI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
-                       String searchAllBrand, String brandclick, String brandVerifyPDP,
-                       String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
-                       String searchAllBrand3, String brandclick3, String brandVerifyPDP3,
-                       String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName,  String paymentType,
-                       String drName, String drState,
-                       String emailPrefix, String password,
-                       String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
-                       String rBC, String lBC, String rBC2, String lBC2,
-                       String rDia, String lDia, String rDia2, String lDia2,
-                       String rColor, String lColor, String rColor2, String lColor2,
-                       String rAdd, String lAdd, String rAdd2, String lAdd2,
-                       String rCyl, String lCyl, String rCyl2, String lCyl2,
-                       String rAxis, String lAxis, String rAxis2, String lAxis2,
-                       String rDN, String lDN,
-                       String rBoxes, String lBoxes, String rBoxes2, String lBoxes2,
-                       String PatientFNameCart, String PatientLNameCart, String PatientFNameCart2, String PatientLNameCart2,
-                       String ShippingCart,
-                       String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
-                       String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
-                       String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
-                       String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
-                       String multiRxReorder)
+                     String searchAllBrand, String brandclick, String brandVerifyPDP,
+                     String searchAllBrand2, String brandclick2, String brandVerifyPDP2,
+                     String searchAllBrand3, String brandclick3, String brandVerifyPDP3,
+                     String ccExpMo, String ccExpYear, String CCNum, String BadccExpMo, String BadccExpYear, String BadCCNum, String error, String CCName, String paymentType,
+                     String drName, String drState,
+                     String emailPrefix, String password,
+                     String posR, String posR2, String posL, String posL2, String rPower, String lPower, String rPower2, String lPower2,
+                     String rBC, String lBC, String rBC2, String lBC2,
+                     String rDia, String lDia, String rDia2, String lDia2,
+                     String rColor, String lColor, String rColor2, String lColor2,
+                     String rAdd, String lAdd, String rAdd2, String lAdd2,  //52
+                     String rCyl, String lCyl, String rCyl2, String lCyl2,
+                     String rAxis, String lAxis, String rAxis2, String lAxis2,
+                     String rDN, String lDN,
+                     String rBoxes, String lBoxes, String rBoxes2, String lBoxes2,
+                     String PatientFNameCart, String PatientLNameCart, String PatientFNameCart2, String PatientLNameCart2,
+                     String ShippingCart,
+                     String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
+                     String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
+                     String shippingFName, String shippingLName, String country, String state, String city, String zip, String bState, String bCity,
+                     String rebateNotShipped, String orderStatus, String shippingVerify,
+                     String oneEyeFirstOrder,String oneEyeSecondOrder,
+                     String multiRxReorder)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
@@ -175,13 +175,13 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
             selectShippingCart(ShippingCart);
         }
         takeScreenshot(screenshotTestName, "Cart");
-        verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        verifyCart(device, brandVerifyPDP, PatientFNameCart + " " + PatientLNameCart, pricePerBox, priceREye, priceLEye, priceTotal);
         clickCart_Continue(device);
         typeShippingName(shippingFName, shippingLName);
         clickCountry(country);
+        typeShippingState(country,state);
         typeShippingAddress();
         typeShippingCity(city);
-        typeShippingState(country,state);
         typeShippingZip(zip);
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
@@ -189,18 +189,18 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         if (country.equals("united states")){
-            typeDoctorSearch(drName);
-            typeDoctorStateAndFind(device,drState);
-            if(!drName.equals("test")){
+        typeDoctorSearch(drName);
+        typeDoctorStateAndFind(device,drState);
+            if(!drName.equals("test")||!drName.equals("Jake Eyes")){
                 typeDoctorSearch(drName);
                 typeDoctorStateAndFind(device,drState);
                 typeDoctorSearch(drName);
                 typeDoctorStateAndFind(device,drState);
                 addDoctor(device);
-                addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
+                //addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
             }
-            takeScreenshot(screenshotTestName, "DoctorSearch");
-            if(drName.equals("test")){
+        takeScreenshot(screenshotTestName, "DoctorSearch");
+            if(drName.equals("test")||drName.equals("Jake Eyes")){
                 selectDoctor(device);
             }
         }
@@ -221,14 +221,10 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
         typeCreditCard(device,CCNum);
         typeCreditCardName(device,CCName);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -240,6 +236,10 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         gotoOrderStatusHistory(device);
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
+    }
+    @Test
+    public void blah (){
+        Wait(900);
     }
     @Test (dataProvider = "RI")
     @Parameters(value = "device")
@@ -265,7 +265,7 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsRebate, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
                        String rebateNotShipped, String orderStatus, String shippingVerify,
-                       String oneEyeFirstOrder,String oneEyeSecondOrder,String drLastName,String drClinicName,String drPhone,
+                       String oneEyeFirstOrder,String oneEyeSecondOrder,
                        String multiRxReorder)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
@@ -285,7 +285,13 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
             checkReorderCheckboxTwo(device);
             clickCartEdit(device);
         }
-        if (!multiRxReorder.equals("yes")){
+        //remove this IF when bug  52481 is fixed.
+       if (multiRxReorder.equals("")){
+            //gotoMyAccount(device);
+           // reorderRx(device);
+        }
+         if (!multiRxReorder.equals("yes")){
+
             verifyCart(device,brandVerifyPDP2,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
             cartRemove(device);
             gotoMyAccount(device);
@@ -320,8 +326,8 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         clickLColor(lColor);
         clickRAdd(rAdd);
         clickLAdd(lAdd);
-        clickRDN(device, rDN);
-        clickLDN(device, lDN);
+        clickRDN(device,rDN);
+        clickLDN(device,lDN);
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         try{
@@ -372,7 +378,7 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         if (!searchAllBrand3.equals("")){
             clickAddRx(device);
             searchAllBrand(device,searchAllBrand3);
-            if (searchAllBrand3.contains("drops")
+            if (searchAllBrand3.equals("Acuvue")||searchAllBrand3.contains("drops")
                     ||searchAllBrand2.contains("solution")){
                 clickPhoneBrand(device,brandclick3);
             }
@@ -408,7 +414,12 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
             }
             takeScreenshot(screenshotTestName, "PDP3");
         }
-        clickAddToCart(device);
+        if (searchAllBrand.equals("")){
+            clickUpdateCart(device);
+        }
+        if (!searchAllBrand.equals("")){
+            clickAddToCart(device);
+        }
         if (!ShippingCart.equals("")){
             selectShippingCart(ShippingCart);
         }
@@ -435,16 +446,12 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
             clickBottomSubmitButton(device);
             verifyDeclinedCard(device, error);
             takeScreenshot(screenshotTestName, "DeclinedCard");
-            goToCart1Item(device);
-            clickCart_Continue(device);
         }
-        typeCreditCard(device,CCNum);
-        if (!ccExpMo.equals("")|| !ccExpYear.equals("")){
+        if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){
+            typeCreditCard(device,CCNum);
             typeCreditCardName(device,CCName);
             pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }
-
-
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
         clickBottomSubmitButton(device);
@@ -466,3 +473,4 @@ public class SMOKE_Test_Tablet_Prod extends ContactsTestBase {
         driver.quit();
     }
 }
+

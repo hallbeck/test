@@ -1,19 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="tablet" verbose="1">
-        <test name="DesktopOONTests" >
-            <parameter name="device" value='tablet'/>
-            <classes>
-                <class name="OONInsurance.OONTest"/>
-                <class name="OONInsurance.OON_50614"/>
-            </classes>
-        </test>
+    <!-- OON not available on mobile devices-->
+<!--        <test name="DesktopOONTests" >
+           <parameter name="device" value='tablet'/>
+           <classes>
+               <class name="OONInsurance.OONTest"/>
+               <class name="OONInsurance.OON_50614"/>
+           </classes>
+       </test>-->
         <test name="tabletPromoTests" >
             <parameter name="device" value='tablet'/>
             <parameter name="prod" value='no'/>
             <classes>
                 <class name="Promos.current.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
-                <class name="Promos.current.SunglassesPromo"/>
             </classes>
         </test>
             <test name="Account">
@@ -29,6 +29,16 @@
                    <class name="Regression.Account.NILogin_signinpage_48412"/>
                </classes>
            </test>
+    <test name="Shipping Billing">
+        <parameter name="device" value='tablet'/>
+        <classes>
+            <class name="Verification.DiffShippingBilling47612"/>
+            <class name="Verification.DiffShippingBillingColor47612"/>
+            <class name="Verification.EditShippingBilling44764"/>
+            <class name="Verification.OrderStatusHistory47655"/>
+            <!--<class name="Verification.ShippingChanges47266"/>-->
+        </classes>
+    </test>
         <test name="Links">
             <parameter name="device" value='tablet'/>
             <classes>
@@ -36,41 +46,11 @@
                     <methods>
                         <include name="LinksTest"/>
                         <include name="EmailLinkTest"/>
-                        <include name="ClickLinkTest"/>
+                        <!--<include name="ClickLinkTest"/>-->
                         <include name="OtherLinkTest"/>
                     </methods>
                 </class>
                 <class name="Regression.Doctor.Doctor_Custom_44058"/>
             </classes>
         </test>
-           <test name="DesktopPaymentTests" >
-               <parameter name="device" value='tablet'/>
-               <classes>
-                   <class name="Regression.Payment.Payment_Tablet47577">
-                       <methods>
-                           <include name="NItest"/>
-                           <include name="RItest"/>
-                           <include name="PayPaltest"/>
-                           <include name="PayPalCarttest"/>
-                       </methods>
-                   </class>
-               </classes>
-           </test>
-        <test name="Shipping Billing">
-            <parameter name="device" value='tablet'/>
-            <classes>
-                <class name="Verification.DiffShippingBilling47612"/>
-                <class name="Verification.DiffShippingBillingColor47612"/>
-                <class name="Verification.EditShippingBilling44764"/>
-                <class name="Verification.OrderStatusHistory47655"/>
-                <!--<class name="Verification.ShippingChanges47266"/>-->
-            </classes>
-        </test>
-        <test name="stress tablet Stage">
-            <classes>
-                <class name="stress.stress_productpageHTMLSelenium">
-                </class>
-            </classes>
-        </test>
-
 </suite>

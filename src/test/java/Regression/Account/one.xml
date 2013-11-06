@@ -2,10 +2,9 @@
 
 <suite name="Account" verbose="1" >
     <test name="AccountTests" >
-        <parameter name="device" value='desktop'/>
+        <parameter name="device" value='tablet'/>
         <classes>
-            <class name="Regression.Account.editRxNI_49773"/>
-            <class name="Regression.Account.editRxRI_49777"/>
+            <class name="Regression.Account.NILogin_48412"/>
         </classes>
     </test>
 </suite>

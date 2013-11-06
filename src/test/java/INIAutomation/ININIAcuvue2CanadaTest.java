@@ -18,7 +18,7 @@ public class ININIAcuvue2CanadaTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "acuvue";
+    String searchAllBrand = "Acuvue 2";
     String searchAllBrand2 = "";
     String brandToClickOn = "Acuvue2";
     String brandToClickOn2 = "";
@@ -113,7 +113,6 @@ public class ININIAcuvue2CanadaTest extends ContactsTestBase {
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

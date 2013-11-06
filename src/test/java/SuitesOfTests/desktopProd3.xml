@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
+<suite name="desktop" verbose="1">
 
-<suite name="Links" verbose="1" >
-    <test name="LinkTests" >
+    <test name="NI Business Desktop Prod">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.OpenBugs.PDPEditRx53128_53484"/>
+            <class name="Business.NI_Business_Test_Desktop_Prod"/>
         </classes>
     </test>
+
 </suite>

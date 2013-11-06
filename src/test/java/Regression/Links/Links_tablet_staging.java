@@ -55,9 +55,8 @@ public class Links_tablet_staging extends ContactsTestBase {
     public void LinksTest(String testNumber, String device, String typeOfTest, String page, String link, String title, String tag) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page + " | " + link + " | " + title;
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_Links" + link;
-        openWebPage(device);
         printTestNumber(printTestName);
-        gotoPage(page);
+        gotoPage(device,page);
         clickAndAssertLink(link,title,tag);
         takeScreenshot(screenshotTestName, link);
     }
@@ -65,16 +64,14 @@ public class Links_tablet_staging extends ContactsTestBase {
     @Parameters(value = "device")
     public void EmailLinkTest(String testNumber, String device, String typeOfTest, String page, String link, String title, String tag) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page + " | " + link + " | " + title;
-        openWebPage(device);
         printTestNumber(printTestName);
-        gotoPage(page);
+        gotoPage(device,page);
         clickAndVerifyEmail(link,title);
     }
     @Test (dataProvider = "ClickLinks")
     @Parameters(value = "device")
     public void ClickLinkTest(String testNumber, String device, String typeOfTest, String link1, String verify1, String expected1, String tag1) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + link1 + " | " + expected1;
-        openWebPage(device);
         printTestNumber(printTestName);
         clickLink(link1);
         verifyTagContains(tag1,verify1,expected1);
@@ -83,10 +80,9 @@ public class Links_tablet_staging extends ContactsTestBase {
     @Parameters(value = "device")
     public void OtherLinkTest(String testNumber, String device, String typeOfTest, String page, String para, String title, String tag) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page + " | " + para + " | " + title;
-        openWebPage(device);
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        gotoPage(page);
+        gotoPage(device,page);
         if (!title.equals("")){
             verifyPageTitle(title);
         }

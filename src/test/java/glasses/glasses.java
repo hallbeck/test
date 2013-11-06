@@ -85,7 +85,7 @@ public class glasses extends TestBaseGlasses {
     String rsShipping = "35.99" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
-    String country = "BOLIVIA";
+    String country = "Bolivia";
     String state = "whatever";
     String city = "newberry";
     String zip = "K1A 0G9";

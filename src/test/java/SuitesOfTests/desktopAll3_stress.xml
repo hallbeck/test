@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="desktop" verbose="1">
+        <test name="stress Desktop Stage">
+            <classes>
+                <class name="stress.stress_productpageHTMLSelenium">
+                </class>
+            </classes>
+        </test>
+</suite>

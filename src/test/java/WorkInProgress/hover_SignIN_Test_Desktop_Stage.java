@@ -63,16 +63,16 @@ public class hover_SignIN_Test_Desktop_Stage extends ContactsTestBase {
         clickNoThanksButton(device);
         printTestNumber(printTestName);
         hoverSignin(device, testNumberDependentOn,password);
-        clickSignIn(device);
+        assertURL("https://www.1800contactstest.com/Cart");
         takeScreenshot(screenshotTestName, "Cart1");
     }
     @AfterMethod
     public void tearDown(){
-        //driver.manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
     }
     @org.junit.AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
 

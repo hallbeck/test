@@ -40,7 +40,6 @@ public class PDPAccessoriesAll48553 extends ContactsTestBase {
         String screenshotTestName =  testNumber + "_" + typeOfTest + "_Accessories_" + product;
         printTestNumber(printTestName);
         searchAllBrand(device,product);
-        //assertProductTitlePDP(device,expected);
         assertProduct(device,expected);
     }
     @AfterMethod

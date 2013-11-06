@@ -1,4 +1,4 @@
-package Regression.Account;
+package Promos.current;
 
 import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
@@ -11,26 +11,25 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class NILogin_48412 extends ContactsTestBase {
+public class FreeExpeditedShipping_SolutionPromo_2pk_50712_tablet extends ContactsTestBase {
+
 
     //change the Strings below to change the tests
-    String testNumber = "48412";
-    String testNumberDependentOn = "48412";
-    String typeOfTest = "Regression";
+    String testNumber = "50712";
+    String typeOfTest = "Promo";
     String typeOfCust = "NI";
-    String typeOfPayment = "N/A";
-    String searchAllBrand = "color";
-    String searchAllBrand2 = "";
-    String brandToClickOn = "Acuvue2Colours";
-    String brandToClickOn2 = "";
+    String typeOfPayment = "Credit";
+    String searchAllBrand = "acuvue 2";
+    String brandToClickOn = "Acuvue2";
     String brandVerifyPDP = "Acuvue 2";
     String brandVerifyPDP2 = "";
+    String Acuvue2Colours="lens/acuvue-2-colours";
     String posR = "+";
     String posL = "";
-    String rPower = "0.25";
-    String lPower = "-0.25";
     String rPower2 = "";
     String lPower2 = "";
+    String rPower = "0.50";
+    String lPower = "-1.00";
     String rBC = "8";
     String lBC = "8";
     String rBC2 = "";
@@ -39,25 +38,25 @@ public class NILogin_48412 extends ContactsTestBase {
     String lDia = "";
     String rDia2 = "";
     String lDia2 = "";
-    String rColor = "E";
-    String lColor = "E";
+    String rColor = "E-Blue";
+    String lColor = "E-Blue";
     String rColor2 = "";
     String lColor2 = "";
     String rAdd = "";
     String lAdd = "";
     String rAdd2 = "";
     String lAdd2 = "";
-    String rCyl = "";
-    String lCyl = "";
+    String rCyl = "--";
+    String lCyl = "--";
     String rCyl2 = "";
     String lCyl2 = "";
-    String rAxis = "";
+    String rAxis = "11";
     String rAxis2 = "";
-    String lAxis = "";
+    String lAxis = "11";
     String lAxis2 = "";
-    String rBoxes = "";
+    String rBoxes = "1";
     String rBoxes2 = "";
-    String lBoxes = "";
+    String lBoxes = "1";
     String lBoxes2 = "";
     String PatientFNameCart = "PatOneFirst";
     String PatientLNameCart = "PatientLast";
@@ -65,73 +64,81 @@ public class NILogin_48412 extends ContactsTestBase {
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "e";
-    //String FullPatientName = (PatientFNameCart + " " + PatientLNameCart);
-    String pricePerBox = "37.99";
-    String priceREye = "151.96";
-    String priceLEye = "151.96";
-    String pricePerBox2 = "";
-    String priceREye2 = "";
-    String priceLEye2 = "";
-    String priceTotal = "318.91";
-    String rsTotal = "339.73";
-    String rsTotalAfterRebate = "147.92";
-    String rsTax = "20.82";
-    String rsRebate = "20 Acuvue Rebate";
-    String rsShipping = "14.99" ;
+    String ShippingCart = "";
+    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpageupsell%5Falcontwin%5Fmod%5Fnofreeship?fmt=png-alpha";
+    String promoProdName = "OPTI-FREE® PureMoist® Solution 2 pack (2-10oz)";
+    String pricePromoCart = "22.99";
+    String promoItemNumber = "002964";
+    String promoText = "";
+    String sunglassesPromoLink = "?rb=ACFSW2013";
+    String promoCode = "ACFS2013";
+    String pricePerBox = "39.99";
+    String priceREye = "39.99";
+    String priceLEye = "39.99";
+    String pricePerBox2 = "49.99";
+    String priceREye2 = "99.98";
+    String priceLEye2 = "199.96";
+    String priceTotal = "92.97";
+    String rsTotal = "99.34";
+    String rsTotalAfterRebate = "";
+    String rsTax = "6.37";
+    String rsRebate = "";
+    String rsShipping = "FREE" ;
     String shippingFName = "ShipFirst";
     String shippingLName = "ShipLast";
     String country = "united states";
-    String state = "utah";
-    String city = "slc";
     String bState = "utah";
     String bCity = "slc";
+    String state = "utah";
+    String city = "slc";
     String zip = "84121";
     String emailPrefix = "test";
     String password = "password";
     String drName = "test";
     String drState = "UT";
-    String creditCard = "testVisaForeign";
+    String creditCard = "test";
     String ccName = "Blah";
     String ccExpMo = "";
     String ccExpYear = "";
-    String creditCardBad = "36259600";
+    String creditCardBad = "4111111111111111";
     String ccExpMoBad = "01";
     String ccExpYearBad = "2013";
-    String paymentType = "";
         String rebateNotShipped = "Your order has not shipped yet.";
     String orderStatus = "Checking Stock";
-    String shippingVerify = "Expedited";
+    String shippingVerify = "FREE";
+    String paymentType = "";
+    String seperator = "/";
     String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust + " | " + searchAllBrand + " | " + typeOfPayment + " | " + shippingVerify;
-    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify;
+    String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + searchAllBrand + "_" + typeOfPayment + "_" + shippingVerify + seperator;
 
 
     @Test (singleThreaded = true)
-    @Parameters(value = "device")
-    public void test(String device) {
+    @Parameters({ "device", "prod" })
+    public void promoTest(String device,String prod) {
         openWebPage(device);
         takeScreenshot(screenshotTestName, "Interstitial");
         clickNoThanksButton(device);
         printTestNumber(printTestName);
-        clickFindBrand(device);
-        searchAllBrand(device,searchAllBrand);
-        takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
-        takeScreenshot(screenshotTestName, "PDP1");
+        gotoPage(device,Acuvue2Colours);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
         clickRBC(rBC);
         clickLBC(lBC);
         clickRColor(rColor);
         clickLColor(lColor);
+        clickRboxes(rBoxes);
+        clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP2");
+        takeScreenshot(screenshotTestName, "PDP1_");
         clickAddToCart(device);
+        selectPromoCart(device,promoName);
         selectShippingCart(ShippingCart);
         takeScreenshot(screenshotTestName, "Cart");
+        //enterOrderCode(device,promoCode);
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
+        verifyPromoCart(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickCart_Continue(device);
-        typeShippingName(shippingFName, shippingLName);
+        typeShippingName(shippingFName,shippingLName);
         clickCountry(country);
         typeShippingAddress();
         typeShippingCity(city);
@@ -142,14 +149,6 @@ public class NILogin_48412 extends ContactsTestBase {
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        clickSignOut(device);
-        openWebPagePlain(device);
-        gotoMyAccount(device);
-        typeReturningPhoneEmail(testNumberDependentOn);
-        typeReturningPhonePassword(device,password);
-        clickSignIn(device);
-        //goToCart(device);
-        clickCart_Continue(device);
         typeDoctorSearch(drName);
         typeDoctorStateAndFind(device,drState);
         takeScreenshot(screenshotTestName, "DoctorSearch");
@@ -159,6 +158,7 @@ public class NILogin_48412 extends ContactsTestBase {
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         takeScreenshot(screenshotTestName, "ReviewSubmit");
         verifyRS(device,brandVerifyPDP, PatientFNameCart, pricePerBox, priceREye, priceLEye, priceTotal, rsTax, rsTotal, rsTotalAfterRebate, rsRebate, rsShipping);
+        verifyPromoRS(device,promoProdName,pricePromoCart,promoItemNumber,promoText);
         clickBottomSubmitButton(device);
         verifyThankYouPage(testNumber,shippingVerify);
         takeScreenshot(screenshotTestName, "ThankYou");
@@ -169,5 +169,5 @@ public class NILogin_48412 extends ContactsTestBase {
         verifyOrderStatusHistory(device,brandVerifyPDP,fullPatientName,rsShipping,shippingVerify,zip,city,rsTax,rsTotal,rsRebate,rsTotalAfterRebate,orderStatus,bState,bCity);
         takeScreenshot(screenshotTestName, "OrderStatusHistory");
         driver.quit();
-    }
+  }
 }

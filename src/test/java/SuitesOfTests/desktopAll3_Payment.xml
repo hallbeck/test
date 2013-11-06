@@ -6,10 +6,10 @@
                <classes>
                    <class name="Regression.Payment.Payment47577">
                        <methods>
-                           <include name="NItest"/>
-<!--                           <include name="RItest"/>
-                           <include name="PayPaltest"/>
-                           <include name="PayPalCarttest"/>-->
+                          <include name="NItest"/>
+                               <include name="RItest"/>
+                             <include name="PayPaltest"/>
+                               <include name="PayPalCarttest"/>
                        </methods>
                    </class>
                </classes>

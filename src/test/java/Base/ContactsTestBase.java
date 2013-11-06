@@ -81,19 +81,18 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";*/
-/*    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     //STAGING
-    public String desktopBaseUrl = "https://www.1800contactstest.com/";
-
+   /* public String desktopBaseUrl = "https://www.1800contactstest.com/";
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     public String fileName = ("TestOut" + new Date().getTime());
     public String emailFile = "./out/Oct_2013_email_addresses.txt";
@@ -1901,7 +1900,7 @@ public class ContactsTestBase {
         Wait(2);
         printPageTitle();
         if(device.equals("phone")){
-            try{   //phone
+            try{
                 driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-phone rd-stretchButton rd-orangeButton')]")).click();
                 System.out.println("Clicked Sign In Phone");
                 Wait(3);
@@ -1909,9 +1908,9 @@ public class ContactsTestBase {
             catch (Throwable e){System.out.println("Could not Sign In phone");}
         }
         else if(device.equals("tablet")){
-            try{   //tablet
-                //driver.findElement(By.xpath("//button[contains(@id,'signInSubmitButton')]")).click();
-                driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton')]")).click();
+            try{
+                driver.findElement(By.xpath("//button[contains(@id,'signInSubmitButton')]")).click();
+               // driver.findElement(By.xpath("//div[contains(@class,'rd-button rd-tablet rd-tabletRightButton rd-orangeButton')]")).click();
                 System.out.println("Clicked Sign In tablet");
                 Wait(3);
             }
@@ -1926,7 +1925,7 @@ public class ContactsTestBase {
             }
         }
         else if(device.equals("desktop")){
-            try{   //desktop
+            try{
 
                 driver.findElement(By.xpath("//button[contains(@id,'signInSubmitButton')]")).click();
                 System.out.println("Clicked Sign In desktop");
@@ -1972,19 +1971,26 @@ public class ContactsTestBase {
     //this is not working because it is not finding the search button. it has no link associated, just js. SO...
     //once it starts working uncomment searchAllBrand and rename the used searchAllBrand to Go to all Lenses
     public void searchAllBrand(String device,String search) {
-        Wait(3);
+       // Wait(3);
+        String currentURL = driver.getCurrentUrl();
+        while(!driver.getCurrentUrl().contains("contacts")){
+            print("waiting");
+            currentURL = driver.getCurrentUrl();
+            print(currentURL);
+            Wait(1);
+        }
         System.out.println("About to search for brand: " + search);
         if(device.equals("phone")){
             driver.findElement(By.xpath("//a[contains(.,'Search')]")).click();
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).click();
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).sendKeys(search, Keys.ENTER);
-            System.out.println("Searched for brand: " + search);
+            print("Searched for brand: " + search);
         }
         else { //for desktop or tablet
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).click();
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).clear();
             driver.findElement(By.xpath("//input[contains(@name,'searchTerm')]")).sendKeys(search, Keys.ENTER);
-            System.out.println("Searched for brand: " + search);
+            print("Searched for brand: " + search);
         }
         Wait(1);
     }
@@ -2904,7 +2910,6 @@ public class ContactsTestBase {
 
     public void selectPromoCart(String device,String promoName){
         Wait(3);
-
         WebElement wePromo = driver.findElement(By.xpath("//img[contains(@src,'"+promoName+"')]"));
         print("Promo link: " + wePromo);
         wePromo.click();
@@ -4187,20 +4192,21 @@ public class ContactsTestBase {
                 print("CC exp date1:" + month + " " + year);
         }
         else if(device.equals("tablet")){
-            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
+            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys("07");
             driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationYear')]")).sendKeys(year);
+            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
             print("CC exp date:" + month + " " + year);
         }
         else if(device.equals("desktop")){
             try{
             driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys("07");
-            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
             driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationYear')]")).sendKeys(year);
+            driver.findElement(By.xpath("//select[contains(@id,'CreditCardExpirationMonth')]")).sendKeys(month);
             }
             catch(Throwable e){
                 driver.findElement(By.xpath("(//select[@id='CreditCardExpirationMonth'])[2]")).sendKeys("07"); //because November is 11 if I sendkeys 11 and the previous month chosen started with a 1 it just goes 2 months more. so< i mke it go back.
-                driver.findElement(By.xpath("(//select[@id='CreditCardExpirationMonth'])[2]")).sendKeys(month);
                 driver.findElement(By.xpath("(//select[@id='CreditCardExpirationYear'])[2]")).sendKeys(year);
+                driver.findElement(By.xpath("(//select[@id='CreditCardExpirationMonth'])[2]")).sendKeys(month);
             }
             System.out.println("CC exp date:" + month + " " + year);
         }
@@ -4366,7 +4372,6 @@ public class ContactsTestBase {
             print("You are in the cart... proceed as normal");
         }
         else if(device.equals("desktop")){
-            print("Next Go To Cart");
             //driver.findElement(By.xpath("//a[contains(@href,'/Cart')]"));
             driver.findElement(By.xpath("//a[contains(@title,'View Cart')]")).click();
             Wait(1);
@@ -4375,7 +4380,6 @@ public class ContactsTestBase {
             print("You are in the cart... proceed as normal");
         }
         else if(device.equals("tablet")){
-            print("Next Go To Cart");
             driver.get(desktopBaseUrl + "cart");
             Wait(1);
             driver.findElement(By.xpath("//p[contains(.,'Please review your cart')]"));

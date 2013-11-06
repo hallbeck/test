@@ -50,7 +50,7 @@ public class Payment47577 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "OneTest")
+    @Test (dataProvider = "NI")
     @Parameters(value = "device")
     public void NItest(String testNumber, String testNumberDependentOn, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
                        String searchAllBrand, String brandclick, String brandVerifyPDP,
@@ -403,10 +403,10 @@ public class Payment47577 extends ContactsTestBase {
     }
     @AfterMethod
     public void tearDown(){
-        //driver.manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
     }
     @AfterClass
     public void shutDown(){
-        //driver.quit();
+        driver.quit();
     }
 }

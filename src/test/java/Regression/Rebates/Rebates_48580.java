@@ -102,7 +102,6 @@ public class Rebates_48580 extends ContactsTestBase {
         if (!rebate12Month.equals("")){
             goToCart(device);
             clickRemove(device);
-
             gotoPage(device,link);
             print(rebatesAvailable);
             clickRPower(device,posR,rPower);

@@ -191,7 +191,7 @@ public class SMOKE_Test_Desktop_Dev extends ContactsTestBase{
         if (country.equals("united states")){
         typeDoctorSearch(drName);
         typeDoctorStateAndFind(device,drState);
-            if(!drName.equals("test")||!drName.equals("Jake Eyes")){
+            if(!drName.equals("test")||!drName.contains("Jake")){
                 typeDoctorSearch(drName);
                 typeDoctorStateAndFind(device,drState);
                 typeDoctorSearch(drName);
@@ -200,7 +200,7 @@ public class SMOKE_Test_Desktop_Dev extends ContactsTestBase{
                 //addDoctorInfo(device,drLastName,drClinicName,city,drState,drPhone);
             }
         takeScreenshot(screenshotTestName, "DoctorSearch");
-            if(drName.equals("test")||drName.equals("Jake Eyes")){
+            if(drName.equals("test")||drName.contains("Jake")){
                 selectDoctor(device);
             }
         }

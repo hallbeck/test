@@ -1,4 +1,4 @@
-package Promos.current;
+package Promos.old;
 
 import Base.ContactsTestBase;
 import org.testng.annotations.*;
@@ -10,13 +10,13 @@ import org.testng.annotations.*;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SunglassesPromo extends ContactsTestBase {
+public class SunglassesTabletPromo extends ContactsTestBase {
 
 
     @DataProvider(name = "sunglasses")
     public Object[][] createData1() throws Exception{
         Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Promos.xls",
-                "inputsStage", "PromoSunglasses");
+                "inputsStage", "TabletPromoSunglasses");
         return(retObjArr);
     }
 

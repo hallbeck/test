@@ -188,7 +188,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         typePassword_newcust(password);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
-        if (country.equals("united states")){
+        if (country.equals("united states")||country.equals("")){
         typeDoctorSearch(drName);
         typeDoctorStateAndFind(device,drState);
             if(!drName.equals("test")){
@@ -426,7 +426,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         takeScreenshot(screenshotTestName, "Cart");
         verifyCart(device,brandVerifyPDP,PatientFNameCart + " " + PatientLNameCart,pricePerBox,priceREye,priceLEye,priceTotal);
         clickCart_Continue(device);
-        if (country.equals("united states")&&(!searchAllBrand.equals(""))){
+        if (country.equals("united states")||country.equals("")&&(!searchAllBrand.equals(""))){
             selectDoctor(device);
         }
         if(!BadCCNum.equals("")||BadccExpMo.equals("bad")||BadccExpYear.equals("bad")){

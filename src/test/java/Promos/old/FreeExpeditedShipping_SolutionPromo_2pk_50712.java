@@ -1,4 +1,4 @@
-package Promos.current;
+package Promos.old;
 
 import Base.ContactsTestBase;
 import org.testng.annotations.Parameters;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Time: 6:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class FreeExpeditedShipping_SolutionPromo_2pk_50712_tablet extends ContactsTestBase {
+public class FreeExpeditedShipping_SolutionPromo_2pk_50712 extends ContactsTestBase {
 
 
     //change the Strings below to change the tests
@@ -64,8 +64,8 @@ public class FreeExpeditedShipping_SolutionPromo_2pk_50712_tablet extends Contac
     String PatientLNameCart2 = "PatientLast";
     String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
     String fullPatientName2 = (PatientFNameCart2 + " " + PatientLNameCart2);
-    String ShippingCart = "";
-    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpageupsell%5Falcontwin%5Fmod%5Fnofreeship?fmt=png-alpha";
+    String ShippingCart = "e";
+    String promoName = "https://media.1800contacts.com/is/image/1800Contacts/website%5Fcartpageupsell%5Falcontwin%5Fmod?fmt=png-alpha";
     String promoProdName = "OPTI-FREE® PureMoist® Solution 2 pack (2-10oz)";
     String pricePromoCart = "22.99";
     String promoItemNumber = "002964";

@@ -68,6 +68,12 @@ public class ContactsTestBase {
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://main.ctac.1800contacts.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    //DEV staging
+/*        public String desktopBaseUrl = "https://staging.ctac.1800contacts.com/";
+    public String mobileBaseUrl = "https://staging.ctac.1800contacts.com/";
+    public String mobileURL = (mobileBaseUrl + "?responsive=yes");
+    public String tabletBaseUrl = "https://staging.ctac.1800contacts.com/";
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
     //PRODUCTION
 /*
    public String desktopBaseUrl = "https://www.1800contacts.com/";  */
@@ -81,21 +87,21 @@ public class ContactsTestBase {
     //public String desktopBaseUrl = "https://dr0-web-36.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-37.ctac.1800contacts.com/";
     //public String desktopBaseUrl = "https://dr0-web-38.ctac.1800contacts.com/";*/
-    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
+/*    public String desktopBaseUrl = "https://dr0-web-39.ctac.1800contacts.com/";
     public String mobileBaseUrl = "https://www.1800contacts.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contacts.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
     //STAGING
-   /* public String desktopBaseUrl = "https://www.1800contactstest.com/";
+    public String desktopBaseUrl = "https://www.1800contactstest.com/";
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
     public String tabletBaseUrl = "https://www.1800contactstest.com/";
-    public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
+    public String tabletURL = (tabletBaseUrl + "?responsive=yes");
 
     public String fileName = ("TestOut" + new Date().getTime());
-    public String emailFile = "./out/Oct_2013_email_addresses.txt";
+    public String emailFile = "./out/Nov_2013_email_addresses.txt";
     public String prodVisa = "4111111111111111";   //ccg
     public String prodMC = "5111111111111118";
     public String prodAmex = "300000000000007";
@@ -432,7 +438,7 @@ public class ContactsTestBase {
         verifyTxtPresent("Name",name,stLogin);
     }
     public void verifyRebateCart(String device,String rebateAmount){
-        Wait(3);
+        Wait(1);
         if(rebateAmount.equals("0.0")){
             try{
                 WebElement weTotal = driver.findElement(By.xpath("//td[contains(@class,'a41-cart-right-final-total')]"));
@@ -477,6 +483,12 @@ public class ContactsTestBase {
         }
     }
     public void verifyRebateRS(String device,String rebateAmount,String RebateText){
+        while(!driver.getCurrentUrl().contains("Review")) {
+            print("waiting");
+            String currentURL = driver.getCurrentUrl();
+            print(currentURL);
+            Wait(1);
+        }
         if(device.equals("desktop")){
             if(rebateAmount.equals("0.0")){
             try{
@@ -3023,12 +3035,11 @@ public class ContactsTestBase {
     }
     public void clickCart_Continue(String device) {
         printPageTitle();
-        Wait(2);
         print("Find Continue");
         String currentURL = driver.getCurrentUrl();
         print(currentURL);
        // while(!driver.getCurrentUrl().equalsIgnoreCase(desktopBaseUrl+"/Cart"))
-            while(!driver.getCurrentUrl().contains("art")||!driver.getCurrentUrl().contains("art")){
+            while(!driver.getCurrentUrl().contains("art")){
             print("waiting");
             currentURL = driver.getCurrentUrl();
             print(currentURL);
@@ -3057,6 +3068,14 @@ public class ContactsTestBase {
     }
 
     public void typeShippingName(String first, String last) {
+        String currentURL = driver.getCurrentUrl();
+        print(currentURL);
+        while(!driver.getCurrentUrl().contains("ddress")){
+            print("waiting");
+            currentURL = driver.getCurrentUrl();
+            print(currentURL);
+            Wait(1);
+        }
         driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.FirstName')]")).clear();
         driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.FirstName')]")).sendKeys(first);
         System.out.println("Shipping First Name is: " + first);
@@ -4034,6 +4053,12 @@ public class ContactsTestBase {
         Wait(2);
         if(device.equals("desktop")){
             Wait(5);
+            while(!driver.getCurrentUrl().contains("Review")) {
+                print("waiting");
+                String currentURL = driver.getCurrentUrl();
+                print(currentURL);
+                Wait(1);
+            }
             WebElement weNumber2 = driver.findElement(By.xpath("//input[contains(@id,'CreditCardNumber')]"));
             String ccnumber = weNumber2.getAttribute("value");
             print("ccnum:" + ccnumber);
@@ -4424,13 +4449,13 @@ public class ContactsTestBase {
             Wait(3);
             //driver.findElement(By.xpath("//img[contains(@src,'/images/AccountHub/OrderStatusAndHistory/orderStatusTrackerVerifyingLensAvailability.png')]"));
             String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-            verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+            verifyTxtPresent("Title is: ", "Account", verifyTitleOrderStatusHistory);
         }
         else if(device.equals("phone")) {
             Wait(3);
             driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]"));
             String verifyTitleOrderStatusHistory =  driver.findElement(By.xpath("//h1[contains(@class,'pageTitle hidePrint accountHubHeader')]")).getText();
-            verifyTxtPresent("Title is: ", "My 1‑800 CONTACTS Account", verifyTitleOrderStatusHistory);
+            verifyTxtPresent("Title is: ", "Account", verifyTitleOrderStatusHistory);
         }
 
 

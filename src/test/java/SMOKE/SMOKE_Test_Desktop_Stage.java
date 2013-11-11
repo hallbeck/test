@@ -282,6 +282,7 @@ public class SMOKE_Test_Desktop_Stage extends ContactsTestBase{
         clickSignIn(device);
         takeScreenshot(screenshotTestName, "Cart1");
         if (multiRxReorder.equals("yes")){
+            gotoMyAccount(device);
             checkReorderCheckboxTwo(device);
             clickCartEdit(device);
         }

@@ -18,7 +18,7 @@ public class ININI1EyeAsphericTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "Astigmatism";
+    String searchAllBrand = "Acuvue Oasys for Astigmatism";
     String searchAllBrand2 = "";
     String brandToClickOn = "AcuvueOasysforAstigmatism";
     String brandToClickOn2 = "";
@@ -113,7 +113,7 @@ public class ININI1EyeAsphericTest extends ContactsTestBase {
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
+        //clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         checkBoxRightEye(device);
         clickLPower(device,posL,lPower);

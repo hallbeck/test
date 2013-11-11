@@ -18,7 +18,7 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "progressive";
+    String searchAllBrand = "Focus DAILIES Progressives 30 pack";
     String brandToClickOn = "FocusDAILIESProgressives30pack";
     String brandVerifyPDP = "Focus DAILIES Progressives 30 pack";
     String posR = "+";
@@ -81,7 +81,7 @@ public class ININIProgressiveInternationalTest extends ContactsTestBase {
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
+        //clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);

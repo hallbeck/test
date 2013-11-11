@@ -19,7 +19,7 @@ public class ININIToricTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "toric";
+    String searchAllBrand = "Vertex Toric XR";
     String brandToClickOn = "VertexToricXR";
     String brandVerifyPDP = "Vertex Toric XR";
     String posR = "+"; String posL = "+";
@@ -85,7 +85,7 @@ public class ININIToricTest extends ContactsTestBase {
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
+        //clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

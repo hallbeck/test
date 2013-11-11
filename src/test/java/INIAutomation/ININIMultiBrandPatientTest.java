@@ -18,8 +18,8 @@ public class ININIMultiBrandPatientTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "color";
-    String searchAllBrand2 = "Toric";
+    String searchAllBrand = "FreshLook Colors";
+    String searchAllBrand2 = "Vertex Toric XR";
     String brandToClickOn = "FreshLookColors";
     String brandToClickOn2 = "VertexToricXR";
     String brandVerifyPDP = "FreshLook Colors";
@@ -114,7 +114,7 @@ public class ININIMultiBrandPatientTest extends ContactsTestBase {
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
         takeScreenshot(screenshotTestName, "SearchBrand");
-        clickPhoneBrand(device,brandToClickOn);
+        //clickPhoneBrand(device,brandToClickOn);
         takeScreenshot(screenshotTestName, "PDP1");
         verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);
@@ -127,7 +127,7 @@ public class ININIMultiBrandPatientTest extends ContactsTestBase {
         takeScreenshot(screenshotTestName, "PDP2");
         clickAddRx(device);
         searchAllBrand(device,searchAllBrand2);
-        clickPhoneBrand(device,brandToClickOn2);
+        //clickPhoneBrand(device,brandToClickOn2);
         verifyPDP(brandVerifyPDP2);
         clickRPower(device,posR,rPower2);
         clickLPower(device,posL,lPower2);

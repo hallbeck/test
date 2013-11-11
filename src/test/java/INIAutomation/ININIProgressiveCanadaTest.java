@@ -18,7 +18,7 @@ public class ININIProgressiveCanadaTest extends ContactsTestBase {
     String typeOfTest = "INI";
     String typeOfCust = "NI";
     String typeOfPayment = "Insurance";
-    String searchAllBrand = "multifocal";
+    String searchAllBrand = "PureVision Multi-Focal";
     String brandToClickOn = "PureVisionMulti-Focal";
     String brandVerifyPDP = "PureVision Multi-Focal";
     String posR = "+";
@@ -81,7 +81,7 @@ public class ININIProgressiveCanadaTest extends ContactsTestBase {
         printTestNumber(printTestName);
         clickFindBrand(device);
         searchAllBrand(device,searchAllBrand);
-        clickPhoneBrand(device,brandToClickOn);
+        //clickPhoneBrand(device,brandToClickOn);
         verifyPDP(brandVerifyPDP);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);

@@ -887,12 +887,14 @@ public class ContactsTestBase {
             assertTxtPresent("Searched for ",expected,toVerify);
         }
         if (!driver.getCurrentUrl().contains("code=404")) {
+        Wait(3);
         try{
             WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'product-heading')]"));
             String toVerify = weText.getText();
             print("First verify: "+toVerify);
             verifyTxtPresent("1st try Pages:  Searched for ", expected, toVerify);
             print("find text prod heading.");
+            new String (state = "PASS");
         }
         catch(Throwable e){
             try{
@@ -901,6 +903,7 @@ public class ContactsTestBase {
                 print("Second verify: "+toVerify);
                 verifyTxtPresent("2nd try Pages:  Searched for ", expected, toVerify);
                 print("find text prod name.");
+                new String (state = "PASS");
             }
             catch(Throwable E) {
                 WebElement weText = driver.findElement(By.xpath("//h1[contains(@class,'pageTitle')]"));
@@ -2716,6 +2719,12 @@ public class ContactsTestBase {
     }
     public void editRxDashboard(String device){
         //desktop
+        while(!driver.getCurrentUrl().contains("hub")) {
+            print("waiting");
+            String currentURL = driver.getCurrentUrl();
+            print(currentURL);
+            Wait(1);
+        }
         driver.findElement(By.xpath("//a[contains(@class,'a41-edit-link')]")).click();
         print("Clicked edit RX from Dashboard");
     }
@@ -4290,7 +4299,15 @@ public class ContactsTestBase {
         try{driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
             print("Found CreditCard Error page");
             print("going back");
-            try{driver.findElement(By.xpath("//a[contains(@href,'/ReviewOrder')]")).click();
+            try{
+                goback();
+                while(!driver.getCurrentUrl().contains("Review")) {
+                    print("waiting");
+                    String currentURL = driver.getCurrentUrl();
+                    print(currentURL);
+                    Wait(1);
+                }
+                //driver.findElement(By.xpath("//a[contains(@href,'/ReviewOrder')]")).click();
             }
             catch(Throwable e){}
         }

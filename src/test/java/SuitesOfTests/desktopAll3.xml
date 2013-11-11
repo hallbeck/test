@@ -12,7 +12,7 @@
             <parameter name="device" value='desktop'/>
             <parameter name="prod" value='no'/>
             <classes>
-                <class name="Promos.old.FreeExpeditedShipping_SolutionPromo_2pk_50712"/>
+                <class name="Promos.current.SolutionPromo_2pk_not_free_shipping"/>
                 <!--<class name="Promos.old.SunglassesPromo"/>-->
             </classes>
         </test>

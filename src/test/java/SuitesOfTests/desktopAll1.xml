@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1" parallel="tests" thread-count="1">
-<!--    <test name="Hit_Servers">
+    <test name="Hit_Servers">
         <parameter name="device" value='desktop'/>
         <classes>
             <class name="WorkInProgress.hitServers">
@@ -10,7 +10,7 @@
                 </methods>
             </class>
         </classes>
-    </test>-->
+    </test>
 <test name="SMOKE Desktop StageNI">
         <parameter name="device" value='desktop'/>
         <classes>

@@ -98,16 +98,6 @@ public class HTMLSeleniumTestBase {
         print(pageTxt);
         driver.navigate().refresh();
         print(pageTxt);
-        driver.navigate().refresh();
-        print(pageTxt);
-        driver.navigate().refresh();
-        print(pageTxt);
-        driver.navigate().refresh();
-        print(pageTxt);
-        driver.navigate().refresh();
-        print(pageTxt);
-        driver.navigate().refresh();
-        print(pageTxt);
     }
     public void verifyTag(String tag,String expected) {
         try{

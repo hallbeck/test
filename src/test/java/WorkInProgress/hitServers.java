@@ -43,14 +43,14 @@ public class hitServers extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-/*@Test (dataProvider = "Stage")
+@Test (dataProvider = "Stage")
     @Parameters(value = "device")
 public void StageServers (String testNumber, String device, String typeOfTest, String page, String tag, String version) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + page;
         printTestNumber(printTestName);
         openPage(page);
         verifyVersion(device,page,tag,version);
-    }  */
+    }
     @Test (dataProvider = "Prod30_35")
          @Parameters(value = "device")
          public void ProdServers(String testNumber, String device, String typeOfTest, String page, String tag, String version) {

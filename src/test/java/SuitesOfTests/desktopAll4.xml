@@ -1,6 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="desktop" verbose="1" parallel="tests" thread-count="1">
+    <test name="Open Bugs" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.OpenBugs.Find_my_account_50468"/>
+            <class name="Regression.OpenBugs.howToOrder_brands_46203"/>
+            <class name="Regression.OpenBugs.PDPEditRx53128_53484"/>
+        </classes>
+    </test>
         <test name="PDP">
             <parameter name="device" value='desktop'/>
             <classes>
@@ -10,14 +18,6 @@
                 <class name="Regression.PDP.PDPAccessoriesAll48553"/>
             </classes>
         </test>
-    <test name="Open Bugs" >
-        <parameter name="device" value='desktop'/>
-        <classes>
-            <class name="Regression.OpenBugs.Find_my_account_50468"/>
-            <class name="Regression.OpenBugs.howToOrder_brands_46203"/>
-            <class name="Regression.OpenBugs.PDPEditRx53128_53484"/>
-        </classes>
-    </test>
     <test name="HoverSignin">
         <parameter name="device" value='desktop'/>
         <classes>

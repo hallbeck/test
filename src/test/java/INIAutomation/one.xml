@@ -4,7 +4,7 @@
     <test name="NIINIDesktop">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="INIAutomation.Insurance_test_Desktop_Stage"/>
+            <class name="INIAutomation.ININI1EyeAsphericTest"/>
         </classes>
     </test>
 </suite>

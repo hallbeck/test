@@ -417,6 +417,12 @@ public class ContactsTestBase {
         verifyPageTitle(expected);
     }
     public void clickRemove (String device){
+        while(!driver.getCurrentUrl().contains("art")) {
+            print("waiting");
+            String currentURL = driver.getCurrentUrl();
+            print(currentURL);
+            Wait(1);
+        }
         if(device.equals("desktop")) {
         driver.findElement(By.xpath("//a[contains(@id,'cartRemoveLink')]")).click();
         }
@@ -1423,6 +1429,7 @@ public class ContactsTestBase {
         WebElement weZip = driver.findElement(By.xpath("(//input[@id='AddressDetailsViewModel_ZipOrPostalCode'])[2]"));
         print("find State");
         driver.findElement(By.xpath("(//select[@id='AddressDetailsViewModel_StateProvinceOrRegion'])[2]"));
+        print("found State");
 
         WebElement weCountry = null;
         WebElement wePhone = null;
@@ -1481,10 +1488,13 @@ public class ContactsTestBase {
         Wait(2);
         //driver.findElement(By.xpath("//input[contains(@id,'SaveShippingButton')]")).click();
        try{
-           driver.findElement(By.id("SaveShippingButton")).click();
+           print("trying phone and tab");
+           driver.findElement(By.xpath("//input[@id='PhoneNumber']")).sendKeys(Keys.TAB,Keys.SPACE,Keys.ENTER);
+
        }
        catch(Throwable e){
-           driver.findElement(By.xpath("//div[17]/div/div/div/div/div/form/div[3]/input[3]")).click();
+           print("trying button");
+           driver.findElement(By.xpath("//input[contains(@id,'SaveShippingButton')]")).click();
        }
     }
     public String editBilling(String device,String fName,String lName,String country,String city, String state, String stateAbrev,String zip){
@@ -1804,7 +1814,7 @@ public class ContactsTestBase {
             weNewCustomer.click();
         }
         else if(device.equals("desktop")){
-            WebElement weNewCustomer = driver.findElement(By.xpath("//label[contains(@for,'ctl00_contentPlaceHolderContent_SignIn1_rbNewCustomer')]"));
+            WebElement weNewCustomer = driver.findElement(By.xpath("//input[@id='NewCustomer']"));
             weNewCustomer.click();
         }
     }
@@ -1827,10 +1837,10 @@ public class ContactsTestBase {
             typeNewCustPassword(device,password);
         }
         else if(device.equals("desktop")){
-            driver.findElement(By.xpath("//input[contains(@onblur,'tbEmail(this.value);')]")).sendKeys(theEmailString);
+            driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(theEmailString);
             print("Email used is: " + theEmailString);
             printToExcel(testNumber,theEmailString);
-            WebElement weEmailConfirm = driver.findElement(By.xpath("//input[contains(@onblur,'tbNewCustomerEmailConfirm(this.value);')]"));
+            WebElement weEmailConfirm = driver.findElement(By.xpath("//input[@id='EmailConfirmation']"));
             weEmailConfirm.sendKeys(theEmailString);
             typeNewCustPassword(device,password);
         }
@@ -1868,8 +1878,8 @@ public class ContactsTestBase {
 
     }
     public void typeNewCustPassword(String device,String password){
-        WebElement wePassword = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_SignIn1_tbNewCustomerPassword_tbPass')]"));
-        WebElement wePasswordConfirm = driver.findElement(By.xpath("//input[contains(@id,'ctl00_contentPlaceHolderContent_SignIn1_tbNewCustomerPasswordConfirm_tbPass')]"));
+        WebElement wePassword = driver.findElement(By.xpath("//input[@id='NewCustomerPassword']"));
+        WebElement wePasswordConfirm = driver.findElement(By.xpath("//input[@id='PasswordConfirmation']"));
         wePassword.sendKeys(password);
         wePasswordConfirm.sendKeys(password);
     }
@@ -3109,7 +3119,17 @@ public class ContactsTestBase {
         }
         return present;
     }
-    public boolean isDatabindPresent(String name) {
+    public boolean isDatabindPresent(String device) {
+        boolean present;
+        try {
+            driver.findElement(By.xpath("//ul[@id='errorMessagesUl']"));
+            present = true;
+        } catch (NoSuchElementException e) {
+            present = false;
+        }
+        return present;
+    }
+    public boolean isErrorPresent(String name) {
         boolean present;
         try {
             driver.findElement(By.xpath("//div[contains(@data-bind,'"+name+"')]"));
@@ -3146,6 +3166,7 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.City')]")).sendKeys(city);
         print("City is: " + city);
         Wait(1);
+        driver.findElement(By.xpath("//input[contains(@name,'ShippingAddress.City')]")).sendKeys(city);
     }
 
     public void typeShippingState(String country,String state) {
@@ -3240,6 +3261,7 @@ public class ContactsTestBase {
     public void clickNewAddress_Continue() {
         driver.findElement(By.xpath("//input[contains(@value,'continue')]")).click();
         print("Clicked Continue on New Address Page");
+        Wait(5);
     }
 
     public void selectDiffBillingAddress(String device){
@@ -3277,17 +3299,31 @@ public class ContactsTestBase {
     }
 
     public void typeBillingCity(String city) {
-        driver.findElement(By.xpath("//input[contains(@name,'BillingAddress.City')]")).sendKeys(city);
-        print("City is: " + city);
+        WebElement weCity = driver.findElement(By.xpath("//input[contains(@id,'BillingAddress_City')]"));
+        weCity.click();
+        weCity.sendKeys(city);
+        /*String stCity = weCity.getText();
+        print("City is: " + stCity);
+        while(!weCity.getText().contains(city)){
+            print("City is: " + stCity);
+            weCity.sendKeys(city);
+        }*/
     }
 
     public void typeBillingState(String device,String state) {
-        driver.findElement(By.xpath("//select[contains(@id,'BillingAddress_StateProvinceOrRegion')]")).sendKeys(state,Keys.ENTER);
-        print("State is: " + state + " " + device);
+        Wait(1);
+            WebElement weState = driver.findElement(By.xpath("//select[contains(@id,'BillingAddress_StateProvinceOrRegion')]"));
+            weState.sendKeys(state, Keys.TAB);
+            while(!weState.getText().contains("")) {
+                Wait(1);
+                weState.click();
+                weState.sendKeys(state,Keys.TAB);
+            }
+            print("State is: " + state);
     }
 
     public void typeBillingZip(String zip) {
-        driver.findElement(By.xpath("//input[contains(@name,'BillingAddress.ZipOrPostalCode')]")).sendKeys(zip);
+        driver.findElement(By.xpath("//input[contains(@id,'BillingAddress_ZipOrPostalCode')]")).sendKeys(zip);
         print("Zip is: " + zip);
     }
 
@@ -4266,9 +4302,10 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//input[contains(@id,'generatePDF')]")).click();
     }
     public void verifyExpiredCard(String device) {
-        driver.findElement(By.id ("errorMessagesUl"));
-        print("Got the Expired Card message");
-        print("Next - Change exp date to be correct");
+           Wait(4);
+            driver.findElement(By.id ("errorMessagesUl"));
+            print("Got the Expired Card message");
+            print("Next - Change exp date to be correct");
     }
     public void verifyCartNameError(String device) {
         Wait(2);
@@ -4277,7 +4314,7 @@ public class ContactsTestBase {
         print("Next - Change Name to be correct");
     }
     public void verifyCartRxError(String device) {
-        Wait(2);
+        Wait(4);
         String verifyCartRxError =  driver.findElement(By.xpath("//li[contains(.,'We do not carry the prescription entered. If you need help with your prescription, we have contact lens specialists available through live chat or by phone (1-800-266-8228).')]")).getText();
         verifyTxtPresent("Error text is: ", "We do not carry the prescription entered. If you need help with your prescription, we have contact lens specialists available through live chat or by phone (1-800-266-8228).", verifyCartRxError);
         print("Next - Change the Rx to be correct");

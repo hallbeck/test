@@ -200,8 +200,8 @@ public class Payment47577 extends ContactsTestBase {
         print(paymentType);
         if(paymentType.equals("expired")) {
         clickBottomSubmitButton(device);
-        verifyExpiredCard(device);
         takeScreenshot(screenshotTestName, "Exp_cardRI");
+        verifyExpiredCard(device);
         typeCreditCard(device,CCNum);
         pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
         }

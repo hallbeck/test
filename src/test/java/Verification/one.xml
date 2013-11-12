@@ -4,6 +4,7 @@
     <test name="verification">
         <parameter name="device" value='desktop'/>
         <classes>
+            <class name="Verification.DiffShippingBilling47612"/>
             <class name="Verification.EditShippingBilling44764"/>
         </classes>
     </test>

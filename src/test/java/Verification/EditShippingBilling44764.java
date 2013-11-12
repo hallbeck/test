@@ -130,5 +130,6 @@ public class EditShippingBilling44764 extends ContactsTestBase {
         //clickSaveBilling(device);
         verifyBillCityStateMyAcct(device,cityEdit,stateAbrev,zipEdit);
         verifyPaymentInfo(device,paymentType);
+        driver.quit();
     }
 }

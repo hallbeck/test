@@ -7,15 +7,6 @@
     <list id="e57d5f92-6995-46e5-9431-8418867e91d5" name="Default" comment="rebates tests" />
     <list default="true" id="269dda35-e416-4fe0-a874-bd0fea29addb" name="base files" comment="base files">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src.zip" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/DiffShippingBilling47612.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" afterPath="$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" afterPath="$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" afterPath="$PROJECT_DIR$/src/test/java/INIAutomation/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/Account/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Regression/PDP/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Regression/PDP/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Verification/one.xml" afterPath="$PROJECT_DIR$/src/test/java/Verification/one.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +64,7 @@
     <file path="/SmokeNIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368483380908" ignored="false" />
     <file path="/SmokeRIColor6MoTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1369942264733" ignored="false" />
     <file path="/SmokeNIAcuvue2CanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368043943977" ignored="false" />
-    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1384183321327" ignored="false" />
+    <file path="/Dummy.txt" changelist="269dda35-e416-4fe0-a874-bd0fea29addb" time="1384355822239" ignored="false" />
     <file path="/testng.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1366823962680" ignored="false" />
     <file path="/SmokeRIMultiFocalCanadaTest.java" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1368042248603" ignored="false" />
     <file path="/phoneSmoke.xml" changelist="e57d5f92-6995-46e5-9431-8418867e91d5" time="1367261367068" ignored="false" />
@@ -410,6 +401,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -448,7 +440,6 @@
       </breakpoint>
     </breakpoint_any>
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -468,7 +459,7 @@
       <file leaf-file-name="ContactsTestBase.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3304" column="72" selection-start="159433" selection-end="159433" vertical-scroll-proportion="0.40305343">
+            <state line="3304" column="72" selection-start="159433" selection-end="159433" vertical-scroll-proportion="0.016915424">
               <folding />
             </state>
           </provider>
@@ -644,8 +635,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -824,6 +813,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -839,12 +830,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1020,12 +1011,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -1033,6 +1018,12 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -1074,6 +1065,35 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1100,35 +1120,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" />
-      <option name="myWorkingDirectory" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1404,7 +1395,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1416,12 +1407,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2813653" sideWeight="0.1125" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29829243" sideWeight="0.25417075" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25830257" sideWeight="0.17662753" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29829243" sideWeight="0.25417075" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6855524" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40021345" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.68869734" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23125" sideWeight="0.68869734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3113027" sideWeight="0.25453576" order="2" side_tool="false" content_ui="tabs" x="1914" y="910" width="1920" height="274" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1438,6 +1428,7 @@
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30747128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25830257" sideWeight="0.17662753" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1642,58 +1633,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/PDPAccessoriesAll48553.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1492" selection-end="1505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="21" selection-start="1492" selection-end="1505" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/editRxRI_49779.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="8" selection-start="4895" selection-end="4895" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="129" column="8" selection-start="4895" selection-end="4895" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/editRxNI_49775.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="36" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3_Payment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="0.12265512">
-          <folding />
-        </state>
+        <state line="5" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="0.12265512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Payment/Payment47577.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="400" column="32" selection-start="23933" selection-end="23933" vertical-scroll-proportion="0.5584416">
-          <folding />
-        </state>
+        <state line="400" column="32" selection-start="23933" selection-end="23933" vertical-scroll-proportion="0.5584416" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/NILogin_signinpage_48412.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="33" selection-start="3901" selection-end="3926" vertical-scroll-proportion="0.53968257">
-          <folding />
-        </state>
+        <state line="117" column="33" selection-start="3901" selection-end="3926" vertical-scroll-proportion="0.53968257" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/PDP/one.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.14718615">
-          <folding />
-        </state>
+        <state line="6" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.14718615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression/Account/one.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="256" selection-end="256" vertical-scroll-proportion="0.14718615">
-          <folding />
-        </state>
+        <state line="6" column="58" selection-start="256" selection-end="256" vertical-scroll-proportion="0.14718615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Verification/EditShippingBilling44764.java">
@@ -1712,28 +1687,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Verification/one.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="237" selection-end="368" vertical-scroll-proportion="0.14718615">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="237" selection-end="368" vertical-scroll-proportion="0.14718615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Verification/verification.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll4.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="150" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0981241">
-          <folding />
-        </state>
+        <state line="4" column="150" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0981241" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SuitesOfTests/desktopAll3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="63" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.31890333">
+        <state line="28" column="63" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.31890333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3304" column="72" selection-start="159433" selection-end="159433" vertical-scroll-proportion="0.016915424">
           <folding />
         </state>
       </provider>
@@ -1741,13 +1715,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/INIAutomation/one.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="44" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base/ContactsTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3304" column="72" selection-start="159433" selection-end="159433" vertical-scroll-proportion="0.40305343">
           <folding />
         </state>
       </provider>

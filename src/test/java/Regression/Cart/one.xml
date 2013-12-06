@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Links" verbose="1" >
+    <test name="LinkTests" >
+        <parameter name="device" value='desktop'/>
+        <classes>
+            <class name="Regression.OpenBugs.PDPEditRx53128_53484"/>
+        </classes>
+    </test>
+</suite>

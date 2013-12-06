@@ -6,11 +6,11 @@
         <classes>
             <class name="WorkInProgress.hitServers">
                 <methods>
-                          <include name="Prod39Servers"/>
+                          <include name="ProdServers"/>
                 </methods>
             </class>
         </classes>
     </test>
 </suite>
-        <!-- <include name="ProdServers" />-->
+        <!-- <include name="ProdServers"/>-->
         <!--<include name="ProdServers2"/>-->

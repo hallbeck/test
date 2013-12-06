@@ -13,7 +13,6 @@
             <parameter name="prod" value='no'/>
             <classes>
                 <class name="Promos.current.SolutionPromo_2pk_not_free_shipping"/>
-                <!--<class name="Promos.old.SunglassesPromo"/>-->
             </classes>
         </test>
             <test name="Account">
@@ -36,7 +35,7 @@
                     <methods>
                         <include name="LinksTest"/>
                         <include name="EmailLinkTest"/>
-                        <include name="ClickLinkTest"/>
+                        <!--<include name="ClickLinkTest"/>-->
                         <include name="OtherLinkTest"/>
                     </methods>
                 </class>

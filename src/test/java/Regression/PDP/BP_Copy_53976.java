@@ -13,10 +13,16 @@ import org.testng.annotations.*;
 public class BP_Copy_53976 extends ContactsTestBase {
 
 
-    @DataProvider(name = "Accessories")
+    @DataProvider(name = "BP")
     public Object[][] createData1() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\PDP.xls",
-                "inputsStage", "accessories1");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\PDPCopy.xls",
+                "inputsStage", "pdpCopy");
+        return(retObjArr);
+    }
+    @DataProvider(name = "BPError")
+    public Object[][] createData3() throws Exception{
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\PDPCopy.xls",
+                "inputsStage", "pdpError");
         return(retObjArr);
     }
     @DataProvider(name = "OneTest")
@@ -33,14 +39,25 @@ public class BP_Copy_53976 extends ContactsTestBase {
         print("===========START TEST============="+device);
         openWebPage(device);
     }
-    @Test (dataProvider = "Accessories")
+    @Test (dataProvider = "BP")
     @Parameters(value = "device")
-    public void AccessoriesTest(String testNumber, String device, String typeOfTest, String product, String expected) {
+    public void bPTest(String testNumber, String device, String typeOfTest, String id,String product, String expected) {
         String printTestName = typeOfTest + " | " + testNumber + " | " + product;
-        String screenshotTestName =  testNumber + "_" + typeOfTest + "_Accessories_" + product;
+        String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + product;
         printTestNumber(printTestName);
-        searchAllBrand(device,product);
-        assertProduct(device,expected);
+        gotoPage(device,product);
+        takeScreenshot(screenshotTestName, "BP");
+        verifyBPCopy(device,id,expected);
+    }
+    @Test (dataProvider = "BPError")
+    @Parameters(value = "device")
+    public void bPTestError(String testNumber, String device, String typeOfTest, String id,String product, String expected) {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + product;
+        String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + product;
+        printTestNumber(printTestName);
+        gotoPage(device,product);
+        verifyBPCopy(device,id,expected);
+        takeScreenshot(screenshotTestName, "BP");
     }
     @AfterMethod
     public void tearDown(){

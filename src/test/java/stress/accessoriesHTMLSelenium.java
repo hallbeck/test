@@ -11,11 +11,12 @@ import org.testng.annotations.*;
  * To change this template use File | Settings | File Templates.
  */
 public class accessoriesHTMLSelenium extends HTMLSeleniumTestBase {
-
-    @DataProvider(name = "products")
+    String BuyersGuideLink = "BuyersGuide/default.aspx";
+    @DataProvider(name = "HowToOrder")
     public Object[][] createData1() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\StressInputs.xls",
-                "inputsStage", "AllProductsTEST");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\HowToOrderInputs.xls",
+                "inputsStage", "AllProducts");
+
         return(retObjArr);
     }
     @BeforeMethod
@@ -23,11 +24,17 @@ public class accessoriesHTMLSelenium extends HTMLSeleniumTestBase {
         startNow("http://www.google.com");
 
     }
-    @Test (singleThreaded = true,dataProvider = "products")
-    @Parameters()
-    public void productPage(String testNumber,String productPage,String title) {
+    @Test (dataProvider = "HowToOrder")
+    @Parameters(value = "device")
+    public void howToOrderTest(String testNumber, String device,String typeOfTest, String brand, String title)
+    {
+        String printTestName = typeOfTest + " | " + testNumber + " | " + brand ;
+        String screenshotTestName =  testNumber + "_" + typeOfTest + "_"  + brand ;
         print(testNumber+"\n");
-        getLink(productPage, title);
+        goToPage(BuyersGuideLink);
+        chooseBrand(device,brand);
+        clickGo();
+        //assertProductTitlePDP(device,title);
     }
     @AfterMethod
     public void afterMethod(){

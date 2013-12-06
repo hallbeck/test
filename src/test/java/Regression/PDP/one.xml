@@ -4,7 +4,12 @@
     <test name="testing1">
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.PDP.PDPEditRx48520"/>
+            <class name="Regression.PDP.BP_Copy_53976">
+            <methods>
+                <!--<include name="bPTest"/>-->
+                <include name="bPTestError"/>
+            </methods>
+            </class>
         </classes>
     </test>
 </suite>

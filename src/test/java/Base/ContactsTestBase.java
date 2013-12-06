@@ -33,6 +33,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * User: KHALLBEC
@@ -93,7 +94,16 @@ public class ContactsTestBase {
     public String tabletBaseUrl = "https://www.1800contacts.com/";
     public String tabletURL = (tabletBaseUrl + "?responsive=yes");*/
 
+
+
+
+    //variation1
+    //public String desktopBaseUrl = "http://www.1800contacts.com/?SS_PREVIEW_EXP=2013_NOV_28_1500MST&9091:FSDM7B2A";
+    //variation2
+    //public String desktopBaseUrl = "http://www.1800contacts.com/?SS_PREVIEW_EXP=2013_NOV_28_1500MST&9092:FSDM7B2A";
+
     //STAGING
+
     public String desktopBaseUrl = "https://www.1800contactstest.com/";
     public String mobileBaseUrl = "https://www.1800contactstest.com/";
     public String mobileURL = (mobileBaseUrl + "?responsive=yes");
@@ -302,6 +312,28 @@ public class ContactsTestBase {
             driver.get(tabletURL);
         }
     }
+    public void openWebPageSiteSpect(String device) {
+        if(device.equals("desktop")){
+            String baseUrl = makeBaseUrl(device);
+            driver.get("https://www.google.com");
+            driver.manage().deleteAllCookies();
+            driver.get(desktopBaseUrl);
+            Wait(1);
+            minSiteSpect();
+            setCookie();
+        }
+        if(device.equals("tablet")||device.equals("phone")){
+            driver.get(tabletURL);
+        }
+    }
+    public void minSiteSpect(){
+        try{
+        driver.findElement(By.id("ssp_miniMode_toggle_button")).click();
+        }
+        catch(Throwable e){
+            print ("no sitespect");
+        }
+    }
     public void gotoPage(String device,String addition) {
         if(device.equals("desktop")){
             driver.get(desktopBaseUrl + addition);
@@ -348,31 +380,42 @@ public class ContactsTestBase {
         Wait(1);
     }
     //to find gigya window
-    public void findNewWindow(String device){
-        final Set<String> handles = driver.getWindowHandles();
-      //I dont think I need this because I am opeing the new window in another method
-   // driver.findElement(By.id("Monitor Groups")).click();
+    public void backtoParentWindow(String device,String parentWindow){
+        try{
+        print("Finding parent window");
+        Set<String> handles =  driver.getWindowHandles();
+        print("HANDLES: "+handles);
+        for(String windowHandle  : handles)
+        {
+            if(windowHandle.equals(parentWindow))
+            {
+                driver.switchTo().window(windowHandle);
 
-    // It wasn't waiting for the popup to be loaded... bug in webdriver maybe? I'll have to ask....
-    String newWindow = (new WebDriverWait(driver, 10)).until(new ExpectedCondition<String>() {
-        public String apply(WebDriver input) {
-            Set<String> newHandles = input.getWindowHandles();
-            newHandles.removeAll(handles);
-            if (newHandles.size() > 0) {
-                return newHandles.iterator().next();
             }
-            return null;
         }
-    });
-
-    driver.switchTo().window(newWindow);
-
-    // wait for the element to appear
-    WebElement element = (new WebDriverWait(driver, 10)).until(new ExpectedCondition<WebElement>() {
-        public WebElement apply(WebDriver input) {
-            return input.findElement(By.xpath("//input[contains(@id,'email'||'Email'||'ap_email')]"));
         }
-    });
+        catch (Throwable e){}
+    }
+    public void findNewWindow(String device,String parentWindow){
+        try{
+            print("Finding new window");
+            Set<String> handles =  driver.getWindowHandles();
+            print("HANDLES: "+handles);
+            print("parent window is: "+parentWindow);
+            Wait(2);
+            for(String windowHandle  : handles)
+            {
+                if(!windowHandle.equals(parentWindow))
+                {
+                    print("going to new window");
+                    Wait(2);
+                    driver.switchTo().window(windowHandle);
+                    print("went to new window");
+                    Wait(2);
+                }
+            }
+        }
+        catch (Throwable e){}
     }
     public void clickLink(String linkName){
         driver.findElement(By.xpath(linkName)).click();
@@ -1059,6 +1102,13 @@ public class ContactsTestBase {
         //    System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
         // }
     }
+    public void verifyCookie(){
+        Set<Cookie> allCookies = driver.manage().getCookies();
+         for (Cookie loadedCookie : allCookies) {
+            print(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
+         }
+    }
+
     public void appendToFile(String fileName, String toAppend){
 
         try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)))) {
@@ -1736,56 +1786,91 @@ public class ContactsTestBase {
             hoverSignInButton(device);
         }
     }
-    public void hoverSigninFacebook(String device,String riEmail,String password){
+    public void hoverSigninGivenEmail(String device,String email,String password){
         if(device.equals("desktop")) {
-            String email = getRIEmail(riEmail);
             clickHoverSignin(device);
+            WebElement weSignInEmail = driver.findElement(By.xpath("//input[contains(@class,'email')]"));
+            WebElement weSignInPassword = driver.findElement(By.xpath("//input[contains(@class,'password')]"));
+            weSignInEmail.sendKeys(email);
+            weSignInPassword.sendKeys(password);
+            hoverSignInButton(device);
+        }
+    }
+    public void hoverSigninFacebook(String device,String email,String password){
+        if(device.equals("desktop")) {
+            clickHoverSignin(device);
+            String parentWindow = driver.getWindowHandle();
             WebElement weSignInFbButton = driver.findElement(By.xpath("//img[contains(@src,'/images/Gigya/facebookFLogo.png')]"));
             weSignInFbButton.click();
-            findNewWindow(device);
+            Wait(3);
+            findNewWindow(device,parentWindow);
             WebElement weSignInEmail = driver.findElement(By.id("email"));
             WebElement weSignInPassword = driver.findElement(By.id("pass"));
             weSignInEmail.sendKeys(email);
             weSignInPassword.sendKeys(password);
             //click signin in the window
             driver.findElement(By.id("u_0_1")).click();
-            hoverSignInButton(device);
+            print("Signedin");
+            Wait(2);
+            backtoParentWindow(device,parentWindow);
         }
     }
-    public void hoverSigninGoogle(String device,String riEmail,String password){
+    public void hoverSigninGoogle(String device,String email,String password){
         if(device.equals("desktop")) {
-            String email = getRIEmail(riEmail);
             clickHoverSignin(device);
+            String parentWindow = driver.getWindowHandle();
             WebElement weSignInGoogleButton = driver.findElement(By.xpath("//img[contains(@src,'/images/Gigya/googlePlusLogo.png')]"));
-            WebElement weSignInEmail = driver.findElement(By.xpath("//input[contains(@class,'email')]"));
-            WebElement weSignInPassword = driver.findElement(By.xpath("//input[contains(@class,'password')]"));
             weSignInGoogleButton.click();
+            Wait(3);
+            findNewWindow(device,parentWindow);
+            driver.findElement(By.id("PersistentCookie")).click();
+            WebElement weSignInEmail = driver.findElement(By.id("Email"));
+            WebElement weSignInPassword = driver.findElement(By.id("Passwd"));
             weSignInEmail.sendKeys(email);
             weSignInPassword.sendKeys(password);
             //click signin in the window
             driver.findElement(By.id("signIn")).click();
-            hoverSignInButton(device);
+            try{
+                findNewWindow(device,parentWindow);
+                driver.findElement(By.id("submit_approve_access")).click();
+            }
+            catch(Throwable e){}
+            print("Signedin");
+            Wait(2);
+            backtoParentWindow(device,parentWindow);
         }
     }
-    public void hoverSigninAmazon(String device,String riEmail,String password){
+    public void hoverSigninAmazon(String device,String email,String password){
         if(device.equals("desktop")) {
-            String email = getRIEmail(riEmail);
             clickHoverSignin(device);
+            String parentWindow = driver.getWindowHandle();
             WebElement weSignInAmazonButton = driver.findElement(By.xpath("//img[contains(@src,'/images/Gigya/amazonALogo.png')]"));
-            WebElement weSignInEmail = driver.findElement(By.xpath("//input[contains(@class,'email')]"));
-            WebElement weSignInPassword = driver.findElement(By.xpath("//input[contains(@class,'password')]"));
             weSignInAmazonButton.click();
+            Wait(3);
+            findNewWindow(device,parentWindow);
+            WebElement weSignInEmail = driver.findElement(By.id("ap_email"));
+            WebElement weSignInPassword = driver.findElement(By.id("ap_password"));
             weSignInEmail.sendKeys(email);
             weSignInPassword.sendKeys(password);
             //click signin in the window
             driver.findElement(By.cssSelector("button.button-text.signin-button-text")).click();
-            hoverSignInButton(device);
+            try{
+                findNewWindow(device,parentWindow);
+                driver.findElement(By.name("consentApproved")).click();
+            }
+            catch(Throwable e){}
+            print("Signedin");
+            Wait(2);
+            backtoParentWindow(device,parentWindow);
         }
     }
     public void hoverSignInButton(String device){
         if(device.equals("desktop")) {
         driver.findElement(By.xpath("//button[contains(.,'Sign in')]")).click();
         }
+    }
+    public void clickSendEmailButton (String device) {
+        driver.findElement(By.xpath("//button[@id='sendEmailButton']")).click();
     }
 
 /*    public void goToSignInPage(String device){
@@ -2811,6 +2896,29 @@ public class ContactsTestBase {
             print("ToolTip not present");
         }
     }
+    public boolean isIDTextPresent(String device,String id, String desired) {
+        boolean present;
+            String actual = driver.findElement(By.id(""+id+"")).getText();
+            print(id+" : "+ actual);
+            Pattern p = Pattern.compile(desired);
+            Matcher m = p.matcher(actual);
+            // try to find a match
+            if (m.find()) {
+                print("VERIFIED " + id + ". Found : " + desired + ", within: " + actual );
+                present = true;
+            }
+            else {
+                print("FAIL " + id + ". NOT Found :" + desired + ", within:" + actual+":" );
+                present = false;
+            }
+            if (present == false) {
+                throw new UnsatisfiedLinkError();
+        }
+        return present;
+    }
+    public void verifyBPCopy(String device, String id,String desired){
+        isIDTextPresent(device,id,desired);
+    }
     public void clickAddAccessoryToCart(String device) {
         Wait(3);
         driver.findElement(By.cssSelector("input.accessoryAddToCart")).click();
@@ -3257,6 +3365,15 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//input[contains(@id,'a41-checkout-confirm-password')]")).sendKeys(password);
         print("Password Entered: " + password);
     }
+    public void typeShippingGivenEmail(String email, String testNumber) {
+        String theEmailString = email;
+        WebElement weEmail = driver.findElement(By.xpath("//input[contains(@name,'EmailAddress')]"));
+        weEmail.clear();
+        weEmail.sendKeys(theEmailString);
+        print("Email used is: " + theEmailString);
+        printToExcel(testNumber,theEmailString);
+        appendToFile(emailFile,theEmailString);
+    }
 
     public void clickNewAddress_Continue() {
         driver.findElement(By.xpath("//input[contains(@value,'continue')]")).click();
@@ -3326,15 +3443,22 @@ public class ContactsTestBase {
         driver.findElement(By.xpath("//input[contains(@id,'BillingAddress_ZipOrPostalCode')]")).sendKeys(zip);
         print("Zip is: " + zip);
     }
-
+   public String checkURL(){
+       String currentURL = driver.getCurrentUrl();
+       return currentURL;
+   }
     public void typeDoctorSearch(String doctor) {
+        while(!checkURL().contains("octorSearch")) {
+            print(checkURL());
+            Wait(1);
+        }
         driver.findElement(By.xpath("//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]")).clear();
         driver.findElement(By.xpath("//input[contains(@name,'DoctorSearchOptionsViewModel.DoctorOrClinic')]")).sendKeys(doctor);
         print("input dr name for search");
     }
     public void addDoctor(String device){
         if(device.equals("desktop")){
-            Wait(2);
+            Wait(3);
             driver.findElement(By.xpath("//img[contains(@alt,'Add Doctor')]")).click();
         }
         if(device.equals("tablet")){
@@ -3432,6 +3556,7 @@ public class ContactsTestBase {
             print("selected Doctor 2595945");
         }
         else if(device.equals("desktop")){
+            Wait(2);
             driver.findElement(By.xpath("//img[contains(@src,'/img/UI3/DoctorSearch/bttn-select.png')]")).click();
             print("selected Doctor 2696254");
         }
@@ -4332,29 +4457,30 @@ public class ContactsTestBase {
         if (givenError.equals("invalid")){
             error = ccErrorInvalid;
         }
-
-        try{driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
+        while(checkURL().contains("Error")) {
+            print(checkURL());
+       // try{driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
             print("Found CreditCard Error page");
             print("going back");
-            try{
+            //try{
                 goback();
-                while(!driver.getCurrentUrl().contains("Review")) {
+/*                while(!driver.getCurrentUrl().contains("Review")) {
                     print("waiting");
                     String currentURL = driver.getCurrentUrl();
                     print(currentURL);
                     Wait(1);
-                }
+                }*/
                 //driver.findElement(By.xpath("//a[contains(@href,'/ReviewOrder')]")).click();
-            }
-            catch(Throwable e){}
+            //}
+            //catch(Throwable e){}
         }
-        catch (Throwable e){
-            try{
-                String actualError = driver.findElement(By.xpath("//ul[contains(@id,'errorMessagesUl')]")).getText();
+        //catch (Throwable e){
+            //try{
+                //String actualError = driver.findElement(By.xpath("//ul[contains(@id,'errorMessagesUl')]")).getText();
 
-            verifyTxtPresent("Error Message for Card: ",error,actualError); }
-            catch(Throwable E){}
-        }
+            //verifyTxtPresent("Error Message for Card: ",error,actualError); }
+           // catch(Throwable E){}
+
     }
     public void verifyTestDeclinedCard(String device) {     //for the 4111111111 card
         driver.findElement(By.xpath("//div[contains(@class,'errorPageHeader1')]"));
@@ -5062,6 +5188,7 @@ public class ContactsTestBase {
         verifyTotalAfterRebate(device,rsTotalAfterRebate);
         verifyRebateText(device,rsRebate);
         verifyShipping(device, rsShipping);
+        verifyCookie();
     }
     //asserts
     public void verifyRXCart (String device,String rPower,String lPower,String rDia,String lDia,String rAxis,String lAxis,String rColor,String lColor,String rAdd,String lAdd,String rCyl,String lCyl,String rBC,String lBC,String rBoxes,String lBoxes){
@@ -5081,6 +5208,7 @@ public class ContactsTestBase {
         assertLBCCart(device,lBC);
         assertRBoxesCart(device,rBoxes);
         assertLBoxesCart(device,lBoxes);
+        verifyCookie();
     }
     public void assertOrderStatusHistory(String device,String brand,String patientName,String shippingCost,String shippingType,String sState,String sCity,String tax,String total,String rebateText,String totalAfterRebate) {
         assertBrandOrderStatusHistory(device,brand);

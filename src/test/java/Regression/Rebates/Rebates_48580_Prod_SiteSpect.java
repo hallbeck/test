@@ -14,8 +14,8 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
 
     @DataProvider(name = "Rebates")
     public Object[][] createData1() throws Exception{
-        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\Rebates.xls",
-                "inputsProd", "rebatesNI");
+        Object[][] retObjArr=getTableArray("c:\\test\\src\\test\\resources\\RebatesSiteSpect.xls",
+                "inputsStage", "rebatesNI");
         return(retObjArr);
     }
 
@@ -31,12 +31,12 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
     @Parameters(value = "device")
     public void setUp(String device) throws Exception {
         print("===========START TEST============="+device);
-        openWebPage(device);
+        openWebPageSiteSpect(device);
     }
     @Test(dataProvider = "Rebates")
     @Parameters(value = "device")
     public void NItest(String testNumber, String orderNumberPlaceholder, String device,String typeOfTest, String typeOfCust, String typeOfPayment,
-                       String link, String rebatesAvailable, String rebateTextRS,
+                       String searchAllBrand, String rebatesAvailable, String rebateTextRS,
                        String rebate6Month, String rebate12Month, String rebateShipped, String brandVerifyPDP,
                        String ccExpMo, String ccExpYear, String CCNum, String CCName, String paymentType,
                        String emailPrefix, String password,
@@ -54,15 +54,20 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
                        String pricePerBox, String priceREye, String priceLEye, String pricePerBox2, String priceREye2, String priceLEye2,
                        String priceTotal, String rsTotal, String rsTotalAfterRebate, String rsTax, String rsShipping,
                        String shippingFName, String shippingLName, String country, String state, String city, String zip,String bState, String bCity,
-                       String rebateNotShipped, String orderStatus, String shippingVerify)
+                       String rebateNotShipped, String brandclick, String shippingVerify)
     {
         String fullPatientName = (PatientFNameCart + " " + PatientLNameCart);
         String printTestName = typeOfTest + " | " + testNumber + " | " + typeOfCust  + " | " + typeOfPayment + " | " + shippingVerify;
-        String screenshotTestName =  testNumber + "_" + typeOfTest + "_" + typeOfCust + "_" + typeOfPayment + "_" + shippingVerify;
-        takeScreenshot(screenshotTestName, "Interstitial");
-        clickNoThanksButton(device);
+        String screenshotTestName =  "SiteSpect_" + "Variation2_"+testNumber;
         printTestNumber(printTestName);
-        gotoPage(device,link);
+
+        clickFindBrand(device);
+        searchAllBrand(device,searchAllBrand);
+        if (searchAllBrand.equals("acuvue")||searchAllBrand.equals("acuvue advance")||searchAllBrand.equals("proclear")||searchAllBrand.equals("purevision")||searchAllBrand.contains("drops")
+                ||searchAllBrand.contains("solution")){
+            clickPhoneBrand(device,brandVerifyPDP);
+        }
+        takeScreenshot(screenshotTestName, "PDP1_");
         print(rebatesAvailable);
         clickRPower(device,posR,rPower);
         clickLPower(device,posL,lPower);
@@ -83,10 +88,12 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
         clickRboxes(rBoxes);
         clickLboxes(lBoxes);
         typePatientName(PatientFNameCart, PatientLNameCart);
-        takeScreenshot(screenshotTestName, "PDP1_");
+        takeScreenshot(screenshotTestName, "PDP2_");
         clickAddToCart(device);
+        minSiteSpect();
         verifyRebateCart(device,rebate6Month);
         clickCart_Continue(device);
+        minSiteSpect();
         typeShippingName(shippingFName,shippingLName);
         typeShippingAddress();
         clickCountry(country);
@@ -96,14 +103,19 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
         typeShippingPhone(device);
         typeShippingEmail(emailPrefix,testNumber);
         typePassword_newcust(password);
-        takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();
         verifyRebateRS(device,rebate6Month,rebateTextRS);
+        appendToFile("sitespect.txt", iMoY+"_"+iDay+"_"+iYr+"_"+iToD);
         if (!rebate12Month.equals("")){
             goToCart(device);
+            minSiteSpect();
             clickRemove(device);
-
-            gotoPage(device,link);
+            clickFindBrand(device);
+            searchAllBrand(device,searchAllBrand);
+            if (searchAllBrand.equals("Acuvue")||searchAllBrand.contains("drops")
+                    ||searchAllBrand.contains("solution")){
+                clickPhoneBrand(device,brandVerifyPDP);
+            }
             print(rebatesAvailable);
             clickRPower(device,posR,rPower);
             clickLPower(device,posL,lPower);
@@ -124,23 +136,22 @@ public class Rebates_48580_Prod_SiteSpect extends ContactsTestBase {
             clickRboxes(rBoxes2);
             clickLboxes(lBoxes2);
             typePatientName(PatientFNameCart, PatientLNameCart);
-            takeScreenshot(screenshotTestName, "PDP2_");
+            takeScreenshot(screenshotTestName, "PDP3_");
             clickAddToCart(device);
             verifyRebateCart(device,rebate12Month);
             clickCart_Continue(device);
             verifyRebateRS(device,rebate12Month,rebateTextRS);
         }
-        typeCreditCard(device,CCNum);
-        typeCreditCardName(device,CCName);
-        pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
-        takeScreenshot(screenshotTestName, "ReviewSubmit");
-        checkoutAndVerify(orderNumberPlaceholder,device,shippingVerify,brandVerifyPDP,fullPatientName,rsShipping,zip,city,rsTax,rsTotal,rebateTextRS,rsTotalAfterRebate,orderStatus,bState,bCity);
-        getRebate(device,orderNumberPlaceholder,rebateNotShipped);
+        //typeCreditCard(device,CCNum);
+       //typeCreditCardName(device,CCName);
+       // pickCreditCardExpDate(device,ccExpMo, ccExpYear,paymentType);
+        //takeScreenshot(screenshotTestName, "ReviewSubmit");
         //shipOrder(testNumber);
         //getRebate(device,orderNumberPlaceholder,rebateShipped);
     }
     @AfterMethod
     public void tearDown(){
+
         driver.manage().deleteAllCookies();
     }
     @AfterClass

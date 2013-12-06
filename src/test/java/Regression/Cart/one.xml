@@ -5,7 +5,7 @@
     <test name="LinkTests" >
         <parameter name="device" value='desktop'/>
         <classes>
-            <class name="Regression.OpenBugs.PDPEditRx53128_53484"/>
+            <class name="Regression.Cart.basketCookie"/>
         </classes>
     </test>
 </suite>

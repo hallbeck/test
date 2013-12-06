@@ -8,6 +8,12 @@
                 <class name="Regression.PDP.PDPBadRx47802"/>
                 <class name="Regression.PDP.PDPBadPName47802"/>
                 <class name="Regression.PDP.PDPEditRx48520"/>
+                <class name="Regression.PDP.BP_Copy_53976">
+                    <methods>
+                        <include name="bPTest"/>
+                        <include name="bPTestError"/>
+                    </methods>
+                </class>
             </classes>
         </test>
     <test name="HoverSignin">

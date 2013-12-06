@@ -138,9 +138,9 @@ public class OrderStatusHistory47655 extends ContactsTestBase {
         typeBillingName(billingFName, billingLName);
         clickBillingCountry(billingCountry);
         typeBillingAddress();
-        typeBillingCity(billingCity);
         typeBillingState(device,billingState);
         typeBillingZip(billingZip);
+        typeBillingCity(billingCity);
         typeShippingPhone(device);
         takeScreenshot(screenshotTestName, "NewAddress");
         clickNewAddress_Continue();

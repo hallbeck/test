@@ -2,6 +2,11 @@ package Automation;
 
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.Page;
+import com.gargoylesoftware.htmlunit.RefreshHandler;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.*;
+
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -11,8 +16,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -81,7 +89,12 @@ public class HTMLSeleniumTestBase {
     public String ccErrorDecline = "We're sorry, that credit card number appears to be invalid. Please update the credit card number to continue.";
 
 
+
     private HtmlUnitDriver driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_17);
+        WebClient webClient = new WebClient (BrowserVersion.FIREFOX_17);
+
+
+
     public void startNow(String url){
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -98,6 +111,84 @@ public class HTMLSeleniumTestBase {
         print(pageTxt);
         driver.navigate().refresh();
         print(pageTxt);
+    }
+    public void goToPage(String addition){
+        driver.get(desktopBaseUrl + addition);
+        String pageTxt = driver.getTitle();
+        Wait(3);
+        print(pageTxt + "\n");
+    }
+    public void chooseBrand(String device, String brand){
+        try{
+        HtmlPage page = webClient.getPage(desktopBaseUrl);
+        HtmlSelect select = (HtmlSelect) page.getElementById("ctl00_contentPlaceHolderContent_ProductDropDown");
+        HtmlOption option = select.getOptionByValue(brand);
+        select.setSelectedAttribute(option, true);
+        HtmlSubmitInput submitBtn = page.getElementByName("ctl00$contentPlaceHolderContent$GoButton");
+        page = submitBtn.click();
+        }
+        catch(Throwable e){}
+        print("Brand is: " + brand);
+        String pageTxt = driver.getTitle();
+        Wait(3);
+        print("page: " + pageTxt + "\n");
+    }
+    public void clickGo(){
+        driver.findElement(By.id("ctl00_contentPlaceHolderContent_GoButton")).click();
+        print("clicked Go");
+        String pageTxt = driver.getTitle();
+        Wait(3);
+        print("page: " + pageTxt + "\n");
+    }
+    public void searchAllBrand(String product){
+        driver.get(desktopBaseUrl + "/"+"pn="+product);
+        Wait(3);
+        String pageTxt = driver.getTitle();
+        print(pageTxt + "\n");
+    }
+
+    public void assertProduct(String product,String expected){
+        String state = "";
+        Wait(2);
+        if (driver.getCurrentUrl().contains("code=404")) {
+            print("got 404");
+            String toVerify = driver.getTitle();
+            assertTxtPresent("Searched for ",expected,toVerify);
+        }
+        if (!driver.getCurrentUrl().contains("code=404")) {
+            Wait(3);
+            try{
+
+                //WebElement weText = WebElement weText = driver.findElementByXPath("//h1[contains(@class,'product-heading')]");
+                String toVerify = driver.getTitle();//weText.getText();
+                print("First verify: "+toVerify);
+                verifyTxtPresent("1st try Pages:  Searched for "+product+": ", expected, toVerify);
+                print("find text prod heading.");
+                new String (state = "PASS");
+            }
+            catch(Throwable e){
+                try{
+                    WebElement weText = driver.findElementByXPath("//h1[contains(@class,'product-name')]");
+                    String toVerify = weText.getText();
+                    print("Second verify: "+toVerify);
+                    verifyTxtPresent("2nd try Pages:  Searched for ", expected, toVerify);
+                    print("find text prod name.");
+                    new String (state = "PASS");
+                }
+                catch(Throwable E) {
+                    WebElement weText = driver.findElementByXPath("//h1[contains(@class,'pageTitle')]");
+                    String toVerify = weText.getText();
+                    print("Third assert!: "+toVerify);
+                    assertTxtPresent("Last try Pages:  Searched for ",expected,toVerify);
+                    print("find text page title."+state);
+                    //assert true;
+                    new String (state = "PASS");
+                    if (!state.equals("PASS")){
+                        print("FAILED could not find: " + expected);
+                    }
+                }
+            }
+        }
     }
     public void verifyTag(String tag,String expected) {
         try{
@@ -189,7 +280,7 @@ public class HTMLSeleniumTestBase {
     }
     public void Wait(long seconds) {
         try {
-            Thread.sleep(seconds * 100);
+            Thread.sleep(seconds * 1000);
             //System.out.println("Waiting " + seconds + " seconds");
         } catch (Exception e) {
             print("Sleep exception...its a nightmare");
